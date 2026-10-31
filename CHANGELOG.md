@@ -11,3 +11,4 @@ First complete version of the Raincloud viz extension.
 - Format dialog (Tableau UI, React 18) with live preview; frozen Lite fallback (`raincloud-lite.trex`).
 - Landing page with live examples and feature hints.
 - Classic-script build that loads under Tableau's sandbox hosting (verified with `@tableau/tabextsandbox`).
+- Hosted on GitHub Pages: website with quick start, live demo, and the downloadable `raincloud.trex`.

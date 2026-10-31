@@ -24,7 +24,7 @@ Feature list: [CHANGELOG.md](../CHANGELOG.md). Release steps and known limitatio
 1. ~~Full test round~~ done (see RELEASE.md); a **detailed-testing TODO** remains there.
 2. **GitHub:** first public commit + tag; **GitHub Pages hosting is built** (`site/` landing page, `npm run site`,
    `.github/workflows/pages.yml`; `raincloud.trex` → Pages URL; `vizzes/raincloud/manifests/raincloud-dev.trex` → localhost).
-   Remaining: push, enable Pages (Source: GitHub Actions), check the hosted build in Tableau.
+   Live at https://okhammahko.github.io/tableau-viz-extensions/ and checked in Tableau (2026-10-31). Next: GitHub Release.
    Needs the GitHub username and repo name.
 3. **Community portal** (https://tableau.github.io/extensions-api/community/): fork tableau/extensions-api, add an entry
    to `community/community_extensions.json` (name, author, description; source link) and our Pages-hosted `.trex` to

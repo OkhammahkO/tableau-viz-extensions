@@ -17,8 +17,10 @@
 ## Community portal (lighter, before the Exchange)
 - [x] GitHub Pages site built (`site/`, `npm run site`, `.github/workflows/pages.yml`); `raincloud.trex` points at
       https://okhammahko.github.io/tableau-viz-extensions/raincloud/raincloud.html; dev manifest in `vizzes/raincloud/manifests/`.
-- [ ] Public repo `OkhammahkO/tableau-viz-extensions`: first commit, push, Settings → Pages → Source: GitHub Actions.
-- [ ] **Tableau check of the hosted build:** load the top-level `raincloud.trex` once Pages is live (T1–T6 quick pass).
+- [x] Public repo https://github.com/OkhammahkO/tableau-viz-extensions pushed; Pages live (Source: GitHub Actions).
+- [x] **Tableau check of the hosted build** (2026-10-31, Desktop 2026.3.0): downloaded `.trex` loads from Pages; chart,
+      Format dialog and Done work.
+- [ ] GitHub Release v1.0.0 with `raincloud.trex` attached.
 - [ ] PR to tableau/extensions-api: entry in `community/community_extensions.json` + manifest in
       `community/CommunityManifests/` (docs: https://tableau.github.io/extensions-api/docs/publish/trex_contributing).
 

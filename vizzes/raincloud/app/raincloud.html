@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raincloud</title>
+    <script src="./lib/tableau.extensions.1.17.0.min.js"></script>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; font: 12px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; color: #333; }
+      body { display: flex; flex-direction: column; position: relative; } /* anchors the outlier badge */
+      #banner { flex: none; margin: 6px 8px 0; padding: 6px 8px; font-size: 11.5px; background: #fff6dc; border: 1px solid #ecd58a; border-radius: 4px; }
+      #chart { flex: 1; min-height: 0; }
+      #splash { position: fixed; inset: 0; background: #fff; z-index: 10; } /* landing page: src/extension/splash.ts */
+      [hidden] { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <div id="banner" hidden></div>
+    <div id="chart" class="rc-host"></div>
+    <div id="splash" hidden></div>
+    <script type="module" src="/src/extension/main.ts"></script>
+  </body>
+</html>

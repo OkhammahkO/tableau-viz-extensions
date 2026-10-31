@@ -1,0 +1,374 @@
+row_id,category,value,segment,region
+1,Group A (uniform),47.62,Beta,West
+2,Group A (uniform),50.39,Alpha,South
+3,Group A (uniform),65.2,Beta,South
+4,Group A (uniform),29.71,Beta,South
+5,Group A (uniform),29.53,Alpha,West
+6,Group A (uniform),73.24,Alpha,North
+7,Group A (uniform),66.59,Alpha,North
+8,Group A (uniform),26.78,Alpha,North
+9,Group A (uniform),63.91,Beta,West
+10,Group A (uniform),54.55,Alpha,South
+11,Group A (uniform),57.01,Beta,North
+12,Group A (uniform),58.12,Beta,East
+13,Group A (uniform),45.34,Alpha,East
+14,Group A (uniform),40.76,Alpha,East
+15,Group A (uniform),26.49,Alpha,West
+16,Group A (uniform),30.39,Beta,West
+17,Group A (uniform),28.34,Alpha,North
+18,Group A (uniform),35.68,Alpha,West
+19,Group A (uniform),43.77,Beta,West
+20,Group A (uniform),28.65,Alpha,East
+21,Group A (uniform),41.84,Beta,East
+22,Group A (uniform),25.76,Beta,North
+23,Group A (uniform),31.73,Alpha,North
+24,Group A (uniform),27.99,Beta,South
+25,Group A (uniform),59.1,Alpha,West
+26,Group A (uniform),50.44,Alpha,West
+27,Group A (uniform),57.19,Alpha,West
+28,Group A (uniform),46.04,Alpha,North
+29,Group A (uniform),38.49,Beta,North
+30,Group A (uniform),35.54,Beta,North
+31,Group A (uniform),27.11,Alpha,South
+32,Group A (uniform),47.08,Alpha,East
+33,Group A (uniform),66.51,Beta,North
+34,Group A (uniform),28.71,Alpha,South
+35,Group A (uniform),25.78,Beta,East
+36,Group A (uniform),56.11,Alpha,West
+37,Group A (uniform),66.62,Alpha,West
+38,Group A (uniform),34.14,Alpha,East
+39,Group A (uniform),70.42,Alpha,South
+40,Group A (uniform),32.92,Alpha,West
+41,Group A (uniform),69.11,Alpha,West
+42,Group A (uniform),27.37,Alpha,North
+43,Group A (uniform),50.62,Beta,South
+44,Group A (uniform),61.99,Beta,East
+45,Group A (uniform),46.04,Beta,East
+46,Group A (uniform),51.0,Alpha,South
+47,Group A (uniform),36.42,Alpha,East
+48,Group A (uniform),35.62,Alpha,North
+49,Group A (uniform),28.46,Beta,West
+50,Group A (uniform),37.45,Alpha,South
+51,Group A (uniform),39.1,Alpha,North
+52,Group A (uniform),43.11,Beta,East
+53,Group A (uniform),57.85,Alpha,North
+54,Group A (uniform),71.18,Beta,East
+55,Group A (uniform),60.05,Alpha,North
+56,Group A (uniform),54.92,Alpha,West
+57,Group A (uniform),28.36,Beta,East
+58,Group A (uniform),31.83,Alpha,North
+59,Group A (uniform),47.65,Beta,North
+60,Group A (uniform),70.01,Alpha,East
+61,Group A (uniform),42.59,Beta,North
+62,Group A (uniform),68.56,Beta,North
+63,Group A (uniform),68.17,Alpha,West
+64,Group A (uniform),43.96,Alpha,North
+65,Group A (uniform),29.01,Alpha,East
+66,Group A (uniform),68.99,Beta,West
+67,Group A (uniform),71.71,Beta,West
+68,Group A (uniform),48.13,Alpha,North
+69,Group A (uniform),40.51,Alpha,West
+70,Group A (uniform),26.11,Alpha,West
+71,Group A (uniform),64.0,Beta,East
+72,Group A (uniform),69.82,Beta,East
+73,Group A (uniform),32.16,Alpha,South
+74,Group A (uniform),62.69,Beta,West
+75,Group A (uniform),49.92,Alpha,East
+76,Group A (uniform),45.24,Beta,South
+77,Group A (uniform),56.71,Alpha,South
+78,Group A (uniform),44.22,Beta,South
+79,Group A (uniform),31.81,Beta,East
+80,Group A (uniform),66.85,Alpha,North
+81,Group A (uniform),72.5,Beta,South
+82,Group A (uniform),30.64,Beta,East
+83,Group A (uniform),71.29,Beta,West
+84,Group A (uniform),56.29,Beta,East
+85,Group A (uniform),60.81,Beta,East
+86,Group A (uniform),28.73,Alpha,East
+87,Group A (uniform),68.64,Alpha,East
+88,Group A (uniform),53.53,Beta,North
+89,Group A (uniform),57.05,Beta,West
+90,Group A (uniform),34.5,Beta,South
+91,Group A (uniform),63.96,Alpha,North
+92,Group A (uniform),47.32,Beta,North
+93,Group A (uniform),59.22,Alpha,West
+94,Group A (uniform),37.8,Alpha,West
+95,Group A (uniform),51.74,Alpha,South
+96,Group A (uniform),36.32,Beta,South
+97,Group A (uniform),44.68,Alpha,North
+98,Group A (uniform),45.52,Beta,South
+99,Group A (uniform),47.53,Alpha,North
+100,Group A (uniform),43.84,Beta,West
+101,Group A (uniform),41.32,Alpha,North
+102,Group A (uniform),61.1,Alpha,South
+103,Group A (uniform),37.11,Beta,North
+104,Group A (uniform),73.87,Beta,East
+105,Group A (uniform),70.5,Alpha,East
+106,Group A (uniform),50.24,Alpha,West
+107,Group A (uniform),42.1,Beta,East
+108,Group A (uniform),49.37,Alpha,South
+109,Group A (uniform),65.46,Alpha,West
+110,Group A (uniform),64.99,Alpha,East
+111,Group A (uniform),118,Alpha,West
+112,Group B (gap at median),40.23,Beta,West
+113,Group B (gap at median),70.36,Alpha,South
+114,Group B (gap at median),31.66,Alpha,East
+115,Group B (gap at median),68.14,Beta,West
+116,Group B (gap at median),45.73,Alpha,East
+117,Group B (gap at median),63.45,Alpha,East
+118,Group B (gap at median),34.3,Alpha,North
+119,Group B (gap at median),64.67,Beta,North
+120,Group B (gap at median),35.69,Beta,North
+121,Group B (gap at median),65.68,Beta,North
+122,Group B (gap at median),36.4,Beta,West
+123,Group B (gap at median),64.45,Beta,East
+124,Group B (gap at median),37.12,Beta,West
+125,Group B (gap at median),71.24,Beta,East
+126,Group B (gap at median),40.64,Alpha,East
+127,Group B (gap at median),68.96,Alpha,North
+128,Group B (gap at median),39.55,Alpha,East
+129,Group B (gap at median),66.58,Beta,East
+130,Group B (gap at median),37.18,Beta,North
+131,Group B (gap at median),71.29,Beta,South
+132,Group B (gap at median),34.22,Alpha,West
+133,Group B (gap at median),57.18,Beta,South
+134,Group B (gap at median),28.27,Alpha,South
+135,Group B (gap at median),63.86,Alpha,South
+136,Group B (gap at median),42.44,Beta,South
+137,Group B (gap at median),62.77,Beta,East
+138,Group B (gap at median),39.29,Alpha,North
+139,Group B (gap at median),64.12,Alpha,South
+140,Group B (gap at median),38.3,Beta,North
+141,Group B (gap at median),67.43,Beta,West
+142,Group B (gap at median),30.23,Alpha,West
+143,Group B (gap at median),64.11,Alpha,North
+144,Group B (gap at median),39.07,Beta,North
+145,Group B (gap at median),72.49,Beta,South
+146,Group B (gap at median),38.68,Alpha,North
+147,Group B (gap at median),61.12,Beta,South
+148,Group B (gap at median),37.82,Alpha,South
+149,Group B (gap at median),68.07,Beta,North
+150,Group B (gap at median),34.88,Beta,North
+151,Group B (gap at median),64.84,Alpha,East
+152,Group B (gap at median),33.33,Beta,West
+153,Group B (gap at median),69.0,Alpha,East
+154,Group B (gap at median),43.97,Alpha,South
+155,Group B (gap at median),66.58,Beta,West
+156,Group B (gap at median),34.25,Alpha,South
+157,Group B (gap at median),69.34,Alpha,North
+158,Group B (gap at median),36.15,Beta,South
+159,Group B (gap at median),67.7,Beta,East
+160,Group B (gap at median),36.59,Alpha,West
+161,Group B (gap at median),68.2,Alpha,East
+162,Group B (gap at median),42.05,Beta,South
+163,Group B (gap at median),61.25,Beta,South
+164,Group B (gap at median),36.71,Beta,East
+165,Group B (gap at median),64.3,Beta,North
+166,Group B (gap at median),41.21,Alpha,South
+167,Group B (gap at median),66.28,Beta,East
+168,Group B (gap at median),33.54,Alpha,North
+169,Group B (gap at median),71.63,Beta,West
+170,Group B (gap at median),32.62,Beta,North
+171,Group B (gap at median),60.55,Alpha,North
+172,Group B (gap at median),36.76,Beta,North
+173,Group B (gap at median),62.54,Alpha,West
+174,Group B (gap at median),40.47,Beta,East
+175,Group B (gap at median),66.24,Beta,North
+176,Group B (gap at median),31.7,Alpha,North
+177,Group B (gap at median),59.75,Beta,South
+178,Group B (gap at median),28.01,Beta,North
+179,Group B (gap at median),73.83,Beta,West
+180,Group B (gap at median),32.16,Beta,East
+181,Group B (gap at median),68.63,Beta,West
+182,Group B (gap at median),33.76,Beta,East
+183,Group B (gap at median),61.22,Alpha,North
+184,Group B (gap at median),37.84,Alpha,West
+185,Group B (gap at median),60.08,Beta,North
+186,Group B (gap at median),42.98,Alpha,East
+187,Group B (gap at median),61.51,Alpha,South
+188,Group B (gap at median),32.37,Alpha,North
+189,Group B (gap at median),68.2,Alpha,West
+190,Group B (gap at median),44.03,Alpha,North
+191,Group B (gap at median),74.99,Alpha,West
+192,Group B (gap at median),34.08,Alpha,East
+193,Group B (gap at median),66.83,Alpha,North
+194,Group B (gap at median),35.39,Beta,West
+195,Group B (gap at median),67.87,Beta,West
+196,Group B (gap at median),32.12,Alpha,East
+197,Group B (gap at median),71.6,Alpha,South
+198,Group B (gap at median),31.72,Beta,East
+199,Group B (gap at median),66.63,Beta,East
+200,Group B (gap at median),31.42,Alpha,East
+201,Group B (gap at median),61.4,Alpha,South
+202,Group B (gap at median),42.07,Alpha,North
+203,Group B (gap at median),64.42,Alpha,North
+204,Group B (gap at median),36.38,Alpha,North
+205,Group B (gap at median),70.69,Alpha,East
+206,Group B (gap at median),38.72,Alpha,South
+207,Group B (gap at median),66.84,Beta,West
+208,Group B (gap at median),33.93,Beta,West
+209,Group B (gap at median),66.42,Alpha,North
+210,Group B (gap at median),38.58,Alpha,West
+211,Group B (gap at median),61.36,Beta,East
+212,Group B (gap at median),35.02,Alpha,East
+213,Group B (gap at median),67.64,Beta,South
+214,Group B (gap at median),33.12,Alpha,West
+215,Group B (gap at median),67.9,Beta,North
+216,Group B (gap at median),32.39,Beta,West
+217,Group B (gap at median),64.7,Beta,North
+218,Group B (gap at median),39.77,Alpha,East
+219,Group B (gap at median),67.43,Beta,East
+220,Group B (gap at median),36.49,Beta,East
+221,Group B (gap at median),68.45,Beta,North
+222,Group B (gap at median),34.87,Beta,West
+223,Group B (gap at median),70.36,Beta,West
+224,Group B (gap at median),35.13,Alpha,North
+225,Group B (gap at median),70.14,Beta,East
+226,Group B (gap at median),43.69,Beta,South
+227,Group B (gap at median),67.02,Beta,West
+228,Group B (gap at median),28.71,Alpha,South
+229,Group B (gap at median),63.84,Alpha,West
+230,Group B (gap at median),39.68,Alpha,South
+231,Group B (gap at median),63.51,Alpha,South
+232,Group B (gap at median),26.31,Beta,North
+233,Group B (gap at median),61.18,Beta,North
+234,Group B (gap at median),35.18,Alpha,East
+235,Group B (gap at median),69.1,Alpha,North
+236,Group B (gap at median),35.33,Beta,South
+237,Group B (gap at median),64.13,Alpha,West
+238,Group B (gap at median),37.53,Beta,West
+239,Group B (gap at median),60.56,Beta,East
+240,Group B (gap at median),38.43,Alpha,West
+241,Group B (gap at median),62.21,Beta,North
+242,Group B (gap at median),34.4,Beta,East
+243,Group B (gap at median),56.35,Alpha,West
+244,Group B (gap at median),41.74,Alpha,East
+245,Group B (gap at median),57.85,Alpha,North
+246,Group B (gap at median),32.86,Alpha,South
+247,Group B (gap at median),68.22,Alpha,West
+248,Group B (gap at median),35.41,Beta,West
+249,Group B (gap at median),62.38,Beta,East
+250,Group B (gap at median),38.54,Beta,North
+251,Group B (gap at median),65.7,Beta,South
+252,Group C (whole numbers),53,Alpha,West
+253,Group C (whole numbers),46,Alpha,West
+254,Group C (whole numbers),54,Alpha,South
+255,Group C (whole numbers),51,Alpha,East
+256,Group C (whole numbers),53,Beta,South
+257,Group C (whole numbers),58,Beta,South
+258,Group C (whole numbers),59,Beta,West
+259,Group C (whole numbers),46,Beta,West
+260,Group C (whole numbers),67,Beta,North
+261,Group C (whole numbers),39,Beta,South
+262,Group C (whole numbers),47,Alpha,West
+263,Group C (whole numbers),56,Beta,North
+264,Group C (whole numbers),48,Alpha,West
+265,Group C (whole numbers),46,Beta,West
+266,Group C (whole numbers),56,Alpha,West
+267,Group C (whole numbers),38,Alpha,East
+268,Group C (whole numbers),64,Alpha,East
+269,Group C (whole numbers),68,Alpha,South
+270,Group C (whole numbers),47,Alpha,South
+271,Group C (whole numbers),50,Alpha,North
+272,Group C (whole numbers),45,Alpha,West
+273,Group C (whole numbers),62,Beta,North
+274,Group C (whole numbers),63,Beta,North
+275,Group C (whole numbers),49,Alpha,West
+276,Group C (whole numbers),57,Beta,South
+277,Group C (whole numbers),65,Alpha,West
+278,Group C (whole numbers),47,Beta,East
+279,Group C (whole numbers),51,Beta,West
+280,Group C (whole numbers),59,Beta,North
+281,Group C (whole numbers),56,Beta,North
+282,Group C (whole numbers),50,Beta,West
+283,Group C (whole numbers),48,Alpha,West
+284,Group C (whole numbers),61,Beta,South
+285,Group C (whole numbers),53,Beta,North
+286,Group C (whole numbers),51,Alpha,South
+287,Group C (whole numbers),52,Beta,West
+288,Group C (whole numbers),66,Beta,West
+289,Group C (whole numbers),46,Alpha,East
+290,Group C (whole numbers),55,Alpha,East
+291,Group C (whole numbers),60,Beta,East
+292,Group C (whole numbers),39,Beta,West
+293,Group C (whole numbers),46,Beta,North
+294,Group C (whole numbers),62,Alpha,South
+295,Group C (whole numbers),59,Alpha,South
+296,Group C (whole numbers),38,Alpha,North
+297,Group C (whole numbers),62,Alpha,North
+298,Group C (whole numbers),55,Beta,North
+299,Group C (whole numbers),56,Beta,West
+300,Group C (whole numbers),56,Alpha,South
+301,Group C (whole numbers),50,Beta,West
+302,Group C (whole numbers),47,Alpha,West
+303,Group C (whole numbers),60,Beta,South
+304,Group C (whole numbers),45,Alpha,East
+305,Group C (whole numbers),42,Beta,South
+306,Group C (whole numbers),45,Alpha,West
+307,Group C (whole numbers),63,Alpha,East
+308,Group C (whole numbers),56,Alpha,East
+309,Group C (whole numbers),36,Beta,South
+310,Group C (whole numbers),46,Alpha,South
+311,Group C (whole numbers),60,Alpha,North
+312,Group C (whole numbers),48,Alpha,South
+313,Group C (whole numbers),48,Alpha,West
+314,Group C (whole numbers),40,Beta,North
+315,Group C (whole numbers),46,Beta,East
+316,Group C (whole numbers),47,Alpha,South
+317,Group C (whole numbers),53,Alpha,East
+318,Group C (whole numbers),59,Beta,South
+319,Group C (whole numbers),65,Alpha,North
+320,Group C (whole numbers),47,Alpha,East
+321,Group C (whole numbers),71,Alpha,South
+322,Group C (whole numbers),39,Beta,North
+323,Group C (whole numbers),43,Beta,South
+324,Group C (whole numbers),56,Alpha,East
+325,Group C (whole numbers),32,Beta,North
+326,Group C (whole numbers),57,Alpha,South
+327,Group C (whole numbers),60,Beta,North
+328,Group C (whole numbers),47,Alpha,East
+329,Group C (whole numbers),50,Alpha,East
+330,Group C (whole numbers),67,Alpha,West
+331,Group C (whole numbers),57,Beta,North
+332,Group C (whole numbers),43,Beta,East
+333,Group C (whole numbers),54,Beta,West
+334,Group C (whole numbers),61,Beta,West
+335,Group C (whole numbers),37,Alpha,North
+336,Group C (whole numbers),61,Beta,West
+337,Group C (whole numbers),46,Alpha,East
+338,Group C (whole numbers),58,Beta,West
+339,Group C (whole numbers),48,Beta,East
+340,Group C (whole numbers),66,Alpha,North
+341,Group C (whole numbers),40,Beta,South
+342,Group C (whole numbers),43,Alpha,West
+343,Group C (whole numbers),52,Alpha,South
+344,Group C (whole numbers),39,Alpha,North
+345,Group C (whole numbers),48,Beta,West
+346,Group C (whole numbers),47,Beta,North
+347,Group C (whole numbers),50,Alpha,North
+348,Group C (whole numbers),47,Beta,North
+349,Group C (whole numbers),51,Beta,South
+350,Group C (whole numbers),52,Alpha,North
+351,Group C (whole numbers),50,Beta,West
+352,Group C (whole numbers),56,Beta,South
+353,Group C (whole numbers),44,Alpha,East
+354,Group C (whole numbers),71,Beta,East
+355,Group C (whole numbers),56,Beta,South
+356,Group C (whole numbers),75,Beta,South
+357,Group C (whole numbers),42,Alpha,East
+358,Group C (whole numbers),61,Alpha,South
+359,Group C (whole numbers),41,Beta,East
+360,Group C (whole numbers),53,Alpha,South
+361,Group C (whole numbers),51,Alpha,North
+362,Group C (whole numbers),47,Beta,East
+363,Group C (whole numbers),46,Beta,South
+364,Group C (whole numbers),41,Beta,West
+365,Group C (whole numbers),71,Alpha,South
+366,Group C (whole numbers),53,Alpha,East
+367,Group C (whole numbers),60,Alpha,South
+368,Group C (whole numbers),44,Beta,East
+369,Group C (whole numbers),52,Alpha,South
+370,Group C (whole numbers),71,Alpha,South
+371,Group C (whole numbers),49,Beta,South
+372,Group C (whole numbers),-6,Alpha,West
+373,Group C (whole numbers),131,Alpha,West

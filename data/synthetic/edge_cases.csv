@@ -1,0 +1,241 @@
+row_id,category,value,segment,region
+1,Mixed sign,-44.89,Beta,East
+2,Mixed sign,-6.24,Alpha,East
+3,Mixed sign,4.5,Beta,West
+4,Mixed sign,3.73,Beta,East
+5,Mixed sign,-24.11,Beta,South
+6,Mixed sign,-29.34,Alpha,South
+7,Mixed sign,19.55,Alpha,South
+8,Mixed sign,-47.12,Beta,North
+9,Mixed sign,26.38,Beta,West
+10,Mixed sign,-24.02,Alpha,West
+11,Mixed sign,-21.54,Beta,East
+12,Mixed sign,-26.1,Alpha,West
+13,Mixed sign,-5.66,Beta,North
+14,Mixed sign,5.86,Beta,East
+15,Mixed sign,-2.23,Beta,South
+16,Mixed sign,-1.23,Alpha,South
+17,Mixed sign,29.5,Beta,North
+18,Mixed sign,-8.09,Beta,North
+19,Mixed sign,3.72,Alpha,East
+20,Mixed sign,-15.93,Beta,East
+21,Mixed sign,-9.42,Beta,East
+22,Mixed sign,20.39,Alpha,North
+23,Mixed sign,0.47,Beta,East
+24,Mixed sign,-23.12,Beta,North
+25,Mixed sign,-2.83,Alpha,West
+26,Mixed sign,-21.34,Alpha,South
+27,Mixed sign,-33.25,Beta,South
+28,Mixed sign,23.21,Alpha,East
+29,Mixed sign,36.42,Alpha,North
+30,Mixed sign,-9.13,Beta,East
+31,Mixed sign,2.97,Beta,North
+32,Mixed sign,-7.39,Beta,East
+33,Mixed sign,-13.96,Alpha,North
+34,Mixed sign,-21.24,Alpha,South
+35,Mixed sign,-19.23,Alpha,East
+36,Mixed sign,-3.95,Alpha,West
+37,Mixed sign,-39.93,Alpha,West
+38,Mixed sign,-24.09,Beta,North
+39,Mixed sign,40.86,Alpha,West
+40,Mixed sign,-8.49,Beta,South
+41,Mixed sign,33.15,Beta,North
+42,Mixed sign,-6.38,Beta,South
+43,Mixed sign,28.8,Beta,East
+44,Mixed sign,-13.61,Alpha,South
+45,Mixed sign,-7.71,Alpha,North
+46,Mixed sign,22.13,Alpha,South
+47,Mixed sign,50.0,Alpha,West
+48,Mixed sign,-19.0,Beta,West
+49,Mixed sign,8.37,Beta,West
+50,Mixed sign,-10.7,Alpha,East
+51,Mixed sign,-6.25,Beta,East
+52,Mixed sign,73.96,Beta,South
+53,Mixed sign,10.79,Alpha,North
+54,Mixed sign,3.64,Alpha,West
+55,Mixed sign,-5.24,Alpha,North
+56,Mixed sign,-20.52,Alpha,West
+57,Mixed sign,-41.08,Alpha,North
+58,Mixed sign,-9.61,Beta,North
+59,Mixed sign,-7.8,Alpha,South
+60,Mixed sign,3.78,Beta,East
+61,Mixed sign,-36.91,Beta,West
+62,Mixed sign,46.44,Alpha,East
+63,Mixed sign,36.34,Alpha,East
+64,Mixed sign,20.25,Beta,East
+65,Mixed sign,9.65,Alpha,West
+66,Mixed sign,8.78,Beta,West
+67,Mixed sign,13.44,Beta,East
+68,Mixed sign,13.38,Alpha,West
+69,Mixed sign,-11.51,Alpha,East
+70,Mixed sign,12.96,Alpha,West
+71,Mixed sign,-49.3,Alpha,South
+72,Mixed sign,20.41,Alpha,East
+73,Mixed sign,-50.76,Beta,West
+74,Mixed sign,2.18,Alpha,South
+75,Mixed sign,19.29,Alpha,West
+76,Mixed sign,34.38,Beta,West
+77,Mixed sign,0.1,Beta,South
+78,Mixed sign,-44.8,Beta,East
+79,Mixed sign,-24.13,Alpha,East
+80,Mixed sign,-0.36,Beta,North
+81,Mostly zero,0,Beta,South
+82,Mostly zero,0,Beta,North
+83,Mostly zero,0,Beta,East
+84,Mostly zero,0,Alpha,East
+85,Mostly zero,0,Beta,South
+86,Mostly zero,0,Beta,South
+87,Mostly zero,0,Beta,West
+88,Mostly zero,0,Alpha,East
+89,Mostly zero,0,Alpha,East
+90,Mostly zero,0,Alpha,East
+91,Mostly zero,0,Beta,West
+92,Mostly zero,0,Beta,East
+93,Mostly zero,0,Alpha,West
+94,Mostly zero,0,Alpha,East
+95,Mostly zero,21.51,Alpha,South
+96,Mostly zero,25.42,Alpha,West
+97,Mostly zero,0,Beta,South
+98,Mostly zero,15.04,Beta,North
+99,Mostly zero,0,Beta,West
+100,Mostly zero,0,Beta,West
+101,Mostly zero,0,Alpha,East
+102,Mostly zero,27.97,Alpha,West
+103,Mostly zero,0,Alpha,West
+104,Mostly zero,19.86,Alpha,South
+105,Mostly zero,0,Beta,West
+106,Mostly zero,0,Alpha,East
+107,Mostly zero,0,Alpha,East
+108,Mostly zero,0,Alpha,East
+109,Mostly zero,19.75,Beta,West
+110,Mostly zero,0,Alpha,North
+111,Mostly zero,9.26,Alpha,North
+112,Mostly zero,0,Beta,West
+113,Mostly zero,23.26,Alpha,North
+114,Mostly zero,0,Beta,West
+115,Mostly zero,0,Beta,East
+116,Mostly zero,1.23,Alpha,East
+117,Mostly zero,0,Alpha,West
+118,Mostly zero,0,Alpha,North
+119,Mostly zero,28.22,Beta,South
+120,Mostly zero,0,Beta,North
+121,Mostly zero,0,Beta,North
+122,Mostly zero,4.08,Alpha,South
+123,Mostly zero,0,Beta,East
+124,Mostly zero,0,Beta,North
+125,Mostly zero,0,Beta,North
+126,Mostly zero,0,Alpha,East
+127,Mostly zero,0,Beta,West
+128,Mostly zero,2.66,Beta,North
+129,Mostly zero,0,Beta,East
+130,Mostly zero,0,Alpha,South
+131,Mostly zero,3.06,Beta,North
+132,Mostly zero,25.42,Alpha,East
+133,Mostly zero,24.04,Alpha,West
+134,Mostly zero,15.19,Beta,West
+135,Mostly zero,20.57,Alpha,West
+136,Mostly zero,0,Alpha,East
+137,Mostly zero,20.07,Beta,East
+138,Mostly zero,7.12,Alpha,South
+139,Mostly zero,14.57,Beta,West
+140,Mostly zero,0,Beta,North
+141,Some nulls,,Alpha,South
+142,Some nulls,,Alpha,East
+143,Some nulls,34.54,Alpha,North
+144,Some nulls,,Beta,East
+145,Some nulls,46.46,Alpha,East
+146,Some nulls,34.22,Beta,West
+147,Some nulls,30.86,Alpha,South
+148,Some nulls,,Alpha,West
+149,Some nulls,36.49,Alpha,North
+150,Some nulls,,Beta,West
+151,Some nulls,,Alpha,South
+152,Some nulls,,Alpha,West
+153,Some nulls,22.47,Beta,South
+154,Some nulls,38.07,Beta,West
+155,Some nulls,,Alpha,South
+156,Some nulls,34.08,Beta,North
+157,Some nulls,,Beta,East
+158,Some nulls,38.99,Beta,South
+159,Some nulls,39.95,Alpha,South
+160,Some nulls,,Beta,North
+161,Some nulls,45.17,Alpha,South
+162,Some nulls,52.62,Alpha,North
+163,Some nulls,47.57,Beta,West
+164,Some nulls,29.89,Beta,North
+165,Some nulls,,Alpha,South
+166,Some nulls,,Beta,North
+167,Some nulls,,Beta,South
+168,Some nulls,42.44,Beta,East
+169,Some nulls,35.89,Beta,East
+170,Some nulls,31.15,Alpha,South
+171,Some nulls,31.15,Beta,East
+172,Some nulls,38.94,Beta,South
+173,Some nulls,42.67,Beta,North
+174,Some nulls,,Beta,North
+175,Some nulls,,Alpha,South
+176,Some nulls,51.45,Alpha,West
+177,Some nulls,46.99,Beta,East
+178,Some nulls,45.92,Beta,South
+179,Some nulls,26.21,Beta,North
+180,Some nulls,46.35,Alpha,North
+181,Some nulls,23.94,Alpha,West
+182,Some nulls,,Beta,South
+183,Some nulls,44.46,Beta,East
+184,Some nulls,,Beta,East
+185,Some nulls,45.45,Beta,North
+186,Some nulls,52.91,Beta,North
+187,Some nulls,,Alpha,West
+188,Some nulls,,Beta,East
+189,Some nulls,60.81,Beta,South
+190,Some nulls,,Alpha,West
+191,All null,,Alpha,West
+192,All null,,Alpha,West
+193,All null,,Beta,South
+194,All null,,Beta,East
+195,All null,,Beta,North
+196,All null,,Alpha,East
+197,All null,,Beta,North
+198,All null,,Alpha,South
+199,All null,,Beta,North
+200,All null,,Beta,North
+201,,49.95,Alpha,South
+202,,50.57,Beta,East
+203,,51.81,Alpha,East
+204,,53.69,Beta,North
+205,,53.92,Beta,West
+206,,67.81,Alpha,South
+207,,53.01,Alpha,West
+208,,61.18,Beta,North
+209,,56.74,Alpha,South
+210,,53.65,Alpha,East
+211,,50.94,Alpha,North
+212,,54.45,Beta,West
+213,,48.24,Alpha,North
+214,,51.15,Beta,West
+215,,50.19,Beta,West
+216,,58.84,Alpha,North
+217,,57.95,Alpha,South
+218,,57.64,Alpha,West
+219,,51.64,Beta,South
+220,,40.96,Alpha,East
+221,,59.58,Alpha,East
+222,,53.78,Alpha,North
+223,,47.51,Beta,West
+224,,47.29,Beta,South
+225,,61.22,Alpha,South
+226,,50.31,Beta,East
+227,,68.54,Beta,South
+228,,50.97,Alpha,West
+229,,52.03,Beta,North
+230,,51.55,Alpha,East
+231,,50.37,Beta,West
+232,,54.17,Beta,West
+233,,51.06,Alpha,South
+234,,54.31,Alpha,East
+235,,50.38,Alpha,South
+236,,52.81,Beta,West
+237,,58.53,Alpha,South
+238,,53.69,Alpha,North
+239,,58.59,Alpha,South
+240,,51.19,Alpha,South

@@ -1,0 +1,126 @@
+/* Getting-started screen. Tableau-like greys, Tableau 10 blue as the accent, Tableau's pill colours. */
+.sp-page {
+  --sp-ink: #2b2f33;
+  --sp-muted: #61676e;
+  --sp-line: #e3e6ea;
+  --sp-accent: #4e79a7;
+  --sp-measure: #2e9a5b;
+  --sp-dimension: #4278b0;
+  --sp-card: #f7f8fa;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--sp-ink);
+  font: 12.5px/1.45 "Benton Sans", "Segoe UI", system-ui, sans-serif;
+  text-align: left;
+}
+
+.sp-head { display: grid; gap: 2px; }
+.sp-title { margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; }
+.sp-title::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--sp-accent);
+  box-shadow: 14px 0 0 #f28e2b, 28px 0 0 #59a14f;
+  vertical-align: 2px;
+  margin-right: 38px;
+}
+.sp-lede { margin: 0; color: var(--sp-muted); max-width: 60ch; }
+
+.sp-main { display: grid; gap: 18px; align-items: start; }
+.sp-roomy .sp-main, .sp-medium .sp-main { grid-template-columns: minmax(300px, 1.4fr) minmax(240px, 1fr); }
+
+.sp-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.sp-step { display: flex; gap: 10px; align-items: flex-start; }
+.sp-num {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--sp-accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 11.5px;
+  display: grid;
+  place-items: center;
+}
+.sp-step-body { display: grid; gap: 3px; min-width: 0; }
+.sp-step-line { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.sp-arrow { color: var(--sp-muted); }
+.sp-target { font-weight: 600; }
+.sp-hint { color: var(--sp-muted); font-size: 11.5px; }
+
+.sp-pill {
+  display: inline-block;
+  padding: 1px 9px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.sp-measure { background: var(--sp-measure); }
+/* Looks like Tableau's Format Extension button on the Marks card. */
+.sp-button {
+  color: var(--sp-ink);
+  background: #fff;
+  border: 1px solid #b8bec5;
+  border-radius: 3px;
+  padding: 1px 8px;
+}
+.sp-dimension { background: var(--sp-dimension); }
+
+.sp-hero {
+  position: relative;
+  height: 220px;
+  border: 1px solid var(--sp-line);
+  border-radius: 8px;
+  background: #fff;
+  overflow: auto;
+}
+.sp-hero-wide { grid-column: 1 / -1; }
+
+.sp-more { display: grid; gap: 8px; border-top: 1px solid var(--sp-line); padding-top: 14px; }
+.sp-more-title { margin: 0; font-size: 13.5px; font-weight: 600; }
+.sp-more-hint { margin: 0; color: var(--sp-muted); }
+.sp-thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.sp-thumb { margin: 0; background: var(--sp-card); border: 1px solid var(--sp-line); border-radius: 8px; padding: 8px; display: grid; gap: 4px; }
+.sp-thumb-chart { position: relative; height: 96px; background: #fff; border-radius: 4px; overflow: hidden; }
+.sp-thumb figcaption { display: flex; gap: 6px; align-items: baseline; font-size: 11.5px; }
+.sp-thumb figcaption span { color: var(--sp-muted); }
+
+/* The previews are pictures, not controls. */
+.sp-hero *, .sp-thumb-chart * { pointer-events: none; }
+.sp-hero .rc-badge, .sp-thumb-chart .rc-badge { display: none; }
+
+/* Feature chips under step 4: what's in Format Extension. */
+.sp-features { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 5px; }
+.sp-feature {
+  display: inline-flex;
+  gap: 5px;
+  align-items: baseline;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #eef3f9;
+  border: 1px solid #d6e2ef;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.sp-feature b { color: var(--sp-accent); font-weight: 600; }
+.sp-feature span { color: var(--sp-muted); }
+
+/* Stacked hero: small charts beside the steps (a viz renders one chart per panel). */
+.sp-hero-stack { height: auto; display: grid; gap: 2px; padding: 4px 0; max-width: 520px; width: 100%; justify-self: end; }
+.sp-hero-panel { position: relative; height: 112px; }
+.sp-hero-panel:first-child { height: 134px; }
+.sp-thumb-wide { grid-column: span 2; }
+.sp-thumb-wide .sp-thumb-chart { height: 196px; }
+@media (max-width: 620px) { .sp-thumb-wide { grid-column: auto; } }

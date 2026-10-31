@@ -1,0 +1,490 @@
+<title>Raincloud Gallery</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one lab-notebook column. Playground first, then the variant grid, then where to port from. */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #15181c;
+  --ink-2: #4b525b;
+  --muted: #747c86;
+  --rule: #dde2e8;
+  --grid: #e9edf1;
+  --accent: #2a78d6;
+  --s1: #2a78d6;
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --chip: #eef3fa;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131518; --surface: #1b1e22; --ink: #eef0f3; --ink-2: #bcc2ca; --muted: #8d949d;
+    --rule: #2d3238; --grid: #252a2f; --accent: #3987e5; --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --chip: #1f2833; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131518; --surface: #1b1e22; --ink: #eef0f3; --ink-2: #bcc2ca; --muted: #8d949d;
+  --rule: #2d3238; --grid: #252a2f; --accent: #3987e5; --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+  --chip: #1f2833; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.55;
+}
+.wrap {
+  max-width: 1000px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 64px;
+  display: grid; gap: 40px;
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; margin: 0; }
+h1 { font-size: 2.3rem; line-height: 1.1; }
+h2 { font-size: 1.55rem; line-height: 1.2; }
+h3 { font-size: 1.1rem; line-height: 1.25; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+header { display: grid; gap: 10px; }
+.lede { color: var(--ink-2); font-size: 1.05rem; }
+section { display: grid; gap: 16px; min-width: 0; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; display: grid; gap: 14px; min-width: 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: flex-end; }
+.ctl { display: grid; gap: 5px; }
+.ctl > span { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 7px; overflow: hidden; flex-wrap: wrap; }
+.seg button {
+  font: inherit; font-size: 0.82rem; padding: 5px 10px; border: 0; background: transparent; color: var(--ink-2); cursor: pointer;
+  border-right: 1px solid var(--rule);
+}
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--chip); color: var(--ink); font-weight: 600; }
+.seg button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+input[type="range"] { width: 140px; accent-color: var(--accent); }
+.bw-val { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.chart { position: relative; min-width: 0; }
+.chart svg { display: block; overflow: visible; }
+.chart text { font-family: var(--font-body); }
+.axis-label { fill: var(--muted); font-size: 11px; font-family: var(--font-mono) !important; font-variant-numeric: tabular-nums; }
+.group-label { fill: var(--ink); font-size: 12.5px; font-weight: 600; }
+.group-note { fill: var(--muted); font-size: 11px; }
+.note-text { fill: var(--ink-2); font-size: 10.5px; font-family: var(--font-mono) !important; }
+.caption { color: var(--ink-2); font-size: 0.88rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 14px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.card .src { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+.card p { font-size: 0.86rem; color: var(--ink-2); }
+.tip {
+  position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--rule);
+  border-radius: 6px; padding: 6px 8px; font-size: 0.78rem; line-height: 1.4; box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  white-space: nowrap; font-variant-numeric: tabular-nums; z-index: 5;
+}
+.tip b { font-weight: 600; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.86rem; min-width: 720px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+tr:last-child td { border-bottom: 0; }
+.lic { font-family: var(--font-mono); font-size: 0.75rem; padding: 1px 6px; border-radius: 4px; background: var(--chip); color: var(--ink); white-space: nowrap; }
+.lic.warn { outline: 1px dashed var(--muted); background: transparent; }
+a { color: var(--accent); }
+ul.points { margin: 0; padding-left: 1.1rem; display: grid; gap: 6px; max-width: 72ch; }
+.rec { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; display: grid; gap: 8px; }
+.sources { font-size: 0.82rem; color: var(--ink-2); columns: 2 320px; column-gap: 28px; margin: 0; padding-left: 1.1rem; }
+.sources li { margin-bottom: 4px; break-inside: avoid; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Research · candidate 4 · distribution family</div>
+    <h1>Raincloud Gallery</h1>
+    <p class="lede">The raincloud variants in use today, drawn live from one small D3 engine, plus the implementations we could port from. All three groups are synthetic and built to fool a box plot: A is uniform, B has a gap at its median, and C holds whole numbers only. A and C each include an outlier.</p>
+  </header>
+
+  <section aria-labelledby="play-h">
+    <h2 id="play-h">Playground</h2>
+    <p class="caption">Correll (2023) splits a raincloud into <b>cloud</b> (shape), <b>lightning</b> (summary statistics) and <b>rain</b> (raw values). Each is a toggle here, as planned for the extension. Hover points or boxes for values.</p>
+    <div class="panel">
+      <div class="controls" role="group" aria-label="Chart options">
+        <div class="ctl"><span>Cloud</span><div class="seg" data-key="density">
+          <button type="button" data-v="none">None</button><button type="button" data-v="half">Half</button><button type="button" data-v="full">Violin</button><button type="button" data-v="hist">Histogram</button></div></div>
+        <div class="ctl"><span>Lightning</span><div class="seg" data-key="lightning">
+          <button type="button" data-v="none">None</button><button type="button" data-v="box">Box</button><button type="button" data-v="interval">Interval</button></div></div>
+        <div class="ctl"><span>Rain</span><div class="seg" data-key="rain">
+          <button type="button" data-v="none">None</button><button type="button" data-v="jitter">Jitter</button><button type="button" data-v="strip">Strip</button><button type="button" data-v="beeswarm">Beeswarm</button><button type="button" data-v="dots">Dot plot</button><button type="button" data-v="barcode">Barcode</button></div></div>
+        <div class="ctl"><span>Truncate axis</span><div class="seg" data-key="truncate">
+          <button type="button" data-v="off">Off</button><button type="button" data-v="1">P1–P99</button><button type="button" data-v="5">P5–P95</button></div></div>
+        <div class="ctl"><span>Mean line</span><div class="seg" data-key="mean">
+          <button type="button" data-v="off">Off</button><button type="button" data-v="on">On</button></div></div>
+        <label class="ctl" for="bw"><span>Bandwidth</span>
+          <span style="display:flex;gap:8px;align-items:center"><input id="bw" type="range" min="0.25" max="2.5" step="0.05" value="1"><span class="bw-val" id="bw-val">1.00× Silverman</span></span></label>
+      </div>
+      <div class="chart" id="play"></div>
+      <p class="caption" id="play-note"></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="var-h">
+    <h2 id="var-h">Variants in the wild</h2>
+    <p class="caption">The same three groups, drawn the way each source does it. The box plot alone hides all three quirks.</p>
+    <div class="grid" id="variants"></div>
+  </section>
+
+  <section aria-labelledby="impl-h">
+    <h2 id="impl-h">Implementations to port from</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Source</th><th>Platform</th><th>Licence</th><th>What it gives us</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://github.com/RainCloudPlots/RainCloudPlots" target="_blank" rel="noopener">RainCloudPlots</a> (Allen et al. 2019)</td><td>R · Python · Matlab</td><td><span class="lic">MIT</span></td><td>The original paper and tutorials. Defines the classic look: half density, box, jittered points.</td></tr>
+          <tr><td><a href="https://github.com/njudd/ggrain" target="_blank" rel="noopener">ggrain</a> (<code>geom_rain</code>)</td><td>R / ggplot2</td><td><span class="lic">MIT</span></td><td>The cleanest feature set to copy: rain side left/right/flanking, lines linking repeated measures (<code>id.long.var</code>), Likert jitter, covariate colour, per-layer args. v0.1.2, Jan 2026.</td></tr>
+          <tr><td>ptitprince</td><td>Python / seaborn</td><td><span class="lic">MIT</span></td><td>Python port of the original; same design.</td></tr>
+          <tr><td>ggdist (<code>stat_halfeye</code> + <code>stat_dots</code>)</td><td>R / ggplot2</td><td><span class="lic warn">to verify</span></td><td>The look in your r-bloggers link: half-eye cloud, slim box, Wilkinson dot plot rain.</td></tr>
+          <tr><td><a href="https://cedricscherer.netlify.app/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/" target="_blank" rel="noopener">Cédric Scherer tutorial</a></td><td>R (gghalves, ggdist, ggbeeswarm)</td><td><span class="lic warn">blog</span></td><td>14 variants from box plot to raincloud, with the case against each default. Design reference, not code to lift.</td></tr>
+          <tr><td><a href="https://ar5iv.labs.arxiv.org/html/2303.17709" target="_blank" rel="noopener">Correll, "Teru Teru Bōzu" (EuroVis 2023)</a></td><td>Paper (Tableau Research)</td><td><span class="lic warn">paper</span></td><td>Design guidance: deterministic rain over random jitter, split density over mirrored violins, labelled lightning, no density beyond the data.</td></tr>
+          <tr><td><a href="https://gist.github.com/vijithassar/c60dafea4431f292660d6f5e0487e470" target="_blank" rel="noopener">vijithassar gist</a></td><td>JS / D3 v5</td><td><span class="lic warn">none stated</span></td><td>Toy demo. The "cloud" is a smoothed histogram, not a KDE, and the jitter is random. No licence, so we can't copy it.</td></tr>
+          <tr><td><a href="https://github.com/git-blue-white/raincloud-plot-from-data" target="_blank" rel="noopener">git-blue-white</a></td><td>JS / D3</td><td><span class="lic warn">none stated</span></td><td>Same approach as the gist; 0 stars. Not worth porting.</td></tr>
+          <tr><td><a href="https://observablehq.com/@jeyabbalas/rain-cloud-plots" target="_blank" rel="noopener">Observable: jeyabbalas</a></td><td>JS / D3 notebook</td><td><span class="lic warn">unknown</span></td><td>Reusable density, box and beeswarm components. About four years old; couldn't load it to check.</td></tr>
+          <tr><td><a href="https://gist.github.com/dm-p/c77693f109cbe8db5c5a04fe2f93c3ef" target="_blank" rel="noopener">dm-p Deneb gist</a></td><td>Vega-Lite (Power BI)</td><td><span class="lic warn">unknown</span></td><td>Density + box + jitter strip, faceted. Fixed scale domains. Shows the Power BI route.</td></tr>
+          <tr><td>d3 · d3-force · Observable Plot</td><td>JS</td><td><span class="lic">ISC</span></td><td>Building blocks. Plot's <code>dodge</code> transform is a beeswarm; d3 gives quantiles, scales and areas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="guide-h">
+    <h2 id="guide-h">Design guidance</h2>
+    <ul class="points">
+      <li><b>The common default</b> is density + jittered points + box plot. In Correll's survey of 50 published rainclouds: density in 48, jitter in 40, box plot in 38.</li>
+      <li><b>Random jitter "hallucinates":</b> identical data looks different every render, and the jitter axis means nothing. Prefer deterministic rain (strip, beeswarm, dot plot). Try Group C above: jitter hides that it is whole numbers; barcode and dot plot show it.</li>
+      <li><b>Bandwidth is the main trap.</b> The default smooths over gaps; drag the slider down and Group B's gap appears. Scherer tunes it; the Power BI violin exposes it as a setting, with per-category values.</li>
+      <li><b>Don't draw density beyond the data.</b> The engine here clips each cloud to the group's observed range.</li>
+      <li><b>Label the lightning.</b> Whiskers, IQR and 90% intervals look alike; say which one is drawn.</li>
+      <li><b>Split, not mirrored:</b> Correll prefers a half density to a violin, since the mirror adds no information.</li>
+      <li><b>A beeswarm can be enough:</b> if it shows the density legibly, the cloud may be redundant. That needs a toggle, not a fixed design.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="rec-h">
+    <h2 id="rec-h">Recommendation</h2>
+    <div class="rec">
+      <p><b>There is no JS raincloud worth porting as-is.</b> The D3 examples are toy demos with no licence, and the good implementations are R and Python. So we port the <b>design</b> (ggrain's feature set, ggdist's look, Correll's defaults) and write the engine in D3 ourselves. It is small: the engine drawing this page is about 300 lines, with a Gaussian KDE, Silverman bandwidth, quantiles, a deterministic beeswarm and a dot plot.</p>
+      <p>Suggested defaults for the extension: half density clipped to the data, slim box with labelled whiskers, beeswarm rain, bandwidth control, percentile truncation with overflow counts. Repeated-measures lines (ggrain) are a strong later feature.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="src-h">
+    <h2 id="src-h">Sources</h2>
+    <ul class="sources">
+      <li>Allen et al., <a href="https://www.repository.cam.ac.uk/handle/1810/304688" target="_blank" rel="noopener">Raincloud plots: a multi-platform tool for robust data visualization</a>, Wellcome Open Research 2019/2021</li>
+      <li><a href="https://github.com/RainCloudPlots/RainCloudPlots" target="_blank" rel="noopener">RainCloudPlots repository</a></li>
+      <li>Correll, <a href="https://ar5iv.labs.arxiv.org/html/2303.17709" target="_blank" rel="noopener">Teru Teru Bōzu: Defensive Raincloud Plots</a>, EuroVis 2023</li>
+      <li>Scherer, <a href="https://cedricscherer.netlify.app/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/" target="_blank" rel="noopener">Visualizing Distributions with Raincloud Plots</a> (2021)</li>
+      <li><a href="https://www.r-bloggers.com/2021/07/ggdist-make-a-raincloud-plot-to-visualize-distribution-in-ggplot2/" target="_blank" rel="noopener">ggdist: Make a Raincloud Plot</a>, R-bloggers (2021)</li>
+      <li><a href="https://github.com/njudd/ggrain" target="_blank" rel="noopener">ggrain on GitHub</a> · <a href="https://cran.r-project.org/web/packages/ggrain/index.html" target="_blank" rel="noopener">CRAN</a></li>
+      <li><a href="https://pypi.org/project/ptitprince" target="_blank" rel="noopener">ptitprince on PyPI</a></li>
+      <li><a href="https://gist.github.com/vijithassar/c60dafea4431f292660d6f5e0487e470" target="_blank" rel="noopener">vijithassar raincloud gist</a> · <a href="https://github.com/git-blue-white/raincloud-plot-from-data" target="_blank" rel="noopener">git-blue-white repo</a></li>
+      <li><a href="https://observablehq.com/@jeyabbalas/rain-cloud-plots" target="_blank" rel="noopener">Observable: rain cloud plots</a> · <a href="https://gist.github.com/dm-p/c77693f109cbe8db5c5a04fe2f93c3ef" target="_blank" rel="noopener">dm-p Deneb raincloud</a></li>
+      <li>The Medium article you linked (amorimfranchi) blocked automated reading; not reviewed.</li>
+    </ul>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(function () {
+  // ---------- synthetic data (seeded, so every render is identical) ----------
+  function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  const rand = mulberry32(11);
+  const randn = () => { let u = 0, v = 0; while (!u) u = rand(); while (!v) v = rand(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+  const A = d3.range(110).map(() => 25 + rand() * 50).concat([118]);
+  const B = d3.range(70).map(() => 37 + randn() * 4.5).concat(d3.range(70).map(() => 66 + randn() * 4.5));
+  const C = d3.range(120).map(() => Math.round(52 + randn() * 9)).concat([-6, 131]);
+  const GROUPS = [
+    { name: 'Group A', note: 'uniform', color: 'var(--s1)', values: A },
+    { name: 'Group B', note: 'gap at median', color: 'var(--s2)', values: B },
+    { name: 'Group C', note: 'whole numbers', color: 'var(--s3)', values: C }
+  ].map((g) => {
+    const v = g.values.slice().sort(d3.ascending);
+    const q1 = d3.quantile(v, 0.25), q2 = d3.quantile(v, 0.5), q3 = d3.quantile(v, 0.75), iqr = q3 - q1;
+    const sd = d3.deviation(v);
+    return Object.assign(g, {
+      sorted: v, n: v.length, q1, q2, q3, iqr, mean: d3.mean(v), min: v[0], max: v[v.length - 1],
+      p5: d3.quantile(v, 0.05), p95: d3.quantile(v, 0.95),
+      wlo: v.find((x) => x >= q1 - 1.5 * iqr), whi: [...v].reverse().find((x) => x <= q3 + 1.5 * iqr),
+      silverman: 0.9 * Math.min(sd, iqr / 1.34) * Math.pow(v.length, -0.2),
+      jit: v.map(() => rand()) // fixed per point, so jitter stays put between renders
+    });
+  });
+  const POOLED = GROUPS.flatMap((g) => g.sorted).sort(d3.ascending);
+  const fmt = d3.format('.1f');
+
+  // ---------- statistics ----------
+  function kde(g, bwMul, steps) {
+    const bw = g.silverman * bwMul, k = 1 / (g.n * bw * Math.sqrt(2 * Math.PI));
+    return d3.range(steps).map((i) => {
+      const x = g.min + (g.max - g.min) * i / (steps - 1); // clipped to the observed range
+      let s = 0; for (const v of g.sorted) { const z = (x - v) / bw; s += Math.exp(-0.5 * z * z); }
+      return [x, s * k];
+    });
+  }
+  function histo(g, bins) {
+    const b = d3.bin().domain([g.min, g.max]).thresholds(bins)(g.sorted);
+    return b.map((d) => ({ x0: d.x0, x1: d.x1, n: d.length }));
+  }
+
+  // ---------- rain layouts (pixel space) ----------
+  function swarm(xs, r, maxRows) {
+    const placed = []; const out = [];
+    const step = r * 1.75;
+    xs.forEach((x) => {
+      let row = 0;
+      for (; row < maxRows; row++) {
+        const y = row * step;
+        let ok = true;
+        for (let j = placed.length - 1; j >= 0; j--) {
+          const p = placed[j];
+          if (x - p.x >= 2 * r) break; // sorted by x, nothing further left can collide
+          if (Math.hypot(x - p.x, y - p.y) < 2 * r * 0.98) { ok = false; break; }
+        }
+        if (ok) break;
+      }
+      const y = (row % maxRows) * step;
+      placed.push({ x, y }); out.push(y);
+    });
+    return out;
+  }
+  function dotplot(xs, r) {
+    const counts = new Map(); const out = [];
+    xs.forEach((x) => {
+      const bin = Math.floor(x / (2 * r));
+      const k = counts.get(bin) || 0; counts.set(bin, k + 1);
+      out.push({ x: bin * 2 * r + r, k });
+    });
+    return out;
+  }
+
+  // ---------- one renderer for every chart on the page ----------
+  let uid = 0;
+  const tipFor = new WeakMap();
+  function draw(el, o) {
+    const W = Math.max(280, el.clientWidth);
+    const compact = !!o.compact;
+    const m = { l: compact ? 76 : 108, r: compact ? 14 : 22, t: 6, b: 30 };
+    const bandH = compact ? 76 : 122;
+    const H = m.t + m.b + GROUPS.length * bandH;
+    let dom;
+    if (o.truncate && o.truncate !== 'off') {
+      const p = +o.truncate / 100;
+      dom = [d3.quantile(POOLED, p), d3.quantile(POOLED, 1 - p)];
+    } else {
+      const pad = (POOLED[POOLED.length - 1] - POOLED[0]) * 0.03;
+      dom = [POOLED[0] - pad, POOLED[POOLED.length - 1] + pad];
+    }
+    const x = d3.scaleLinear().domain(dom).range([m.l, W - m.r]);
+    const id = 'clip' + (++uid);
+    el.innerHTML = '';
+    const svg = d3.select(el).append('svg').attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('role', 'img').attr('aria-label', o.aria || 'Raincloud plot of three synthetic groups');
+    svg.append('clipPath').attr('id', id).append('rect').attr('x', m.l).attr('y', 0).attr('width', W - m.l - m.r).attr('height', H);
+
+    // grid + axis
+    const ticks = x.ticks(compact ? 4 : 7);
+    const gx = svg.append('g');
+    gx.selectAll('line').data(ticks).join('line').attr('x1', x).attr('x2', x).attr('y1', m.t).attr('y2', H - m.b)
+      .attr('stroke', 'var(--grid)').attr('stroke-width', 1);
+    gx.selectAll('text').data(ticks).join('text').attr('class', 'axis-label').attr('x', x).attr('y', H - m.b + 16)
+      .attr('text-anchor', 'middle').text((d) => d);
+    if (o.truncate && o.truncate !== 'off') {
+      [0, 1].forEach((side) => {
+        svg.append('line').attr('x1', x(dom[side])).attr('x2', x(dom[side])).attr('y1', m.t).attr('y2', H - m.b)
+          .attr('stroke', 'var(--muted)').attr('stroke-dasharray', '3 3');
+      });
+      svg.append('text').attr('class', 'note-text').attr('x', W - m.r).attr('y', H - 2).attr('text-anchor', 'end')
+        .text(`axis cut at P${o.truncate}–P${100 - o.truncate} of all values · stats use all data`);
+    }
+
+    const plot = svg.append('g').attr('clip-path', `url(#${id})`);
+    const maxD = d3.max(GROUPS, (g) => d3.max(kde(g, o.bw || 1, 80), (d) => d[1]));
+
+    GROUPS.forEach((g, i) => {
+      const top = m.t + i * bandH;
+      const full = o.density === 'full';
+      const base = top + bandH * (full ? 0.42 : 0.52);
+      const cloudH = bandH * (full ? 0.3 : 0.42);
+      const L = plot.append('g');
+
+      // labels
+      svg.append('text').attr('class', 'group-label').attr('x', m.l - 12).attr('y', base - 2).attr('text-anchor', 'end').text(g.name);
+      svg.append('text').attr('class', 'group-note').attr('x', m.l - 12).attr('y', base + 12).attr('text-anchor', 'end').text(g.note);
+
+      // cloud
+      if (o.density === 'half' || o.density === 'full') {
+        const pts = kde(g, o.bw || 1, 140);
+        const h = d3.scaleLinear().domain([0, maxD]).range([0, cloudH]);
+        const gap = o.lightning === 'box' || o.lightning === 'interval' ? 7 : 2;
+        const area = d3.area().x((d) => x(d[0])).y0(full ? (d) => base + gap - 2 + h(d[1]) : base - gap)
+          .y1((d) => (full ? base - gap + 2 - h(d[1]) : base - gap - h(d[1]))).curve(d3.curveBasis);
+        L.append('path').datum(pts).attr('d', area).attr('fill', g.color).attr('fill-opacity', 0.3)
+          .attr('stroke', g.color).attr('stroke-width', 1.5);
+      } else if (o.density === 'hist') {
+        const bins = histo(g, compact ? 18 : 24);
+        const mx = d3.max(GROUPS, (gg) => d3.max(histo(gg, compact ? 18 : 24), (b) => b.n));
+        const h = d3.scaleLinear().domain([0, mx]).range([0, cloudH]);
+        const gap = o.lightning !== 'none' ? 7 : 2;
+        L.selectAll(null).data(bins).join('rect').attr('x', (b) => x(b.x0) + 1).attr('width', (b) => Math.max(0, x(b.x1) - x(b.x0) - 2))
+          .attr('y', (b) => base - gap - h(b.n)).attr('height', (b) => h(b.n)).attr('rx', 1.5)
+          .attr('fill', g.color).attr('fill-opacity', 0.55)
+          .attr('data-tip', (b) => `<b>${g.name}</b> · ${fmt(b.x0)}–${fmt(b.x1)}<br>${b.n} values`);
+      }
+
+      // lightning
+      if (o.lightning === 'box') {
+        const bh = compact ? 8 : 11;
+        L.append('line').attr('x1', x(g.wlo)).attr('x2', x(g.q1)).attr('y1', base).attr('y2', base).attr('stroke', 'var(--ink-2)').attr('stroke-width', 1.5);
+        L.append('line').attr('x1', x(g.q3)).attr('x2', x(g.whi)).attr('y1', base).attr('y2', base).attr('stroke', 'var(--ink-2)').attr('stroke-width', 1.5);
+        L.append('rect').attr('x', x(g.q1)).attr('y', base - bh / 2).attr('width', x(g.q3) - x(g.q1)).attr('height', bh).attr('rx', 2)
+          .attr('fill', 'var(--surface)').attr('stroke', 'var(--ink-2)').attr('stroke-width', 1.5)
+          .attr('data-tip', `<b>${g.name}</b> · n ${g.n}<br>median ${fmt(g.q2)} · IQR ${fmt(g.q1)}–${fmt(g.q3)}<br>whiskers ${fmt(g.wlo)}–${fmt(g.whi)} (1.5×IQR)`);
+        L.append('line').attr('x1', x(g.q2)).attr('x2', x(g.q2)).attr('y1', base - bh / 2).attr('y2', base + bh / 2).attr('stroke', 'var(--ink)').attr('stroke-width', 2.5);
+      } else if (o.lightning === 'interval') {
+        L.append('line').attr('x1', x(g.p5)).attr('x2', x(g.p95)).attr('y1', base).attr('y2', base).attr('stroke', 'var(--ink-2)').attr('stroke-width', 1.5);
+        L.append('line').attr('x1', x(g.q1)).attr('x2', x(g.q3)).attr('y1', base).attr('y2', base).attr('stroke', 'var(--ink)').attr('stroke-width', 4.5).attr('stroke-linecap', 'round')
+          .attr('data-tip', `<b>${g.name}</b><br>median ${fmt(g.q2)}<br>50% interval ${fmt(g.q1)}–${fmt(g.q3)}<br>90% interval ${fmt(g.p5)}–${fmt(g.p95)}`);
+        L.append('circle').attr('cx', x(g.q2)).attr('cy', base).attr('r', 4.5).attr('fill', 'var(--surface)').attr('stroke', 'var(--ink)').attr('stroke-width', 2);
+        if (!compact || o.labelInterval) {
+          svg.append('text').attr('class', 'note-text').attr('x', Math.min(W - m.r, x(Math.min(g.p95, dom[1])) + 6)).attr('y', base + 3.5)
+            .attr('text-anchor', x(Math.min(g.p95, dom[1])) + 90 > W ? 'end' : 'start').text('● median · ━ 50% · ─ 90%');
+        }
+      }
+
+      // rain
+      const rainTop = full ? base + 5 + cloudH + 4 : base + (o.lightning === 'none' ? 6 : 10);
+      const rainH = top + bandH - 4 - rainTop;
+      const r = compact ? 2 : 2.6;
+      const inView = g.sorted.map((v, j) => ({ v, j })).filter((d) => d.v >= dom[0] && d.v <= dom[1]);
+      const tip = (v) => `<b>${g.name}</b> · ${Number.isInteger(v) ? v : fmt(v)}`;
+      if (o.rain === 'jitter' || o.rain === 'strip') {
+        L.selectAll(null).data(inView).join('circle').attr('cx', (d) => x(d.v))
+          .attr('cy', (d) => (o.rain === 'jitter' ? rainTop + r + g.jit[d.j] * Math.max(0, rainH - 2 * r) : rainTop + r + 1))
+          .attr('r', r).attr('fill', g.color).attr('fill-opacity', o.rain === 'strip' ? 0.35 : 0.7).attr('data-tip', (d) => tip(d.v));
+      } else if (o.rain === 'barcode') {
+        L.selectAll(null).data(inView).join('line').attr('x1', (d) => x(d.v)).attr('x2', (d) => x(d.v))
+          .attr('y1', rainTop).attr('y2', rainTop + Math.min(14, rainH)).attr('stroke', g.color).attr('stroke-opacity', 0.45).attr('stroke-width', 1.5)
+          .attr('data-tip', (d) => tip(d.v));
+      } else if (o.rain === 'beeswarm') {
+        const maxRows = Math.max(1, Math.floor((rainH - 2 * r) / (r * 1.75)) + 1);
+        const ys = swarm(inView.map((d) => x(d.v)), r, maxRows);
+        L.selectAll(null).data(inView).join('circle').attr('cx', (d) => x(d.v)).attr('cy', (d, k) => rainTop + r + ys[k])
+          .attr('r', r).attr('fill', g.color).attr('fill-opacity', 0.8).attr('data-tip', (d) => tip(d.v));
+      } else if (o.rain === 'dots') {
+        let rr = r; let pos = dotplot(inView.map((d) => x(d.v)), rr);
+        const maxK = d3.max(pos, (p) => p.k) || 0;
+        if ((maxK + 1) * 2 * rr > rainH) { rr = Math.max(1, rainH / (2 * (maxK + 1))); pos = dotplot(inView.map((d) => x(d.v)), rr); }
+        L.selectAll(null).data(inView).join('circle').attr('cx', (d, k) => pos[k].x).attr('cy', (d, k) => rainTop + rr + pos[k].k * 2 * rr)
+          .attr('r', rr * 0.9).attr('fill', g.color).attr('fill-opacity', 0.85).attr('data-tip', (d) => tip(d.v));
+      }
+
+      // mean reference line, computed from all of the group's values
+      if (o.mean === 'on') {
+        L.append('line').attr('x1', x(g.mean)).attr('x2', x(g.mean)).attr('y1', top + 4).attr('y2', top + bandH - 4)
+          .attr('stroke', 'var(--ink)').attr('stroke-width', 1.5).attr('stroke-dasharray', '5 3');
+        svg.append('text').attr('class', 'note-text').attr('x', Math.min(W - m.r - 2, x(g.mean) + 4)).attr('y', top + 13)
+          .attr('text-anchor', x(g.mean) + 70 > W ? 'end' : 'start').text(`mean ${fmt(g.mean)}`);
+      }
+
+      // overflow counts for values cut off by truncation
+      if (o.truncate && o.truncate !== 'off') {
+        const lo = g.sorted.filter((v) => v < dom[0]).length, hi = g.sorted.filter((v) => v > dom[1]).length;
+        const yy = rainTop + 10;
+        if (lo) svg.append('text').attr('class', 'note-text').attr('x', m.l + 3).attr('y', yy).text(`‹ ${lo} below`);
+        if (hi) svg.append('text').attr('class', 'note-text').attr('x', W - m.r - 3).attr('y', yy).attr('text-anchor', 'end').text(`${hi} above ›`);
+      }
+    });
+    return svg;
+  }
+
+  // ---------- hover tooltips (one per chart container) ----------
+  function wireTips(el) {
+    if (tipFor.has(el)) return;
+    const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; el.appendChild(tip); tipFor.set(el, tip);
+    el.addEventListener('pointermove', (e) => {
+      const t = e.target.closest('[data-tip]');
+      if (!t) { tip.hidden = true; return; }
+      tip.innerHTML = t.getAttribute('data-tip'); tip.hidden = false;
+      const b = el.getBoundingClientRect(); let lx = e.clientX - b.left + 12, ly = e.clientY - b.top + 12;
+      if (lx + tip.offsetWidth > b.width) lx = e.clientX - b.left - tip.offsetWidth - 12;
+      tip.style.left = lx + 'px'; tip.style.top = ly + 'px';
+    });
+    el.addEventListener('pointerleave', () => { tip.hidden = true; });
+  }
+  function render(el, o) {
+    const tip = tipFor.get(el);
+    draw(el, o);
+    if (tip) el.appendChild(tip); else wireTips(el);
+  }
+
+  // ---------- playground ----------
+  const state = { density: 'half', lightning: 'box', rain: 'beeswarm', truncate: 'off', mean: 'off', bw: 1 };
+  const play = document.getElementById('play');
+  const note = document.getElementById('play-note');
+  function notes() {
+    const n = [];
+    if (state.rain === 'jitter') n.push('Jitter is random: the vertical position carries no information, and Group C\'s whole numbers blur together.');
+    if ((state.rain === 'barcode' || state.rain === 'dots') && state.density !== 'none') n.push('Barcode and dot plot rain show Group C stacking on whole numbers.');
+    if (state.bw <= 0.6) n.push('A narrow bandwidth reveals Group B\'s gap, but adds noise elsewhere.');
+    if (state.bw >= 1.6) n.push('A wide bandwidth smooths Group B\'s gap away.');
+    if (state.truncate !== 'off') n.push('Statistics still use every value; only the view is cut. Counts show what falls outside.');
+    if (state.density === 'full') n.push('A violin mirrors the same curve, which adds ink but no information (Correll prefers half).');
+    if (state.lightning === 'interval') n.push('The interval lightning labels what it shows: median, 50% and 90% ranges.');
+    note.textContent = n.join(' ');
+  }
+  function syncButtons() {
+    document.querySelectorAll('.seg').forEach((seg) => {
+      const k = seg.dataset.key;
+      seg.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === state[k])));
+    });
+  }
+  function renderPlay() { render(play, state); notes(); }
+  document.querySelectorAll('.seg').forEach((seg) => {
+    seg.addEventListener('click', (e) => {
+      const b = e.target.closest('button'); if (!b) return;
+      state[seg.dataset.key] = b.dataset.v; syncButtons(); renderPlay();
+    });
+  });
+  const bw = document.getElementById('bw'), bwVal = document.getElementById('bw-val');
+  bw.addEventListener('input', () => { state.bw = +bw.value; bwVal.textContent = state.bw.toFixed(2) + '× Silverman'; renderPlay(); });
+
+  // ---------- variant gallery ----------
+  const VARIANTS = [
+    { t: 'Box plot only', src: 'the baseline', d: 'Looks the same for all three quirks: the uniform spread, the gap and the whole numbers all vanish.', o: { density: 'none', lightning: 'box', rain: 'none' } },
+    { t: 'Box + jitter', src: 'Scherer #4', d: 'Raw points appear, but random jitter adds a meaningless vertical spread.', o: { density: 'none', lightning: 'box', rain: 'jitter' } },
+    { t: 'Box + beeswarm', src: 'Scherer #5 · ggbeeswarm', d: 'Points packed without overlap; the swarm\'s width shows density.', o: { density: 'none', lightning: 'box', rain: 'beeswarm' } },
+    { t: 'Violin + box', src: 'Scherer #8', d: 'Shape plus summary, but no raw data, and the mirror doubles the ink.', o: { density: 'full', lightning: 'box', rain: 'none' } },
+    { t: 'Classic raincloud', src: 'Allen et al. 2019 · ptitprince · ggrain', d: 'Half density, box and jittered rain. The default in most published rainclouds.', o: { density: 'half', lightning: 'box', rain: 'jitter' } },
+    { t: 'ggdist style', src: 'stat_halfeye + stat_dots · your r-bloggers link', d: 'The rain becomes a Wilkinson dot plot, a deterministic histogram of points.', o: { density: 'half', lightning: 'box', rain: 'dots' } },
+    { t: 'Barcode rain', src: 'Scherer #13–14', d: 'Ticks instead of dots. Exact values, no jitter, but ticks can hide behind box lines.', o: { density: 'half', lightning: 'box', rain: 'barcode' } },
+    { t: 'Defensive raincloud', src: 'Correll 2023', d: 'Half density, deterministic beeswarm, and an interval that says what it shows.', o: { density: 'half', lightning: 'interval', rain: 'beeswarm', labelInterval: true } },
+    { t: 'Histogram cloud', src: 'Correll: for discrete data', d: 'Bars instead of a smooth curve, which suits whole-number data like Group C.', o: { density: 'hist', lightning: 'box', rain: 'strip' } }
+  ];
+  const host = document.getElementById('variants');
+  const cards = VARIANTS.map((v) => {
+    const c = document.createElement('article'); c.className = 'card';
+    c.innerHTML = `<h3></h3><div class="src"></div><div class="chart"></div><p></p>`;
+    c.querySelector('h3').textContent = v.t; c.querySelector('.src').textContent = v.src; c.querySelector('p').textContent = v.d;
+    host.appendChild(c);
+    return { el: c.querySelector('.chart'), o: Object.assign({ compact: true, bw: 1, truncate: 'off', mean: 'off', aria: v.t + ' of three synthetic groups' }, v.o) };
+  });
+
+  function renderAll() { renderPlay(); cards.forEach((c) => render(c.el, c.o)); }
+  syncButtons();
+  renderAll();
+  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(renderAll, 120); });
+})();
+</script>

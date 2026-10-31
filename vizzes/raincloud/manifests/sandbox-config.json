@@ -1,0 +1,6 @@
+{
+  "port": 8765,
+  "extensions": {
+    "raincloud": { "path": "../../../dist/raincloud" }
+  }
+}

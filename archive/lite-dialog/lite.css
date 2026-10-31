@@ -1,0 +1,66 @@
+/* Styled to resemble Tableau's format panes: 12px Benton-like sans, quiet greys, Tableau blue accent. */
+:root {
+  --ink: #333;
+  --muted: #666;
+  --line: #d4d4d4;
+  --hover: #f2f2f2;
+  --accent: #1f77b4;
+  --focus: #1a73e8;
+}
+
+html, body { margin: 0; height: 100%; }
+body { font-family: "Benton Sans", "Segoe UI", system-ui, sans-serif; font-size: 12px; color: var(--ink); background: #fff; }
+#root { height: 100%; display: flex; flex-direction: column; }
+.body { flex: 1; overflow-y: auto; }
+
+.section { border-bottom: 1px solid #e6e6e6; }
+.section > summary {
+  list-style: none; cursor: pointer; padding: 9px 12px; font-weight: 600; font-size: 12.5px; display: flex; align-items: center; gap: 6px;
+}
+.section > summary::-webkit-details-marker { display: none; }
+.section > summary::before {
+  content: ""; width: 0; height: 0; border-left: 4px solid var(--muted); border-top: 4px solid transparent; border-bottom: 4px solid transparent;
+  transition: transform 0.12s;
+}
+.section[open] > summary::before { transform: rotate(90deg); }
+.section > summary:hover { background: var(--hover); }
+.stack { display: grid; gap: 10px; padding: 2px 12px 12px 22px; }
+.row { display: flex; gap: 10px; }
+.row .field { flex: 1; min-width: 0; }
+
+.field { display: grid; gap: 4px; }
+.field > label { color: var(--muted); font-size: 11px; }
+.field .value { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+select, input[type="text"], input[type="number"] {
+  font: inherit; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 2px; height: 26px; padding: 0 6px; box-sizing: border-box; width: 100%;
+}
+select:hover, input[type="text"]:hover, input[type="number"]:hover { border-color: #a8a8a8; }
+select:focus-visible, input:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+input[type="range"] { width: 100%; accent-color: var(--accent); margin: 0; }
+.scale { display: flex; justify-content: space-between; color: var(--muted); font-size: 10.5px; }
+
+.check { display: flex; align-items: center; gap: 7px; cursor: pointer; }
+.check input { margin: 0; width: 14px; height: 14px; accent-color: var(--accent); }
+
+.switch { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.switch input {
+  appearance: none; margin: 0; width: 28px; height: 16px; border-radius: 8px; background: #bdbdbd; position: relative; cursor: pointer; flex: none; transition: background 0.12s;
+}
+.switch input::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; border-radius: 50%; background: #fff; transition: left 0.12s;
+}
+.switch input:checked { background: var(--accent); }
+.switch input:checked::after { left: 14px; }
+
+.note { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.4; }
+
+.swatches { display: grid; grid-template-columns: repeat(5, 24px); gap: 6px; }
+.swatch { width: 24px; height: 24px; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 2px; padding: 0; cursor: pointer; }
+.swatch[aria-checked="true"] { outline: 2px solid var(--ink); outline-offset: 1px; }
+
+.actions { display: flex; justify-content: flex-end; gap: 8px; padding: 10px 12px; border-top: 1px solid #e6e6e6; }
+.btn { font: inherit; height: 26px; padding: 0 14px; border-radius: 2px; border: 1px solid #a8a8a8; background: #fff; color: var(--ink); cursor: pointer; }
+.btn:hover { background: var(--hover); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.primary:hover { filter: brightness(1.08); }

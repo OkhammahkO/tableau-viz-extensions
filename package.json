@@ -1,0 +1,46 @@
+{
+  "name": "raincloud-tableau",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vizzes/raincloud/vite.config.ts",
+    "build": "tsc --noEmit && vite build --config vizzes/raincloud/vite.config.ts",
+    "site": "node scripts/build-site.mjs",
+    "preview": "vite preview --config vizzes/raincloud/vite.config.ts --port 5173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "build:watch": "vite build --watch --config vizzes/raincloud/vite.config.ts",
+    "test": "vitest run",
+    "sandbox": "npm run build && tabextsandbox --config vizzes/raincloud/manifests/sandbox-config.json",
+    "showcase": "vitest run --config scripts/showcase/vitest.config.ts"
+  },
+  "devDependencies": {
+    "@tableau/extensions-api-types": "1.17.0",
+    "@tableau/tabextsandbox": "^1.17.0",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-selection": "^3.0.12",
+    "@types/d3-shape": "^3.2.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-legacy": "^8.2.3",
+    "happy-dom": "^21.0.4",
+    "terser": "^5.51.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "@tableau/tableau-ui": "^3.15.0",
+    "d3-scale": "^4.0.2",
+    "d3-selection": "^3.0.0",
+    "d3-shape": "^3.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "overrides": {
+    "@tableau/tableau-ui": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raincloud live demo</title>
+    <style>
+      body { margin: 0; padding: 16px; font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; color: #222; background: #f3f4f6; display: grid; gap: 12px; }
+      h1 { margin: 0; font-size: 16px; }
+      .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: end; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 10px 12px; }
+      .controls label { display: grid; gap: 3px; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: .04em; }
+      .controls select, .controls input[type=text] { font: inherit; text-transform: none; }
+      .controls input[type=text] { width: 90px; }
+      .row { display: flex; gap: 6px; align-items: center; text-transform: none; color: #222; font-size: 13px; letter-spacing: 0; }
+      #frame { position: relative; background: #fff; border: 1px solid #bbb; resize: both; overflow: hidden; width: 900px; height: 420px; max-width: calc(100vw - 34px); display: flex; }
+      #chart { flex: 1; min-width: 0; }
+      .intro { margin: 0; color: #555; max-width: 900px; }
+      .intro a { color: #1f6feb; }
+      #status { color: #555; font-size: 12px; font-variant-numeric: tabular-nums; }
+    </style>
+  </head>
+  <body>
+    <h1>Raincloud live demo <span id="status"></span></h1>
+    <p class="intro">The same chart engine as the Tableau extension, running on synthetic datasets. Pick a dataset,
+      then try the options that Format Extension offers in Tableau. <a id="home" href="../../" hidden>About Raincloud for Tableau</a></p>
+    <div class="controls">
+      <label>Dataset <select id="dataset"></select></label>
+      <label>Landing page <span class="row"><input id="landing" type="checkbox"> show</span></label>
+      <label>Rows <span class="row"><select id="rows1"></select><select id="rows2"></select></span></label>
+      <label>Columns <span class="row"><select id="cols1"></select><select id="cols2"></select></span></label>
+      <label>Colour <span class="row"><select id="colour"></select><input id="split" type="checkbox" title="Split cloud by colour"> split cloud</span></label>
+      <label>Panels per row <select id="wrap"><option value="auto">Auto</option><option>1</option><option>2</option><option>3</option><option>4</option><option>6</option></select></label>
+      <label>Panel axes <select id="paxis"><option value="shared">Shared</option><option value="independent">Independent</option></select></label>
+      <label>Cloud <select id="cloud"><option value="density">Density</option><option value="histogram">Histogram</option><option value="none">None</option></select></label>
+      <label>Rain <select id="rain"><option value="dots">Dot plot</option><option value="strip">Strip</option><option value="none">None</option></select></label>
+      <label>Box <span class="row"><input id="box" type="checkbox" checked> show</span></label>
+      <label>Bandwidth <span class="row"><input id="bw" type="range" min="0.25" max="2.5" step="0.05" value="1"><span id="bwv">1.00×</span></span></label>
+      <label>Axis <select id="axis"><option value="data">All data</option><option value="whiskers" selected>Whiskers + 5%</option><option value="0.5,99.5">P0.5–P99.5</option><option value="1,99">P1–P99</option><option value="5,95">P5–P95</option></select></label>
+      <label>Size <select id="size"><option value="entire">Entire view</option><option value="fitWidth">Fit width</option><option value="fitHeight">Fit height</option><option value="standard">Standard</option></select></label>
+      <label>Row height <input id="rowh" type="number" min="64" max="400" step="10" value="90" style="width:64px"></label>
+      <label>Panel width <input id="panelw" type="number" min="200" max="2000" step="20" value="480" style="width:72px"></label>
+      <label>Bins <select id="bins"><option value="auto">Auto</option><option>10</option><option>20</option><option>30</option><option>40</option></select></label>
+      <label>Mean marker <span class="row"><input id="mean" type="checkbox" checked> show</span></label>
+      <label>Percentiles <input id="pct" type="text" placeholder="e.g. 10, 90" value="5, 95"></label>
+      <label>Values <span class="row"><input id="vals" type="checkbox" checked> show</span></label>
+      <label>Decimals <input id="decimals" type="number" min="0" max="6" step="1" value="0" style="width:48px"></label>
+    </div>
+    <div id="frame"><div id="chart" class="rc-host"></div></div>
+    <p style="margin:0;color:#666;font-size:12px">Drag the frame's bottom-right corner to resize, as a Tableau worksheet would. Hover dots for values, click to select, Ctrl+click to add.</p>
+    <script>if (location.hostname !== 'localhost') document.getElementById('home').hidden = false;</script>
+    <script type="module" src="/src/harness/main.ts"></script>
+  </body>
+</html>

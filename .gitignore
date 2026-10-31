@@ -1,0 +1,19 @@
+# third-party reference material (cloned repos, mirrored extension builds)
+reference/*
+!reference/*.trex
+
+node_modules/
+dist/
+*.log
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+
+# regenerate with: python -I scripts/make_synthetic.py
+data/synthetic/large_*.csv
+
+# Tableau temp/lock and backup files
+~*.twbr
+~*.twb
+*.twbr

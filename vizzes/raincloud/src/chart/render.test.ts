@@ -142,13 +142,15 @@ describe('large data', () => {
     }
     const el = host();
     renderRaincloud(el, gridFromGroups(buildGroups(records)), DEFAULT_OPTIONS, DEFAULT_THEME, new Set(), noop);
+    let overflow = -Infinity; // worst dot bottom below its band's bottom, over all dots (one expect: 30k is slow)
     for (const g of el.querySelectorAll('g[data-rain-bottom]')) {
       const bottom = Number(g.getAttribute('data-rain-bottom'));
       for (const c of g.querySelectorAll('circle.rc-dot')) {
-        expect(Number(c.getAttribute('cy')) + Number(c.getAttribute('r'))).toBeLessThanOrEqual(bottom + 0.01);
+        overflow = Math.max(overflow, Number(c.getAttribute('cy')) + Number(c.getAttribute('r')) - bottom);
       }
     }
-  });
+    expect(overflow).toBeLessThanOrEqual(0.01);
+  }, 30_000); // slow CI runners take longer than the 5 s default
 });
 
 describe('Rows × Columns grid', () => {

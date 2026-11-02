@@ -17,3 +17,11 @@ data/synthetic/large_*.csv
 ~*.twbr
 ~*.twb
 *.twbr
+
+# working copies of workbooks at the top level (examples/ holds the shared test workbook)
+/*.twb
+/*.twbx
+
+# temporary mock-ups (rendered by scripts/showcase/_mockup-*.test.ts, served by the dev server)
+vizzes/*/app/mockups/
+scripts/showcase/_mockup*

@@ -284,3 +284,33 @@ parameter updater (small dashboard extension), and unchecked ideas (SPC/control 
   alias). tabextsandbox resolves config paths relative to the config file.
 - Final structure: `kit/` (generic toolkit) + `vizzes/raincloud/`, one root package, `@kit/*` alias.
 - Decisions: landing hero option B with independent axes; density tails trimmed (option a); example measure renamed.
+
+
+## 2026-10-31 – 11-02: publishing, then the v1.1 round
+- Published: public repo OkhammahkO/tableau-viz-extensions, GitHub Pages site (landing page, hosted extension, live
+  demo = the harness built on its own), Release v1.0.0, community portal PR tableau/extensions-api#673.
+  Hosted build checked in Tableau Desktop 2026.3.0. Load path users see: Show Me → Viz Extensions → Access Local Viz
+  Extensions. CI: the 30k-record render test needed a 30 s timeout on GitHub's runners.
+- v1.1 feedback (user used the charts): axis labelling, sparse ticks, "% height", dense small multiples, padding, ECDF,
+  and "one chart's rain squashes the row". Root cause of the last: dot size and cloud height were shared across all
+  cells, so one spike (e.g. many zeros) shrank everything. Reproduced with the new `spikes_grid.csv`.
+- Best-practice check (user asked to be challenged): independent dot sizes break "one dot = one record" across small
+  multiples, so the default became one dot size with per-chart compression; independent cloud heights stay the default
+  (shape first, user) but are labelled (peak label); the ECDF overlay is a second scale, so it's drawn Pareto-style.
+- Peak label first multiplied the density by the gridline interval, which gave "139% per 50" for a spike narrower
+  than the interval; now it counts records within that interval around the peak.
+- Fixes found while reviewing: blank strip under short rain (band now shrinks to the tallest stack), then boxes not
+  aligned across columns (band sized per grid row instead of per cell); hollow circle hid the median (no fill now).
+- New candidate logged: correlation / scatterplot matrix (CANDIDATES #6). Vertical orientation moved into v1.1 scope.
+- Decided by mock-up (rendered by the engine, viewed via the dev server): box position follows density (own lane /
+  on the baseline / inside the cloud); mean marker = hollow orange circle (reverses v1.0's "no coloured markers":
+  mean and median must stay distinct when they coincide; the first hollow circle was filled and hid the median, and was
+  smaller than the box, so it vanished inside it); colour style stays all-in-mark-colour (grey + accent variants
+  dropped, option removed).
+- ECDF tweaks from Tableau use: 100% at the top of the cloud area with the n count moved just under the line; the line
+  follows the cloud (per colour only when split). Parked: cramped summary labels (short labels / reference lines).
+- Tableau round for v1.1 started (TESTING.md T11–T17). Node wasn't on the user's PowerShell PATH.
+- Evening (user away): renderer refactor (render.ts 724 → 450 lines; cloud.ts, ecdf.ts, summary.ts, frame.ts; no
+  behaviour change), ECDF unit tests, stale comments fixed, unused 'line' mean style removed. Release prep: showcase
+  images regenerated, README/site feature lists for v1.1. Research: correlation / scatterplot matrix (gap confirmed,
+  ggpairs-style design, ink-efficient mock-up with Pearson vs Spearman) and a quick SPC / control-chart check.

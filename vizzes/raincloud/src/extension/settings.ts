@@ -15,6 +15,7 @@ export function mergeOptions(stored: Partial<RaincloudOptions> | undefined): Rai
     axis: { ...DEFAULT_OPTIONS.axis, ...s.axis },
     size: { ...DEFAULT_OPTIONS.size, ...s.size },
     panels: { ...DEFAULT_OPTIONS.panels, ...s.panels },
+    scales: { ...DEFAULT_OPTIONS.scales, ...s.scales },
     colour: { ...DEFAULT_OPTIONS.colour, ...s.colour },
     markers: { ...DEFAULT_OPTIONS.markers, ...s.markers }
   };

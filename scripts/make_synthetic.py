@@ -2,7 +2,7 @@
 
 Usage:
     python -I scripts/make_synthetic.py            # all datasets
-    python -I scripts/make_synthetic.py --no-large # skip the 10k / 100k row files
+    python -I scripts/make_synthetic.py --no-large # skip the large_* files (10k, 100k, grid)
 
 Writes CSVs to data/synthetic/. Same seed → identical files, so the dev harness and Tableau
 see exactly the same data. Every file has a row_id: put it on Detail in Tableau so the view
@@ -152,6 +152,53 @@ def large(rng, total: int, name: str):
     write(name, ["category", "value", "segment", "region"], rows)
 
 
+def basket(rng, mu=3.6, sigma=0.55):
+    """A right-skewed basket value (lognormal-ish), in currency units."""
+    return fmt(math.exp(rng.gauss(mu, sigma)))
+
+
+def spikes_grid(rng):
+    """Rows x Columns grid where one cell has a big spike: a pile of zeros (abandoned baskets) that, with shared
+    scales, squashes every other cell's dots and cloud (user report 2026-11-02). Also a tiny cell, an empty cell
+    and a rare segment, for split-cloud sizing."""
+    rows = []
+    segment = lambda: rng.choices(["Alpha", "Beta", "Gamma"], weights=[60, 35, 5])[0]
+    for s in range(1, 13):
+        store = f"Store {s:02d}"
+        for channel in ("Online", "In store"):
+            if (store, channel) == ("Store 10", "Online"):
+                continue  # no sales: an empty cell
+            n = 8 if (store, channel) == ("Store 07", "In store") else rng.randint(120, 200)
+            mu = 3.4 + 0.05 * s + (0.2 if channel == "Online" else 0)
+            for _ in range(n):
+                rows.append([store, channel, segment(), basket(rng, mu)])
+            if (store, channel) == ("Store 03", "Online"):
+                for _ in range(1000):
+                    rows.append([store, channel, segment(), 0 if rng.random() < 0.85 else basket(rng, mu)])
+    write("spikes_grid.csv", ["store", "channel", "segment", "basket_value"], rows)
+
+
+def large_grid(rng):
+    """Dense small multiples with many dots: 40 stores x 3 regions, 4 segments, ~60k records. One 10k-record cell,
+    spike cells (zeros, ties at round numbers) and quiet cells side by side."""
+    rows = []
+    segs, weights = ["Alpha", "Beta", "Gamma", "Delta"], [45, 30, 20, 5]
+    for s in range(1, 41):
+        store = f"Store {s:02d}"
+        for region in ("North", "South", "West"):
+            n = 10_000 if (s, region) == (5, "North") else rng.randint(150, 650)
+            mu = 3.3 + 0.02 * s + {"North": 0, "South": 0.15, "West": -0.1}[region]
+            for _ in range(n):
+                if s % 9 == 0 and region == "South" and rng.random() < 0.6:
+                    v = 0  # spike of zeros
+                elif s % 7 == 0 and region == "West" and rng.random() < 0.5:
+                    v = rng.choice([25, 50, 75, 100])  # ties at round prices
+                else:
+                    v = basket(rng, mu, 0.5)
+                rows.append([store, region, rng.choices(segs, weights=weights)[0], v])
+    write("large_grid.csv", ["store", "region", "segment", "basket_value"], rows)
+
+
 def main() -> None:
     print(f"writing to {OUT}")
     # One generator per dataset, each with its own seed, so adding a dataset never changes the others.
@@ -163,9 +210,11 @@ def main() -> None:
     many_categories(random.Random(16))
     edge_cases(random.Random(17))
     repeated(random.Random(18))
+    spikes_grid(random.Random(21))
     if "--no-large" not in sys.argv:
         large(random.Random(19), 10_000, "large_10k.csv")
         large(random.Random(20), 100_000, "large_100k.csv")
+        large_grid(random.Random(22))
 
 
 if __name__ == "__main__":

@@ -20,9 +20,23 @@
 - [x] Public repo https://github.com/OkhammahkO/tableau-viz-extensions pushed; Pages live (Source: GitHub Actions).
 - [x] **Tableau check of the hosted build** (2026-10-31, Desktop 2026.3.0): downloaded `.trex` loads from Pages; chart,
       Format dialog and Done work.
-- [ ] GitHub Release v1.0.0 with `raincloud.trex` attached.
-- [ ] PR to tableau/extensions-api: entry in `community/community_extensions.json` + manifest in
-      `community/CommunityManifests/` (docs: https://tableau.github.io/extensions-api/docs/publish/trex_contributing).
+- [x] GitHub Release v1.0.0 with `raincloud.trex` attached.
+- [x] PR https://github.com/tableau/extensions-api/pull/673 (2026-10-31): entry + `Raincloud.trex` on `gh-pages-dev`
+      (the docs page still says `community/` on main; the files live in `website/static/community/` on `gh-pages-dev`).
+      CLA signed and green (2026-11-02; the bot only re-checked after closing and reopening the PR). Awaiting review.
+      Outside community PRs since 2025-03 were closed unmerged, so don't wait on it.
+
+## v1.1 release (when the v1.1 items are done)
+- [x] Dev build in Tableau: user reports it works well (2026-11-02).
+- [x] **Built site in Tableau** (TESTING.md section P): user: "all looking good" (2026-11-02).
+- [x] Tableau round (dev + built) and harness checks: user sign-off 2026-11-02.
+- [x] `npm run showcase` regenerated (2026-11-02, after the renderer refactor); README features and site "Also
+      included" updated for v1.1. Still to do: eyeball `docs/images/*.svg` and `npm run site` + preview before pushing.
+- [x] Version 1.1.0 in `package.json`, `extension-version` in the four `.trex` files; CHANGELOG dated 2026-11-02.
+- [ ] Refresh the public copy (`raincloud-tableau`) from the private HEAD; commit; tag v1.1.0; user pushes (Pages
+      redeploys the hosted extension: everyone on the public `.trex` gets v1.1 automatically); GitHub Release notes.
+- [ ] Defaults changed since v1.0 (cloud height fit per chart, split 100%, orange mean): workbooks saved with v1.0
+      keep only the options they stored, so new options take the new defaults.
 
 ## Before submitting
 - [ ] **Tableau check of the sandbox build:** add `vizzes/raincloud/manifests/raincloud-sandbox.trex` in Tableau with `npm run sandbox` running;

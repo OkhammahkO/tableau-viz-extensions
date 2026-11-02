@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
-  <worksheet-extension id="io.github.okhammahko.raincloud.dev" extension-version="1.0.0">
+  <worksheet-extension id="io.github.okhammahko.raincloud.dev" extension-version="1.1.0">
     <default-locale>en_US</default-locale>
     <name resource-id="name"/>
     <description>Raincloud plot: density or histogram cloud, box plot, and one dot per record, in a Rows x Columns grid.</description>

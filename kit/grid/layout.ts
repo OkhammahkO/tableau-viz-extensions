@@ -30,6 +30,8 @@ export interface GridSpec {
   colHeaderH: number;
   /** Tick-label strip under every cell (0 when the axis is drawn once at the bottom). */
   tickH: number;
+  /** Tick-label strip under the last row of each block row only (dense layouts); default 0. */
+  footH?: number;
   /** Space below everything: shared axis and/or footnote. */
   bottomH: number;
   /** Gap between panels, and between wrapped block rows. */
@@ -62,7 +64,8 @@ export function computeGrid(s: GridSpec): GridGeometry {
   const rows = Math.max(1, s.rowCount);
   const perRow = Math.max(1, Math.min(s.perRow, Math.max(1, s.colCount)));
   const blockRows = Math.ceil(Math.max(1, s.colCount) / perRow);
-  const vertFixed = s.top + blockRows * s.colHeaderH + blockRows * rows * s.tickH + s.bottomH + (blockRows - 1) * s.gap;
+  const footH = s.footH ?? 0;
+  const vertFixed = s.top + blockRows * (s.colHeaderH + footH) + blockRows * rows * s.tickH + s.bottomH + (blockRows - 1) * s.gap;
   const fillH = (s.frameH - vertFixed) / (blockRows * rows);
   const fillW = (s.frameW - s.rowHeaderW - s.right - (perRow - 1) * s.gap) / perRow;
   const fitsW = s.size.mode === 'entire' || s.size.mode === 'fitWidth';
@@ -71,7 +74,7 @@ export function computeGrid(s: GridSpec): GridGeometry {
   const rowH = Math.max(s.size.minRowHeight, fitsH ? fillH : s.size.rowHeight);
   const width = s.rowHeaderW + s.right + perRow * panelW + (perRow - 1) * s.gap;
   const height = vertFixed + blockRows * rows * rowH;
-  const blockH = s.colHeaderH + rows * (rowH + s.tickH);
+  const blockH = s.colHeaderH + rows * (rowH + s.tickH) + footH;
   return {
     width, height, rowH, panelW, perRow, blockRows,
     scrollX: width > s.frameW + 0.5,

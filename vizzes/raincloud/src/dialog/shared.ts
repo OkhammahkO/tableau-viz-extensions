@@ -2,8 +2,8 @@ import { DEFAULT_OPTIONS, type RaincloudOptions } from '../chart/options';
 import { optionsStore } from '../extension/settings';
 import { startDialog as startKitDialog, type DialogSession as KitSession } from '@kit/ui/dialog';
 
-// Shared by both Format dialog prototypes: same options, same save behaviour, same choices,
-// so the comparison is only about look and feel.
+// Choices, parsers and the dialog session for the Format dialog (tableau-ui.tsx). The frozen Lite fallback in
+// archive/lite-dialog keeps its own copy.
 
 export const CLOUDS = [
   ['density', 'Smooth density'],
@@ -12,7 +12,7 @@ export const CLOUDS = [
 ] as const;
 
 export const RAINS = [
-  ['dots', 'Dot plot (stacked)'],
+  ['dots', 'Stacked (dot plot)'],
   ['strip', 'Strip (one line)'],
   ['none', 'None']
 ] as const;
@@ -37,6 +37,12 @@ export function smoothingFromSlider(t: number): number {
 }
 export function sliderFromSmoothing(bw: number): number {
   return Math.round((Math.log(bw / 0.25) / Math.log(16)) * SMOOTHING_STEPS);
+}
+
+/** "Fixed interval" text → a positive step, or 0 (automatic) for blank or invalid input. */
+export function parseStep(text: string): number {
+  const v = Number(text.trim().replace(',', '.'));
+  return Number.isFinite(v) && v > 0 ? v : 0;
 }
 
 export function parsePercentiles(text: string): number[] {

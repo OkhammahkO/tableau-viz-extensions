@@ -20,7 +20,9 @@ const COLUMNS: Record<string, [string, string]> = {
   'edge_cases.csv': ['category', 'value'],
   'repeated_measures.csv': ['time', 'score'],
   'large_10k.csv': ['category', 'value'],
-  'large_100k.csv': ['category', 'value']
+  'large_100k.csv': ['category', 'value'],
+  'spikes_grid.csv': ['store', 'basket_value'],
+  'large_grid.csv': ['store', 'basket_value']
 };
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -139,6 +141,7 @@ $<HTMLSelectElement>('paxis').addEventListener('change', (e) => {
   options.panels.axis = (e.target as HTMLSelectElement).value as RaincloudOptions['panels']['axis'];
   draw();
 });
+$<HTMLSelectElement>('density').addEventListener('change', (e) => { options.density = (e.target as HTMLSelectElement).value as RaincloudOptions['density']; draw(); });
 $<HTMLSelectElement>('size').addEventListener('change', (e) => {
   options.size.mode = (e.target as HTMLSelectElement).value as RaincloudOptions['size']['mode'];
   draw();
@@ -150,6 +153,24 @@ $<HTMLSelectElement>('bins').addEventListener('change', (e) => {
   options.bins = v === 'auto' ? 'auto' : Number(v);
   draw();
 });
+$<HTMLSelectElement>('cloudh').addEventListener('change', (e) => { options.scales.cloudHeight = (e.target as HTMLSelectElement).value as RaincloudOptions['scales']['cloudHeight']; draw(); });
+$<HTMLSelectElement>('boxpos').addEventListener('change', (e) => { options.boxPosition = (e.target as HTMLSelectElement).value as RaincloudOptions['boxPosition']; draw(); });
+$<HTMLInputElement>('ecdf').addEventListener('change', (e) => { options.ecdf = (e.target as HTMLInputElement).checked; draw(); });
+$<HTMLSelectElement>('peaklabel').addEventListener('change', (e) => { options.scales.cloudLabel = (e.target as HTMLSelectElement).value as RaincloudOptions['scales']['cloudLabel']; draw(); });
+$<HTMLSelectElement>('sizing').addEventListener('change', (e) => { options.colour.cloudSizing = (e.target as HTMLSelectElement).value as RaincloudOptions['colour']['cloudSizing']; draw(); });
+$<HTMLSelectElement>('titlemode').addEventListener('change', (e) => { options.axis.titleMode = (e.target as HTMLSelectElement).value as RaincloudOptions['axis']['titleMode']; draw(); });
+// Typing a title switches to Custom, as the dialog's text box only shows for Custom.
+$<HTMLInputElement>('title').addEventListener('input', (e) => {
+  options.axis.title = (e.target as HTMLInputElement).value;
+  options.axis.titleMode = 'custom';
+  $<HTMLSelectElement>('titlemode').value = 'custom';
+  draw();
+});
+$<HTMLSelectElement>('ticks').addEventListener('change', (e) => { options.axis.ticks = (e.target as HTMLSelectElement).value as RaincloudOptions['axis']['ticks']; draw(); });
+$<HTMLInputElement>('tickstep').addEventListener('change', (e) => { const v = Number((e.target as HTMLInputElement).value); options.axis.tickStep = v > 0 ? v : 0; draw(); });
+$<HTMLInputElement>('gridlines').addEventListener('change', (e) => { options.axis.gridlines = (e.target as HTMLInputElement).checked; draw(); });
+$<HTMLSelectElement>('meanstyle').addEventListener('change', (e) => { options.markers.meanStyle = (e.target as HTMLSelectElement).value as RaincloudOptions['markers']['meanStyle']; draw(); });
+$<HTMLSelectElement>('meancolour').addEventListener('change', (e) => { options.markers.meanColour = (e.target as HTMLSelectElement).value; draw(); });
 $<HTMLInputElement>('mean').addEventListener('change', (e) => { options.markers.mean = (e.target as HTMLInputElement).checked; draw(); });
 $<HTMLInputElement>('landing').addEventListener('change', () => draw());
 $<HTMLInputElement>('decimals').addEventListener('change', (e) => { options.markers.decimals = Number((e.target as HTMLInputElement).value) || 0; draw(); });

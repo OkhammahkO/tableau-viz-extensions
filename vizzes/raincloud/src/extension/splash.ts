@@ -126,6 +126,6 @@ export function renderSplash(host: HTMLElement): void {
       ? buildGrid(records.filter((r) => r.rowPath[0] !== 'Right-skewed').map((r) => ({ ...r, colPath: [r.colour ?? ''] })), ['Category'], ['Sub-group'], VALUE)
       : t.colour ? buildGrid(one, [], [], t.shape, 'Sub-group') : buildGrid(one, [], [], t.shape);
     renderRaincloud(card.querySelector<HTMLElement>('.sp-thumb-chart')!, grid,
-      { ...base, ...t.opts, markers: { ...base.markers, percentiles: [], showValues: false, mean: false } }, DEFAULT_THEME, new Set(), noop);
+      { ...base, ...t.opts, axis: { ...base.axis, titleMode: t.panels ? 'auto' : 'hidden' }, scales: { ...base.scales, cloudLabel: 'off' }, markers: { ...base.markers, percentiles: [], showValues: false, mean: false } }, DEFAULT_THEME, new Set(), noop);
   });
 }

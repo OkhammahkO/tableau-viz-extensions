@@ -28,6 +28,14 @@ describe('computeGrid', () => {
     expect(g.cellY(2, 0)).toBeCloseTo(g.blockY(2) + 18);
   });
 
+  it('a foot strip goes once under each block row instead of under every row', () => {
+    const g = computeGrid(spec({ frameH: 1200, colCount: 12, perRow: 4, tickH: 0, footH: 16 }));
+    const blockH = 18 + 3 * g.rowH + 16;
+    expect(g.blockY(1)).toBeCloseTo(4 + blockH + 12);
+    expect(g.height).toBeCloseTo(1200);
+    expect(g.rowH).toBeGreaterThan(computeGrid(spec({ frameH: 1200, colCount: 12, perRow: 4 })).rowH);
+  });
+
   it('keeps the minimum row height and scrolls when wrapped blocks get too tall', () => {
     const g = computeGrid(spec({ colCount: 12, perRow: 2, rowCount: 6 }));
     expect(g.rowH).toBe(64);

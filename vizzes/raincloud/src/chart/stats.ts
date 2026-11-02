@@ -172,6 +172,8 @@ export interface DotLayout {
   d: number;
   /** Vertical distance between dots in a stack; < d means dots overlap ("compress", as ggdist does). */
   step: number;
+  /** Height the tallest stack actually uses: (tallest − 1) × step + d. */
+  used: number;
 }
 
 /**
@@ -182,7 +184,25 @@ export function dotLayout(groupsXs: number[][], height: number, maxD: number, mi
   const d = fitDotDiameter(groupsXs, height, maxD, minD);
   const tallest = Math.max(1, ...groupsXs.map((xs) => tallestStack(xs, d)));
   // The last dot still needs its full diameter: (tallest − 1) × step + d ≤ height.
-  return { d, step: tallest > 1 ? Math.max(0, Math.min(d, (height - d) / (tallest - 1))) : d };
+  const step = tallest > 1 ? Math.max(0, Math.min(d, (height - d) / (tallest - 1))) : d;
+  return { d, step, used: (tallest - 1) * step + d };
+}
+
+/** Stack spacing for a given dot size so the tallest stack fits in `height` (dots overlap when they must). */
+export function stackLayout(xs: number[], height: number, d: number): DotLayout {
+  const tallest = Math.max(1, tallestStack(xs, d));
+  const step = tallest > 1 ? Math.max(0, Math.min(d, (height - d) / (tallest - 1))) : d;
+  return { d, step, used: (tallest - 1) * step + d };
+}
+
+/**
+ * One dot size for all groups, sized for a typical group (the lower median of each group's own best fit), so one
+ * huge group doesn't shrink every group's dots. Groups that don't fit at that size compress their own stacks
+ * (stackLayout): their crowding shows as overlap, and one dot stays one record everywhere.
+ */
+export function typicalDotDiameter(groupsXs: number[][], height: number, maxD: number, minD = 0.5): number {
+  const fits = groupsXs.filter((xs) => xs.length).map((xs) => fitDotDiameter([xs], height, maxD, minD)).sort((a, b) => a - b);
+  return fits.length ? fits[Math.floor((fits.length - 1) / 2)] : maxD;
 }
 
 /**

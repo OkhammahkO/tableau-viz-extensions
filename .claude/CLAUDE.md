@@ -29,9 +29,14 @@ clone tableau/extensions-api there for the official samples) · `dist/<viz>/` (b
 
 ## Commands
 - `npm run dev`: dev server on http://localhost:5173 (the URL in `vizzes/raincloud/manifests/raincloud-dev.trex`); harness at /dev.html.
+- `npm run site:preview`: build the GitHub Pages site and serve it on :4180 (`raincloud-preview.trex`): test this before every push.
 - `npm test`: Vitest. `npm run build`: type-check and bundle to `dist/raincloud/` (classic SystemJS scripts, required by
   sandbox hosting). `npm run sandbox`: build and serve `dist/raincloud/` with Tableau's sandbox server (:8765).
 - Old Tableau (Chromium 87) may reject the dev client: use `npm run build:watch` + `npm run preview`.
+- Node (`C:\Program Files\nodejs`) isn't on the user's PowerShell PATH: prefix `$env:Path = "C:\Program Files\nodejs;$env:Path"`
+  (bash: `export PATH="/c/Program Files/nodejs:$PATH"`).
+- Mock-ups: temporary `scripts/showcase/_mockup-*.test.ts` render pages into `vizzes/raincloud/app/mockups/` (both
+  git-ignored), viewed via the dev server; delete them once decided.
 
 ## Conventions
 - Extensions API ≥ 1.12 (Tableau 2024.2+); feature-detect newer APIs.

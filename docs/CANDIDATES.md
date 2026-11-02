@@ -34,6 +34,8 @@ Tableau-built, free, v3.0.0 (Dec 2025) plus a Jan 2026 hotfix, Tableau 2024.3+. 
 | 5 | **Live parameter updater** (dashboard extension) | Candidate: gap confirmed (2026-10-30) | Keeps parameters equal to a calculated value (e.g. P5/P95) **while filters change**, so native Dynamic Axis Ranges and reference lines follow the data. Details below. |
 | 4d | **Box plot + beeswarm** (+ jitter/sina) | Candidate: beeswarm/sina not native | Points packed without overlap over a box plot. Part of the composable distribution chart below. |
 | 4b | **Raincloud plot** | Candidate: passes native check (2026-10-30) | Half-violin ("cloud") + box plot + jittered raw points ("rain"). Shares data shape, KDE and encodings with the violin, so it's one family. Details below. |
+| 6 | **Correlation / scatterplot matrix** | Researched (2026-11-02): gap confirmed, design mocked up | Lower triangle scatters, diagonal histograms (labelling the matrix), upper triangle coefficients. Research, design and mock-up: [concepts/correlation-matrix/](concepts/correlation-matrix/README.md). |
+| 7 | **SPC / control chart** (XmR) | Quick check (2026-11-02): likely gap, Exchange not yet searched directly | Native Tableau can draw a centre line and limits with table calculations / reference lines, but XmR limits from the moving range, rule detection (Western Electric 4 rules, Nelson 8) and limits recalculated per phase are manual ([Alteryx thread](https://community.alteryx.com/t5/Alteryx-Designer-Desktop-Discussions/Data-for-XmR-SPC-control-charts/m-p/443205/highlight/true); rules: [QI Macros](https://www.qimacros.com/control-chart/western-electric-rules/), [MathWorks](https://www.mathworks.com/help/stats/controlrules.html)). Next: search the Exchange for "control chart" / "SPC", then decide. |
 
 ## Distribution family: one composable chart with layers (user direction, 2026-10-30)
 
@@ -146,6 +148,28 @@ dimensions on Detail: e.g. a row-ID dimension on Detail, or Analysis → Aggrega
 - KDE computed in the browser (d3 + a small KDE; `getSummaryDataReaderAsync` pages up to 4M rows, so performance needs testing).
 - Each observation is one tuple, so points and barcode marks map 1:1 to Tableau selection, and selecting a whole violin = selecting all its tuples.
 - To prove first: behaviour with ~100k rows, and how users find the disaggregation step (splash screen guidance).
+
+## Candidate 6: Correlation / scatterplot matrix (idea, 2026-11-02)
+
+**The idea (user):** an overview of how several measures relate: every pair as a small scatter plot in a grid, like
+seaborn's `pairplot` / a correlation matrix. Reference the user gave:
+[Exploring different correlation coefficients and plotting correlations in Python](https://sustainabilitymethods.org/index.php/Exploring_Different_Correlation_Coefficients_and_Plotting_Correlations_in_Python)
+(`sns.pairplot(data, vars=[...])`). "We will do research on the best type."
+
+**Research done 2026-11-02:** see [concepts/correlation-matrix/README.md](concepts/correlation-matrix/README.md)
+(native check, reference designs, recommended ink-efficient design, Tableau fit, effort and risk, open questions)
+and the [mock-up](concepts/correlation-matrix/mockup.html). The original checklist:
+- **Native check first.** To verify: native Tableau can build a scatterplot matrix by putting several measures on both
+  Rows and Columns (or pivoting the data), and `CORR()` / `COVAR()` give coefficients as window calculations. Likely
+  gaps: distributions on the diagonal, coefficients or a heatmap in the other triangle, Spearman/Kendall
+  (rank-based) as well as Pearson, ordering variables by correlation, setup effort.
+- Which form works best: full pairplot, lower triangle + coefficient heatmap (upper), correlogram (heatmap only),
+  coefficient + p-value labels, regression/LOESS lines, density contours or hexbins for large n.
+- Exchange and community alternatives.
+- Encodings: one tile accepting several measures (`<fields max-count="…">`, as Columns takes two dimensions); a row ID
+  on Detail for one mark per record; Colour for groups. How many measures stay legible (5–8?).
+- Reuse: the kit's grid layout, headers, colours, number formats and tooltips; the raincloud's KDE/histogram for the
+  diagonal.
 
 ## Per-candidate checklist
 - **First: does native Tableau already do it?** Search for the native feature before anything else (candidate 3 was covered by a 2017 feature).

@@ -14,7 +14,6 @@ export interface HeaderGrid {
   colLevels: string[];
   rows: string[][];
   cols: string[][];
-  valueName: string;
 }
 
 type Geo = ReturnType<typeof computeGrid>;
@@ -89,7 +88,7 @@ export function drawColumnHeaders(svg: Selection<SVGSVGElement, unknown, null, u
   });
 }
 
-/** Row headers: one column per Rows level, outer levels spanning their inner rows (repeated per wrapped block). */
+/** Row headers: one column per Rows level, outer levels spanning their inner rows (repeated per wrapped block). None without Rows. */
 export function drawRowHeaders(
   svg: Selection<SVGSVGElement, unknown, null, undefined>,
   grid: HeaderGrid,
@@ -99,12 +98,11 @@ export function drawRowHeaders(
   theme: RenderTheme,
   right: number
 ): void {
-  const levels = Math.max(1, grid.rowLevels.length);
+  const levels = grid.rowLevels.length;
   for (let b = 0; b < geo.blockRows; b++) {
     for (let k = 0; k < levels; k++) {
       const inner = k === levels - 1;
-      const runs = grid.rowLevels.length ? spans(grid.rows, k) : [{ start: 0, end: 0, label: grid.valueName }];
-      for (const s of runs) {
+      for (const s of spans(grid.rows, k)) {
         const yTop = geo.cellY(b, s.start);
         const y = inner ? yTop + geo.rowH * 0.5 + 4 : yTop + 14;
         svg.append('text').attr('x', levelX[k] + levelW[k] - 6).attr('y', y).attr('text-anchor', 'end')

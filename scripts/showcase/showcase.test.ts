@@ -43,7 +43,7 @@ function outliersGrid(): Grid {
 it('renders showcase images', () => {
   mkdirSync(OUT, { recursive: true });
   const labels = { markers: { ...base.markers, showValues: true } };
-  const quiet = { markers: { ...base.markers, percentiles: [], showValues: false, mean: false } };
+  const quiet = { axis: { ...base.axis, titleMode: 'hidden' as const }, scales: { ...base.scales, cloudLabel: 'off' as const }, markers: { ...base.markers, percentiles: [], showValues: false, mean: false } };
 
   // Hero options for the landing page
   svg('hero-a-rows-columns', buildGrid(records.map((r) => ({ ...r, colPath: [r.colour ?? ''] })), ['Category'], ['Sub-group'], VALUE), labels, 900, 420);

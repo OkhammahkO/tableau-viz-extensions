@@ -6,7 +6,8 @@ Generic code every viz in `vizzes/` can use. Imported as `@kit/…`. **The kit n
 |---|---|
 | `tableau/api.ts` | Paged summary-data reading, tuple ids, encodings, logged API calls |
 | `tableau/settings.ts` | `createSettingsStore(key, merge)`: options as one JSON string in Tableau settings, serialized saves |
-| `grid/layout.ts` | Size modes (Entire view, Fit width/height, Standard), Rows × Columns panels, wrapping |
+| `grid/layout.ts` | Size modes (Entire view, Fit width/height, Standard), Rows × Columns panels, wrapping; tick strip per cell or once per block (`footH`) |
+| `grid/ticks.ts` | Axis tick values (Fewer / Auto / More density, fixed interval) and label thinning so labels never overlap |
 | `grid/paths.ts` | Row/column combinations for Rows/Columns tiles (every combination, capped) |
 | `grid/headers.ts` | Nested/spanning row headers, column headers (nested or per wrapped panel), colour legend |
 | `colours.ts` | Tableau 10/20 palettes, "Other" folding, stable colours remembered per field |

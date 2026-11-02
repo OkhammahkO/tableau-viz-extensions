@@ -200,6 +200,22 @@ Modelled on how Tableau's own Sankey behaves:
 - Never leave a blank frame: wrap drawing in try/catch and show the error in the chart area; number each refresh so
   an older, slower `SummaryDataChanged` read can't overwrite a newer one; show a message when filters leave no rows.
 
+## Publishing (verified 2026-10-31 – 11-02)
+- **GitHub Pages hosting works** for a viz extension (Desktop 2026.3.0): build with relative paths, point the `.trex`
+  `<url>` at `https://<user>.github.io/<repo>/…/page.html`. Desktop asks once to allow the extension; Cloud/Server
+  admins add the github.io origin to the site's allow list. Deploy via Actions needs **Settings → Pages → Source:
+  GitHub Actions**, or `deploy-pages` fails (the build still passes).
+- Users load it with **Show Me → Viz Extensions → Access Local Viz Extensions** → the `.trex` → follow the prompts.
+- **Community portal** (https://tableau.github.io/extensions-api/community/): the contributing page still says
+  `community/` on main, but the files live on branch **`gh-pages-dev`** in `website/static/community/`
+  (`community_extensions.json` entry: name, website, author, github_username, tags ["v_1.0"], description,
+  source_code, hostedTrexFileName; the `.trex` in `CommunityManifests/`). PRs need the Salesforce CLA; after signing,
+  the bot only re-checked once the PR was **closed and reopened**. Outside PRs since 2025-03 were closed unmerged.
+- **Exchange listing** (https://tableau.github.io/extensions-api/docs/ux_extension_gallery): contributor access via
+  extensiongallery@tableau.com; name 1–3 words matching the `.trex`; 280×280 PNG icon matching a 70×70 base64 icon in
+  the manifest; tagline ≤ 96 chars; one-paragraph description; privacy policy, terms, support contact, version;
+  1–3 screenshots 1200×680 PNG.
+
 ## Debugging in Tableau Desktop (Windows)
 
 - **Logs:** `Documents\My Tableau Repository\Logs\log.txt`. Look for `Registration Failed: XSD Validation Failed` (bad .trex) or `Multiple Extensions With ID`.

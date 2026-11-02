@@ -29,18 +29,26 @@
       <label>Rows <span class="row"><select id="rows1"></select><select id="rows2"></select></span></label>
       <label>Columns <span class="row"><select id="cols1"></select><select id="cols2"></select></span></label>
       <label>Colour <span class="row"><select id="colour"></select><input id="split" type="checkbox" title="Split cloud by colour"> split cloud</span></label>
+      <label>Split size <select id="sizing"><option value="each">Each colour = 100%</option><option value="share">Share of slice</option></select></label>
       <label>Panels per row <select id="wrap"><option value="auto">Auto</option><option>1</option><option>2</option><option>3</option><option>4</option><option>6</option></select></label>
       <label>Panel axes <select id="paxis"><option value="shared">Shared</option><option value="independent">Independent</option></select></label>
       <label>Cloud <select id="cloud"><option value="density">Density</option><option value="histogram">Histogram</option><option value="none">None</option></select></label>
       <label>Rain <select id="rain"><option value="dots">Dot plot</option><option value="strip">Strip</option><option value="none">None</option></select></label>
-      <label>Box <span class="row"><input id="box" type="checkbox" checked> show</span></label>
+      <label>Cloud height <select id="cloudh"><option value="independent">Fit each chart</option><option value="shared">Shared</option></select></label>
+      <label>Peak label <select id="peaklabel"><option value="auto">Auto</option><option value="on">On</option><option value="off">Off</option></select></label>
+      <label>ECDF <span class="row"><input id="ecdf" type="checkbox"> line</span></label>
+      <label>Box <span class="row"><input id="box" type="checkbox" checked> show<select id="boxpos"><option value="auto">Auto</option><option value="lane">Own lane</option><option value="baseline">Baseline</option><option value="inside">Inside</option></select></span></label>
       <label>Bandwidth <span class="row"><input id="bw" type="range" min="0.25" max="2.5" step="0.05" value="1"><span id="bwv">1.00×</span></span></label>
       <label>Axis <select id="axis"><option value="data">All data</option><option value="whiskers" selected>Whiskers + 5%</option><option value="0.5,99.5">P0.5–P99.5</option><option value="1,99">P1–P99</option><option value="5,95">P5–P95</option></select></label>
+      <label>Axis title <span class="row"><select id="titlemode"><option value="auto">Automatic</option><option value="hidden">Hidden</option><option value="custom">Custom</option></select><input id="title" type="text" placeholder="Field name" style="width:120px"></span></label>
+      <label>Ticks <span class="row"><select id="ticks"><option value="fewer">Fewer</option><option value="auto" selected>Auto</option><option value="more">More</option></select><input id="tickstep" type="text" placeholder="interval" style="width:56px"></span></label>
+      <label>Gridlines <span class="row"><input id="gridlines" type="checkbox" checked> show</span></label>
+      <label>Density <select id="density"><option value="comfortable">Comfortable</option><option value="compact">Compact</option><option value="dense">Dense</option></select></label>
       <label>Size <select id="size"><option value="entire">Entire view</option><option value="fitWidth">Fit width</option><option value="fitHeight">Fit height</option><option value="standard">Standard</option></select></label>
       <label>Row height <input id="rowh" type="number" min="64" max="400" step="10" value="90" style="width:64px"></label>
       <label>Panel width <input id="panelw" type="number" min="200" max="2000" step="20" value="480" style="width:72px"></label>
       <label>Bins <select id="bins"><option value="auto">Auto</option><option>10</option><option>20</option><option>30</option><option>40</option></select></label>
-      <label>Mean marker <span class="row"><input id="mean" type="checkbox" checked> show</span></label>
+      <label>Mean marker <span class="row"><input id="mean" type="checkbox" checked> show<select id="meanstyle"><option value="circle">Circle</option><option value="circle-lift">Lifted circle</option><option value="diamond">Diamond</option><option value="dot">Dot</option><option value="cross">Cross</option><option value="triangle">Triangle</option></select><select id="meancolour"><option value="#f28e2b">Orange</option><option value="">As median</option><option value="mark">Mark colour</option></select></span></label>
       <label>Percentiles <input id="pct" type="text" placeholder="e.g. 10, 90" value="5, 95"></label>
       <label>Values <span class="row"><input id="vals" type="checkbox" checked> show</span></label>
       <label>Decimals <input id="decimals" type="number" min="0" max="6" step="1" value="0" style="width:48px"></label>

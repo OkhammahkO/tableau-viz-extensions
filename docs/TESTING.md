@@ -16,11 +16,21 @@ Run before each release. Automated first: `npm test` and `npm run build` must pa
 - **H5 Cloud/rain:** Density / Histogram / None; Dot plot / Strip / None (Strip and None compress rows); smoothing.
 - **H6 Outliers:** `outliers_response_ms`: amber badge bottom right; click → all values, click again → cut; per-cell
   ‹ n / n › counts; `likert_satisfaction`: no badge.
-- **H7 Markers:** P5/P95 + mean + median labels, whole numbers by default; Decimals 2; mean is a hollow diamond.
+- **H7 Markers:** P5/P95 + mean + median labels, whole numbers by default; Decimals 2; mean is a hollow orange circle with the median visible through it.
 - **H8 Size modes:** Entire view (24 rows scroll at 64 px), Fit width with row height, Fit height, Standard (scrolls
   sideways); box keeps its lane at 64 px and 150 px rows.
 - **H9 Interaction:** hover dots (value tooltip), click / Ctrl+click select, click empty space clears; hover the box
   (stats tooltip), also when scrolled.
+
+- **H10 Labels and ticks (v1.1):** Rows empty → no row header, axis title = field name; Axis title Hidden / Custom;
+  Ticks Fewer / Auto / More; interval 10; gridlines off → short tick marks; long tick labels never overlap.
+- **H11 Scales (v1.1):** `spikes_grid` (Rows store, Columns channel): Store 03 / Online's pile at 0 doesn't shrink other
+  charts; Cloud height Fit each / Shared; dots keep one size (crowded stacks overlap); peak labels ≤ 100%; boxes level
+  across columns.
+- **H12 Density (v1.1):** `large_grid` (40 × 3): Comfortable / Compact / Dense; tick labels once per block; thin rows
+  drop labels and n; box position follows density.
+- **H13 Split and ECDF (v1.1):** Colour segment + split cloud: each colour 100% vs share (histogram outlines vs
+  stacks); ECDF on: one line per colour, 100% / 50% labels, hover readout.
 
 ## T. Tableau, dev build (`vizzes/raincloud/manifests/raincloud-dev.trex`; remove older Raincloud sheets first)
 - **T1 Load:** Show Me → Viz Extensions → Access Local Viz Extensions → `raincloud-dev.trex`. Landing page shows.
@@ -36,6 +46,25 @@ Run before each release. Automated first: `npm test` and `npm run build` must pa
 - **T9 Persistence:** save, close and reopen the workbook: settings and colours kept.
 - **T10 Robustness:** remove/re-add fields quickly, filter to nothing ("No values to show"), resize the sheet: never a
   blank frame; any error shows as a red message (check DevTools at http://localhost:8696 for `[raincloud]` lines).
+- **T11 Labels (v1.1):** nothing on Rows → no `SUM(…)` row header; Axis → Axis title Hidden, then Custom text.
+- **T12 Ticks (v1.1):** Tick marks Automatic / Fewer / More, then Fixed interval 10; Gridlines off → short tick marks;
+  tick labels never overlap.
+- **T13 Scales (v1.1):** `spikes_grid.csv` (Rows store, Columns channel, row_id on Detail): Store 03 / Online's pile at 0
+  doesn't shrink other charts; boxes level across columns; peak labels ≤ 100%; Cloud → Height
+  switches to shared heights.
+- **T14 Density (v1.1):** `large_grid.csv` (Rows store, Columns region): Layout → Density Compact / Dense show more rows,
+  tick labels once per block, box on the baseline (Compact) / inside the cloud (Dense).
+- **T15 Split cloud (v1.1):** Colour segment + Split cloud: Each colour = 100% vs Share of the slice, density and histogram.
+- **T16 ECDF (v1.1):** Cumulative on: one line (one per colour when split); 100% at the top, n just under it with the
+  100% label beside it; 50% guide; hover readout "x% of records ≤ v".
+- **T17 Mean (v1.1):** orange hollow circle, median visible through it; Summary → Shape and Colour change it.
+
+## P. Tableau, built site (what GitHub Pages will serve; do before every push)
+`npm run site:preview` (builds `dist/site/` and serves it on http://localhost:4180), then load
+`vizzes/raincloud/manifests/raincloud-preview.trex` ("Raincloud (preview)"). Repeat T1–T5, T9 and T11–T17 quickly.
+Differences from dev to watch for: the built bundle uses classic scripts and bundles everything, so a failure here
+but not in dev points at the build (check DevTools at http://localhost:8696). Also open http://localhost:4180/ to
+check the site, images and demo.
 
 ## S. Tableau, sandbox build (`npm run sandbox`; `vizzes/raincloud/manifests/raincloud-sandbox.trex`)
 - **S1** Landing page and chart load (classic-script build under the sandbox).

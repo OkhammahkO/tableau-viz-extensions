@@ -1,0 +1,4381 @@
+row_id,store,channel,segment,basket_value
+1,Store 01,Online,Alpha,26.08
+2,Store 01,Online,Beta,47.95
+3,Store 01,Online,Gamma,9.53
+4,Store 01,Online,Alpha,48.15
+5,Store 01,Online,Alpha,39.34
+6,Store 01,Online,Beta,35.16
+7,Store 01,Online,Alpha,67.54
+8,Store 01,Online,Beta,79.42
+9,Store 01,Online,Beta,7.29
+10,Store 01,Online,Beta,77.24
+11,Store 01,Online,Alpha,10.62
+12,Store 01,Online,Alpha,62.97
+13,Store 01,Online,Beta,17.82
+14,Store 01,Online,Alpha,13.55
+15,Store 01,Online,Beta,89.98
+16,Store 01,Online,Alpha,65.22
+17,Store 01,Online,Alpha,35.69
+18,Store 01,Online,Alpha,22.15
+19,Store 01,Online,Beta,14.14
+20,Store 01,Online,Alpha,46.58
+21,Store 01,Online,Alpha,24.37
+22,Store 01,Online,Beta,15.96
+23,Store 01,Online,Beta,143.72
+24,Store 01,Online,Alpha,14.28
+25,Store 01,Online,Alpha,23.15
+26,Store 01,Online,Alpha,31.59
+27,Store 01,Online,Alpha,24.64
+28,Store 01,Online,Gamma,34.74
+29,Store 01,Online,Alpha,29.6
+30,Store 01,Online,Alpha,68.46
+31,Store 01,Online,Beta,61.71
+32,Store 01,Online,Gamma,80.13
+33,Store 01,Online,Alpha,75.41
+34,Store 01,Online,Alpha,52.84
+35,Store 01,Online,Alpha,20.22
+36,Store 01,Online,Alpha,155.63
+37,Store 01,Online,Beta,18.55
+38,Store 01,Online,Alpha,18.29
+39,Store 01,Online,Beta,55.89
+40,Store 01,Online,Alpha,32.25
+41,Store 01,Online,Beta,50.27
+42,Store 01,Online,Alpha,64.52
+43,Store 01,Online,Alpha,17.3
+44,Store 01,Online,Alpha,34.84
+45,Store 01,Online,Beta,61.57
+46,Store 01,Online,Alpha,83.39
+47,Store 01,Online,Alpha,17.03
+48,Store 01,Online,Beta,37.28
+49,Store 01,Online,Alpha,22.25
+50,Store 01,Online,Alpha,30.75
+51,Store 01,Online,Beta,58.8
+52,Store 01,Online,Beta,45.15
+53,Store 01,Online,Beta,57.74
+54,Store 01,Online,Alpha,42.1
+55,Store 01,Online,Beta,31.86
+56,Store 01,Online,Alpha,30.12
+57,Store 01,Online,Beta,51.27
+58,Store 01,Online,Beta,42.19
+59,Store 01,Online,Beta,10.0
+60,Store 01,Online,Beta,45.98
+61,Store 01,Online,Alpha,51.92
+62,Store 01,Online,Beta,59.39
+63,Store 01,Online,Alpha,64.23
+64,Store 01,Online,Alpha,26.85
+65,Store 01,Online,Alpha,67.55
+66,Store 01,Online,Alpha,75.53
+67,Store 01,Online,Alpha,35.09
+68,Store 01,Online,Alpha,25.25
+69,Store 01,Online,Alpha,66.88
+70,Store 01,Online,Beta,32.85
+71,Store 01,Online,Beta,43.13
+72,Store 01,Online,Alpha,29.14
+73,Store 01,Online,Alpha,52.21
+74,Store 01,Online,Beta,79.56
+75,Store 01,Online,Alpha,53.39
+76,Store 01,Online,Alpha,52.15
+77,Store 01,Online,Beta,15.41
+78,Store 01,Online,Beta,77.32
+79,Store 01,Online,Alpha,48.46
+80,Store 01,Online,Beta,28.85
+81,Store 01,Online,Beta,22.92
+82,Store 01,Online,Beta,25.89
+83,Store 01,Online,Alpha,62.91
+84,Store 01,Online,Beta,30.43
+85,Store 01,Online,Alpha,14.36
+86,Store 01,Online,Alpha,24.76
+87,Store 01,Online,Gamma,18.75
+88,Store 01,Online,Alpha,22.0
+89,Store 01,Online,Alpha,29.95
+90,Store 01,Online,Beta,7.32
+91,Store 01,Online,Beta,18.8
+92,Store 01,Online,Alpha,40.24
+93,Store 01,Online,Alpha,25.72
+94,Store 01,Online,Alpha,29.28
+95,Store 01,Online,Alpha,19.96
+96,Store 01,Online,Alpha,20.01
+97,Store 01,Online,Beta,32.49
+98,Store 01,Online,Alpha,53.4
+99,Store 01,Online,Beta,14.57
+100,Store 01,Online,Beta,65.47
+101,Store 01,Online,Beta,65.83
+102,Store 01,Online,Alpha,9.33
+103,Store 01,Online,Beta,26.66
+104,Store 01,Online,Alpha,17.67
+105,Store 01,Online,Alpha,44.66
+106,Store 01,Online,Alpha,33.18
+107,Store 01,Online,Beta,58.93
+108,Store 01,Online,Alpha,43.18
+109,Store 01,Online,Alpha,15.93
+110,Store 01,Online,Alpha,59.44
+111,Store 01,Online,Alpha,45.59
+112,Store 01,Online,Beta,128.82
+113,Store 01,Online,Alpha,49.29
+114,Store 01,Online,Beta,61.57
+115,Store 01,Online,Alpha,18.36
+116,Store 01,Online,Beta,49.0
+117,Store 01,Online,Beta,17.24
+118,Store 01,Online,Alpha,20.54
+119,Store 01,Online,Alpha,24.05
+120,Store 01,Online,Alpha,38.63
+121,Store 01,Online,Alpha,28.81
+122,Store 01,Online,Alpha,11.95
+123,Store 01,Online,Alpha,71.52
+124,Store 01,Online,Alpha,20.8
+125,Store 01,Online,Alpha,18.04
+126,Store 01,Online,Alpha,34.56
+127,Store 01,Online,Beta,205.48
+128,Store 01,Online,Alpha,32.15
+129,Store 01,Online,Alpha,30.57
+130,Store 01,Online,Alpha,23.85
+131,Store 01,Online,Alpha,43.18
+132,Store 01,Online,Alpha,41.07
+133,Store 01,Online,Beta,122.07
+134,Store 01,Online,Alpha,30.22
+135,Store 01,Online,Alpha,27.64
+136,Store 01,Online,Alpha,17.15
+137,Store 01,Online,Alpha,23.38
+138,Store 01,Online,Beta,54.82
+139,Store 01,Online,Beta,26.33
+140,Store 01,Online,Alpha,19.76
+141,Store 01,Online,Gamma,42.99
+142,Store 01,In store,Beta,51.88
+143,Store 01,In store,Beta,59.98
+144,Store 01,In store,Alpha,34.03
+145,Store 01,In store,Beta,27.8
+146,Store 01,In store,Alpha,21.37
+147,Store 01,In store,Alpha,46.61
+148,Store 01,In store,Alpha,41.04
+149,Store 01,In store,Beta,25.72
+150,Store 01,In store,Beta,39.09
+151,Store 01,In store,Beta,26.53
+152,Store 01,In store,Alpha,30.51
+153,Store 01,In store,Alpha,21.71
+154,Store 01,In store,Beta,27.78
+155,Store 01,In store,Beta,87.08
+156,Store 01,In store,Alpha,18.79
+157,Store 01,In store,Alpha,88.41
+158,Store 01,In store,Beta,55.76
+159,Store 01,In store,Beta,33.88
+160,Store 01,In store,Beta,37.66
+161,Store 01,In store,Beta,20.05
+162,Store 01,In store,Beta,20.58
+163,Store 01,In store,Alpha,29.56
+164,Store 01,In store,Alpha,52.43
+165,Store 01,In store,Beta,37.07
+166,Store 01,In store,Alpha,27.54
+167,Store 01,In store,Alpha,26.95
+168,Store 01,In store,Alpha,22.85
+169,Store 01,In store,Alpha,58.88
+170,Store 01,In store,Beta,36.55
+171,Store 01,In store,Beta,36.26
+172,Store 01,In store,Beta,39.1
+173,Store 01,In store,Alpha,15.53
+174,Store 01,In store,Beta,49.83
+175,Store 01,In store,Alpha,78.14
+176,Store 01,In store,Alpha,51.26
+177,Store 01,In store,Alpha,20.98
+178,Store 01,In store,Beta,54.22
+179,Store 01,In store,Alpha,26.81
+180,Store 01,In store,Alpha,16.92
+181,Store 01,In store,Beta,47.84
+182,Store 01,In store,Beta,10.26
+183,Store 01,In store,Alpha,38.69
+184,Store 01,In store,Alpha,9.78
+185,Store 01,In store,Beta,53.92
+186,Store 01,In store,Beta,28.45
+187,Store 01,In store,Beta,32.22
+188,Store 01,In store,Alpha,29.09
+189,Store 01,In store,Beta,15.31
+190,Store 01,In store,Beta,17.71
+191,Store 01,In store,Alpha,58.46
+192,Store 01,In store,Beta,23.64
+193,Store 01,In store,Alpha,63.42
+194,Store 01,In store,Beta,31.23
+195,Store 01,In store,Beta,46.37
+196,Store 01,In store,Alpha,22.19
+197,Store 01,In store,Alpha,42.46
+198,Store 01,In store,Beta,58.37
+199,Store 01,In store,Alpha,34.38
+200,Store 01,In store,Alpha,34.62
+201,Store 01,In store,Alpha,70.3
+202,Store 01,In store,Alpha,36.01
+203,Store 01,In store,Alpha,57.48
+204,Store 01,In store,Beta,23.48
+205,Store 01,In store,Alpha,42.18
+206,Store 01,In store,Alpha,41.86
+207,Store 01,In store,Beta,35.52
+208,Store 01,In store,Beta,12.68
+209,Store 01,In store,Alpha,19.39
+210,Store 01,In store,Alpha,39.56
+211,Store 01,In store,Alpha,17.42
+212,Store 01,In store,Alpha,27.29
+213,Store 01,In store,Beta,13.49
+214,Store 01,In store,Beta,18.87
+215,Store 01,In store,Beta,53.76
+216,Store 01,In store,Alpha,30.82
+217,Store 01,In store,Alpha,21.71
+218,Store 01,In store,Alpha,16.89
+219,Store 01,In store,Gamma,35.85
+220,Store 01,In store,Beta,45.75
+221,Store 01,In store,Beta,26.21
+222,Store 01,In store,Alpha,32.13
+223,Store 01,In store,Beta,17.08
+224,Store 01,In store,Alpha,31.52
+225,Store 01,In store,Beta,15.82
+226,Store 01,In store,Beta,19.29
+227,Store 01,In store,Beta,23.45
+228,Store 01,In store,Beta,42.33
+229,Store 01,In store,Beta,43.79
+230,Store 01,In store,Beta,26.85
+231,Store 01,In store,Beta,47.82
+232,Store 01,In store,Beta,39.26
+233,Store 01,In store,Alpha,38.88
+234,Store 01,In store,Beta,21.62
+235,Store 01,In store,Alpha,33.93
+236,Store 01,In store,Alpha,45.47
+237,Store 01,In store,Beta,37.26
+238,Store 01,In store,Alpha,71.56
+239,Store 01,In store,Beta,24.69
+240,Store 01,In store,Alpha,41.08
+241,Store 01,In store,Alpha,26.1
+242,Store 01,In store,Alpha,18.42
+243,Store 01,In store,Beta,29.55
+244,Store 01,In store,Beta,28.67
+245,Store 01,In store,Alpha,17.15
+246,Store 01,In store,Gamma,39.42
+247,Store 01,In store,Alpha,18.87
+248,Store 01,In store,Alpha,17.46
+249,Store 01,In store,Alpha,32.28
+250,Store 01,In store,Alpha,14.42
+251,Store 01,In store,Alpha,37.0
+252,Store 01,In store,Alpha,82.06
+253,Store 01,In store,Beta,21.68
+254,Store 01,In store,Alpha,35.12
+255,Store 01,In store,Alpha,54.37
+256,Store 01,In store,Alpha,43.86
+257,Store 01,In store,Beta,25.08
+258,Store 01,In store,Alpha,48.64
+259,Store 01,In store,Alpha,35.6
+260,Store 01,In store,Beta,42.13
+261,Store 01,In store,Beta,33.07
+262,Store 01,In store,Alpha,40.99
+263,Store 01,In store,Alpha,14.58
+264,Store 01,In store,Alpha,53.08
+265,Store 01,In store,Beta,25.15
+266,Store 01,In store,Alpha,29.79
+267,Store 01,In store,Alpha,42.75
+268,Store 01,In store,Alpha,38.9
+269,Store 01,In store,Beta,14.08
+270,Store 01,In store,Alpha,28.39
+271,Store 01,In store,Alpha,19.01
+272,Store 01,In store,Alpha,95.28
+273,Store 01,In store,Beta,59.21
+274,Store 01,In store,Beta,36.17
+275,Store 01,In store,Beta,23.2
+276,Store 01,In store,Beta,26.65
+277,Store 01,In store,Alpha,79.71
+278,Store 01,In store,Beta,25.55
+279,Store 01,In store,Alpha,40.79
+280,Store 01,In store,Beta,48.45
+281,Store 01,In store,Beta,14.75
+282,Store 01,In store,Alpha,59.35
+283,Store 01,In store,Alpha,47.51
+284,Store 01,In store,Beta,40.95
+285,Store 01,In store,Beta,41.64
+286,Store 01,In store,Alpha,46.11
+287,Store 01,In store,Beta,21.68
+288,Store 01,In store,Alpha,36.27
+289,Store 01,In store,Beta,14.86
+290,Store 01,In store,Beta,46.15
+291,Store 01,In store,Alpha,19.29
+292,Store 01,In store,Alpha,26.27
+293,Store 01,In store,Alpha,26.7
+294,Store 01,In store,Alpha,50.08
+295,Store 01,In store,Beta,22.69
+296,Store 01,In store,Alpha,37.18
+297,Store 01,In store,Alpha,44.16
+298,Store 01,In store,Beta,21.83
+299,Store 01,In store,Alpha,22.16
+300,Store 01,In store,Beta,19.33
+301,Store 01,In store,Alpha,22.96
+302,Store 01,In store,Alpha,43.14
+303,Store 01,In store,Beta,25.13
+304,Store 01,In store,Alpha,17.51
+305,Store 01,In store,Beta,37.54
+306,Store 01,In store,Beta,24.43
+307,Store 01,In store,Beta,16.63
+308,Store 01,In store,Beta,8.86
+309,Store 01,In store,Alpha,51.42
+310,Store 01,In store,Alpha,31.19
+311,Store 01,In store,Gamma,41.43
+312,Store 01,In store,Beta,50.85
+313,Store 01,In store,Alpha,28.38
+314,Store 01,In store,Beta,83.3
+315,Store 01,In store,Beta,41.55
+316,Store 01,In store,Beta,10.69
+317,Store 01,In store,Beta,59.8
+318,Store 01,In store,Beta,28.87
+319,Store 01,In store,Alpha,69.24
+320,Store 01,In store,Alpha,27.01
+321,Store 01,In store,Beta,29.06
+322,Store 01,In store,Alpha,41.6
+323,Store 01,In store,Alpha,40.14
+324,Store 01,In store,Alpha,31.69
+325,Store 01,In store,Beta,66.46
+326,Store 01,In store,Alpha,39.84
+327,Store 01,In store,Alpha,26.59
+328,Store 01,In store,Beta,55.88
+329,Store 01,In store,Alpha,15.79
+330,Store 01,In store,Alpha,55.07
+331,Store 01,In store,Alpha,23.08
+332,Store 01,In store,Gamma,11.63
+333,Store 01,In store,Alpha,22.5
+334,Store 01,In store,Beta,22.48
+335,Store 01,In store,Beta,44.01
+336,Store 01,In store,Beta,46.05
+337,Store 01,In store,Alpha,15.87
+338,Store 01,In store,Alpha,14.88
+339,Store 01,In store,Beta,52.02
+340,Store 01,In store,Alpha,31.86
+341,Store 01,In store,Alpha,32.41
+342,Store 02,Online,Alpha,45.66
+343,Store 02,Online,Alpha,14.75
+344,Store 02,Online,Beta,28.29
+345,Store 02,Online,Beta,63.67
+346,Store 02,Online,Alpha,91.12
+347,Store 02,Online,Beta,34.79
+348,Store 02,Online,Alpha,59.86
+349,Store 02,Online,Alpha,53.45
+350,Store 02,Online,Beta,14.24
+351,Store 02,Online,Beta,41.18
+352,Store 02,Online,Alpha,65.62
+353,Store 02,Online,Alpha,146.47
+354,Store 02,Online,Alpha,11.08
+355,Store 02,Online,Gamma,68.9
+356,Store 02,Online,Beta,29.96
+357,Store 02,Online,Beta,54.27
+358,Store 02,Online,Gamma,81.59
+359,Store 02,Online,Beta,49.24
+360,Store 02,Online,Beta,35.8
+361,Store 02,Online,Alpha,53.5
+362,Store 02,Online,Alpha,33.8
+363,Store 02,Online,Alpha,54.33
+364,Store 02,Online,Alpha,17.64
+365,Store 02,Online,Alpha,66.16
+366,Store 02,Online,Beta,74.21
+367,Store 02,Online,Alpha,157.34
+368,Store 02,Online,Alpha,26.23
+369,Store 02,Online,Alpha,24.75
+370,Store 02,Online,Alpha,71.38
+371,Store 02,Online,Alpha,40.43
+372,Store 02,Online,Alpha,28.41
+373,Store 02,Online,Beta,41.79
+374,Store 02,Online,Beta,49.66
+375,Store 02,Online,Alpha,26.99
+376,Store 02,Online,Alpha,52.09
+377,Store 02,Online,Alpha,31.01
+378,Store 02,Online,Alpha,37.96
+379,Store 02,Online,Alpha,55.99
+380,Store 02,Online,Alpha,48.22
+381,Store 02,Online,Alpha,30.92
+382,Store 02,Online,Beta,111.31
+383,Store 02,Online,Alpha,45.24
+384,Store 02,Online,Alpha,17.65
+385,Store 02,Online,Beta,39.67
+386,Store 02,Online,Beta,20.5
+387,Store 02,Online,Beta,59.58
+388,Store 02,Online,Beta,33.5
+389,Store 02,Online,Gamma,12.49
+390,Store 02,Online,Alpha,32.8
+391,Store 02,Online,Beta,37.03
+392,Store 02,Online,Alpha,100.68
+393,Store 02,Online,Alpha,40.61
+394,Store 02,Online,Beta,61.8
+395,Store 02,Online,Beta,33.5
+396,Store 02,Online,Alpha,33.2
+397,Store 02,Online,Gamma,49.3
+398,Store 02,Online,Beta,77.79
+399,Store 02,Online,Alpha,10.24
+400,Store 02,Online,Beta,24.84
+401,Store 02,Online,Alpha,24.06
+402,Store 02,Online,Beta,51.6
+403,Store 02,Online,Beta,38.16
+404,Store 02,Online,Alpha,93.93
+405,Store 02,Online,Alpha,35.2
+406,Store 02,Online,Alpha,67.8
+407,Store 02,Online,Beta,144.34
+408,Store 02,Online,Beta,38.05
+409,Store 02,Online,Beta,19.49
+410,Store 02,Online,Beta,42.03
+411,Store 02,Online,Alpha,28.64
+412,Store 02,Online,Alpha,60.66
+413,Store 02,Online,Alpha,87.91
+414,Store 02,Online,Gamma,54.13
+415,Store 02,Online,Alpha,49.16
+416,Store 02,Online,Beta,63.85
+417,Store 02,Online,Alpha,42.28
+418,Store 02,Online,Alpha,28.91
+419,Store 02,Online,Beta,36.37
+420,Store 02,Online,Gamma,32.95
+421,Store 02,Online,Beta,13.71
+422,Store 02,Online,Beta,46.06
+423,Store 02,Online,Alpha,17.93
+424,Store 02,Online,Alpha,74.84
+425,Store 02,Online,Alpha,48.34
+426,Store 02,Online,Alpha,54.86
+427,Store 02,Online,Beta,23.82
+428,Store 02,Online,Gamma,48.42
+429,Store 02,Online,Alpha,33.95
+430,Store 02,Online,Alpha,29.13
+431,Store 02,Online,Alpha,58.99
+432,Store 02,Online,Alpha,56.02
+433,Store 02,Online,Alpha,27.17
+434,Store 02,Online,Beta,22.9
+435,Store 02,Online,Alpha,86.99
+436,Store 02,Online,Alpha,63.24
+437,Store 02,Online,Beta,78.44
+438,Store 02,Online,Alpha,36.48
+439,Store 02,Online,Alpha,24.97
+440,Store 02,Online,Alpha,40.63
+441,Store 02,Online,Alpha,23.04
+442,Store 02,Online,Beta,17.44
+443,Store 02,Online,Beta,48.39
+444,Store 02,Online,Beta,23.64
+445,Store 02,Online,Alpha,51.2
+446,Store 02,Online,Alpha,17.63
+447,Store 02,Online,Alpha,35.4
+448,Store 02,Online,Alpha,106.72
+449,Store 02,Online,Beta,94.32
+450,Store 02,Online,Alpha,26.08
+451,Store 02,Online,Alpha,124.41
+452,Store 02,Online,Alpha,27.16
+453,Store 02,Online,Alpha,50.37
+454,Store 02,Online,Alpha,16.48
+455,Store 02,Online,Alpha,51.02
+456,Store 02,Online,Alpha,38.2
+457,Store 02,Online,Beta,123.18
+458,Store 02,Online,Alpha,19.46
+459,Store 02,Online,Beta,65.65
+460,Store 02,Online,Alpha,37.15
+461,Store 02,Online,Alpha,42.99
+462,Store 02,Online,Alpha,30.11
+463,Store 02,Online,Beta,51.13
+464,Store 02,Online,Alpha,84.6
+465,Store 02,In store,Alpha,55.73
+466,Store 02,In store,Beta,49.92
+467,Store 02,In store,Alpha,12.38
+468,Store 02,In store,Beta,13.47
+469,Store 02,In store,Beta,47.25
+470,Store 02,In store,Alpha,82.67
+471,Store 02,In store,Beta,72.95
+472,Store 02,In store,Alpha,36.34
+473,Store 02,In store,Alpha,16.8
+474,Store 02,In store,Alpha,55.18
+475,Store 02,In store,Alpha,14.05
+476,Store 02,In store,Beta,60.87
+477,Store 02,In store,Beta,64.62
+478,Store 02,In store,Alpha,17.29
+479,Store 02,In store,Beta,68.53
+480,Store 02,In store,Beta,12.29
+481,Store 02,In store,Alpha,141.03
+482,Store 02,In store,Beta,59.79
+483,Store 02,In store,Alpha,105.41
+484,Store 02,In store,Alpha,38.2
+485,Store 02,In store,Alpha,55.67
+486,Store 02,In store,Beta,28.13
+487,Store 02,In store,Alpha,33.39
+488,Store 02,In store,Beta,26.43
+489,Store 02,In store,Beta,28.03
+490,Store 02,In store,Alpha,22.31
+491,Store 02,In store,Alpha,126.83
+492,Store 02,In store,Beta,47.53
+493,Store 02,In store,Alpha,45.14
+494,Store 02,In store,Alpha,18.52
+495,Store 02,In store,Beta,33.76
+496,Store 02,In store,Alpha,37.44
+497,Store 02,In store,Alpha,28.45
+498,Store 02,In store,Alpha,27.68
+499,Store 02,In store,Alpha,10.03
+500,Store 02,In store,Alpha,39.95
+501,Store 02,In store,Gamma,31.97
+502,Store 02,In store,Alpha,20.08
+503,Store 02,In store,Alpha,88.53
+504,Store 02,In store,Beta,33.24
+505,Store 02,In store,Beta,18.68
+506,Store 02,In store,Alpha,51.63
+507,Store 02,In store,Alpha,120.73
+508,Store 02,In store,Alpha,28.05
+509,Store 02,In store,Alpha,38.26
+510,Store 02,In store,Beta,25.43
+511,Store 02,In store,Alpha,15.22
+512,Store 02,In store,Beta,36.88
+513,Store 02,In store,Alpha,21.73
+514,Store 02,In store,Alpha,53.03
+515,Store 02,In store,Alpha,25.32
+516,Store 02,In store,Beta,23.13
+517,Store 02,In store,Alpha,23.65
+518,Store 02,In store,Beta,49.82
+519,Store 02,In store,Beta,72.04
+520,Store 02,In store,Beta,14.96
+521,Store 02,In store,Alpha,36.2
+522,Store 02,In store,Alpha,22.12
+523,Store 02,In store,Alpha,40.67
+524,Store 02,In store,Alpha,23.82
+525,Store 02,In store,Alpha,14.01
+526,Store 02,In store,Alpha,24.88
+527,Store 02,In store,Alpha,17.78
+528,Store 02,In store,Alpha,38.77
+529,Store 02,In store,Beta,74.0
+530,Store 02,In store,Alpha,107.32
+531,Store 02,In store,Beta,36.38
+532,Store 02,In store,Gamma,64.69
+533,Store 02,In store,Alpha,28.49
+534,Store 02,In store,Alpha,41.78
+535,Store 02,In store,Alpha,25.95
+536,Store 02,In store,Alpha,56.06
+537,Store 02,In store,Beta,31.98
+538,Store 02,In store,Beta,52.88
+539,Store 02,In store,Alpha,24.77
+540,Store 02,In store,Beta,56.77
+541,Store 02,In store,Alpha,97.98
+542,Store 02,In store,Alpha,29.49
+543,Store 02,In store,Beta,38.02
+544,Store 02,In store,Alpha,72.72
+545,Store 02,In store,Beta,34.08
+546,Store 02,In store,Beta,70.64
+547,Store 02,In store,Alpha,42.23
+548,Store 02,In store,Alpha,52.06
+549,Store 02,In store,Alpha,21.8
+550,Store 02,In store,Beta,27.52
+551,Store 02,In store,Beta,23.15
+552,Store 02,In store,Alpha,45.5
+553,Store 02,In store,Alpha,24.62
+554,Store 02,In store,Alpha,25.63
+555,Store 02,In store,Alpha,26.9
+556,Store 02,In store,Alpha,63.42
+557,Store 02,In store,Beta,50.81
+558,Store 02,In store,Alpha,75.24
+559,Store 02,In store,Alpha,44.06
+560,Store 02,In store,Beta,12.16
+561,Store 02,In store,Beta,49.28
+562,Store 02,In store,Beta,35.83
+563,Store 02,In store,Alpha,75.21
+564,Store 02,In store,Alpha,28.89
+565,Store 02,In store,Alpha,16.97
+566,Store 02,In store,Beta,42.47
+567,Store 02,In store,Beta,29.3
+568,Store 02,In store,Alpha,35.92
+569,Store 02,In store,Alpha,25.73
+570,Store 02,In store,Beta,28.19
+571,Store 02,In store,Alpha,76.38
+572,Store 02,In store,Beta,45.64
+573,Store 02,In store,Alpha,45.21
+574,Store 02,In store,Beta,81.51
+575,Store 02,In store,Beta,51.02
+576,Store 02,In store,Alpha,20.09
+577,Store 02,In store,Alpha,31.87
+578,Store 02,In store,Alpha,27.06
+579,Store 02,In store,Beta,18.95
+580,Store 02,In store,Beta,28.77
+581,Store 02,In store,Alpha,34.15
+582,Store 02,In store,Alpha,39.48
+583,Store 02,In store,Alpha,22.33
+584,Store 02,In store,Alpha,12.31
+585,Store 02,In store,Beta,19.54
+586,Store 02,In store,Beta,29.34
+587,Store 02,In store,Beta,29.33
+588,Store 02,In store,Alpha,30.31
+589,Store 02,In store,Alpha,26.59
+590,Store 02,In store,Beta,37.07
+591,Store 02,In store,Alpha,54.57
+592,Store 02,In store,Gamma,32.06
+593,Store 02,In store,Alpha,64.57
+594,Store 02,In store,Alpha,19.7
+595,Store 02,In store,Alpha,48.91
+596,Store 02,In store,Alpha,48.74
+597,Store 02,In store,Alpha,41.23
+598,Store 02,In store,Alpha,43.58
+599,Store 02,In store,Beta,41.04
+600,Store 02,In store,Alpha,17.82
+601,Store 02,In store,Alpha,35.88
+602,Store 02,In store,Beta,37.57
+603,Store 02,In store,Alpha,77.55
+604,Store 02,In store,Beta,52.92
+605,Store 02,In store,Beta,36.82
+606,Store 02,In store,Alpha,22.94
+607,Store 02,In store,Alpha,45.39
+608,Store 02,In store,Alpha,28.69
+609,Store 02,In store,Beta,53.66
+610,Store 02,In store,Alpha,92.7
+611,Store 02,In store,Beta,99.2
+612,Store 02,In store,Beta,38.92
+613,Store 02,In store,Alpha,21.82
+614,Store 02,In store,Alpha,46.81
+615,Store 02,In store,Alpha,15.62
+616,Store 02,In store,Beta,15.02
+617,Store 02,In store,Alpha,39.66
+618,Store 02,In store,Beta,18.65
+619,Store 02,In store,Alpha,12.47
+620,Store 02,In store,Beta,21.66
+621,Store 02,In store,Beta,31.73
+622,Store 02,In store,Beta,47.38
+623,Store 02,In store,Alpha,36.23
+624,Store 02,In store,Beta,72.38
+625,Store 02,In store,Beta,72.39
+626,Store 02,In store,Alpha,20.17
+627,Store 02,In store,Alpha,17.23
+628,Store 02,In store,Gamma,31.61
+629,Store 02,In store,Beta,21.79
+630,Store 02,In store,Beta,119.41
+631,Store 02,In store,Alpha,29.29
+632,Store 02,In store,Beta,15.44
+633,Store 02,In store,Alpha,116.18
+634,Store 02,In store,Alpha,15.17
+635,Store 02,In store,Gamma,59.6
+636,Store 02,In store,Beta,24.41
+637,Store 02,In store,Beta,45.94
+638,Store 02,In store,Alpha,83.95
+639,Store 02,In store,Beta,43.14
+640,Store 02,In store,Alpha,45.55
+641,Store 02,In store,Alpha,37.04
+642,Store 02,In store,Alpha,23.74
+643,Store 02,In store,Alpha,71.33
+644,Store 02,In store,Alpha,20.04
+645,Store 02,In store,Alpha,26.89
+646,Store 02,In store,Alpha,30.07
+647,Store 02,In store,Alpha,9.89
+648,Store 02,In store,Alpha,46.65
+649,Store 02,In store,Beta,24.1
+650,Store 03,Online,Alpha,24.42
+651,Store 03,Online,Alpha,40.28
+652,Store 03,Online,Beta,44.64
+653,Store 03,Online,Alpha,18.42
+654,Store 03,Online,Alpha,11.61
+655,Store 03,Online,Alpha,30.38
+656,Store 03,Online,Gamma,77.45
+657,Store 03,Online,Alpha,44.12
+658,Store 03,Online,Alpha,137.03
+659,Store 03,Online,Beta,42.4
+660,Store 03,Online,Alpha,41.83
+661,Store 03,Online,Beta,88.98
+662,Store 03,Online,Alpha,28.07
+663,Store 03,Online,Alpha,32.74
+664,Store 03,Online,Alpha,40.66
+665,Store 03,Online,Alpha,23.0
+666,Store 03,Online,Alpha,40.12
+667,Store 03,Online,Alpha,47.92
+668,Store 03,Online,Alpha,44.83
+669,Store 03,Online,Gamma,99.91
+670,Store 03,Online,Alpha,50.94
+671,Store 03,Online,Alpha,25.23
+672,Store 03,Online,Beta,182.43
+673,Store 03,Online,Alpha,13.91
+674,Store 03,Online,Alpha,71.05
+675,Store 03,Online,Beta,25.25
+676,Store 03,Online,Alpha,26.2
+677,Store 03,Online,Alpha,60.37
+678,Store 03,Online,Alpha,53.24
+679,Store 03,Online,Alpha,89.65
+680,Store 03,Online,Alpha,66.37
+681,Store 03,Online,Beta,15.33
+682,Store 03,Online,Alpha,96.85
+683,Store 03,Online,Alpha,17.97
+684,Store 03,Online,Alpha,66.9
+685,Store 03,Online,Alpha,20.34
+686,Store 03,Online,Alpha,53.03
+687,Store 03,Online,Alpha,54.88
+688,Store 03,Online,Gamma,41.51
+689,Store 03,Online,Gamma,34.32
+690,Store 03,Online,Alpha,45.71
+691,Store 03,Online,Gamma,106.65
+692,Store 03,Online,Beta,42.78
+693,Store 03,Online,Alpha,33.16
+694,Store 03,Online,Alpha,35.24
+695,Store 03,Online,Alpha,33.46
+696,Store 03,Online,Alpha,91.88
+697,Store 03,Online,Alpha,44.85
+698,Store 03,Online,Beta,41.29
+699,Store 03,Online,Alpha,77.94
+700,Store 03,Online,Alpha,27.25
+701,Store 03,Online,Alpha,83.42
+702,Store 03,Online,Gamma,18.14
+703,Store 03,Online,Alpha,120.19
+704,Store 03,Online,Beta,24.99
+705,Store 03,Online,Alpha,28.47
+706,Store 03,Online,Beta,31.32
+707,Store 03,Online,Alpha,92.48
+708,Store 03,Online,Beta,17.97
+709,Store 03,Online,Alpha,37.77
+710,Store 03,Online,Alpha,51.93
+711,Store 03,Online,Alpha,31.47
+712,Store 03,Online,Alpha,107.78
+713,Store 03,Online,Beta,97.79
+714,Store 03,Online,Alpha,27.22
+715,Store 03,Online,Alpha,20.35
+716,Store 03,Online,Beta,52.03
+717,Store 03,Online,Alpha,102.12
+718,Store 03,Online,Alpha,71.99
+719,Store 03,Online,Beta,76.43
+720,Store 03,Online,Alpha,169.98
+721,Store 03,Online,Beta,67.7
+722,Store 03,Online,Alpha,17.08
+723,Store 03,Online,Alpha,47.07
+724,Store 03,Online,Alpha,28.19
+725,Store 03,Online,Beta,90.98
+726,Store 03,Online,Alpha,21.19
+727,Store 03,Online,Alpha,96.98
+728,Store 03,Online,Alpha,80.13
+729,Store 03,Online,Alpha,77.57
+730,Store 03,Online,Gamma,46.6
+731,Store 03,Online,Alpha,42.28
+732,Store 03,Online,Beta,65.67
+733,Store 03,Online,Alpha,62.68
+734,Store 03,Online,Beta,89.95
+735,Store 03,Online,Alpha,71.45
+736,Store 03,Online,Beta,52.84
+737,Store 03,Online,Alpha,70.97
+738,Store 03,Online,Beta,77.81
+739,Store 03,Online,Alpha,82.95
+740,Store 03,Online,Alpha,51.64
+741,Store 03,Online,Alpha,142.85
+742,Store 03,Online,Alpha,66.81
+743,Store 03,Online,Alpha,49.85
+744,Store 03,Online,Alpha,30.51
+745,Store 03,Online,Beta,30.51
+746,Store 03,Online,Alpha,36.87
+747,Store 03,Online,Gamma,76.67
+748,Store 03,Online,Alpha,11.82
+749,Store 03,Online,Alpha,38.95
+750,Store 03,Online,Gamma,42.46
+751,Store 03,Online,Alpha,14.55
+752,Store 03,Online,Alpha,30.09
+753,Store 03,Online,Beta,59.55
+754,Store 03,Online,Beta,69.6
+755,Store 03,Online,Alpha,65.39
+756,Store 03,Online,Alpha,115.58
+757,Store 03,Online,Beta,28.3
+758,Store 03,Online,Alpha,109.65
+759,Store 03,Online,Beta,88.91
+760,Store 03,Online,Alpha,33.74
+761,Store 03,Online,Gamma,115.53
+762,Store 03,Online,Alpha,34.3
+763,Store 03,Online,Alpha,34.0
+764,Store 03,Online,Alpha,35.08
+765,Store 03,Online,Alpha,64.12
+766,Store 03,Online,Beta,36.61
+767,Store 03,Online,Gamma,52.54
+768,Store 03,Online,Alpha,39.2
+769,Store 03,Online,Gamma,59.11
+770,Store 03,Online,Alpha,39.52
+771,Store 03,Online,Beta,52.53
+772,Store 03,Online,Alpha,49.28
+773,Store 03,Online,Alpha,20.48
+774,Store 03,Online,Alpha,91.36
+775,Store 03,Online,Beta,48.13
+776,Store 03,Online,Beta,25.32
+777,Store 03,Online,Beta,106.58
+778,Store 03,Online,Alpha,103.02
+779,Store 03,Online,Alpha,45.5
+780,Store 03,Online,Alpha,38.84
+781,Store 03,Online,Alpha,41.16
+782,Store 03,Online,Beta,28.94
+783,Store 03,Online,Beta,60.14
+784,Store 03,Online,Alpha,42.13
+785,Store 03,Online,Beta,0
+786,Store 03,Online,Alpha,0
+787,Store 03,Online,Beta,0
+788,Store 03,Online,Alpha,0
+789,Store 03,Online,Alpha,0
+790,Store 03,Online,Alpha,28.74
+791,Store 03,Online,Beta,69.23
+792,Store 03,Online,Beta,0
+793,Store 03,Online,Alpha,0
+794,Store 03,Online,Alpha,0
+795,Store 03,Online,Alpha,0
+796,Store 03,Online,Alpha,0
+797,Store 03,Online,Alpha,23.53
+798,Store 03,Online,Alpha,0
+799,Store 03,Online,Beta,0
+800,Store 03,Online,Alpha,0
+801,Store 03,Online,Alpha,0
+802,Store 03,Online,Beta,0
+803,Store 03,Online,Beta,0
+804,Store 03,Online,Alpha,14.47
+805,Store 03,Online,Alpha,57.43
+806,Store 03,Online,Alpha,0
+807,Store 03,Online,Gamma,0
+808,Store 03,Online,Alpha,0
+809,Store 03,Online,Beta,0
+810,Store 03,Online,Beta,0
+811,Store 03,Online,Alpha,0
+812,Store 03,Online,Alpha,22.61
+813,Store 03,Online,Alpha,0
+814,Store 03,Online,Alpha,0
+815,Store 03,Online,Beta,0
+816,Store 03,Online,Beta,0
+817,Store 03,Online,Alpha,39.34
+818,Store 03,Online,Alpha,31.09
+819,Store 03,Online,Alpha,0
+820,Store 03,Online,Beta,0
+821,Store 03,Online,Alpha,0
+822,Store 03,Online,Beta,0
+823,Store 03,Online,Beta,0
+824,Store 03,Online,Alpha,0
+825,Store 03,Online,Beta,44.4
+826,Store 03,Online,Beta,0
+827,Store 03,Online,Alpha,0
+828,Store 03,Online,Alpha,11.45
+829,Store 03,Online,Beta,47.07
+830,Store 03,Online,Alpha,0
+831,Store 03,Online,Alpha,0
+832,Store 03,Online,Alpha,0
+833,Store 03,Online,Alpha,0
+834,Store 03,Online,Alpha,0
+835,Store 03,Online,Alpha,0
+836,Store 03,Online,Alpha,0
+837,Store 03,Online,Beta,0
+838,Store 03,Online,Beta,0
+839,Store 03,Online,Alpha,0
+840,Store 03,Online,Alpha,0
+841,Store 03,Online,Alpha,0
+842,Store 03,Online,Alpha,0
+843,Store 03,Online,Beta,23.43
+844,Store 03,Online,Beta,0
+845,Store 03,Online,Beta,0
+846,Store 03,Online,Alpha,0
+847,Store 03,Online,Beta,0
+848,Store 03,Online,Beta,0
+849,Store 03,Online,Beta,0
+850,Store 03,Online,Alpha,0
+851,Store 03,Online,Beta,0
+852,Store 03,Online,Alpha,0
+853,Store 03,Online,Gamma,33.7
+854,Store 03,Online,Alpha,0
+855,Store 03,Online,Alpha,0
+856,Store 03,Online,Alpha,0
+857,Store 03,Online,Alpha,76.73
+858,Store 03,Online,Alpha,0
+859,Store 03,Online,Alpha,0
+860,Store 03,Online,Alpha,0
+861,Store 03,Online,Beta,43.71
+862,Store 03,Online,Beta,0
+863,Store 03,Online,Alpha,0
+864,Store 03,Online,Alpha,0
+865,Store 03,Online,Alpha,0
+866,Store 03,Online,Beta,0
+867,Store 03,Online,Alpha,0
+868,Store 03,Online,Beta,0
+869,Store 03,Online,Alpha,0
+870,Store 03,Online,Alpha,10.7
+871,Store 03,Online,Beta,0
+872,Store 03,Online,Alpha,0
+873,Store 03,Online,Alpha,0
+874,Store 03,Online,Beta,0
+875,Store 03,Online,Alpha,0
+876,Store 03,Online,Alpha,0
+877,Store 03,Online,Alpha,0
+878,Store 03,Online,Beta,0
+879,Store 03,Online,Alpha,0
+880,Store 03,Online,Beta,0
+881,Store 03,Online,Alpha,0
+882,Store 03,Online,Alpha,0
+883,Store 03,Online,Gamma,0
+884,Store 03,Online,Gamma,0
+885,Store 03,Online,Beta,0
+886,Store 03,Online,Beta,0
+887,Store 03,Online,Alpha,0
+888,Store 03,Online,Beta,0
+889,Store 03,Online,Alpha,0
+890,Store 03,Online,Alpha,0
+891,Store 03,Online,Alpha,0
+892,Store 03,Online,Beta,0
+893,Store 03,Online,Alpha,0
+894,Store 03,Online,Alpha,41.2
+895,Store 03,Online,Alpha,0
+896,Store 03,Online,Alpha,0
+897,Store 03,Online,Alpha,0
+898,Store 03,Online,Alpha,0
+899,Store 03,Online,Alpha,0
+900,Store 03,Online,Beta,0
+901,Store 03,Online,Beta,0
+902,Store 03,Online,Alpha,52.4
+903,Store 03,Online,Beta,0
+904,Store 03,Online,Alpha,0
+905,Store 03,Online,Beta,0
+906,Store 03,Online,Beta,0
+907,Store 03,Online,Beta,0
+908,Store 03,Online,Alpha,0
+909,Store 03,Online,Alpha,0
+910,Store 03,Online,Alpha,0
+911,Store 03,Online,Alpha,0
+912,Store 03,Online,Gamma,0
+913,Store 03,Online,Alpha,0
+914,Store 03,Online,Alpha,0
+915,Store 03,Online,Alpha,50.02
+916,Store 03,Online,Alpha,0
+917,Store 03,Online,Beta,0
+918,Store 03,Online,Beta,0
+919,Store 03,Online,Beta,0
+920,Store 03,Online,Alpha,0
+921,Store 03,Online,Beta,0
+922,Store 03,Online,Beta,23.96
+923,Store 03,Online,Beta,0
+924,Store 03,Online,Alpha,0
+925,Store 03,Online,Alpha,0
+926,Store 03,Online,Beta,39.89
+927,Store 03,Online,Beta,85.93
+928,Store 03,Online,Alpha,0
+929,Store 03,Online,Alpha,0
+930,Store 03,Online,Alpha,0
+931,Store 03,Online,Beta,0
+932,Store 03,Online,Alpha,0
+933,Store 03,Online,Alpha,0
+934,Store 03,Online,Alpha,0
+935,Store 03,Online,Alpha,35.39
+936,Store 03,Online,Alpha,0
+937,Store 03,Online,Beta,0
+938,Store 03,Online,Beta,28.88
+939,Store 03,Online,Alpha,0
+940,Store 03,Online,Alpha,0
+941,Store 03,Online,Alpha,0
+942,Store 03,Online,Alpha,0
+943,Store 03,Online,Alpha,0
+944,Store 03,Online,Alpha,0
+945,Store 03,Online,Alpha,0
+946,Store 03,Online,Alpha,0
+947,Store 03,Online,Alpha,19.45
+948,Store 03,Online,Beta,0
+949,Store 03,Online,Beta,0
+950,Store 03,Online,Alpha,0
+951,Store 03,Online,Alpha,0
+952,Store 03,Online,Alpha,0
+953,Store 03,Online,Gamma,0
+954,Store 03,Online,Beta,0
+955,Store 03,Online,Alpha,0
+956,Store 03,Online,Alpha,0
+957,Store 03,Online,Alpha,0
+958,Store 03,Online,Beta,0
+959,Store 03,Online,Beta,84.68
+960,Store 03,Online,Alpha,0
+961,Store 03,Online,Alpha,0
+962,Store 03,Online,Alpha,0
+963,Store 03,Online,Alpha,0
+964,Store 03,Online,Alpha,0
+965,Store 03,Online,Beta,0
+966,Store 03,Online,Beta,49.95
+967,Store 03,Online,Beta,0
+968,Store 03,Online,Alpha,0
+969,Store 03,Online,Alpha,0
+970,Store 03,Online,Alpha,42.26
+971,Store 03,Online,Alpha,0
+972,Store 03,Online,Alpha,0
+973,Store 03,Online,Alpha,0
+974,Store 03,Online,Alpha,0
+975,Store 03,Online,Alpha,0
+976,Store 03,Online,Beta,0
+977,Store 03,Online,Beta,0
+978,Store 03,Online,Beta,0
+979,Store 03,Online,Beta,0
+980,Store 03,Online,Gamma,0
+981,Store 03,Online,Beta,0
+982,Store 03,Online,Alpha,0
+983,Store 03,Online,Beta,0
+984,Store 03,Online,Alpha,0
+985,Store 03,Online,Alpha,0
+986,Store 03,Online,Alpha,0
+987,Store 03,Online,Beta,0
+988,Store 03,Online,Beta,0
+989,Store 03,Online,Beta,0
+990,Store 03,Online,Alpha,0
+991,Store 03,Online,Alpha,0
+992,Store 03,Online,Beta,30.4
+993,Store 03,Online,Beta,0
+994,Store 03,Online,Beta,0
+995,Store 03,Online,Gamma,0
+996,Store 03,Online,Gamma,0
+997,Store 03,Online,Beta,0
+998,Store 03,Online,Beta,0
+999,Store 03,Online,Alpha,0
+1000,Store 03,Online,Beta,0
+1001,Store 03,Online,Alpha,30.06
+1002,Store 03,Online,Alpha,0
+1003,Store 03,Online,Alpha,0
+1004,Store 03,Online,Alpha,0
+1005,Store 03,Online,Alpha,0
+1006,Store 03,Online,Beta,63.2
+1007,Store 03,Online,Beta,0
+1008,Store 03,Online,Beta,0
+1009,Store 03,Online,Beta,0
+1010,Store 03,Online,Beta,0
+1011,Store 03,Online,Alpha,0
+1012,Store 03,Online,Beta,0
+1013,Store 03,Online,Alpha,0
+1014,Store 03,Online,Alpha,0
+1015,Store 03,Online,Alpha,0
+1016,Store 03,Online,Alpha,0
+1017,Store 03,Online,Alpha,0
+1018,Store 03,Online,Alpha,0
+1019,Store 03,Online,Alpha,35.65
+1020,Store 03,Online,Beta,0
+1021,Store 03,Online,Alpha,0
+1022,Store 03,Online,Alpha,0
+1023,Store 03,Online,Alpha,0
+1024,Store 03,Online,Alpha,0
+1025,Store 03,Online,Beta,18.59
+1026,Store 03,Online,Alpha,0
+1027,Store 03,Online,Beta,0
+1028,Store 03,Online,Beta,0
+1029,Store 03,Online,Gamma,0
+1030,Store 03,Online,Alpha,0
+1031,Store 03,Online,Beta,34.42
+1032,Store 03,Online,Alpha,0
+1033,Store 03,Online,Alpha,0
+1034,Store 03,Online,Alpha,0
+1035,Store 03,Online,Beta,0
+1036,Store 03,Online,Alpha,0
+1037,Store 03,Online,Alpha,0
+1038,Store 03,Online,Alpha,0
+1039,Store 03,Online,Alpha,0
+1040,Store 03,Online,Alpha,0
+1041,Store 03,Online,Alpha,0
+1042,Store 03,Online,Beta,0
+1043,Store 03,Online,Beta,0
+1044,Store 03,Online,Alpha,0
+1045,Store 03,Online,Beta,0
+1046,Store 03,Online,Beta,0
+1047,Store 03,Online,Beta,0
+1048,Store 03,Online,Beta,0
+1049,Store 03,Online,Beta,21.1
+1050,Store 03,Online,Alpha,0
+1051,Store 03,Online,Gamma,0
+1052,Store 03,Online,Alpha,0
+1053,Store 03,Online,Alpha,0
+1054,Store 03,Online,Alpha,0
+1055,Store 03,Online,Alpha,12.87
+1056,Store 03,Online,Alpha,0
+1057,Store 03,Online,Beta,0
+1058,Store 03,Online,Beta,67.76
+1059,Store 03,Online,Alpha,0
+1060,Store 03,Online,Beta,0
+1061,Store 03,Online,Beta,0
+1062,Store 03,Online,Alpha,0
+1063,Store 03,Online,Alpha,0
+1064,Store 03,Online,Alpha,0
+1065,Store 03,Online,Alpha,0
+1066,Store 03,Online,Beta,40.51
+1067,Store 03,Online,Alpha,0
+1068,Store 03,Online,Beta,0
+1069,Store 03,Online,Alpha,0
+1070,Store 03,Online,Beta,0
+1071,Store 03,Online,Alpha,0
+1072,Store 03,Online,Beta,0
+1073,Store 03,Online,Alpha,0
+1074,Store 03,Online,Alpha,86.63
+1075,Store 03,Online,Beta,43.1
+1076,Store 03,Online,Alpha,0
+1077,Store 03,Online,Beta,0
+1078,Store 03,Online,Alpha,0
+1079,Store 03,Online,Alpha,0
+1080,Store 03,Online,Alpha,0
+1081,Store 03,Online,Alpha,0
+1082,Store 03,Online,Beta,0
+1083,Store 03,Online,Alpha,0
+1084,Store 03,Online,Alpha,65.63
+1085,Store 03,Online,Alpha,0
+1086,Store 03,Online,Alpha,0
+1087,Store 03,Online,Beta,0
+1088,Store 03,Online,Alpha,0
+1089,Store 03,Online,Alpha,0
+1090,Store 03,Online,Alpha,0
+1091,Store 03,Online,Alpha,0
+1092,Store 03,Online,Alpha,0
+1093,Store 03,Online,Alpha,0
+1094,Store 03,Online,Beta,0
+1095,Store 03,Online,Beta,0
+1096,Store 03,Online,Beta,0
+1097,Store 03,Online,Alpha,20.67
+1098,Store 03,Online,Alpha,0
+1099,Store 03,Online,Beta,0
+1100,Store 03,Online,Alpha,0
+1101,Store 03,Online,Alpha,0
+1102,Store 03,Online,Beta,0
+1103,Store 03,Online,Alpha,40.56
+1104,Store 03,Online,Alpha,0
+1105,Store 03,Online,Alpha,0
+1106,Store 03,Online,Alpha,0
+1107,Store 03,Online,Beta,43.74
+1108,Store 03,Online,Alpha,0
+1109,Store 03,Online,Alpha,0
+1110,Store 03,Online,Beta,0
+1111,Store 03,Online,Alpha,0
+1112,Store 03,Online,Alpha,0
+1113,Store 03,Online,Gamma,0
+1114,Store 03,Online,Beta,0
+1115,Store 03,Online,Gamma,0
+1116,Store 03,Online,Alpha,0
+1117,Store 03,Online,Alpha,0
+1118,Store 03,Online,Beta,0
+1119,Store 03,Online,Alpha,60.42
+1120,Store 03,Online,Beta,0
+1121,Store 03,Online,Alpha,0
+1122,Store 03,Online,Beta,0
+1123,Store 03,Online,Gamma,44.23
+1124,Store 03,Online,Beta,0
+1125,Store 03,Online,Beta,0
+1126,Store 03,Online,Alpha,0
+1127,Store 03,Online,Alpha,0
+1128,Store 03,Online,Beta,0
+1129,Store 03,Online,Gamma,0
+1130,Store 03,Online,Beta,102.28
+1131,Store 03,Online,Beta,0
+1132,Store 03,Online,Alpha,0
+1133,Store 03,Online,Beta,0
+1134,Store 03,Online,Alpha,0
+1135,Store 03,Online,Alpha,0
+1136,Store 03,Online,Beta,0
+1137,Store 03,Online,Alpha,0
+1138,Store 03,Online,Gamma,73.3
+1139,Store 03,Online,Alpha,0
+1140,Store 03,Online,Beta,0
+1141,Store 03,Online,Beta,0
+1142,Store 03,Online,Beta,0
+1143,Store 03,Online,Gamma,0
+1144,Store 03,Online,Alpha,0
+1145,Store 03,Online,Alpha,0
+1146,Store 03,Online,Alpha,0
+1147,Store 03,Online,Alpha,0
+1148,Store 03,Online,Alpha,0
+1149,Store 03,Online,Gamma,0
+1150,Store 03,Online,Beta,0
+1151,Store 03,Online,Alpha,0
+1152,Store 03,Online,Alpha,0
+1153,Store 03,Online,Alpha,0
+1154,Store 03,Online,Alpha,0
+1155,Store 03,Online,Beta,0
+1156,Store 03,Online,Alpha,0
+1157,Store 03,Online,Alpha,0
+1158,Store 03,Online,Beta,0
+1159,Store 03,Online,Alpha,0
+1160,Store 03,Online,Alpha,48.91
+1161,Store 03,Online,Beta,33.45
+1162,Store 03,Online,Alpha,0
+1163,Store 03,Online,Alpha,0
+1164,Store 03,Online,Alpha,0
+1165,Store 03,Online,Alpha,0
+1166,Store 03,Online,Alpha,0
+1167,Store 03,Online,Alpha,0
+1168,Store 03,Online,Beta,0
+1169,Store 03,Online,Alpha,0
+1170,Store 03,Online,Beta,20.8
+1171,Store 03,Online,Alpha,0
+1172,Store 03,Online,Alpha,0
+1173,Store 03,Online,Alpha,0
+1174,Store 03,Online,Alpha,0
+1175,Store 03,Online,Beta,0
+1176,Store 03,Online,Gamma,0
+1177,Store 03,Online,Alpha,33.34
+1178,Store 03,Online,Alpha,0
+1179,Store 03,Online,Beta,0
+1180,Store 03,Online,Alpha,0
+1181,Store 03,Online,Beta,0
+1182,Store 03,Online,Beta,70.79
+1183,Store 03,Online,Alpha,0
+1184,Store 03,Online,Alpha,0
+1185,Store 03,Online,Alpha,0
+1186,Store 03,Online,Alpha,24.99
+1187,Store 03,Online,Gamma,26.59
+1188,Store 03,Online,Alpha,0
+1189,Store 03,Online,Alpha,0
+1190,Store 03,Online,Beta,0
+1191,Store 03,Online,Alpha,0
+1192,Store 03,Online,Alpha,0
+1193,Store 03,Online,Alpha,0
+1194,Store 03,Online,Beta,0
+1195,Store 03,Online,Alpha,0
+1196,Store 03,Online,Alpha,0
+1197,Store 03,Online,Alpha,0
+1198,Store 03,Online,Beta,0
+1199,Store 03,Online,Alpha,0
+1200,Store 03,Online,Alpha,0
+1201,Store 03,Online,Beta,112.1
+1202,Store 03,Online,Alpha,0
+1203,Store 03,Online,Beta,0
+1204,Store 03,Online,Alpha,0
+1205,Store 03,Online,Beta,0
+1206,Store 03,Online,Beta,0
+1207,Store 03,Online,Alpha,0
+1208,Store 03,Online,Beta,0
+1209,Store 03,Online,Alpha,0
+1210,Store 03,Online,Alpha,0
+1211,Store 03,Online,Alpha,79.23
+1212,Store 03,Online,Gamma,0
+1213,Store 03,Online,Beta,0
+1214,Store 03,Online,Beta,0
+1215,Store 03,Online,Alpha,0
+1216,Store 03,Online,Alpha,0
+1217,Store 03,Online,Gamma,0
+1218,Store 03,Online,Alpha,0
+1219,Store 03,Online,Alpha,0
+1220,Store 03,Online,Alpha,0
+1221,Store 03,Online,Alpha,78.41
+1222,Store 03,Online,Beta,0
+1223,Store 03,Online,Alpha,99.35
+1224,Store 03,Online,Alpha,0
+1225,Store 03,Online,Beta,0
+1226,Store 03,Online,Beta,0
+1227,Store 03,Online,Alpha,45.44
+1228,Store 03,Online,Alpha,0
+1229,Store 03,Online,Alpha,58.9
+1230,Store 03,Online,Alpha,0
+1231,Store 03,Online,Beta,0
+1232,Store 03,Online,Beta,0
+1233,Store 03,Online,Alpha,0
+1234,Store 03,Online,Beta,17.02
+1235,Store 03,Online,Beta,65.18
+1236,Store 03,Online,Beta,25.8
+1237,Store 03,Online,Alpha,0
+1238,Store 03,Online,Alpha,0
+1239,Store 03,Online,Alpha,0
+1240,Store 03,Online,Beta,0
+1241,Store 03,Online,Alpha,0
+1242,Store 03,Online,Beta,0
+1243,Store 03,Online,Beta,0
+1244,Store 03,Online,Alpha,0
+1245,Store 03,Online,Beta,0
+1246,Store 03,Online,Alpha,0
+1247,Store 03,Online,Alpha,36.87
+1248,Store 03,Online,Alpha,0
+1249,Store 03,Online,Alpha,0
+1250,Store 03,Online,Alpha,73.91
+1251,Store 03,Online,Alpha,0
+1252,Store 03,Online,Alpha,0
+1253,Store 03,Online,Beta,0
+1254,Store 03,Online,Beta,0
+1255,Store 03,Online,Alpha,0
+1256,Store 03,Online,Gamma,54.32
+1257,Store 03,Online,Beta,36.62
+1258,Store 03,Online,Alpha,0
+1259,Store 03,Online,Gamma,0
+1260,Store 03,Online,Alpha,0
+1261,Store 03,Online,Alpha,0
+1262,Store 03,Online,Alpha,0
+1263,Store 03,Online,Alpha,0
+1264,Store 03,Online,Beta,0
+1265,Store 03,Online,Alpha,0
+1266,Store 03,Online,Alpha,0
+1267,Store 03,Online,Beta,0
+1268,Store 03,Online,Alpha,0
+1269,Store 03,Online,Beta,0
+1270,Store 03,Online,Alpha,0
+1271,Store 03,Online,Beta,0
+1272,Store 03,Online,Alpha,0
+1273,Store 03,Online,Beta,0
+1274,Store 03,Online,Alpha,0
+1275,Store 03,Online,Alpha,0
+1276,Store 03,Online,Alpha,0
+1277,Store 03,Online,Beta,39.64
+1278,Store 03,Online,Alpha,37.42
+1279,Store 03,Online,Alpha,0
+1280,Store 03,Online,Beta,0
+1281,Store 03,Online,Beta,0
+1282,Store 03,Online,Alpha,0
+1283,Store 03,Online,Alpha,0
+1284,Store 03,Online,Alpha,0
+1285,Store 03,Online,Alpha,0
+1286,Store 03,Online,Beta,0
+1287,Store 03,Online,Alpha,0
+1288,Store 03,Online,Alpha,0
+1289,Store 03,Online,Beta,0
+1290,Store 03,Online,Beta,0
+1291,Store 03,Online,Alpha,0
+1292,Store 03,Online,Alpha,0
+1293,Store 03,Online,Beta,0
+1294,Store 03,Online,Alpha,106.49
+1295,Store 03,Online,Beta,0
+1296,Store 03,Online,Alpha,0
+1297,Store 03,Online,Alpha,0
+1298,Store 03,Online,Alpha,0
+1299,Store 03,Online,Alpha,0
+1300,Store 03,Online,Alpha,0
+1301,Store 03,Online,Alpha,0
+1302,Store 03,Online,Beta,0
+1303,Store 03,Online,Beta,34.23
+1304,Store 03,Online,Beta,0
+1305,Store 03,Online,Beta,43.85
+1306,Store 03,Online,Beta,0
+1307,Store 03,Online,Alpha,57.82
+1308,Store 03,Online,Alpha,17.67
+1309,Store 03,Online,Alpha,0
+1310,Store 03,Online,Alpha,0
+1311,Store 03,Online,Alpha,0
+1312,Store 03,Online,Beta,0
+1313,Store 03,Online,Beta,0
+1314,Store 03,Online,Alpha,0
+1315,Store 03,Online,Beta,0
+1316,Store 03,Online,Gamma,0
+1317,Store 03,Online,Beta,0
+1318,Store 03,Online,Alpha,0
+1319,Store 03,Online,Beta,0
+1320,Store 03,Online,Alpha,0
+1321,Store 03,Online,Alpha,0
+1322,Store 03,Online,Alpha,0
+1323,Store 03,Online,Alpha,0
+1324,Store 03,Online,Alpha,0
+1325,Store 03,Online,Beta,0
+1326,Store 03,Online,Beta,0
+1327,Store 03,Online,Alpha,0
+1328,Store 03,Online,Alpha,0
+1329,Store 03,Online,Alpha,0
+1330,Store 03,Online,Alpha,0
+1331,Store 03,Online,Alpha,0
+1332,Store 03,Online,Alpha,0
+1333,Store 03,Online,Alpha,0
+1334,Store 03,Online,Alpha,0
+1335,Store 03,Online,Alpha,0
+1336,Store 03,Online,Beta,0
+1337,Store 03,Online,Alpha,0
+1338,Store 03,Online,Alpha,0
+1339,Store 03,Online,Beta,0
+1340,Store 03,Online,Beta,0
+1341,Store 03,Online,Beta,0
+1342,Store 03,Online,Alpha,0
+1343,Store 03,Online,Alpha,0
+1344,Store 03,Online,Beta,0
+1345,Store 03,Online,Alpha,0
+1346,Store 03,Online,Beta,42.52
+1347,Store 03,Online,Alpha,0
+1348,Store 03,Online,Alpha,0
+1349,Store 03,Online,Alpha,0
+1350,Store 03,Online,Beta,0
+1351,Store 03,Online,Beta,0
+1352,Store 03,Online,Alpha,60.12
+1353,Store 03,Online,Beta,0
+1354,Store 03,Online,Beta,0
+1355,Store 03,Online,Beta,0
+1356,Store 03,Online,Alpha,40.79
+1357,Store 03,Online,Alpha,36.41
+1358,Store 03,Online,Alpha,0
+1359,Store 03,Online,Alpha,0
+1360,Store 03,Online,Alpha,0
+1361,Store 03,Online,Beta,0
+1362,Store 03,Online,Alpha,0
+1363,Store 03,Online,Alpha,0
+1364,Store 03,Online,Alpha,0
+1365,Store 03,Online,Gamma,0
+1366,Store 03,Online,Beta,0
+1367,Store 03,Online,Alpha,0
+1368,Store 03,Online,Alpha,34.22
+1369,Store 03,Online,Beta,0
+1370,Store 03,Online,Beta,0
+1371,Store 03,Online,Alpha,0
+1372,Store 03,Online,Alpha,0
+1373,Store 03,Online,Alpha,0
+1374,Store 03,Online,Alpha,0
+1375,Store 03,Online,Alpha,28.35
+1376,Store 03,Online,Alpha,0
+1377,Store 03,Online,Alpha,0
+1378,Store 03,Online,Alpha,0
+1379,Store 03,Online,Alpha,0
+1380,Store 03,Online,Beta,0
+1381,Store 03,Online,Alpha,0
+1382,Store 03,Online,Beta,0
+1383,Store 03,Online,Beta,0
+1384,Store 03,Online,Alpha,0
+1385,Store 03,Online,Beta,36.31
+1386,Store 03,Online,Alpha,0
+1387,Store 03,Online,Beta,0
+1388,Store 03,Online,Beta,0
+1389,Store 03,Online,Alpha,0
+1390,Store 03,Online,Alpha,0
+1391,Store 03,Online,Alpha,0
+1392,Store 03,Online,Alpha,0
+1393,Store 03,Online,Alpha,0
+1394,Store 03,Online,Beta,0
+1395,Store 03,Online,Alpha,0
+1396,Store 03,Online,Alpha,0
+1397,Store 03,Online,Beta,0
+1398,Store 03,Online,Alpha,0
+1399,Store 03,Online,Beta,0
+1400,Store 03,Online,Alpha,0
+1401,Store 03,Online,Alpha,0
+1402,Store 03,Online,Alpha,44.36
+1403,Store 03,Online,Beta,0
+1404,Store 03,Online,Alpha,0
+1405,Store 03,Online,Beta,0
+1406,Store 03,Online,Alpha,0
+1407,Store 03,Online,Alpha,140.61
+1408,Store 03,Online,Alpha,40.92
+1409,Store 03,Online,Alpha,0
+1410,Store 03,Online,Alpha,0
+1411,Store 03,Online,Alpha,40.27
+1412,Store 03,Online,Alpha,0
+1413,Store 03,Online,Alpha,0
+1414,Store 03,Online,Alpha,0
+1415,Store 03,Online,Alpha,0
+1416,Store 03,Online,Beta,0
+1417,Store 03,Online,Alpha,0
+1418,Store 03,Online,Alpha,0
+1419,Store 03,Online,Beta,0
+1420,Store 03,Online,Alpha,0
+1421,Store 03,Online,Beta,0
+1422,Store 03,Online,Alpha,0
+1423,Store 03,Online,Beta,86.61
+1424,Store 03,Online,Beta,0
+1425,Store 03,Online,Beta,0
+1426,Store 03,Online,Beta,0
+1427,Store 03,Online,Beta,0
+1428,Store 03,Online,Alpha,0
+1429,Store 03,Online,Beta,0
+1430,Store 03,Online,Alpha,0
+1431,Store 03,Online,Beta,47.81
+1432,Store 03,Online,Alpha,0
+1433,Store 03,Online,Alpha,0
+1434,Store 03,Online,Beta,0
+1435,Store 03,Online,Alpha,0
+1436,Store 03,Online,Alpha,0
+1437,Store 03,Online,Alpha,0
+1438,Store 03,Online,Alpha,0
+1439,Store 03,Online,Beta,0
+1440,Store 03,Online,Alpha,0
+1441,Store 03,Online,Gamma,0
+1442,Store 03,Online,Beta,0
+1443,Store 03,Online,Beta,0
+1444,Store 03,Online,Alpha,0
+1445,Store 03,Online,Alpha,0
+1446,Store 03,Online,Alpha,0
+1447,Store 03,Online,Beta,0
+1448,Store 03,Online,Alpha,0
+1449,Store 03,Online,Alpha,0
+1450,Store 03,Online,Alpha,21.46
+1451,Store 03,Online,Alpha,0
+1452,Store 03,Online,Beta,0
+1453,Store 03,Online,Alpha,20.12
+1454,Store 03,Online,Beta,0
+1455,Store 03,Online,Alpha,0
+1456,Store 03,Online,Alpha,0
+1457,Store 03,Online,Beta,66.76
+1458,Store 03,Online,Alpha,0
+1459,Store 03,Online,Alpha,0
+1460,Store 03,Online,Alpha,0
+1461,Store 03,Online,Beta,0
+1462,Store 03,Online,Gamma,0
+1463,Store 03,Online,Beta,0
+1464,Store 03,Online,Alpha,0
+1465,Store 03,Online,Beta,0
+1466,Store 03,Online,Alpha,0
+1467,Store 03,Online,Beta,0
+1468,Store 03,Online,Beta,0
+1469,Store 03,Online,Gamma,0
+1470,Store 03,Online,Beta,0
+1471,Store 03,Online,Beta,0
+1472,Store 03,Online,Beta,0
+1473,Store 03,Online,Alpha,0
+1474,Store 03,Online,Alpha,0
+1475,Store 03,Online,Alpha,31.08
+1476,Store 03,Online,Gamma,0
+1477,Store 03,Online,Alpha,0
+1478,Store 03,Online,Alpha,0
+1479,Store 03,Online,Alpha,35.97
+1480,Store 03,Online,Alpha,0
+1481,Store 03,Online,Beta,0
+1482,Store 03,Online,Alpha,0
+1483,Store 03,Online,Alpha,0
+1484,Store 03,Online,Beta,0
+1485,Store 03,Online,Beta,0
+1486,Store 03,Online,Alpha,0
+1487,Store 03,Online,Alpha,44.73
+1488,Store 03,Online,Alpha,53.86
+1489,Store 03,Online,Alpha,0
+1490,Store 03,Online,Beta,0
+1491,Store 03,Online,Alpha,107.5
+1492,Store 03,Online,Beta,0
+1493,Store 03,Online,Alpha,160.01
+1494,Store 03,Online,Beta,0
+1495,Store 03,Online,Beta,0
+1496,Store 03,Online,Alpha,0
+1497,Store 03,Online,Alpha,0
+1498,Store 03,Online,Beta,0
+1499,Store 03,Online,Alpha,0
+1500,Store 03,Online,Alpha,60.82
+1501,Store 03,Online,Alpha,0
+1502,Store 03,Online,Beta,0
+1503,Store 03,Online,Alpha,0
+1504,Store 03,Online,Beta,0
+1505,Store 03,Online,Alpha,0
+1506,Store 03,Online,Alpha,30.53
+1507,Store 03,Online,Alpha,0
+1508,Store 03,Online,Alpha,0
+1509,Store 03,Online,Beta,0
+1510,Store 03,Online,Alpha,0
+1511,Store 03,Online,Beta,29.84
+1512,Store 03,Online,Beta,0
+1513,Store 03,Online,Alpha,0
+1514,Store 03,Online,Alpha,0
+1515,Store 03,Online,Alpha,0
+1516,Store 03,Online,Alpha,0
+1517,Store 03,Online,Beta,0
+1518,Store 03,Online,Alpha,0
+1519,Store 03,Online,Beta,0
+1520,Store 03,Online,Beta,0
+1521,Store 03,Online,Alpha,0
+1522,Store 03,Online,Alpha,0
+1523,Store 03,Online,Alpha,106.21
+1524,Store 03,Online,Alpha,112.8
+1525,Store 03,Online,Beta,0
+1526,Store 03,Online,Alpha,0
+1527,Store 03,Online,Alpha,0
+1528,Store 03,Online,Alpha,0
+1529,Store 03,Online,Beta,0
+1530,Store 03,Online,Alpha,0
+1531,Store 03,Online,Alpha,37.41
+1532,Store 03,Online,Beta,0
+1533,Store 03,Online,Beta,0
+1534,Store 03,Online,Alpha,0
+1535,Store 03,Online,Beta,0
+1536,Store 03,Online,Alpha,0
+1537,Store 03,Online,Alpha,0
+1538,Store 03,Online,Alpha,0
+1539,Store 03,Online,Alpha,0
+1540,Store 03,Online,Alpha,0
+1541,Store 03,Online,Alpha,0
+1542,Store 03,Online,Beta,29.03
+1543,Store 03,Online,Alpha,0
+1544,Store 03,Online,Beta,0
+1545,Store 03,Online,Alpha,0
+1546,Store 03,Online,Alpha,0
+1547,Store 03,Online,Beta,0
+1548,Store 03,Online,Gamma,12.99
+1549,Store 03,Online,Alpha,0
+1550,Store 03,Online,Alpha,0
+1551,Store 03,Online,Alpha,0
+1552,Store 03,Online,Alpha,0
+1553,Store 03,Online,Alpha,0
+1554,Store 03,Online,Beta,0
+1555,Store 03,Online,Alpha,31.22
+1556,Store 03,Online,Alpha,0
+1557,Store 03,Online,Beta,0
+1558,Store 03,Online,Alpha,0
+1559,Store 03,Online,Alpha,0
+1560,Store 03,Online,Beta,0
+1561,Store 03,Online,Alpha,24.92
+1562,Store 03,Online,Alpha,0
+1563,Store 03,Online,Alpha,0
+1564,Store 03,Online,Beta,0
+1565,Store 03,Online,Alpha,0
+1566,Store 03,Online,Alpha,0
+1567,Store 03,Online,Gamma,0
+1568,Store 03,Online,Alpha,0
+1569,Store 03,Online,Beta,0
+1570,Store 03,Online,Gamma,0
+1571,Store 03,Online,Beta,0
+1572,Store 03,Online,Beta,44.82
+1573,Store 03,Online,Alpha,0
+1574,Store 03,Online,Alpha,0
+1575,Store 03,Online,Alpha,0
+1576,Store 03,Online,Beta,0
+1577,Store 03,Online,Alpha,0
+1578,Store 03,Online,Alpha,39.57
+1579,Store 03,Online,Alpha,0
+1580,Store 03,Online,Beta,0
+1581,Store 03,Online,Beta,0
+1582,Store 03,Online,Alpha,21.99
+1583,Store 03,Online,Alpha,0
+1584,Store 03,Online,Beta,0
+1585,Store 03,Online,Alpha,67.82
+1586,Store 03,Online,Beta,0
+1587,Store 03,Online,Beta,0
+1588,Store 03,Online,Alpha,0
+1589,Store 03,Online,Alpha,0
+1590,Store 03,Online,Alpha,62.26
+1591,Store 03,Online,Beta,53.68
+1592,Store 03,Online,Gamma,0
+1593,Store 03,Online,Beta,154.92
+1594,Store 03,Online,Beta,0
+1595,Store 03,Online,Alpha,0
+1596,Store 03,Online,Beta,0
+1597,Store 03,Online,Alpha,0
+1598,Store 03,Online,Beta,61.59
+1599,Store 03,Online,Alpha,0
+1600,Store 03,Online,Alpha,0
+1601,Store 03,Online,Beta,0
+1602,Store 03,Online,Beta,0
+1603,Store 03,Online,Alpha,0
+1604,Store 03,Online,Alpha,34.13
+1605,Store 03,Online,Alpha,0
+1606,Store 03,Online,Beta,17.24
+1607,Store 03,Online,Gamma,0
+1608,Store 03,Online,Alpha,0
+1609,Store 03,Online,Alpha,0
+1610,Store 03,Online,Alpha,0
+1611,Store 03,Online,Beta,11.41
+1612,Store 03,Online,Alpha,0
+1613,Store 03,Online,Alpha,0
+1614,Store 03,Online,Beta,0
+1615,Store 03,Online,Alpha,0
+1616,Store 03,Online,Alpha,0
+1617,Store 03,Online,Alpha,0
+1618,Store 03,Online,Alpha,0
+1619,Store 03,Online,Beta,0
+1620,Store 03,Online,Alpha,0
+1621,Store 03,Online,Alpha,0
+1622,Store 03,Online,Beta,0
+1623,Store 03,Online,Alpha,0
+1624,Store 03,Online,Alpha,0
+1625,Store 03,Online,Beta,0
+1626,Store 03,Online,Alpha,0
+1627,Store 03,Online,Beta,0
+1628,Store 03,Online,Beta,0
+1629,Store 03,Online,Alpha,38.59
+1630,Store 03,Online,Gamma,0
+1631,Store 03,Online,Beta,0
+1632,Store 03,Online,Beta,0
+1633,Store 03,Online,Alpha,27.5
+1634,Store 03,Online,Gamma,0
+1635,Store 03,Online,Alpha,0
+1636,Store 03,Online,Beta,0
+1637,Store 03,Online,Gamma,0
+1638,Store 03,Online,Alpha,0
+1639,Store 03,Online,Alpha,0
+1640,Store 03,Online,Alpha,0
+1641,Store 03,Online,Gamma,0
+1642,Store 03,Online,Alpha,0
+1643,Store 03,Online,Alpha,0
+1644,Store 03,Online,Beta,0
+1645,Store 03,Online,Alpha,0
+1646,Store 03,Online,Alpha,196.81
+1647,Store 03,Online,Beta,0
+1648,Store 03,Online,Beta,0
+1649,Store 03,Online,Alpha,0
+1650,Store 03,Online,Gamma,0
+1651,Store 03,Online,Beta,53.22
+1652,Store 03,Online,Alpha,0
+1653,Store 03,Online,Beta,0
+1654,Store 03,Online,Alpha,0
+1655,Store 03,Online,Beta,0
+1656,Store 03,Online,Beta,30.32
+1657,Store 03,Online,Beta,0
+1658,Store 03,Online,Alpha,60.48
+1659,Store 03,Online,Alpha,0
+1660,Store 03,Online,Alpha,0
+1661,Store 03,Online,Alpha,0
+1662,Store 03,Online,Alpha,71.92
+1663,Store 03,Online,Beta,80.73
+1664,Store 03,Online,Alpha,0
+1665,Store 03,Online,Alpha,0
+1666,Store 03,Online,Beta,0
+1667,Store 03,Online,Alpha,19.31
+1668,Store 03,Online,Alpha,0
+1669,Store 03,Online,Alpha,0
+1670,Store 03,Online,Beta,0
+1671,Store 03,Online,Beta,42.61
+1672,Store 03,Online,Alpha,0
+1673,Store 03,Online,Alpha,0
+1674,Store 03,Online,Beta,0
+1675,Store 03,Online,Beta,46.4
+1676,Store 03,Online,Beta,0
+1677,Store 03,Online,Alpha,0
+1678,Store 03,Online,Alpha,0
+1679,Store 03,Online,Alpha,0
+1680,Store 03,Online,Beta,0
+1681,Store 03,Online,Alpha,0
+1682,Store 03,Online,Alpha,0
+1683,Store 03,Online,Beta,0
+1684,Store 03,Online,Alpha,0
+1685,Store 03,Online,Beta,0
+1686,Store 03,Online,Alpha,0
+1687,Store 03,Online,Alpha,0
+1688,Store 03,Online,Alpha,164.81
+1689,Store 03,Online,Alpha,0
+1690,Store 03,Online,Beta,0
+1691,Store 03,Online,Beta,39.32
+1692,Store 03,Online,Alpha,0
+1693,Store 03,Online,Alpha,0
+1694,Store 03,Online,Alpha,0
+1695,Store 03,Online,Alpha,0
+1696,Store 03,Online,Alpha,0
+1697,Store 03,Online,Alpha,43.38
+1698,Store 03,Online,Alpha,0
+1699,Store 03,Online,Alpha,0
+1700,Store 03,Online,Alpha,0
+1701,Store 03,Online,Beta,0
+1702,Store 03,Online,Beta,0
+1703,Store 03,Online,Alpha,0
+1704,Store 03,Online,Alpha,0
+1705,Store 03,Online,Beta,0
+1706,Store 03,Online,Beta,0
+1707,Store 03,Online,Alpha,0
+1708,Store 03,Online,Beta,0
+1709,Store 03,Online,Alpha,0
+1710,Store 03,Online,Alpha,0
+1711,Store 03,Online,Beta,41.25
+1712,Store 03,Online,Beta,0
+1713,Store 03,Online,Beta,0
+1714,Store 03,Online,Alpha,0
+1715,Store 03,Online,Alpha,0
+1716,Store 03,Online,Alpha,0
+1717,Store 03,Online,Beta,0
+1718,Store 03,Online,Beta,0
+1719,Store 03,Online,Alpha,0
+1720,Store 03,Online,Beta,0
+1721,Store 03,Online,Beta,0
+1722,Store 03,Online,Beta,0
+1723,Store 03,Online,Alpha,0
+1724,Store 03,Online,Alpha,27.83
+1725,Store 03,Online,Alpha,0
+1726,Store 03,Online,Alpha,78.06
+1727,Store 03,Online,Beta,0
+1728,Store 03,Online,Alpha,0
+1729,Store 03,Online,Alpha,0
+1730,Store 03,Online,Alpha,34.52
+1731,Store 03,Online,Alpha,0
+1732,Store 03,Online,Beta,0
+1733,Store 03,Online,Alpha,0
+1734,Store 03,Online,Alpha,0
+1735,Store 03,Online,Gamma,49.21
+1736,Store 03,Online,Alpha,0
+1737,Store 03,Online,Beta,0
+1738,Store 03,Online,Beta,0
+1739,Store 03,Online,Alpha,0
+1740,Store 03,Online,Alpha,0
+1741,Store 03,Online,Alpha,71.77
+1742,Store 03,Online,Alpha,0
+1743,Store 03,Online,Alpha,0
+1744,Store 03,Online,Beta,0
+1745,Store 03,Online,Alpha,0
+1746,Store 03,Online,Alpha,0
+1747,Store 03,Online,Gamma,0
+1748,Store 03,Online,Gamma,0
+1749,Store 03,Online,Beta,0
+1750,Store 03,Online,Alpha,0
+1751,Store 03,Online,Alpha,14.96
+1752,Store 03,Online,Alpha,0
+1753,Store 03,Online,Alpha,0
+1754,Store 03,Online,Beta,0
+1755,Store 03,Online,Alpha,0
+1756,Store 03,Online,Beta,39.79
+1757,Store 03,Online,Alpha,0
+1758,Store 03,Online,Alpha,0
+1759,Store 03,Online,Alpha,0
+1760,Store 03,Online,Alpha,0
+1761,Store 03,Online,Beta,0
+1762,Store 03,Online,Alpha,0
+1763,Store 03,Online,Alpha,0
+1764,Store 03,Online,Alpha,0
+1765,Store 03,Online,Beta,0
+1766,Store 03,Online,Alpha,0
+1767,Store 03,Online,Alpha,39.39
+1768,Store 03,Online,Alpha,48.76
+1769,Store 03,Online,Alpha,0
+1770,Store 03,Online,Alpha,35.24
+1771,Store 03,Online,Beta,0
+1772,Store 03,Online,Alpha,0
+1773,Store 03,Online,Alpha,0
+1774,Store 03,Online,Alpha,0
+1775,Store 03,Online,Alpha,26.91
+1776,Store 03,Online,Alpha,0
+1777,Store 03,Online,Alpha,31.3
+1778,Store 03,Online,Alpha,0
+1779,Store 03,Online,Alpha,0
+1780,Store 03,Online,Alpha,95.92
+1781,Store 03,Online,Beta,0
+1782,Store 03,Online,Alpha,0
+1783,Store 03,Online,Alpha,0
+1784,Store 03,Online,Alpha,0
+1785,Store 03,In store,Alpha,81.04
+1786,Store 03,In store,Alpha,43.64
+1787,Store 03,In store,Alpha,82.06
+1788,Store 03,In store,Beta,68.94
+1789,Store 03,In store,Beta,25.51
+1790,Store 03,In store,Alpha,51.48
+1791,Store 03,In store,Alpha,50.18
+1792,Store 03,In store,Beta,30.35
+1793,Store 03,In store,Beta,24.63
+1794,Store 03,In store,Alpha,42.32
+1795,Store 03,In store,Gamma,27.13
+1796,Store 03,In store,Beta,54.45
+1797,Store 03,In store,Alpha,94.95
+1798,Store 03,In store,Alpha,57.23
+1799,Store 03,In store,Beta,19.6
+1800,Store 03,In store,Beta,48.77
+1801,Store 03,In store,Alpha,31.78
+1802,Store 03,In store,Alpha,111.95
+1803,Store 03,In store,Alpha,46.07
+1804,Store 03,In store,Gamma,26.76
+1805,Store 03,In store,Alpha,46.21
+1806,Store 03,In store,Alpha,21.44
+1807,Store 03,In store,Gamma,42.34
+1808,Store 03,In store,Alpha,39.72
+1809,Store 03,In store,Alpha,31.44
+1810,Store 03,In store,Alpha,37.05
+1811,Store 03,In store,Beta,43.98
+1812,Store 03,In store,Alpha,20.23
+1813,Store 03,In store,Alpha,35.79
+1814,Store 03,In store,Alpha,40.13
+1815,Store 03,In store,Alpha,140.2
+1816,Store 03,In store,Alpha,18.62
+1817,Store 03,In store,Alpha,54.29
+1818,Store 03,In store,Beta,32.17
+1819,Store 03,In store,Alpha,19.8
+1820,Store 03,In store,Alpha,12.37
+1821,Store 03,In store,Gamma,42.24
+1822,Store 03,In store,Alpha,17.34
+1823,Store 03,In store,Alpha,30.28
+1824,Store 03,In store,Beta,33.12
+1825,Store 03,In store,Alpha,23.9
+1826,Store 03,In store,Alpha,90.02
+1827,Store 03,In store,Beta,14.24
+1828,Store 03,In store,Alpha,46.25
+1829,Store 03,In store,Alpha,9.66
+1830,Store 03,In store,Alpha,29.15
+1831,Store 03,In store,Beta,25.22
+1832,Store 03,In store,Beta,49.18
+1833,Store 03,In store,Beta,18.28
+1834,Store 03,In store,Beta,71.99
+1835,Store 03,In store,Alpha,61.0
+1836,Store 03,In store,Alpha,37.45
+1837,Store 03,In store,Beta,81.13
+1838,Store 03,In store,Alpha,10.61
+1839,Store 03,In store,Beta,53.19
+1840,Store 03,In store,Beta,36.94
+1841,Store 03,In store,Alpha,59.6
+1842,Store 03,In store,Alpha,22.01
+1843,Store 03,In store,Alpha,43.18
+1844,Store 03,In store,Alpha,34.67
+1845,Store 03,In store,Alpha,39.74
+1846,Store 03,In store,Beta,14.2
+1847,Store 03,In store,Alpha,60.7
+1848,Store 03,In store,Beta,33.55
+1849,Store 03,In store,Beta,13.74
+1850,Store 03,In store,Alpha,19.3
+1851,Store 03,In store,Beta,64.59
+1852,Store 03,In store,Alpha,58.85
+1853,Store 03,In store,Alpha,62.84
+1854,Store 03,In store,Beta,20.41
+1855,Store 03,In store,Alpha,21.73
+1856,Store 03,In store,Alpha,30.19
+1857,Store 03,In store,Alpha,47.22
+1858,Store 03,In store,Alpha,26.31
+1859,Store 03,In store,Alpha,39.83
+1860,Store 03,In store,Gamma,23.97
+1861,Store 03,In store,Alpha,14.67
+1862,Store 03,In store,Alpha,86.43
+1863,Store 03,In store,Alpha,31.75
+1864,Store 03,In store,Alpha,123.28
+1865,Store 03,In store,Beta,50.44
+1866,Store 03,In store,Alpha,40.2
+1867,Store 03,In store,Alpha,30.71
+1868,Store 03,In store,Alpha,10.96
+1869,Store 03,In store,Beta,130.81
+1870,Store 03,In store,Alpha,35.91
+1871,Store 03,In store,Alpha,12.25
+1872,Store 03,In store,Beta,29.89
+1873,Store 03,In store,Alpha,30.45
+1874,Store 03,In store,Alpha,22.19
+1875,Store 03,In store,Alpha,21.36
+1876,Store 03,In store,Alpha,23.18
+1877,Store 03,In store,Alpha,41.63
+1878,Store 03,In store,Alpha,50.78
+1879,Store 03,In store,Alpha,47.52
+1880,Store 03,In store,Alpha,40.6
+1881,Store 03,In store,Alpha,45.98
+1882,Store 03,In store,Alpha,48.41
+1883,Store 03,In store,Alpha,17.69
+1884,Store 03,In store,Beta,85.42
+1885,Store 03,In store,Alpha,52.07
+1886,Store 03,In store,Alpha,42.43
+1887,Store 03,In store,Alpha,113.7
+1888,Store 03,In store,Alpha,42.44
+1889,Store 03,In store,Gamma,47.37
+1890,Store 03,In store,Alpha,39.28
+1891,Store 03,In store,Beta,83.88
+1892,Store 03,In store,Beta,21.15
+1893,Store 03,In store,Alpha,39.86
+1894,Store 03,In store,Alpha,12.74
+1895,Store 03,In store,Alpha,74.86
+1896,Store 03,In store,Alpha,64.58
+1897,Store 03,In store,Beta,46.68
+1898,Store 03,In store,Alpha,25.46
+1899,Store 03,In store,Beta,49.81
+1900,Store 03,In store,Alpha,113.68
+1901,Store 03,In store,Alpha,19.4
+1902,Store 03,In store,Beta,61.86
+1903,Store 03,In store,Alpha,44.08
+1904,Store 03,In store,Beta,35.8
+1905,Store 03,In store,Alpha,96.68
+1906,Store 03,In store,Alpha,20.72
+1907,Store 03,In store,Beta,57.3
+1908,Store 03,In store,Gamma,35.53
+1909,Store 03,In store,Alpha,26.83
+1910,Store 03,In store,Beta,12.22
+1911,Store 03,In store,Alpha,33.5
+1912,Store 03,In store,Beta,28.39
+1913,Store 03,In store,Beta,25.7
+1914,Store 03,In store,Beta,40.78
+1915,Store 03,In store,Alpha,28.0
+1916,Store 03,In store,Beta,50.93
+1917,Store 03,In store,Alpha,28.36
+1918,Store 03,In store,Alpha,14.37
+1919,Store 03,In store,Alpha,60.95
+1920,Store 03,In store,Alpha,46.07
+1921,Store 03,In store,Beta,56.77
+1922,Store 03,In store,Alpha,40.0
+1923,Store 03,In store,Alpha,13.32
+1924,Store 03,In store,Beta,30.32
+1925,Store 03,In store,Alpha,38.06
+1926,Store 03,In store,Beta,18.34
+1927,Store 03,In store,Beta,56.5
+1928,Store 03,In store,Beta,55.16
+1929,Store 03,In store,Alpha,56.96
+1930,Store 03,In store,Gamma,19.36
+1931,Store 03,In store,Alpha,120.16
+1932,Store 03,In store,Beta,38.69
+1933,Store 03,In store,Alpha,46.73
+1934,Store 03,In store,Beta,19.82
+1935,Store 03,In store,Alpha,79.65
+1936,Store 03,In store,Alpha,19.12
+1937,Store 04,Online,Alpha,48.15
+1938,Store 04,Online,Beta,42.51
+1939,Store 04,Online,Beta,102.09
+1940,Store 04,Online,Alpha,44.24
+1941,Store 04,Online,Beta,77.39
+1942,Store 04,Online,Beta,21.57
+1943,Store 04,Online,Gamma,27.32
+1944,Store 04,Online,Alpha,36.27
+1945,Store 04,Online,Beta,90.85
+1946,Store 04,Online,Alpha,22.55
+1947,Store 04,Online,Beta,76.34
+1948,Store 04,Online,Alpha,22.23
+1949,Store 04,Online,Gamma,36.93
+1950,Store 04,Online,Alpha,68.36
+1951,Store 04,Online,Alpha,27.33
+1952,Store 04,Online,Alpha,70.47
+1953,Store 04,Online,Alpha,59.19
+1954,Store 04,Online,Beta,31.41
+1955,Store 04,Online,Alpha,44.05
+1956,Store 04,Online,Alpha,15.62
+1957,Store 04,Online,Beta,44.26
+1958,Store 04,Online,Alpha,29.55
+1959,Store 04,Online,Beta,51.64
+1960,Store 04,Online,Alpha,19.44
+1961,Store 04,Online,Alpha,63.05
+1962,Store 04,Online,Beta,66.91
+1963,Store 04,Online,Alpha,42.76
+1964,Store 04,Online,Gamma,46.63
+1965,Store 04,Online,Alpha,18.19
+1966,Store 04,Online,Alpha,66.68
+1967,Store 04,Online,Beta,101.61
+1968,Store 04,Online,Alpha,9.8
+1969,Store 04,Online,Alpha,36.31
+1970,Store 04,Online,Alpha,31.37
+1971,Store 04,Online,Alpha,66.86
+1972,Store 04,Online,Beta,31.68
+1973,Store 04,Online,Beta,28.44
+1974,Store 04,Online,Alpha,72.46
+1975,Store 04,Online,Alpha,19.93
+1976,Store 04,Online,Beta,54.86
+1977,Store 04,Online,Beta,24.2
+1978,Store 04,Online,Alpha,62.03
+1979,Store 04,Online,Beta,160.46
+1980,Store 04,Online,Alpha,20.45
+1981,Store 04,Online,Gamma,52.5
+1982,Store 04,Online,Beta,31.92
+1983,Store 04,Online,Alpha,71.94
+1984,Store 04,Online,Beta,50.12
+1985,Store 04,Online,Alpha,35.85
+1986,Store 04,Online,Beta,33.84
+1987,Store 04,Online,Alpha,22.92
+1988,Store 04,Online,Alpha,24.2
+1989,Store 04,Online,Alpha,34.82
+1990,Store 04,Online,Beta,80.04
+1991,Store 04,Online,Beta,33.41
+1992,Store 04,Online,Beta,31.44
+1993,Store 04,Online,Beta,116.96
+1994,Store 04,Online,Gamma,46.49
+1995,Store 04,Online,Alpha,92.39
+1996,Store 04,Online,Alpha,29.43
+1997,Store 04,Online,Beta,39.06
+1998,Store 04,Online,Alpha,39.16
+1999,Store 04,Online,Beta,28.42
+2000,Store 04,Online,Beta,16.3
+2001,Store 04,Online,Beta,28.15
+2002,Store 04,Online,Alpha,52.16
+2003,Store 04,Online,Beta,154.33
+2004,Store 04,Online,Beta,64.75
+2005,Store 04,Online,Alpha,71.64
+2006,Store 04,Online,Alpha,64.66
+2007,Store 04,Online,Alpha,52.26
+2008,Store 04,Online,Alpha,67.28
+2009,Store 04,Online,Beta,30.86
+2010,Store 04,Online,Alpha,50.99
+2011,Store 04,Online,Beta,77.56
+2012,Store 04,Online,Alpha,117.49
+2013,Store 04,Online,Alpha,103.06
+2014,Store 04,Online,Alpha,35.37
+2015,Store 04,Online,Alpha,45.25
+2016,Store 04,Online,Alpha,100.98
+2017,Store 04,Online,Beta,32.1
+2018,Store 04,Online,Alpha,41.82
+2019,Store 04,Online,Alpha,39.87
+2020,Store 04,Online,Alpha,41.04
+2021,Store 04,Online,Alpha,54.24
+2022,Store 04,Online,Alpha,52.79
+2023,Store 04,Online,Alpha,72.19
+2024,Store 04,Online,Beta,69.15
+2025,Store 04,Online,Beta,57.07
+2026,Store 04,Online,Alpha,77.25
+2027,Store 04,Online,Beta,111.04
+2028,Store 04,Online,Alpha,59.3
+2029,Store 04,Online,Alpha,107.64
+2030,Store 04,Online,Beta,52.99
+2031,Store 04,Online,Alpha,33.65
+2032,Store 04,Online,Alpha,14.4
+2033,Store 04,Online,Gamma,22.81
+2034,Store 04,Online,Alpha,25.04
+2035,Store 04,Online,Alpha,22.26
+2036,Store 04,Online,Alpha,77.2
+2037,Store 04,Online,Alpha,28.78
+2038,Store 04,Online,Alpha,34.4
+2039,Store 04,Online,Beta,31.34
+2040,Store 04,Online,Alpha,45.62
+2041,Store 04,Online,Beta,53.63
+2042,Store 04,Online,Alpha,21.19
+2043,Store 04,Online,Beta,30.42
+2044,Store 04,Online,Alpha,30.67
+2045,Store 04,Online,Beta,24.62
+2046,Store 04,Online,Alpha,41.47
+2047,Store 04,Online,Alpha,28.59
+2048,Store 04,Online,Alpha,97.65
+2049,Store 04,Online,Gamma,36.14
+2050,Store 04,Online,Beta,44.6
+2051,Store 04,Online,Alpha,36.58
+2052,Store 04,Online,Beta,48.19
+2053,Store 04,Online,Alpha,40.14
+2054,Store 04,Online,Beta,19.07
+2055,Store 04,Online,Alpha,33.96
+2056,Store 04,Online,Alpha,15.46
+2057,Store 04,Online,Alpha,18.6
+2058,Store 04,Online,Alpha,32.53
+2059,Store 04,Online,Alpha,26.55
+2060,Store 04,Online,Alpha,9.76
+2061,Store 04,Online,Alpha,13.55
+2062,Store 04,Online,Beta,32.82
+2063,Store 04,Online,Alpha,103.44
+2064,Store 04,Online,Alpha,42.82
+2065,Store 04,Online,Gamma,54.37
+2066,Store 04,Online,Alpha,41.01
+2067,Store 04,Online,Alpha,60.6
+2068,Store 04,Online,Beta,30.09
+2069,Store 04,Online,Alpha,26.88
+2070,Store 04,Online,Gamma,58.16
+2071,Store 04,Online,Alpha,43.86
+2072,Store 04,Online,Alpha,51.01
+2073,Store 04,Online,Alpha,180.78
+2074,Store 04,Online,Beta,42.91
+2075,Store 04,Online,Alpha,43.79
+2076,Store 04,Online,Alpha,49.09
+2077,Store 04,Online,Alpha,41.44
+2078,Store 04,Online,Alpha,70.1
+2079,Store 04,Online,Alpha,49.71
+2080,Store 04,Online,Beta,15.8
+2081,Store 04,Online,Beta,63.16
+2082,Store 04,Online,Beta,39.79
+2083,Store 04,Online,Beta,35.82
+2084,Store 04,Online,Beta,50.73
+2085,Store 04,Online,Beta,42.54
+2086,Store 04,Online,Beta,38.27
+2087,Store 04,Online,Beta,36.41
+2088,Store 04,In store,Beta,26.18
+2089,Store 04,In store,Alpha,55.48
+2090,Store 04,In store,Beta,32.51
+2091,Store 04,In store,Beta,15.74
+2092,Store 04,In store,Alpha,42.61
+2093,Store 04,In store,Alpha,37.04
+2094,Store 04,In store,Alpha,39.27
+2095,Store 04,In store,Alpha,124.31
+2096,Store 04,In store,Beta,34.33
+2097,Store 04,In store,Alpha,19.42
+2098,Store 04,In store,Alpha,41.68
+2099,Store 04,In store,Alpha,52.69
+2100,Store 04,In store,Alpha,15.13
+2101,Store 04,In store,Alpha,53.84
+2102,Store 04,In store,Alpha,43.0
+2103,Store 04,In store,Beta,40.85
+2104,Store 04,In store,Alpha,60.77
+2105,Store 04,In store,Gamma,45.93
+2106,Store 04,In store,Alpha,39.22
+2107,Store 04,In store,Alpha,20.22
+2108,Store 04,In store,Beta,44.65
+2109,Store 04,In store,Alpha,80.31
+2110,Store 04,In store,Beta,23.67
+2111,Store 04,In store,Alpha,34.76
+2112,Store 04,In store,Gamma,17.93
+2113,Store 04,In store,Beta,15.34
+2114,Store 04,In store,Gamma,18.54
+2115,Store 04,In store,Alpha,52.17
+2116,Store 04,In store,Alpha,96.37
+2117,Store 04,In store,Alpha,57.69
+2118,Store 04,In store,Alpha,28.92
+2119,Store 04,In store,Beta,21.77
+2120,Store 04,In store,Beta,56.0
+2121,Store 04,In store,Beta,30.0
+2122,Store 04,In store,Alpha,72.77
+2123,Store 04,In store,Alpha,60.07
+2124,Store 04,In store,Beta,12.0
+2125,Store 04,In store,Alpha,34.06
+2126,Store 04,In store,Alpha,61.95
+2127,Store 04,In store,Alpha,47.08
+2128,Store 04,In store,Alpha,44.63
+2129,Store 04,In store,Alpha,21.26
+2130,Store 04,In store,Alpha,61.57
+2131,Store 04,In store,Beta,25.38
+2132,Store 04,In store,Alpha,51.4
+2133,Store 04,In store,Beta,36.9
+2134,Store 04,In store,Alpha,30.98
+2135,Store 04,In store,Alpha,37.68
+2136,Store 04,In store,Beta,37.95
+2137,Store 04,In store,Alpha,24.59
+2138,Store 04,In store,Alpha,13.07
+2139,Store 04,In store,Alpha,29.3
+2140,Store 04,In store,Alpha,19.18
+2141,Store 04,In store,Alpha,93.21
+2142,Store 04,In store,Alpha,25.23
+2143,Store 04,In store,Alpha,18.92
+2144,Store 04,In store,Alpha,46.54
+2145,Store 04,In store,Alpha,34.1
+2146,Store 04,In store,Alpha,9.86
+2147,Store 04,In store,Alpha,43.12
+2148,Store 04,In store,Alpha,19.23
+2149,Store 04,In store,Alpha,48.59
+2150,Store 04,In store,Alpha,25.37
+2151,Store 04,In store,Beta,49.54
+2152,Store 04,In store,Alpha,24.84
+2153,Store 04,In store,Beta,58.25
+2154,Store 04,In store,Beta,57.52
+2155,Store 04,In store,Beta,14.39
+2156,Store 04,In store,Alpha,72.94
+2157,Store 04,In store,Alpha,64.37
+2158,Store 04,In store,Beta,23.19
+2159,Store 04,In store,Alpha,32.38
+2160,Store 04,In store,Alpha,23.17
+2161,Store 04,In store,Alpha,32.53
+2162,Store 04,In store,Alpha,27.76
+2163,Store 04,In store,Gamma,22.0
+2164,Store 04,In store,Beta,100.02
+2165,Store 04,In store,Beta,45.29
+2166,Store 04,In store,Beta,51.09
+2167,Store 04,In store,Beta,43.84
+2168,Store 04,In store,Alpha,27.27
+2169,Store 04,In store,Beta,22.41
+2170,Store 04,In store,Alpha,51.86
+2171,Store 04,In store,Alpha,25.65
+2172,Store 04,In store,Alpha,44.49
+2173,Store 04,In store,Alpha,30.6
+2174,Store 04,In store,Beta,20.45
+2175,Store 04,In store,Beta,77.19
+2176,Store 04,In store,Beta,66.69
+2177,Store 04,In store,Alpha,22.64
+2178,Store 04,In store,Beta,33.47
+2179,Store 04,In store,Beta,79.83
+2180,Store 04,In store,Alpha,29.61
+2181,Store 04,In store,Alpha,27.08
+2182,Store 04,In store,Alpha,14.35
+2183,Store 04,In store,Beta,15.25
+2184,Store 04,In store,Alpha,31.79
+2185,Store 04,In store,Alpha,20.24
+2186,Store 04,In store,Beta,48.18
+2187,Store 04,In store,Beta,70.6
+2188,Store 04,In store,Alpha,21.77
+2189,Store 04,In store,Alpha,46.62
+2190,Store 04,In store,Alpha,19.56
+2191,Store 04,In store,Beta,45.28
+2192,Store 04,In store,Alpha,20.57
+2193,Store 04,In store,Beta,35.61
+2194,Store 04,In store,Alpha,38.07
+2195,Store 04,In store,Alpha,36.57
+2196,Store 04,In store,Beta,107.52
+2197,Store 04,In store,Alpha,72.74
+2198,Store 04,In store,Alpha,19.17
+2199,Store 04,In store,Beta,19.28
+2200,Store 04,In store,Alpha,41.83
+2201,Store 04,In store,Gamma,30.33
+2202,Store 04,In store,Alpha,55.64
+2203,Store 04,In store,Alpha,20.01
+2204,Store 04,In store,Alpha,44.88
+2205,Store 04,In store,Alpha,27.49
+2206,Store 04,In store,Alpha,9.66
+2207,Store 04,In store,Gamma,49.53
+2208,Store 04,In store,Alpha,28.6
+2209,Store 04,In store,Alpha,100.94
+2210,Store 04,In store,Beta,39.21
+2211,Store 04,In store,Alpha,23.61
+2212,Store 04,In store,Alpha,28.03
+2213,Store 04,In store,Alpha,22.98
+2214,Store 04,In store,Alpha,89.81
+2215,Store 04,In store,Beta,11.82
+2216,Store 04,In store,Alpha,28.76
+2217,Store 04,In store,Alpha,102.03
+2218,Store 04,In store,Alpha,19.69
+2219,Store 04,In store,Alpha,48.17
+2220,Store 04,In store,Beta,75.07
+2221,Store 04,In store,Gamma,52.19
+2222,Store 04,In store,Alpha,31.48
+2223,Store 04,In store,Alpha,41.17
+2224,Store 04,In store,Alpha,28.96
+2225,Store 04,In store,Beta,30.19
+2226,Store 04,In store,Alpha,12.87
+2227,Store 04,In store,Alpha,27.57
+2228,Store 04,In store,Alpha,20.58
+2229,Store 04,In store,Alpha,20.77
+2230,Store 04,In store,Beta,24.29
+2231,Store 04,In store,Beta,59.78
+2232,Store 04,In store,Alpha,12.5
+2233,Store 04,In store,Beta,60.48
+2234,Store 04,In store,Alpha,17.74
+2235,Store 04,In store,Alpha,11.63
+2236,Store 04,In store,Alpha,19.27
+2237,Store 04,In store,Beta,95.37
+2238,Store 04,In store,Beta,40.57
+2239,Store 04,In store,Alpha,62.25
+2240,Store 04,In store,Alpha,58.03
+2241,Store 04,In store,Beta,45.5
+2242,Store 04,In store,Beta,48.43
+2243,Store 04,In store,Alpha,41.36
+2244,Store 04,In store,Alpha,35.66
+2245,Store 04,In store,Alpha,18.59
+2246,Store 04,In store,Alpha,16.98
+2247,Store 04,In store,Beta,73.66
+2248,Store 04,In store,Alpha,51.9
+2249,Store 04,In store,Beta,23.54
+2250,Store 04,In store,Beta,34.8
+2251,Store 04,In store,Alpha,17.36
+2252,Store 04,In store,Beta,76.07
+2253,Store 04,In store,Beta,17.1
+2254,Store 04,In store,Alpha,42.16
+2255,Store 04,In store,Beta,29.08
+2256,Store 04,In store,Beta,40.76
+2257,Store 04,In store,Alpha,69.11
+2258,Store 04,In store,Alpha,39.1
+2259,Store 04,In store,Gamma,34.95
+2260,Store 04,In store,Alpha,53.39
+2261,Store 04,In store,Alpha,38.38
+2262,Store 04,In store,Beta,67.44
+2263,Store 04,In store,Beta,50.08
+2264,Store 04,In store,Alpha,52.39
+2265,Store 04,In store,Alpha,66.67
+2266,Store 04,In store,Alpha,38.38
+2267,Store 04,In store,Beta,17.35
+2268,Store 04,In store,Alpha,27.83
+2269,Store 04,In store,Alpha,13.97
+2270,Store 04,In store,Beta,57.28
+2271,Store 04,In store,Beta,31.0
+2272,Store 04,In store,Beta,35.45
+2273,Store 04,In store,Beta,17.6
+2274,Store 04,In store,Alpha,54.37
+2275,Store 04,In store,Beta,32.37
+2276,Store 04,In store,Alpha,35.53
+2277,Store 04,In store,Beta,86.92
+2278,Store 04,In store,Alpha,74.5
+2279,Store 04,In store,Alpha,9.39
+2280,Store 04,In store,Beta,30.24
+2281,Store 04,In store,Alpha,43.45
+2282,Store 05,Online,Alpha,157.13
+2283,Store 05,Online,Alpha,58.8
+2284,Store 05,Online,Alpha,26.69
+2285,Store 05,Online,Beta,79.46
+2286,Store 05,Online,Gamma,23.81
+2287,Store 05,Online,Alpha,49.21
+2288,Store 05,Online,Alpha,39.37
+2289,Store 05,Online,Beta,46.15
+2290,Store 05,Online,Alpha,38.32
+2291,Store 05,Online,Alpha,73.2
+2292,Store 05,Online,Alpha,80.94
+2293,Store 05,Online,Beta,79.47
+2294,Store 05,Online,Alpha,92.97
+2295,Store 05,Online,Beta,26.55
+2296,Store 05,Online,Alpha,52.57
+2297,Store 05,Online,Gamma,24.67
+2298,Store 05,Online,Alpha,53.11
+2299,Store 05,Online,Alpha,58.65
+2300,Store 05,Online,Alpha,82.91
+2301,Store 05,Online,Alpha,45.9
+2302,Store 05,Online,Alpha,42.6
+2303,Store 05,Online,Alpha,26.97
+2304,Store 05,Online,Beta,40.69
+2305,Store 05,Online,Beta,35.1
+2306,Store 05,Online,Alpha,50.12
+2307,Store 05,Online,Alpha,12.26
+2308,Store 05,Online,Alpha,58.12
+2309,Store 05,Online,Alpha,72.87
+2310,Store 05,Online,Alpha,54.01
+2311,Store 05,Online,Alpha,27.82
+2312,Store 05,Online,Alpha,31.87
+2313,Store 05,Online,Alpha,93.88
+2314,Store 05,Online,Alpha,101.04
+2315,Store 05,Online,Alpha,28.5
+2316,Store 05,Online,Alpha,55.22
+2317,Store 05,Online,Beta,47.75
+2318,Store 05,Online,Beta,18.08
+2319,Store 05,Online,Beta,53.03
+2320,Store 05,Online,Alpha,17.21
+2321,Store 05,Online,Alpha,26.11
+2322,Store 05,Online,Beta,16.77
+2323,Store 05,Online,Alpha,110.98
+2324,Store 05,Online,Alpha,71.85
+2325,Store 05,Online,Alpha,25.8
+2326,Store 05,Online,Beta,103.63
+2327,Store 05,Online,Beta,55.83
+2328,Store 05,Online,Alpha,18.4
+2329,Store 05,Online,Alpha,53.69
+2330,Store 05,Online,Gamma,60.83
+2331,Store 05,Online,Alpha,20.31
+2332,Store 05,Online,Alpha,151.26
+2333,Store 05,Online,Alpha,156.54
+2334,Store 05,Online,Alpha,35.67
+2335,Store 05,Online,Alpha,81.24
+2336,Store 05,Online,Alpha,29.01
+2337,Store 05,Online,Alpha,90.04
+2338,Store 05,Online,Alpha,70.02
+2339,Store 05,Online,Beta,99.39
+2340,Store 05,Online,Alpha,21.33
+2341,Store 05,Online,Beta,37.88
+2342,Store 05,Online,Beta,58.15
+2343,Store 05,Online,Beta,60.63
+2344,Store 05,Online,Beta,26.37
+2345,Store 05,Online,Alpha,32.16
+2346,Store 05,Online,Alpha,38.67
+2347,Store 05,Online,Gamma,31.11
+2348,Store 05,Online,Alpha,57.29
+2349,Store 05,Online,Beta,18.51
+2350,Store 05,Online,Beta,68.9
+2351,Store 05,Online,Alpha,55.39
+2352,Store 05,Online,Alpha,39.09
+2353,Store 05,Online,Beta,88.31
+2354,Store 05,Online,Gamma,54.39
+2355,Store 05,Online,Alpha,124.71
+2356,Store 05,Online,Beta,52.77
+2357,Store 05,Online,Alpha,68.08
+2358,Store 05,Online,Alpha,75.03
+2359,Store 05,Online,Alpha,51.18
+2360,Store 05,Online,Alpha,53.59
+2361,Store 05,Online,Alpha,49.53
+2362,Store 05,Online,Alpha,43.95
+2363,Store 05,Online,Alpha,33.07
+2364,Store 05,Online,Beta,43.57
+2365,Store 05,Online,Alpha,52.9
+2366,Store 05,Online,Alpha,54.78
+2367,Store 05,Online,Alpha,11.41
+2368,Store 05,Online,Beta,58.86
+2369,Store 05,Online,Alpha,24.4
+2370,Store 05,Online,Beta,36.99
+2371,Store 05,Online,Beta,53.48
+2372,Store 05,Online,Beta,50.89
+2373,Store 05,Online,Beta,49.99
+2374,Store 05,Online,Alpha,73.62
+2375,Store 05,Online,Beta,25.23
+2376,Store 05,Online,Beta,97.5
+2377,Store 05,Online,Alpha,27.61
+2378,Store 05,Online,Alpha,60.65
+2379,Store 05,Online,Alpha,44.0
+2380,Store 05,Online,Alpha,52.3
+2381,Store 05,Online,Alpha,19.48
+2382,Store 05,Online,Alpha,44.26
+2383,Store 05,Online,Alpha,20.19
+2384,Store 05,Online,Beta,89.5
+2385,Store 05,Online,Beta,31.49
+2386,Store 05,Online,Alpha,51.79
+2387,Store 05,Online,Alpha,131.77
+2388,Store 05,Online,Alpha,75.98
+2389,Store 05,Online,Alpha,52.61
+2390,Store 05,Online,Alpha,80.28
+2391,Store 05,Online,Alpha,81.81
+2392,Store 05,Online,Gamma,41.79
+2393,Store 05,Online,Beta,62.22
+2394,Store 05,Online,Alpha,17.35
+2395,Store 05,Online,Alpha,53.4
+2396,Store 05,Online,Beta,61.18
+2397,Store 05,Online,Alpha,38.5
+2398,Store 05,Online,Beta,72.45
+2399,Store 05,Online,Beta,31.38
+2400,Store 05,Online,Alpha,77.54
+2401,Store 05,Online,Beta,41.85
+2402,Store 05,Online,Beta,42.63
+2403,Store 05,Online,Alpha,55.99
+2404,Store 05,Online,Beta,69.41
+2405,Store 05,Online,Beta,39.97
+2406,Store 05,Online,Beta,94.31
+2407,Store 05,Online,Alpha,40.96
+2408,Store 05,Online,Gamma,34.5
+2409,Store 05,Online,Beta,71.13
+2410,Store 05,Online,Beta,56.46
+2411,Store 05,Online,Alpha,73.18
+2412,Store 05,Online,Alpha,37.45
+2413,Store 05,Online,Beta,24.53
+2414,Store 05,Online,Beta,134.89
+2415,Store 05,Online,Beta,63.96
+2416,Store 05,Online,Alpha,33.39
+2417,Store 05,Online,Beta,58.58
+2418,Store 05,Online,Alpha,62.9
+2419,Store 05,Online,Alpha,34.4
+2420,Store 05,Online,Alpha,165.4
+2421,Store 05,Online,Beta,37.01
+2422,Store 05,Online,Alpha,90.13
+2423,Store 05,Online,Alpha,81.43
+2424,Store 05,Online,Beta,63.76
+2425,Store 05,Online,Beta,20.59
+2426,Store 05,Online,Beta,51.72
+2427,Store 05,Online,Alpha,52.43
+2428,Store 05,Online,Beta,18.78
+2429,Store 05,Online,Alpha,125.08
+2430,Store 05,Online,Beta,15.42
+2431,Store 05,Online,Beta,40.5
+2432,Store 05,Online,Beta,56.04
+2433,Store 05,Online,Beta,56.37
+2434,Store 05,Online,Beta,34.41
+2435,Store 05,Online,Alpha,36.57
+2436,Store 05,Online,Alpha,39.39
+2437,Store 05,Online,Alpha,17.73
+2438,Store 05,Online,Alpha,86.77
+2439,Store 05,Online,Beta,96.39
+2440,Store 05,Online,Alpha,19.59
+2441,Store 05,Online,Alpha,95.5
+2442,Store 05,Online,Alpha,50.71
+2443,Store 05,Online,Alpha,55.19
+2444,Store 05,Online,Beta,41.1
+2445,Store 05,Online,Alpha,69.52
+2446,Store 05,Online,Beta,53.38
+2447,Store 05,Online,Alpha,85.21
+2448,Store 05,Online,Alpha,58.1
+2449,Store 05,In store,Gamma,49.73
+2450,Store 05,In store,Alpha,58.31
+2451,Store 05,In store,Alpha,27.24
+2452,Store 05,In store,Gamma,26.62
+2453,Store 05,In store,Alpha,81.19
+2454,Store 05,In store,Beta,31.87
+2455,Store 05,In store,Beta,87.43
+2456,Store 05,In store,Beta,178.4
+2457,Store 05,In store,Beta,26.62
+2458,Store 05,In store,Alpha,51.95
+2459,Store 05,In store,Alpha,55.49
+2460,Store 05,In store,Alpha,36.87
+2461,Store 05,In store,Beta,26.34
+2462,Store 05,In store,Alpha,16.08
+2463,Store 05,In store,Alpha,77.14
+2464,Store 05,In store,Alpha,40.18
+2465,Store 05,In store,Alpha,49.22
+2466,Store 05,In store,Beta,34.7
+2467,Store 05,In store,Alpha,70.78
+2468,Store 05,In store,Alpha,18.25
+2469,Store 05,In store,Beta,42.79
+2470,Store 05,In store,Beta,17.19
+2471,Store 05,In store,Alpha,15.77
+2472,Store 05,In store,Alpha,123.88
+2473,Store 05,In store,Alpha,45.97
+2474,Store 05,In store,Alpha,40.89
+2475,Store 05,In store,Alpha,33.62
+2476,Store 05,In store,Alpha,66.63
+2477,Store 05,In store,Beta,23.86
+2478,Store 05,In store,Alpha,61.3
+2479,Store 05,In store,Beta,65.97
+2480,Store 05,In store,Beta,31.78
+2481,Store 05,In store,Alpha,38.24
+2482,Store 05,In store,Alpha,30.77
+2483,Store 05,In store,Alpha,23.29
+2484,Store 05,In store,Alpha,46.93
+2485,Store 05,In store,Alpha,61.44
+2486,Store 05,In store,Alpha,31.23
+2487,Store 05,In store,Beta,66.29
+2488,Store 05,In store,Beta,25.4
+2489,Store 05,In store,Alpha,46.98
+2490,Store 05,In store,Beta,19.26
+2491,Store 05,In store,Beta,12.83
+2492,Store 05,In store,Alpha,10.03
+2493,Store 05,In store,Gamma,38.96
+2494,Store 05,In store,Alpha,25.3
+2495,Store 05,In store,Alpha,71.73
+2496,Store 05,In store,Alpha,30.26
+2497,Store 05,In store,Beta,39.48
+2498,Store 05,In store,Alpha,30.56
+2499,Store 05,In store,Alpha,30.06
+2500,Store 05,In store,Beta,45.23
+2501,Store 05,In store,Alpha,73.64
+2502,Store 05,In store,Alpha,31.23
+2503,Store 05,In store,Beta,68.44
+2504,Store 05,In store,Alpha,34.54
+2505,Store 05,In store,Beta,32.8
+2506,Store 05,In store,Alpha,18.68
+2507,Store 05,In store,Alpha,30.25
+2508,Store 05,In store,Alpha,73.57
+2509,Store 05,In store,Alpha,69.65
+2510,Store 05,In store,Alpha,61.82
+2511,Store 05,In store,Alpha,39.04
+2512,Store 05,In store,Beta,21.07
+2513,Store 05,In store,Alpha,47.79
+2514,Store 05,In store,Beta,35.4
+2515,Store 05,In store,Beta,78.34
+2516,Store 05,In store,Beta,30.98
+2517,Store 05,In store,Alpha,31.2
+2518,Store 05,In store,Beta,49.82
+2519,Store 05,In store,Alpha,25.67
+2520,Store 05,In store,Alpha,68.46
+2521,Store 05,In store,Beta,23.02
+2522,Store 05,In store,Alpha,48.45
+2523,Store 05,In store,Alpha,45.49
+2524,Store 05,In store,Beta,136.53
+2525,Store 05,In store,Alpha,21.1
+2526,Store 05,In store,Alpha,11.93
+2527,Store 05,In store,Beta,43.84
+2528,Store 05,In store,Gamma,18.85
+2529,Store 05,In store,Alpha,56.97
+2530,Store 05,In store,Beta,16.01
+2531,Store 05,In store,Alpha,34.67
+2532,Store 05,In store,Alpha,36.64
+2533,Store 05,In store,Beta,16.37
+2534,Store 05,In store,Alpha,118.61
+2535,Store 05,In store,Alpha,37.09
+2536,Store 05,In store,Alpha,21.82
+2537,Store 05,In store,Alpha,7.81
+2538,Store 05,In store,Gamma,32.55
+2539,Store 05,In store,Beta,14.88
+2540,Store 05,In store,Gamma,56.03
+2541,Store 05,In store,Alpha,62.46
+2542,Store 05,In store,Beta,31.04
+2543,Store 05,In store,Alpha,49.45
+2544,Store 05,In store,Beta,39.07
+2545,Store 05,In store,Beta,47.55
+2546,Store 05,In store,Alpha,65.98
+2547,Store 05,In store,Alpha,25.26
+2548,Store 05,In store,Alpha,47.6
+2549,Store 05,In store,Alpha,38.69
+2550,Store 05,In store,Alpha,29.55
+2551,Store 05,In store,Beta,90.27
+2552,Store 05,In store,Beta,29.99
+2553,Store 05,In store,Beta,53.2
+2554,Store 05,In store,Gamma,26.01
+2555,Store 05,In store,Alpha,18.49
+2556,Store 05,In store,Beta,30.42
+2557,Store 05,In store,Alpha,24.73
+2558,Store 05,In store,Beta,17.42
+2559,Store 05,In store,Beta,55.51
+2560,Store 05,In store,Beta,54.64
+2561,Store 05,In store,Alpha,31.97
+2562,Store 05,In store,Beta,45.29
+2563,Store 05,In store,Beta,94.37
+2564,Store 05,In store,Beta,18.12
+2565,Store 05,In store,Alpha,49.06
+2566,Store 05,In store,Alpha,36.16
+2567,Store 05,In store,Beta,11.28
+2568,Store 05,In store,Alpha,23.87
+2569,Store 05,In store,Alpha,67.75
+2570,Store 05,In store,Beta,23.81
+2571,Store 05,In store,Beta,73.43
+2572,Store 05,In store,Beta,127.69
+2573,Store 05,In store,Alpha,12.78
+2574,Store 05,In store,Beta,44.0
+2575,Store 05,In store,Beta,21.89
+2576,Store 05,In store,Alpha,51.41
+2577,Store 05,In store,Alpha,68.53
+2578,Store 05,In store,Alpha,40.3
+2579,Store 05,In store,Alpha,27.39
+2580,Store 05,In store,Beta,24.93
+2581,Store 05,In store,Beta,51.34
+2582,Store 05,In store,Gamma,105.39
+2583,Store 05,In store,Alpha,45.68
+2584,Store 05,In store,Alpha,129.66
+2585,Store 05,In store,Beta,24.38
+2586,Store 05,In store,Alpha,86.56
+2587,Store 05,In store,Beta,22.32
+2588,Store 05,In store,Alpha,44.89
+2589,Store 05,In store,Alpha,50.07
+2590,Store 05,In store,Gamma,50.69
+2591,Store 05,In store,Alpha,90.44
+2592,Store 05,In store,Alpha,11.97
+2593,Store 05,In store,Alpha,18.66
+2594,Store 05,In store,Alpha,23.79
+2595,Store 05,In store,Alpha,25.64
+2596,Store 05,In store,Beta,54.09
+2597,Store 05,In store,Beta,25.01
+2598,Store 05,In store,Alpha,128.55
+2599,Store 05,In store,Alpha,32.99
+2600,Store 05,In store,Beta,37.78
+2601,Store 05,In store,Alpha,34.74
+2602,Store 05,In store,Alpha,20.4
+2603,Store 05,In store,Beta,36.22
+2604,Store 05,In store,Alpha,17.99
+2605,Store 05,In store,Alpha,72.55
+2606,Store 05,In store,Alpha,33.74
+2607,Store 05,In store,Beta,21.21
+2608,Store 05,In store,Alpha,62.77
+2609,Store 05,In store,Alpha,14.55
+2610,Store 05,In store,Alpha,33.86
+2611,Store 05,In store,Alpha,62.11
+2612,Store 05,In store,Alpha,18.17
+2613,Store 05,In store,Alpha,45.45
+2614,Store 06,Online,Alpha,34.84
+2615,Store 06,Online,Alpha,42.34
+2616,Store 06,Online,Alpha,39.77
+2617,Store 06,Online,Alpha,37.09
+2618,Store 06,Online,Gamma,80.27
+2619,Store 06,Online,Alpha,36.71
+2620,Store 06,Online,Alpha,37.98
+2621,Store 06,Online,Beta,198.29
+2622,Store 06,Online,Alpha,41.77
+2623,Store 06,Online,Alpha,59.28
+2624,Store 06,Online,Alpha,99.73
+2625,Store 06,Online,Beta,80.53
+2626,Store 06,Online,Alpha,47.97
+2627,Store 06,Online,Beta,36.74
+2628,Store 06,Online,Beta,50.87
+2629,Store 06,Online,Alpha,71.55
+2630,Store 06,Online,Alpha,67.18
+2631,Store 06,Online,Alpha,32.52
+2632,Store 06,Online,Beta,51.97
+2633,Store 06,Online,Beta,66.92
+2634,Store 06,Online,Alpha,218.86
+2635,Store 06,Online,Alpha,84.26
+2636,Store 06,Online,Alpha,64.89
+2637,Store 06,Online,Gamma,28.55
+2638,Store 06,Online,Beta,61.87
+2639,Store 06,Online,Alpha,28.17
+2640,Store 06,Online,Alpha,214.94
+2641,Store 06,Online,Alpha,39.31
+2642,Store 06,Online,Alpha,215.76
+2643,Store 06,Online,Alpha,60.97
+2644,Store 06,Online,Alpha,79.06
+2645,Store 06,Online,Alpha,28.86
+2646,Store 06,Online,Alpha,30.25
+2647,Store 06,Online,Alpha,78.72
+2648,Store 06,Online,Alpha,18.66
+2649,Store 06,Online,Alpha,49.21
+2650,Store 06,Online,Alpha,80.43
+2651,Store 06,Online,Alpha,98.28
+2652,Store 06,Online,Alpha,71.86
+2653,Store 06,Online,Alpha,31.8
+2654,Store 06,Online,Gamma,50.25
+2655,Store 06,Online,Alpha,37.71
+2656,Store 06,Online,Beta,83.8
+2657,Store 06,Online,Alpha,52.24
+2658,Store 06,Online,Beta,55.04
+2659,Store 06,Online,Alpha,69.53
+2660,Store 06,Online,Alpha,45.54
+2661,Store 06,Online,Beta,29.44
+2662,Store 06,Online,Beta,36.5
+2663,Store 06,Online,Alpha,29.66
+2664,Store 06,Online,Alpha,23.11
+2665,Store 06,Online,Beta,33.95
+2666,Store 06,Online,Beta,34.49
+2667,Store 06,Online,Beta,46.2
+2668,Store 06,Online,Beta,45.65
+2669,Store 06,Online,Beta,18.99
+2670,Store 06,Online,Beta,44.21
+2671,Store 06,Online,Alpha,81.45
+2672,Store 06,Online,Beta,47.37
+2673,Store 06,Online,Alpha,112.92
+2674,Store 06,Online,Alpha,54.48
+2675,Store 06,Online,Beta,61.83
+2676,Store 06,Online,Alpha,68.35
+2677,Store 06,Online,Beta,26.31
+2678,Store 06,Online,Alpha,64.16
+2679,Store 06,Online,Alpha,41.57
+2680,Store 06,Online,Beta,59.33
+2681,Store 06,Online,Beta,36.13
+2682,Store 06,Online,Beta,40.04
+2683,Store 06,Online,Beta,75.75
+2684,Store 06,Online,Alpha,26.32
+2685,Store 06,Online,Alpha,44.92
+2686,Store 06,Online,Alpha,54.83
+2687,Store 06,Online,Alpha,84.96
+2688,Store 06,Online,Beta,41.32
+2689,Store 06,Online,Beta,40.3
+2690,Store 06,Online,Beta,76.44
+2691,Store 06,Online,Alpha,86.15
+2692,Store 06,Online,Alpha,81.66
+2693,Store 06,Online,Beta,72.26
+2694,Store 06,Online,Alpha,57.55
+2695,Store 06,Online,Alpha,52.64
+2696,Store 06,Online,Alpha,60.2
+2697,Store 06,Online,Beta,193.56
+2698,Store 06,Online,Alpha,61.33
+2699,Store 06,Online,Alpha,38.34
+2700,Store 06,Online,Alpha,87.45
+2701,Store 06,Online,Beta,94.55
+2702,Store 06,Online,Alpha,24.67
+2703,Store 06,Online,Beta,34.74
+2704,Store 06,Online,Alpha,41.13
+2705,Store 06,Online,Alpha,71.01
+2706,Store 06,Online,Alpha,61.39
+2707,Store 06,Online,Alpha,72.26
+2708,Store 06,Online,Beta,27.22
+2709,Store 06,Online,Alpha,50.86
+2710,Store 06,Online,Alpha,99.43
+2711,Store 06,Online,Beta,30.51
+2712,Store 06,Online,Alpha,43.82
+2713,Store 06,Online,Alpha,79.08
+2714,Store 06,Online,Alpha,63.42
+2715,Store 06,Online,Alpha,35.64
+2716,Store 06,Online,Beta,199.12
+2717,Store 06,Online,Alpha,81.76
+2718,Store 06,Online,Beta,40.04
+2719,Store 06,Online,Alpha,57.06
+2720,Store 06,Online,Beta,59.06
+2721,Store 06,Online,Alpha,59.22
+2722,Store 06,Online,Beta,40.67
+2723,Store 06,Online,Beta,14.57
+2724,Store 06,Online,Beta,74.12
+2725,Store 06,Online,Beta,194.88
+2726,Store 06,Online,Alpha,26.42
+2727,Store 06,Online,Alpha,102.68
+2728,Store 06,Online,Alpha,40.18
+2729,Store 06,Online,Alpha,61.67
+2730,Store 06,Online,Alpha,46.36
+2731,Store 06,Online,Beta,138.48
+2732,Store 06,Online,Alpha,35.3
+2733,Store 06,Online,Beta,121.42
+2734,Store 06,Online,Alpha,43.62
+2735,Store 06,Online,Alpha,45.51
+2736,Store 06,Online,Beta,23.58
+2737,Store 06,Online,Alpha,41.13
+2738,Store 06,Online,Beta,27.14
+2739,Store 06,Online,Beta,55.37
+2740,Store 06,Online,Alpha,217.28
+2741,Store 06,Online,Beta,30.61
+2742,Store 06,Online,Alpha,31.81
+2743,Store 06,Online,Alpha,52.15
+2744,Store 06,Online,Alpha,45.25
+2745,Store 06,Online,Beta,45.47
+2746,Store 06,Online,Alpha,57.49
+2747,Store 06,Online,Beta,19.91
+2748,Store 06,Online,Gamma,86.96
+2749,Store 06,Online,Beta,89.08
+2750,Store 06,Online,Beta,18.84
+2751,Store 06,Online,Alpha,22.08
+2752,Store 06,Online,Beta,21.49
+2753,Store 06,Online,Alpha,72.3
+2754,Store 06,Online,Alpha,85.56
+2755,Store 06,Online,Beta,53.38
+2756,Store 06,Online,Alpha,39.38
+2757,Store 06,Online,Alpha,60.27
+2758,Store 06,Online,Alpha,71.14
+2759,Store 06,Online,Beta,84.24
+2760,Store 06,Online,Beta,26.46
+2761,Store 06,Online,Alpha,15.28
+2762,Store 06,Online,Alpha,65.86
+2763,Store 06,Online,Beta,15.15
+2764,Store 06,Online,Gamma,49.26
+2765,Store 06,Online,Alpha,34.8
+2766,Store 06,Online,Beta,56.3
+2767,Store 06,Online,Beta,26.51
+2768,Store 06,Online,Beta,50.6
+2769,Store 06,Online,Alpha,31.88
+2770,Store 06,Online,Alpha,31.58
+2771,Store 06,Online,Beta,66.71
+2772,Store 06,Online,Alpha,89.38
+2773,Store 06,Online,Beta,42.07
+2774,Store 06,Online,Alpha,33.7
+2775,Store 06,Online,Alpha,17.44
+2776,Store 06,Online,Alpha,28.43
+2777,Store 06,Online,Alpha,63.85
+2778,Store 06,Online,Gamma,35.09
+2779,Store 06,Online,Alpha,17.55
+2780,Store 06,Online,Alpha,96.28
+2781,Store 06,Online,Beta,54.07
+2782,Store 06,Online,Gamma,72.93
+2783,Store 06,Online,Alpha,60.62
+2784,Store 06,Online,Alpha,49.43
+2785,Store 06,Online,Gamma,46.06
+2786,Store 06,Online,Beta,36.53
+2787,Store 06,Online,Alpha,41.1
+2788,Store 06,Online,Beta,112.66
+2789,Store 06,Online,Beta,44.28
+2790,Store 06,Online,Alpha,65.6
+2791,Store 06,Online,Beta,37.57
+2792,Store 06,Online,Beta,59.23
+2793,Store 06,Online,Beta,35.3
+2794,Store 06,Online,Alpha,29.08
+2795,Store 06,Online,Beta,49.44
+2796,Store 06,Online,Alpha,28.51
+2797,Store 06,Online,Beta,115.71
+2798,Store 06,Online,Gamma,25.88
+2799,Store 06,Online,Alpha,41.23
+2800,Store 06,Online,Alpha,65.93
+2801,Store 06,Online,Beta,165.84
+2802,Store 06,Online,Alpha,44.39
+2803,Store 06,Online,Alpha,77.83
+2804,Store 06,Online,Beta,37.8
+2805,Store 06,Online,Alpha,62.59
+2806,Store 06,Online,Alpha,17.37
+2807,Store 06,In store,Alpha,49.52
+2808,Store 06,In store,Alpha,42.39
+2809,Store 06,In store,Beta,59.89
+2810,Store 06,In store,Alpha,60.75
+2811,Store 06,In store,Alpha,17.54
+2812,Store 06,In store,Alpha,58.34
+2813,Store 06,In store,Beta,70.77
+2814,Store 06,In store,Alpha,55.89
+2815,Store 06,In store,Alpha,52.09
+2816,Store 06,In store,Alpha,47.19
+2817,Store 06,In store,Alpha,62.45
+2818,Store 06,In store,Alpha,19.94
+2819,Store 06,In store,Beta,61.51
+2820,Store 06,In store,Beta,43.19
+2821,Store 06,In store,Alpha,40.63
+2822,Store 06,In store,Gamma,53.53
+2823,Store 06,In store,Alpha,37.56
+2824,Store 06,In store,Alpha,18.94
+2825,Store 06,In store,Alpha,20.9
+2826,Store 06,In store,Alpha,28.44
+2827,Store 06,In store,Alpha,33.7
+2828,Store 06,In store,Alpha,24.23
+2829,Store 06,In store,Beta,72.49
+2830,Store 06,In store,Beta,46.98
+2831,Store 06,In store,Beta,28.27
+2832,Store 06,In store,Alpha,17.21
+2833,Store 06,In store,Gamma,30.95
+2834,Store 06,In store,Alpha,29.36
+2835,Store 06,In store,Beta,41.49
+2836,Store 06,In store,Alpha,91.74
+2837,Store 06,In store,Gamma,41.34
+2838,Store 06,In store,Gamma,25.24
+2839,Store 06,In store,Alpha,32.17
+2840,Store 06,In store,Beta,24.07
+2841,Store 06,In store,Alpha,31.41
+2842,Store 06,In store,Alpha,44.76
+2843,Store 06,In store,Alpha,16.46
+2844,Store 06,In store,Beta,27.04
+2845,Store 06,In store,Beta,19.6
+2846,Store 06,In store,Alpha,123.03
+2847,Store 06,In store,Beta,69.98
+2848,Store 06,In store,Alpha,31.92
+2849,Store 06,In store,Alpha,21.5
+2850,Store 06,In store,Beta,21.7
+2851,Store 06,In store,Alpha,18.62
+2852,Store 06,In store,Alpha,25.71
+2853,Store 06,In store,Beta,61.76
+2854,Store 06,In store,Alpha,19.36
+2855,Store 06,In store,Alpha,28.95
+2856,Store 06,In store,Alpha,39.34
+2857,Store 06,In store,Alpha,23.14
+2858,Store 06,In store,Alpha,31.08
+2859,Store 06,In store,Alpha,57.18
+2860,Store 06,In store,Alpha,39.7
+2861,Store 06,In store,Beta,21.32
+2862,Store 06,In store,Alpha,111.61
+2863,Store 06,In store,Alpha,39.23
+2864,Store 06,In store,Beta,61.91
+2865,Store 06,In store,Alpha,15.58
+2866,Store 06,In store,Alpha,105.79
+2867,Store 06,In store,Beta,15.5
+2868,Store 06,In store,Alpha,54.48
+2869,Store 06,In store,Beta,38.95
+2870,Store 06,In store,Alpha,20.97
+2871,Store 06,In store,Beta,71.54
+2872,Store 06,In store,Alpha,47.72
+2873,Store 06,In store,Alpha,45.42
+2874,Store 06,In store,Beta,27.22
+2875,Store 06,In store,Beta,74.07
+2876,Store 06,In store,Beta,32.41
+2877,Store 06,In store,Alpha,40.1
+2878,Store 06,In store,Alpha,33.12
+2879,Store 06,In store,Gamma,15.06
+2880,Store 06,In store,Alpha,29.58
+2881,Store 06,In store,Alpha,45.82
+2882,Store 06,In store,Alpha,91.47
+2883,Store 06,In store,Alpha,50.66
+2884,Store 06,In store,Alpha,39.6
+2885,Store 06,In store,Beta,110.88
+2886,Store 06,In store,Alpha,9.05
+2887,Store 06,In store,Beta,50.12
+2888,Store 06,In store,Alpha,38.72
+2889,Store 06,In store,Beta,21.14
+2890,Store 06,In store,Beta,56.45
+2891,Store 06,In store,Beta,31.37
+2892,Store 06,In store,Alpha,65.46
+2893,Store 06,In store,Beta,33.07
+2894,Store 06,In store,Beta,57.08
+2895,Store 06,In store,Alpha,29.15
+2896,Store 06,In store,Alpha,31.24
+2897,Store 06,In store,Alpha,19.5
+2898,Store 06,In store,Alpha,20.16
+2899,Store 06,In store,Alpha,53.21
+2900,Store 06,In store,Alpha,60.36
+2901,Store 06,In store,Beta,100.39
+2902,Store 06,In store,Beta,25.12
+2903,Store 06,In store,Beta,95.67
+2904,Store 06,In store,Alpha,40.07
+2905,Store 06,In store,Beta,25.45
+2906,Store 06,In store,Beta,59.4
+2907,Store 06,In store,Beta,50.5
+2908,Store 06,In store,Beta,78.23
+2909,Store 06,In store,Gamma,29.7
+2910,Store 06,In store,Alpha,38.1
+2911,Store 06,In store,Alpha,39.93
+2912,Store 06,In store,Beta,25.09
+2913,Store 06,In store,Alpha,20.71
+2914,Store 06,In store,Alpha,21.71
+2915,Store 06,In store,Alpha,22.2
+2916,Store 06,In store,Beta,93.17
+2917,Store 06,In store,Alpha,47.83
+2918,Store 06,In store,Beta,27.37
+2919,Store 06,In store,Beta,32.76
+2920,Store 06,In store,Alpha,81.72
+2921,Store 06,In store,Alpha,15.06
+2922,Store 06,In store,Alpha,14.53
+2923,Store 06,In store,Alpha,48.06
+2924,Store 06,In store,Gamma,118.64
+2925,Store 06,In store,Alpha,40.23
+2926,Store 06,In store,Alpha,73.46
+2927,Store 06,In store,Beta,42.99
+2928,Store 06,In store,Beta,15.28
+2929,Store 06,In store,Alpha,85.31
+2930,Store 06,In store,Alpha,20.3
+2931,Store 06,In store,Beta,33.64
+2932,Store 06,In store,Beta,33.02
+2933,Store 06,In store,Beta,41.35
+2934,Store 06,In store,Beta,58.68
+2935,Store 06,In store,Beta,24.21
+2936,Store 06,In store,Alpha,43.5
+2937,Store 06,In store,Beta,26.29
+2938,Store 06,In store,Alpha,28.66
+2939,Store 06,In store,Beta,31.5
+2940,Store 06,In store,Alpha,52.3
+2941,Store 06,In store,Beta,20.72
+2942,Store 06,In store,Beta,67.77
+2943,Store 06,In store,Alpha,12.87
+2944,Store 06,In store,Alpha,49.18
+2945,Store 06,In store,Alpha,35.81
+2946,Store 06,In store,Beta,34.67
+2947,Store 06,In store,Alpha,29.15
+2948,Store 06,In store,Alpha,82.2
+2949,Store 06,In store,Beta,78.18
+2950,Store 06,In store,Alpha,102.01
+2951,Store 06,In store,Beta,61.51
+2952,Store 06,In store,Alpha,64.07
+2953,Store 06,In store,Beta,27.67
+2954,Store 06,In store,Beta,70.03
+2955,Store 06,In store,Beta,70.04
+2956,Store 06,In store,Beta,22.06
+2957,Store 06,In store,Alpha,19.89
+2958,Store 07,Online,Alpha,66.18
+2959,Store 07,Online,Alpha,30.9
+2960,Store 07,Online,Alpha,54.22
+2961,Store 07,Online,Alpha,23.09
+2962,Store 07,Online,Alpha,57.03
+2963,Store 07,Online,Gamma,52.63
+2964,Store 07,Online,Beta,42.77
+2965,Store 07,Online,Beta,70.79
+2966,Store 07,Online,Beta,59.1
+2967,Store 07,Online,Alpha,85.63
+2968,Store 07,Online,Alpha,68.38
+2969,Store 07,Online,Beta,83.48
+2970,Store 07,Online,Beta,82.05
+2971,Store 07,Online,Beta,54.04
+2972,Store 07,Online,Alpha,22.64
+2973,Store 07,Online,Alpha,168.34
+2974,Store 07,Online,Alpha,37.72
+2975,Store 07,Online,Beta,68.44
+2976,Store 07,Online,Beta,74.74
+2977,Store 07,Online,Alpha,52.32
+2978,Store 07,Online,Alpha,49.5
+2979,Store 07,Online,Alpha,60.43
+2980,Store 07,Online,Beta,32.27
+2981,Store 07,Online,Beta,116.35
+2982,Store 07,Online,Alpha,24.11
+2983,Store 07,Online,Alpha,94.6
+2984,Store 07,Online,Gamma,106.37
+2985,Store 07,Online,Beta,65.51
+2986,Store 07,Online,Beta,27.73
+2987,Store 07,Online,Alpha,57.33
+2988,Store 07,Online,Alpha,35.07
+2989,Store 07,Online,Beta,141.5
+2990,Store 07,Online,Beta,66.93
+2991,Store 07,Online,Beta,40.91
+2992,Store 07,Online,Alpha,36.25
+2993,Store 07,Online,Alpha,110.85
+2994,Store 07,Online,Alpha,52.23
+2995,Store 07,Online,Alpha,31.8
+2996,Store 07,Online,Alpha,17.14
+2997,Store 07,Online,Beta,45.0
+2998,Store 07,Online,Beta,43.42
+2999,Store 07,Online,Beta,28.0
+3000,Store 07,Online,Beta,40.62
+3001,Store 07,Online,Beta,58.91
+3002,Store 07,Online,Beta,90.85
+3003,Store 07,Online,Alpha,48.68
+3004,Store 07,Online,Beta,44.91
+3005,Store 07,Online,Alpha,66.69
+3006,Store 07,Online,Beta,43.16
+3007,Store 07,Online,Alpha,71.64
+3008,Store 07,Online,Alpha,58.44
+3009,Store 07,Online,Alpha,70.62
+3010,Store 07,Online,Alpha,26.45
+3011,Store 07,Online,Beta,65.37
+3012,Store 07,Online,Alpha,52.05
+3013,Store 07,Online,Beta,40.86
+3014,Store 07,Online,Alpha,42.94
+3015,Store 07,Online,Alpha,38.32
+3016,Store 07,Online,Alpha,35.41
+3017,Store 07,Online,Beta,37.43
+3018,Store 07,Online,Alpha,48.77
+3019,Store 07,Online,Alpha,58.35
+3020,Store 07,Online,Gamma,34.14
+3021,Store 07,Online,Alpha,50.87
+3022,Store 07,Online,Alpha,42.17
+3023,Store 07,Online,Alpha,24.93
+3024,Store 07,Online,Alpha,40.99
+3025,Store 07,Online,Beta,92.31
+3026,Store 07,Online,Alpha,80.51
+3027,Store 07,Online,Beta,50.62
+3028,Store 07,Online,Beta,55.22
+3029,Store 07,Online,Beta,33.55
+3030,Store 07,Online,Alpha,56.31
+3031,Store 07,Online,Alpha,78.73
+3032,Store 07,Online,Alpha,33.52
+3033,Store 07,Online,Beta,29.67
+3034,Store 07,Online,Alpha,51.92
+3035,Store 07,Online,Beta,64.4
+3036,Store 07,Online,Alpha,71.35
+3037,Store 07,Online,Alpha,60.35
+3038,Store 07,Online,Alpha,117.36
+3039,Store 07,Online,Beta,64.23
+3040,Store 07,Online,Alpha,110.89
+3041,Store 07,Online,Alpha,43.55
+3042,Store 07,Online,Beta,37.77
+3043,Store 07,Online,Gamma,57.12
+3044,Store 07,Online,Alpha,72.4
+3045,Store 07,Online,Beta,73.32
+3046,Store 07,Online,Alpha,45.16
+3047,Store 07,Online,Beta,56.08
+3048,Store 07,Online,Alpha,53.96
+3049,Store 07,Online,Alpha,24.65
+3050,Store 07,Online,Alpha,39.01
+3051,Store 07,Online,Beta,31.18
+3052,Store 07,Online,Alpha,17.74
+3053,Store 07,Online,Alpha,116.85
+3054,Store 07,Online,Alpha,68.83
+3055,Store 07,Online,Alpha,25.39
+3056,Store 07,Online,Beta,36.99
+3057,Store 07,Online,Beta,43.62
+3058,Store 07,Online,Beta,64.69
+3059,Store 07,Online,Alpha,91.12
+3060,Store 07,Online,Alpha,44.2
+3061,Store 07,Online,Alpha,71.84
+3062,Store 07,Online,Alpha,80.65
+3063,Store 07,Online,Beta,59.86
+3064,Store 07,Online,Alpha,55.45
+3065,Store 07,Online,Beta,73.95
+3066,Store 07,Online,Alpha,87.77
+3067,Store 07,Online,Alpha,44.53
+3068,Store 07,Online,Alpha,87.16
+3069,Store 07,Online,Alpha,29.17
+3070,Store 07,Online,Alpha,50.84
+3071,Store 07,Online,Beta,53.23
+3072,Store 07,Online,Alpha,25.1
+3073,Store 07,Online,Alpha,45.19
+3074,Store 07,Online,Alpha,65.38
+3075,Store 07,Online,Beta,18.8
+3076,Store 07,Online,Alpha,28.16
+3077,Store 07,Online,Beta,80.48
+3078,Store 07,Online,Alpha,109.11
+3079,Store 07,Online,Alpha,58.84
+3080,Store 07,Online,Alpha,45.42
+3081,Store 07,Online,Gamma,98.85
+3082,Store 07,Online,Beta,88.76
+3083,Store 07,Online,Alpha,63.57
+3084,Store 07,Online,Alpha,42.59
+3085,Store 07,Online,Alpha,67.62
+3086,Store 07,Online,Gamma,84.67
+3087,Store 07,Online,Alpha,32.42
+3088,Store 07,Online,Alpha,51.42
+3089,Store 07,Online,Alpha,143.09
+3090,Store 07,Online,Alpha,36.05
+3091,Store 07,Online,Alpha,34.42
+3092,Store 07,Online,Alpha,153.33
+3093,Store 07,Online,Alpha,45.02
+3094,Store 07,Online,Beta,93.46
+3095,Store 07,Online,Beta,59.33
+3096,Store 07,Online,Beta,46.44
+3097,Store 07,Online,Beta,32.77
+3098,Store 07,Online,Beta,65.7
+3099,Store 07,Online,Alpha,47.29
+3100,Store 07,Online,Beta,14.64
+3101,Store 07,Online,Alpha,51.53
+3102,Store 07,Online,Alpha,62.16
+3103,Store 07,In store,Beta,36.64
+3104,Store 07,In store,Beta,42.79
+3105,Store 07,In store,Alpha,36.74
+3106,Store 07,In store,Beta,25.43
+3107,Store 07,In store,Beta,26.54
+3108,Store 07,In store,Beta,59.07
+3109,Store 07,In store,Alpha,15.73
+3110,Store 07,In store,Alpha,43.34
+3111,Store 08,Online,Alpha,33.1
+3112,Store 08,Online,Alpha,26.76
+3113,Store 08,Online,Beta,70.11
+3114,Store 08,Online,Alpha,33.54
+3115,Store 08,Online,Beta,35.99
+3116,Store 08,Online,Alpha,39.54
+3117,Store 08,Online,Beta,7.43
+3118,Store 08,Online,Alpha,43.72
+3119,Store 08,Online,Beta,74.42
+3120,Store 08,Online,Alpha,61.0
+3121,Store 08,Online,Alpha,36.5
+3122,Store 08,Online,Alpha,34.73
+3123,Store 08,Online,Alpha,68.35
+3124,Store 08,Online,Alpha,50.69
+3125,Store 08,Online,Alpha,73.67
+3126,Store 08,Online,Alpha,35.57
+3127,Store 08,Online,Beta,102.56
+3128,Store 08,Online,Beta,94.32
+3129,Store 08,Online,Gamma,81.25
+3130,Store 08,Online,Alpha,45.4
+3131,Store 08,Online,Alpha,56.86
+3132,Store 08,Online,Alpha,85.72
+3133,Store 08,Online,Alpha,36.63
+3134,Store 08,Online,Alpha,144.4
+3135,Store 08,Online,Alpha,43.45
+3136,Store 08,Online,Alpha,75.55
+3137,Store 08,Online,Alpha,69.73
+3138,Store 08,Online,Alpha,44.24
+3139,Store 08,Online,Alpha,37.46
+3140,Store 08,Online,Beta,82.66
+3141,Store 08,Online,Alpha,48.6
+3142,Store 08,Online,Beta,40.57
+3143,Store 08,Online,Alpha,74.28
+3144,Store 08,Online,Alpha,65.74
+3145,Store 08,Online,Beta,74.41
+3146,Store 08,Online,Alpha,81.1
+3147,Store 08,Online,Alpha,62.92
+3148,Store 08,Online,Beta,35.83
+3149,Store 08,Online,Alpha,35.82
+3150,Store 08,Online,Alpha,46.87
+3151,Store 08,Online,Beta,50.06
+3152,Store 08,Online,Alpha,61.47
+3153,Store 08,Online,Beta,45.35
+3154,Store 08,Online,Beta,83.23
+3155,Store 08,Online,Alpha,69.3
+3156,Store 08,Online,Alpha,33.19
+3157,Store 08,Online,Alpha,41.95
+3158,Store 08,Online,Alpha,49.04
+3159,Store 08,Online,Beta,27.16
+3160,Store 08,Online,Alpha,74.96
+3161,Store 08,Online,Alpha,55.71
+3162,Store 08,Online,Alpha,56.68
+3163,Store 08,Online,Alpha,61.6
+3164,Store 08,Online,Alpha,72.0
+3165,Store 08,Online,Alpha,20.61
+3166,Store 08,Online,Gamma,24.67
+3167,Store 08,Online,Beta,138.1
+3168,Store 08,Online,Alpha,48.95
+3169,Store 08,Online,Beta,73.11
+3170,Store 08,Online,Alpha,43.46
+3171,Store 08,Online,Alpha,20.74
+3172,Store 08,Online,Alpha,112.37
+3173,Store 08,Online,Beta,62.82
+3174,Store 08,Online,Alpha,69.77
+3175,Store 08,Online,Beta,48.24
+3176,Store 08,Online,Alpha,51.93
+3177,Store 08,Online,Beta,21.26
+3178,Store 08,Online,Gamma,99.66
+3179,Store 08,Online,Alpha,41.48
+3180,Store 08,Online,Beta,44.69
+3181,Store 08,Online,Alpha,101.64
+3182,Store 08,Online,Beta,67.88
+3183,Store 08,Online,Beta,52.33
+3184,Store 08,Online,Alpha,33.51
+3185,Store 08,Online,Alpha,50.84
+3186,Store 08,Online,Alpha,102.74
+3187,Store 08,Online,Alpha,55.4
+3188,Store 08,Online,Gamma,76.42
+3189,Store 08,Online,Alpha,128.34
+3190,Store 08,Online,Beta,68.0
+3191,Store 08,Online,Alpha,35.85
+3192,Store 08,Online,Alpha,97.01
+3193,Store 08,Online,Beta,43.15
+3194,Store 08,Online,Alpha,37.85
+3195,Store 08,Online,Alpha,109.29
+3196,Store 08,Online,Alpha,72.09
+3197,Store 08,Online,Alpha,45.89
+3198,Store 08,Online,Alpha,38.78
+3199,Store 08,Online,Alpha,111.34
+3200,Store 08,Online,Beta,52.1
+3201,Store 08,Online,Gamma,38.05
+3202,Store 08,Online,Alpha,103.88
+3203,Store 08,Online,Alpha,25.45
+3204,Store 08,Online,Beta,135.32
+3205,Store 08,Online,Alpha,36.29
+3206,Store 08,Online,Beta,48.17
+3207,Store 08,Online,Alpha,44.59
+3208,Store 08,Online,Alpha,55.02
+3209,Store 08,Online,Alpha,62.31
+3210,Store 08,Online,Alpha,90.35
+3211,Store 08,Online,Beta,51.66
+3212,Store 08,Online,Alpha,24.51
+3213,Store 08,Online,Beta,33.65
+3214,Store 08,Online,Alpha,45.54
+3215,Store 08,Online,Beta,62.88
+3216,Store 08,Online,Alpha,81.66
+3217,Store 08,Online,Beta,34.47
+3218,Store 08,Online,Alpha,50.91
+3219,Store 08,Online,Alpha,12.57
+3220,Store 08,Online,Alpha,28.8
+3221,Store 08,Online,Beta,37.15
+3222,Store 08,Online,Alpha,59.04
+3223,Store 08,Online,Alpha,82.85
+3224,Store 08,Online,Beta,59.56
+3225,Store 08,Online,Alpha,59.35
+3226,Store 08,Online,Alpha,94.75
+3227,Store 08,Online,Alpha,71.21
+3228,Store 08,Online,Beta,51.33
+3229,Store 08,Online,Alpha,45.64
+3230,Store 08,Online,Alpha,84.37
+3231,Store 08,Online,Alpha,24.5
+3232,Store 08,Online,Alpha,53.14
+3233,Store 08,Online,Alpha,52.05
+3234,Store 08,Online,Alpha,44.58
+3235,Store 08,Online,Beta,65.99
+3236,Store 08,Online,Alpha,143.48
+3237,Store 08,Online,Beta,27.59
+3238,Store 08,Online,Beta,62.32
+3239,Store 08,Online,Alpha,48.6
+3240,Store 08,Online,Alpha,31.48
+3241,Store 08,Online,Alpha,48.81
+3242,Store 08,Online,Beta,68.06
+3243,Store 08,Online,Alpha,96.19
+3244,Store 08,Online,Alpha,90.32
+3245,Store 08,Online,Beta,43.59
+3246,Store 08,Online,Alpha,72.42
+3247,Store 08,Online,Alpha,27.27
+3248,Store 08,Online,Beta,172.17
+3249,Store 08,Online,Alpha,51.12
+3250,Store 08,Online,Beta,107.71
+3251,Store 08,Online,Alpha,50.77
+3252,Store 08,Online,Beta,43.27
+3253,Store 08,Online,Alpha,131.73
+3254,Store 08,Online,Beta,94.15
+3255,Store 08,In store,Alpha,23.56
+3256,Store 08,In store,Beta,61.83
+3257,Store 08,In store,Beta,229.68
+3258,Store 08,In store,Alpha,23.13
+3259,Store 08,In store,Alpha,77.74
+3260,Store 08,In store,Gamma,20.68
+3261,Store 08,In store,Alpha,26.58
+3262,Store 08,In store,Alpha,70.29
+3263,Store 08,In store,Alpha,39.41
+3264,Store 08,In store,Beta,61.51
+3265,Store 08,In store,Alpha,40.05
+3266,Store 08,In store,Alpha,27.59
+3267,Store 08,In store,Beta,40.34
+3268,Store 08,In store,Alpha,48.76
+3269,Store 08,In store,Alpha,26.09
+3270,Store 08,In store,Beta,33.31
+3271,Store 08,In store,Alpha,28.08
+3272,Store 08,In store,Alpha,33.38
+3273,Store 08,In store,Alpha,26.52
+3274,Store 08,In store,Beta,76.66
+3275,Store 08,In store,Beta,60.38
+3276,Store 08,In store,Alpha,28.81
+3277,Store 08,In store,Alpha,40.62
+3278,Store 08,In store,Beta,30.36
+3279,Store 08,In store,Gamma,43.56
+3280,Store 08,In store,Alpha,43.27
+3281,Store 08,In store,Beta,121.2
+3282,Store 08,In store,Alpha,49.57
+3283,Store 08,In store,Beta,24.16
+3284,Store 08,In store,Beta,31.75
+3285,Store 08,In store,Beta,122.35
+3286,Store 08,In store,Beta,97.04
+3287,Store 08,In store,Alpha,20.13
+3288,Store 08,In store,Beta,72.14
+3289,Store 08,In store,Alpha,102.43
+3290,Store 08,In store,Alpha,31.65
+3291,Store 08,In store,Alpha,24.86
+3292,Store 08,In store,Alpha,49.85
+3293,Store 08,In store,Beta,21.67
+3294,Store 08,In store,Beta,57.22
+3295,Store 08,In store,Alpha,124.35
+3296,Store 08,In store,Alpha,59.61
+3297,Store 08,In store,Beta,60.63
+3298,Store 08,In store,Beta,29.73
+3299,Store 08,In store,Alpha,135.68
+3300,Store 08,In store,Alpha,50.8
+3301,Store 08,In store,Alpha,68.26
+3302,Store 08,In store,Beta,28.31
+3303,Store 08,In store,Beta,26.13
+3304,Store 08,In store,Alpha,35.26
+3305,Store 08,In store,Beta,55.07
+3306,Store 08,In store,Alpha,113.35
+3307,Store 08,In store,Beta,29.08
+3308,Store 08,In store,Alpha,85.82
+3309,Store 08,In store,Beta,49.35
+3310,Store 08,In store,Alpha,56.69
+3311,Store 08,In store,Beta,57.52
+3312,Store 08,In store,Alpha,60.74
+3313,Store 08,In store,Beta,18.25
+3314,Store 08,In store,Alpha,82.03
+3315,Store 08,In store,Beta,26.59
+3316,Store 08,In store,Beta,33.9
+3317,Store 08,In store,Beta,119.32
+3318,Store 08,In store,Alpha,33.28
+3319,Store 08,In store,Alpha,19.93
+3320,Store 08,In store,Alpha,59.28
+3321,Store 08,In store,Alpha,50.13
+3322,Store 08,In store,Alpha,40.38
+3323,Store 08,In store,Beta,21.44
+3324,Store 08,In store,Alpha,37.93
+3325,Store 08,In store,Alpha,31.99
+3326,Store 08,In store,Beta,65.58
+3327,Store 08,In store,Alpha,58.41
+3328,Store 08,In store,Alpha,23.01
+3329,Store 08,In store,Alpha,51.57
+3330,Store 08,In store,Alpha,62.02
+3331,Store 08,In store,Beta,30.15
+3332,Store 08,In store,Alpha,74.16
+3333,Store 08,In store,Beta,31.03
+3334,Store 08,In store,Alpha,97.33
+3335,Store 08,In store,Alpha,71.31
+3336,Store 08,In store,Beta,43.69
+3337,Store 08,In store,Beta,36.62
+3338,Store 08,In store,Beta,78.33
+3339,Store 08,In store,Beta,47.27
+3340,Store 08,In store,Beta,31.47
+3341,Store 08,In store,Alpha,55.83
+3342,Store 08,In store,Alpha,71.42
+3343,Store 08,In store,Beta,42.61
+3344,Store 08,In store,Beta,121.34
+3345,Store 08,In store,Alpha,58.58
+3346,Store 08,In store,Alpha,39.22
+3347,Store 08,In store,Beta,27.94
+3348,Store 08,In store,Alpha,75.4
+3349,Store 08,In store,Alpha,75.66
+3350,Store 08,In store,Alpha,42.1
+3351,Store 08,In store,Alpha,45.5
+3352,Store 08,In store,Alpha,56.89
+3353,Store 08,In store,Alpha,27.42
+3354,Store 08,In store,Gamma,58.23
+3355,Store 08,In store,Alpha,37.41
+3356,Store 08,In store,Beta,28.49
+3357,Store 08,In store,Alpha,48.19
+3358,Store 08,In store,Alpha,41.63
+3359,Store 08,In store,Gamma,71.99
+3360,Store 08,In store,Alpha,85.13
+3361,Store 08,In store,Beta,23.93
+3362,Store 08,In store,Beta,133.35
+3363,Store 08,In store,Alpha,133.16
+3364,Store 08,In store,Beta,31.66
+3365,Store 08,In store,Alpha,16.89
+3366,Store 08,In store,Alpha,37.57
+3367,Store 08,In store,Beta,33.3
+3368,Store 08,In store,Alpha,122.34
+3369,Store 08,In store,Alpha,85.96
+3370,Store 08,In store,Beta,32.93
+3371,Store 08,In store,Alpha,258.21
+3372,Store 08,In store,Alpha,41.2
+3373,Store 08,In store,Alpha,37.41
+3374,Store 08,In store,Beta,24.12
+3375,Store 08,In store,Beta,62.1
+3376,Store 08,In store,Alpha,40.77
+3377,Store 08,In store,Beta,40.84
+3378,Store 08,In store,Beta,88.95
+3379,Store 08,In store,Alpha,29.1
+3380,Store 08,In store,Alpha,31.18
+3381,Store 08,In store,Alpha,74.38
+3382,Store 08,In store,Alpha,49.84
+3383,Store 08,In store,Beta,91.56
+3384,Store 08,In store,Alpha,54.56
+3385,Store 08,In store,Alpha,45.7
+3386,Store 08,In store,Alpha,20.09
+3387,Store 08,In store,Alpha,20.42
+3388,Store 08,In store,Alpha,46.71
+3389,Store 08,In store,Beta,28.36
+3390,Store 08,In store,Beta,42.18
+3391,Store 08,In store,Beta,43.31
+3392,Store 08,In store,Beta,42.6
+3393,Store 08,In store,Alpha,64.89
+3394,Store 08,In store,Alpha,70.64
+3395,Store 08,In store,Alpha,26.68
+3396,Store 08,In store,Alpha,32.79
+3397,Store 08,In store,Beta,59.67
+3398,Store 08,In store,Alpha,31.61
+3399,Store 08,In store,Beta,37.95
+3400,Store 08,In store,Beta,52.91
+3401,Store 08,In store,Beta,36.44
+3402,Store 08,In store,Alpha,52.35
+3403,Store 08,In store,Alpha,12.45
+3404,Store 08,In store,Alpha,22.6
+3405,Store 08,In store,Beta,80.88
+3406,Store 08,In store,Alpha,32.01
+3407,Store 08,In store,Beta,74.11
+3408,Store 08,In store,Alpha,27.13
+3409,Store 08,In store,Beta,130.95
+3410,Store 08,In store,Alpha,42.32
+3411,Store 08,In store,Beta,15.25
+3412,Store 08,In store,Alpha,19.48
+3413,Store 08,In store,Beta,102.5
+3414,Store 08,In store,Beta,50.78
+3415,Store 09,Online,Alpha,109.36
+3416,Store 09,Online,Beta,40.65
+3417,Store 09,Online,Alpha,94.5
+3418,Store 09,Online,Beta,36.06
+3419,Store 09,Online,Gamma,72.11
+3420,Store 09,Online,Alpha,48.14
+3421,Store 09,Online,Beta,53.03
+3422,Store 09,Online,Beta,155.71
+3423,Store 09,Online,Alpha,34.7
+3424,Store 09,Online,Alpha,64.83
+3425,Store 09,Online,Beta,33.24
+3426,Store 09,Online,Alpha,95.19
+3427,Store 09,Online,Alpha,71.49
+3428,Store 09,Online,Alpha,39.74
+3429,Store 09,Online,Alpha,72.2
+3430,Store 09,Online,Alpha,23.34
+3431,Store 09,Online,Alpha,124.17
+3432,Store 09,Online,Alpha,16.69
+3433,Store 09,Online,Alpha,174.35
+3434,Store 09,Online,Beta,72.14
+3435,Store 09,Online,Alpha,40.5
+3436,Store 09,Online,Beta,41.02
+3437,Store 09,Online,Alpha,46.11
+3438,Store 09,Online,Beta,58.36
+3439,Store 09,Online,Gamma,41.7
+3440,Store 09,Online,Alpha,53.13
+3441,Store 09,Online,Alpha,96.5
+3442,Store 09,Online,Beta,26.05
+3443,Store 09,Online,Alpha,17.09
+3444,Store 09,Online,Alpha,36.7
+3445,Store 09,Online,Alpha,66.78
+3446,Store 09,Online,Alpha,32.65
+3447,Store 09,Online,Beta,44.39
+3448,Store 09,Online,Alpha,95.82
+3449,Store 09,Online,Beta,116.4
+3450,Store 09,Online,Alpha,72.64
+3451,Store 09,Online,Alpha,52.95
+3452,Store 09,Online,Alpha,177.29
+3453,Store 09,Online,Gamma,145.41
+3454,Store 09,Online,Alpha,43.22
+3455,Store 09,Online,Alpha,78.33
+3456,Store 09,Online,Beta,94.39
+3457,Store 09,Online,Alpha,40.58
+3458,Store 09,Online,Beta,76.34
+3459,Store 09,Online,Alpha,25.34
+3460,Store 09,Online,Alpha,66.12
+3461,Store 09,Online,Beta,66.71
+3462,Store 09,Online,Beta,24.19
+3463,Store 09,Online,Gamma,34.48
+3464,Store 09,Online,Alpha,53.05
+3465,Store 09,Online,Alpha,40.5
+3466,Store 09,Online,Alpha,83.35
+3467,Store 09,Online,Alpha,45.91
+3468,Store 09,Online,Alpha,51.43
+3469,Store 09,Online,Beta,39.42
+3470,Store 09,Online,Alpha,64.08
+3471,Store 09,Online,Beta,64.21
+3472,Store 09,Online,Alpha,35.85
+3473,Store 09,Online,Beta,79.04
+3474,Store 09,Online,Alpha,109.38
+3475,Store 09,Online,Alpha,29.04
+3476,Store 09,Online,Beta,47.76
+3477,Store 09,Online,Alpha,105.15
+3478,Store 09,Online,Alpha,40.73
+3479,Store 09,Online,Beta,28.65
+3480,Store 09,Online,Beta,41.89
+3481,Store 09,Online,Beta,73.73
+3482,Store 09,Online,Alpha,51.14
+3483,Store 09,Online,Alpha,23.45
+3484,Store 09,Online,Beta,28.32
+3485,Store 09,Online,Alpha,76.89
+3486,Store 09,Online,Alpha,87.03
+3487,Store 09,Online,Alpha,24.56
+3488,Store 09,Online,Alpha,108.78
+3489,Store 09,Online,Alpha,56.94
+3490,Store 09,Online,Beta,79.17
+3491,Store 09,Online,Alpha,66.69
+3492,Store 09,Online,Alpha,24.02
+3493,Store 09,Online,Alpha,140.44
+3494,Store 09,Online,Beta,52.13
+3495,Store 09,Online,Beta,76.84
+3496,Store 09,Online,Alpha,28.89
+3497,Store 09,Online,Beta,35.54
+3498,Store 09,Online,Alpha,42.65
+3499,Store 09,Online,Beta,94.66
+3500,Store 09,Online,Alpha,76.39
+3501,Store 09,Online,Alpha,90.62
+3502,Store 09,Online,Alpha,181.61
+3503,Store 09,Online,Beta,15.69
+3504,Store 09,Online,Alpha,48.07
+3505,Store 09,Online,Alpha,86.39
+3506,Store 09,Online,Alpha,33.52
+3507,Store 09,Online,Alpha,103.39
+3508,Store 09,Online,Beta,40.78
+3509,Store 09,Online,Alpha,33.86
+3510,Store 09,Online,Alpha,32.3
+3511,Store 09,Online,Beta,72.34
+3512,Store 09,Online,Alpha,47.37
+3513,Store 09,Online,Alpha,29.77
+3514,Store 09,Online,Alpha,41.5
+3515,Store 09,Online,Alpha,17.43
+3516,Store 09,Online,Alpha,60.86
+3517,Store 09,Online,Alpha,56.58
+3518,Store 09,Online,Alpha,55.72
+3519,Store 09,Online,Alpha,46.91
+3520,Store 09,Online,Beta,25.75
+3521,Store 09,Online,Alpha,47.34
+3522,Store 09,Online,Alpha,94.11
+3523,Store 09,Online,Beta,32.03
+3524,Store 09,Online,Beta,44.06
+3525,Store 09,Online,Alpha,48.18
+3526,Store 09,Online,Beta,80.2
+3527,Store 09,Online,Beta,58.79
+3528,Store 09,Online,Alpha,59.61
+3529,Store 09,Online,Beta,52.62
+3530,Store 09,Online,Beta,69.82
+3531,Store 09,Online,Alpha,89.71
+3532,Store 09,Online,Alpha,52.35
+3533,Store 09,Online,Alpha,87.77
+3534,Store 09,Online,Beta,71.81
+3535,Store 09,Online,Alpha,29.86
+3536,Store 09,Online,Alpha,39.76
+3537,Store 09,Online,Alpha,32.13
+3538,Store 09,Online,Alpha,44.52
+3539,Store 09,Online,Alpha,66.1
+3540,Store 09,Online,Beta,80.96
+3541,Store 09,Online,Alpha,20.38
+3542,Store 09,Online,Alpha,35.53
+3543,Store 09,Online,Beta,57.67
+3544,Store 09,Online,Alpha,32.99
+3545,Store 09,Online,Alpha,18.35
+3546,Store 09,Online,Alpha,180.64
+3547,Store 09,Online,Alpha,59.42
+3548,Store 09,Online,Beta,85.97
+3549,Store 09,Online,Beta,60.48
+3550,Store 09,Online,Alpha,156.9
+3551,Store 09,Online,Alpha,54.55
+3552,Store 09,Online,Alpha,31.2
+3553,Store 09,Online,Alpha,30.7
+3554,Store 09,Online,Beta,179.22
+3555,Store 09,Online,Beta,28.3
+3556,Store 09,Online,Beta,90.09
+3557,Store 09,Online,Alpha,64.79
+3558,Store 09,Online,Alpha,35.33
+3559,Store 09,Online,Alpha,41.61
+3560,Store 09,Online,Alpha,166.56
+3561,Store 09,Online,Alpha,73.22
+3562,Store 09,In store,Beta,30.62
+3563,Store 09,In store,Beta,25.87
+3564,Store 09,In store,Alpha,53.04
+3565,Store 09,In store,Alpha,40.1
+3566,Store 09,In store,Beta,42.33
+3567,Store 09,In store,Alpha,16.18
+3568,Store 09,In store,Beta,66.85
+3569,Store 09,In store,Beta,74.81
+3570,Store 09,In store,Alpha,73.89
+3571,Store 09,In store,Alpha,25.38
+3572,Store 09,In store,Beta,29.85
+3573,Store 09,In store,Beta,19.62
+3574,Store 09,In store,Alpha,44.27
+3575,Store 09,In store,Alpha,28.73
+3576,Store 09,In store,Beta,63.14
+3577,Store 09,In store,Beta,96.76
+3578,Store 09,In store,Alpha,41.2
+3579,Store 09,In store,Beta,27.34
+3580,Store 09,In store,Beta,86.94
+3581,Store 09,In store,Alpha,83.19
+3582,Store 09,In store,Alpha,27.39
+3583,Store 09,In store,Alpha,31.56
+3584,Store 09,In store,Alpha,117.2
+3585,Store 09,In store,Beta,48.87
+3586,Store 09,In store,Alpha,22.9
+3587,Store 09,In store,Alpha,97.84
+3588,Store 09,In store,Beta,90.06
+3589,Store 09,In store,Alpha,90.53
+3590,Store 09,In store,Beta,32.01
+3591,Store 09,In store,Beta,40.95
+3592,Store 09,In store,Gamma,30.04
+3593,Store 09,In store,Alpha,45.0
+3594,Store 09,In store,Beta,29.19
+3595,Store 09,In store,Alpha,34.66
+3596,Store 09,In store,Alpha,94.63
+3597,Store 09,In store,Beta,22.85
+3598,Store 09,In store,Beta,52.59
+3599,Store 09,In store,Beta,24.51
+3600,Store 09,In store,Alpha,48.32
+3601,Store 09,In store,Beta,71.67
+3602,Store 09,In store,Alpha,91.21
+3603,Store 09,In store,Alpha,96.95
+3604,Store 09,In store,Beta,74.76
+3605,Store 09,In store,Alpha,27.03
+3606,Store 09,In store,Alpha,35.66
+3607,Store 09,In store,Alpha,43.23
+3608,Store 09,In store,Beta,41.53
+3609,Store 09,In store,Beta,41.13
+3610,Store 09,In store,Gamma,55.08
+3611,Store 09,In store,Alpha,29.34
+3612,Store 09,In store,Beta,15.96
+3613,Store 09,In store,Alpha,46.04
+3614,Store 09,In store,Alpha,69.87
+3615,Store 09,In store,Gamma,48.94
+3616,Store 09,In store,Beta,11.45
+3617,Store 09,In store,Beta,21.78
+3618,Store 09,In store,Beta,14.62
+3619,Store 09,In store,Alpha,38.24
+3620,Store 09,In store,Beta,89.06
+3621,Store 09,In store,Alpha,46.65
+3622,Store 09,In store,Alpha,24.04
+3623,Store 09,In store,Alpha,62.93
+3624,Store 09,In store,Alpha,38.68
+3625,Store 09,In store,Beta,53.7
+3626,Store 09,In store,Alpha,76.05
+3627,Store 09,In store,Gamma,32.44
+3628,Store 09,In store,Alpha,38.89
+3629,Store 09,In store,Beta,43.46
+3630,Store 09,In store,Alpha,62.23
+3631,Store 09,In store,Alpha,49.22
+3632,Store 09,In store,Alpha,88.09
+3633,Store 09,In store,Beta,36.08
+3634,Store 09,In store,Alpha,32.24
+3635,Store 09,In store,Beta,82.28
+3636,Store 09,In store,Beta,22.87
+3637,Store 09,In store,Alpha,55.08
+3638,Store 09,In store,Alpha,39.54
+3639,Store 09,In store,Beta,60.26
+3640,Store 09,In store,Alpha,28.32
+3641,Store 09,In store,Beta,48.72
+3642,Store 09,In store,Alpha,78.49
+3643,Store 09,In store,Alpha,38.1
+3644,Store 09,In store,Gamma,19.56
+3645,Store 09,In store,Alpha,54.84
+3646,Store 09,In store,Alpha,52.38
+3647,Store 09,In store,Alpha,50.18
+3648,Store 09,In store,Alpha,105.74
+3649,Store 09,In store,Alpha,96.35
+3650,Store 09,In store,Alpha,51.73
+3651,Store 09,In store,Beta,22.22
+3652,Store 09,In store,Alpha,79.06
+3653,Store 09,In store,Alpha,27.81
+3654,Store 09,In store,Alpha,40.62
+3655,Store 09,In store,Alpha,45.54
+3656,Store 09,In store,Alpha,36.11
+3657,Store 09,In store,Alpha,77.41
+3658,Store 09,In store,Beta,35.3
+3659,Store 09,In store,Alpha,37.19
+3660,Store 09,In store,Alpha,32.98
+3661,Store 09,In store,Beta,43.92
+3662,Store 09,In store,Alpha,67.75
+3663,Store 09,In store,Alpha,27.04
+3664,Store 09,In store,Alpha,39.99
+3665,Store 09,In store,Alpha,34.38
+3666,Store 09,In store,Alpha,54.11
+3667,Store 09,In store,Beta,81.3
+3668,Store 09,In store,Alpha,94.18
+3669,Store 09,In store,Alpha,34.86
+3670,Store 09,In store,Alpha,136.46
+3671,Store 09,In store,Alpha,82.34
+3672,Store 09,In store,Alpha,15.27
+3673,Store 09,In store,Alpha,41.25
+3674,Store 09,In store,Alpha,25.08
+3675,Store 09,In store,Alpha,35.45
+3676,Store 09,In store,Alpha,49.9
+3677,Store 09,In store,Alpha,89.28
+3678,Store 09,In store,Beta,86.86
+3679,Store 09,In store,Beta,30.69
+3680,Store 09,In store,Beta,77.16
+3681,Store 09,In store,Beta,67.12
+3682,Store 09,In store,Alpha,53.81
+3683,Store 09,In store,Alpha,54.84
+3684,Store 09,In store,Alpha,37.13
+3685,Store 09,In store,Alpha,94.77
+3686,Store 09,In store,Alpha,15.89
+3687,Store 09,In store,Alpha,123.04
+3688,Store 09,In store,Beta,28.19
+3689,Store 09,In store,Beta,26.95
+3690,Store 09,In store,Alpha,30.91
+3691,Store 09,In store,Alpha,7.33
+3692,Store 09,In store,Alpha,18.5
+3693,Store 09,In store,Beta,58.47
+3694,Store 09,In store,Beta,15.14
+3695,Store 09,In store,Alpha,111.81
+3696,Store 09,In store,Alpha,35.19
+3697,Store 09,In store,Alpha,54.28
+3698,Store 09,In store,Alpha,19.53
+3699,Store 09,In store,Beta,119.97
+3700,Store 09,In store,Alpha,12.86
+3701,Store 09,In store,Beta,58.01
+3702,Store 09,In store,Beta,109.06
+3703,Store 09,In store,Beta,18.35
+3704,Store 09,In store,Alpha,56.21
+3705,Store 09,In store,Beta,40.14
+3706,Store 09,In store,Alpha,49.65
+3707,Store 09,In store,Beta,36.09
+3708,Store 09,In store,Gamma,58.71
+3709,Store 09,In store,Alpha,74.67
+3710,Store 10,In store,Beta,21.05
+3711,Store 10,In store,Alpha,21.28
+3712,Store 10,In store,Beta,44.05
+3713,Store 10,In store,Beta,124.29
+3714,Store 10,In store,Alpha,31.87
+3715,Store 10,In store,Beta,37.76
+3716,Store 10,In store,Alpha,40.27
+3717,Store 10,In store,Alpha,49.55
+3718,Store 10,In store,Alpha,18.91
+3719,Store 10,In store,Beta,91.17
+3720,Store 10,In store,Alpha,50.36
+3721,Store 10,In store,Alpha,31.96
+3722,Store 10,In store,Alpha,65.56
+3723,Store 10,In store,Alpha,32.21
+3724,Store 10,In store,Alpha,57.93
+3725,Store 10,In store,Alpha,87.78
+3726,Store 10,In store,Alpha,105.67
+3727,Store 10,In store,Alpha,45.3
+3728,Store 10,In store,Beta,50.02
+3729,Store 10,In store,Alpha,35.6
+3730,Store 10,In store,Beta,71.87
+3731,Store 10,In store,Alpha,77.41
+3732,Store 10,In store,Alpha,36.21
+3733,Store 10,In store,Alpha,40.84
+3734,Store 10,In store,Beta,48.81
+3735,Store 10,In store,Alpha,45.85
+3736,Store 10,In store,Alpha,88.29
+3737,Store 10,In store,Beta,42.28
+3738,Store 10,In store,Alpha,65.23
+3739,Store 10,In store,Alpha,48.89
+3740,Store 10,In store,Alpha,57.91
+3741,Store 10,In store,Beta,82.51
+3742,Store 10,In store,Beta,57.64
+3743,Store 10,In store,Alpha,89.8
+3744,Store 10,In store,Beta,42.19
+3745,Store 10,In store,Alpha,52.11
+3746,Store 10,In store,Alpha,21.24
+3747,Store 10,In store,Alpha,25.68
+3748,Store 10,In store,Alpha,13.3
+3749,Store 10,In store,Beta,50.96
+3750,Store 10,In store,Alpha,60.16
+3751,Store 10,In store,Gamma,43.26
+3752,Store 10,In store,Beta,19.51
+3753,Store 10,In store,Beta,28.89
+3754,Store 10,In store,Beta,41.6
+3755,Store 10,In store,Alpha,71.92
+3756,Store 10,In store,Alpha,65.98
+3757,Store 10,In store,Alpha,45.93
+3758,Store 10,In store,Gamma,43.19
+3759,Store 10,In store,Alpha,63.34
+3760,Store 10,In store,Alpha,13.78
+3761,Store 10,In store,Alpha,34.76
+3762,Store 10,In store,Beta,26.57
+3763,Store 10,In store,Beta,47.03
+3764,Store 10,In store,Alpha,80.17
+3765,Store 10,In store,Alpha,69.41
+3766,Store 10,In store,Beta,38.27
+3767,Store 10,In store,Gamma,33.61
+3768,Store 10,In store,Alpha,20.42
+3769,Store 10,In store,Beta,158.95
+3770,Store 10,In store,Beta,149.2
+3771,Store 10,In store,Beta,85.43
+3772,Store 10,In store,Gamma,38.19
+3773,Store 10,In store,Beta,32.5
+3774,Store 10,In store,Alpha,26.52
+3775,Store 10,In store,Beta,86.03
+3776,Store 10,In store,Alpha,58.9
+3777,Store 10,In store,Alpha,17.11
+3778,Store 10,In store,Beta,33.07
+3779,Store 10,In store,Alpha,78.03
+3780,Store 10,In store,Alpha,29.58
+3781,Store 10,In store,Beta,57.22
+3782,Store 10,In store,Beta,36.6
+3783,Store 10,In store,Alpha,50.3
+3784,Store 10,In store,Alpha,53.23
+3785,Store 10,In store,Gamma,32.67
+3786,Store 10,In store,Alpha,74.73
+3787,Store 10,In store,Alpha,50.23
+3788,Store 10,In store,Beta,30.08
+3789,Store 10,In store,Beta,14.36
+3790,Store 10,In store,Alpha,10.31
+3791,Store 10,In store,Beta,85.74
+3792,Store 10,In store,Beta,41.15
+3793,Store 10,In store,Alpha,84.14
+3794,Store 10,In store,Alpha,30.32
+3795,Store 10,In store,Alpha,49.22
+3796,Store 10,In store,Alpha,45.73
+3797,Store 10,In store,Alpha,58.91
+3798,Store 10,In store,Alpha,38.49
+3799,Store 10,In store,Alpha,55.73
+3800,Store 10,In store,Alpha,54.56
+3801,Store 10,In store,Beta,108.69
+3802,Store 10,In store,Alpha,78.19
+3803,Store 10,In store,Beta,116.9
+3804,Store 10,In store,Beta,50.85
+3805,Store 10,In store,Beta,122.53
+3806,Store 10,In store,Beta,98.35
+3807,Store 10,In store,Beta,59.86
+3808,Store 10,In store,Alpha,92.63
+3809,Store 10,In store,Alpha,37.96
+3810,Store 10,In store,Alpha,28.07
+3811,Store 10,In store,Alpha,79.38
+3812,Store 10,In store,Beta,28.78
+3813,Store 10,In store,Beta,78.9
+3814,Store 10,In store,Alpha,54.76
+3815,Store 10,In store,Beta,60.69
+3816,Store 10,In store,Alpha,49.84
+3817,Store 10,In store,Alpha,36.87
+3818,Store 10,In store,Gamma,41.96
+3819,Store 10,In store,Alpha,26.67
+3820,Store 10,In store,Beta,15.51
+3821,Store 10,In store,Alpha,38.11
+3822,Store 10,In store,Alpha,90.53
+3823,Store 10,In store,Beta,43.0
+3824,Store 10,In store,Beta,118.15
+3825,Store 10,In store,Alpha,38.58
+3826,Store 10,In store,Beta,57.36
+3827,Store 10,In store,Alpha,44.06
+3828,Store 10,In store,Alpha,53.52
+3829,Store 10,In store,Beta,53.8
+3830,Store 11,Online,Alpha,54.35
+3831,Store 11,Online,Beta,40.92
+3832,Store 11,Online,Alpha,76.11
+3833,Store 11,Online,Alpha,93.77
+3834,Store 11,Online,Alpha,74.08
+3835,Store 11,Online,Alpha,39.72
+3836,Store 11,Online,Alpha,106.61
+3837,Store 11,Online,Gamma,51.18
+3838,Store 11,Online,Alpha,52.99
+3839,Store 11,Online,Alpha,62.67
+3840,Store 11,Online,Alpha,67.7
+3841,Store 11,Online,Alpha,29.68
+3842,Store 11,Online,Alpha,119.41
+3843,Store 11,Online,Alpha,65.58
+3844,Store 11,Online,Beta,41.22
+3845,Store 11,Online,Alpha,21.2
+3846,Store 11,Online,Beta,99.08
+3847,Store 11,Online,Alpha,24.65
+3848,Store 11,Online,Alpha,67.39
+3849,Store 11,Online,Alpha,65.3
+3850,Store 11,Online,Beta,41.33
+3851,Store 11,Online,Beta,46.01
+3852,Store 11,Online,Alpha,20.35
+3853,Store 11,Online,Alpha,53.63
+3854,Store 11,Online,Beta,84.06
+3855,Store 11,Online,Alpha,96.77
+3856,Store 11,Online,Beta,74.76
+3857,Store 11,Online,Beta,23.65
+3858,Store 11,Online,Alpha,92.43
+3859,Store 11,Online,Alpha,88.0
+3860,Store 11,Online,Alpha,96.8
+3861,Store 11,Online,Alpha,77.01
+3862,Store 11,Online,Alpha,58.06
+3863,Store 11,Online,Beta,50.41
+3864,Store 11,Online,Alpha,294.34
+3865,Store 11,Online,Beta,66.73
+3866,Store 11,Online,Beta,55.8
+3867,Store 11,Online,Alpha,35.3
+3868,Store 11,Online,Beta,13.91
+3869,Store 11,Online,Beta,140.46
+3870,Store 11,Online,Alpha,94.43
+3871,Store 11,Online,Alpha,86.75
+3872,Store 11,Online,Beta,33.19
+3873,Store 11,Online,Alpha,40.42
+3874,Store 11,Online,Alpha,105.51
+3875,Store 11,Online,Beta,34.53
+3876,Store 11,Online,Beta,65.37
+3877,Store 11,Online,Alpha,86.38
+3878,Store 11,Online,Alpha,103.97
+3879,Store 11,Online,Alpha,154.15
+3880,Store 11,Online,Alpha,41.55
+3881,Store 11,Online,Gamma,128.62
+3882,Store 11,Online,Alpha,49.94
+3883,Store 11,Online,Beta,28.52
+3884,Store 11,Online,Beta,62.67
+3885,Store 11,Online,Alpha,28.75
+3886,Store 11,Online,Beta,35.3
+3887,Store 11,Online,Gamma,112.73
+3888,Store 11,Online,Beta,64.24
+3889,Store 11,Online,Beta,241.84
+3890,Store 11,Online,Alpha,49.79
+3891,Store 11,Online,Alpha,77.44
+3892,Store 11,Online,Alpha,92.33
+3893,Store 11,Online,Alpha,37.59
+3894,Store 11,Online,Alpha,60.93
+3895,Store 11,Online,Beta,50.28
+3896,Store 11,Online,Gamma,44.06
+3897,Store 11,Online,Alpha,105.75
+3898,Store 11,Online,Beta,59.6
+3899,Store 11,Online,Beta,41.69
+3900,Store 11,Online,Beta,49.6
+3901,Store 11,Online,Beta,49.47
+3902,Store 11,Online,Alpha,58.47
+3903,Store 11,Online,Alpha,73.82
+3904,Store 11,Online,Beta,44.14
+3905,Store 11,Online,Gamma,129.71
+3906,Store 11,Online,Alpha,57.16
+3907,Store 11,Online,Alpha,32.18
+3908,Store 11,Online,Beta,105.58
+3909,Store 11,Online,Gamma,114.13
+3910,Store 11,Online,Beta,81.31
+3911,Store 11,Online,Gamma,184.31
+3912,Store 11,Online,Alpha,100.4
+3913,Store 11,Online,Alpha,60.16
+3914,Store 11,Online,Beta,77.49
+3915,Store 11,Online,Beta,29.61
+3916,Store 11,Online,Beta,64.36
+3917,Store 11,Online,Gamma,57.08
+3918,Store 11,Online,Alpha,92.32
+3919,Store 11,Online,Beta,25.32
+3920,Store 11,Online,Alpha,124.74
+3921,Store 11,Online,Beta,44.35
+3922,Store 11,Online,Alpha,49.3
+3923,Store 11,Online,Alpha,32.09
+3924,Store 11,Online,Alpha,103.79
+3925,Store 11,Online,Alpha,76.8
+3926,Store 11,Online,Alpha,39.9
+3927,Store 11,Online,Alpha,80.82
+3928,Store 11,Online,Beta,83.71
+3929,Store 11,Online,Beta,43.61
+3930,Store 11,Online,Alpha,225.7
+3931,Store 11,Online,Beta,134.48
+3932,Store 11,Online,Gamma,135.07
+3933,Store 11,Online,Alpha,34.4
+3934,Store 11,Online,Alpha,16.45
+3935,Store 11,Online,Alpha,41.95
+3936,Store 11,Online,Alpha,236.86
+3937,Store 11,Online,Beta,163.94
+3938,Store 11,Online,Alpha,68.3
+3939,Store 11,Online,Beta,98.85
+3940,Store 11,Online,Alpha,34.87
+3941,Store 11,Online,Alpha,131.89
+3942,Store 11,Online,Beta,53.59
+3943,Store 11,Online,Alpha,67.15
+3944,Store 11,Online,Beta,73.3
+3945,Store 11,Online,Alpha,98.23
+3946,Store 11,Online,Alpha,37.57
+3947,Store 11,Online,Beta,31.3
+3948,Store 11,Online,Alpha,42.6
+3949,Store 11,Online,Beta,130.13
+3950,Store 11,Online,Beta,139.76
+3951,Store 11,Online,Alpha,92.7
+3952,Store 11,Online,Alpha,44.99
+3953,Store 11,Online,Beta,111.45
+3954,Store 11,Online,Alpha,83.54
+3955,Store 11,In store,Alpha,66.05
+3956,Store 11,In store,Beta,59.5
+3957,Store 11,In store,Alpha,60.6
+3958,Store 11,In store,Beta,57.12
+3959,Store 11,In store,Alpha,74.97
+3960,Store 11,In store,Beta,92.83
+3961,Store 11,In store,Beta,132.34
+3962,Store 11,In store,Beta,63.25
+3963,Store 11,In store,Alpha,51.71
+3964,Store 11,In store,Alpha,28.18
+3965,Store 11,In store,Alpha,37.7
+3966,Store 11,In store,Beta,58.93
+3967,Store 11,In store,Alpha,64.24
+3968,Store 11,In store,Alpha,116.93
+3969,Store 11,In store,Alpha,32.39
+3970,Store 11,In store,Alpha,38.22
+3971,Store 11,In store,Alpha,31.76
+3972,Store 11,In store,Alpha,43.47
+3973,Store 11,In store,Alpha,50.77
+3974,Store 11,In store,Alpha,45.89
+3975,Store 11,In store,Alpha,70.36
+3976,Store 11,In store,Alpha,27.71
+3977,Store 11,In store,Alpha,87.26
+3978,Store 11,In store,Alpha,69.98
+3979,Store 11,In store,Beta,79.61
+3980,Store 11,In store,Beta,104.55
+3981,Store 11,In store,Alpha,35.18
+3982,Store 11,In store,Alpha,78.6
+3983,Store 11,In store,Beta,68.91
+3984,Store 11,In store,Beta,81.16
+3985,Store 11,In store,Beta,160.24
+3986,Store 11,In store,Beta,34.04
+3987,Store 11,In store,Alpha,59.56
+3988,Store 11,In store,Alpha,60.47
+3989,Store 11,In store,Beta,46.06
+3990,Store 11,In store,Beta,102.8
+3991,Store 11,In store,Alpha,47.61
+3992,Store 11,In store,Beta,118.29
+3993,Store 11,In store,Alpha,38.95
+3994,Store 11,In store,Alpha,24.1
+3995,Store 11,In store,Beta,100.36
+3996,Store 11,In store,Beta,16.55
+3997,Store 11,In store,Alpha,24.38
+3998,Store 11,In store,Alpha,77.29
+3999,Store 11,In store,Beta,35.43
+4000,Store 11,In store,Alpha,196.1
+4001,Store 11,In store,Beta,43.89
+4002,Store 11,In store,Alpha,113.67
+4003,Store 11,In store,Beta,85.4
+4004,Store 11,In store,Alpha,72.25
+4005,Store 11,In store,Alpha,29.25
+4006,Store 11,In store,Alpha,56.11
+4007,Store 11,In store,Beta,43.7
+4008,Store 11,In store,Alpha,53.25
+4009,Store 11,In store,Alpha,15.13
+4010,Store 11,In store,Beta,34.76
+4011,Store 11,In store,Beta,34.35
+4012,Store 11,In store,Alpha,6.2
+4013,Store 11,In store,Alpha,59.93
+4014,Store 11,In store,Beta,45.8
+4015,Store 11,In store,Beta,13.29
+4016,Store 11,In store,Alpha,68.35
+4017,Store 11,In store,Alpha,72.4
+4018,Store 11,In store,Alpha,35.09
+4019,Store 11,In store,Beta,37.8
+4020,Store 11,In store,Alpha,39.01
+4021,Store 11,In store,Beta,56.12
+4022,Store 11,In store,Beta,46.95
+4023,Store 11,In store,Alpha,123.9
+4024,Store 11,In store,Beta,40.79
+4025,Store 11,In store,Alpha,100.08
+4026,Store 11,In store,Alpha,33.76
+4027,Store 11,In store,Alpha,50.72
+4028,Store 11,In store,Alpha,54.63
+4029,Store 11,In store,Beta,40.44
+4030,Store 11,In store,Beta,83.96
+4031,Store 11,In store,Alpha,29.72
+4032,Store 11,In store,Alpha,65.63
+4033,Store 11,In store,Alpha,41.83
+4034,Store 11,In store,Alpha,58.27
+4035,Store 11,In store,Beta,51.5
+4036,Store 11,In store,Alpha,22.74
+4037,Store 11,In store,Alpha,24.59
+4038,Store 11,In store,Beta,36.87
+4039,Store 11,In store,Alpha,79.28
+4040,Store 11,In store,Alpha,61.58
+4041,Store 11,In store,Alpha,35.95
+4042,Store 11,In store,Alpha,61.98
+4043,Store 11,In store,Beta,46.02
+4044,Store 11,In store,Alpha,32.66
+4045,Store 11,In store,Beta,38.7
+4046,Store 11,In store,Alpha,40.43
+4047,Store 11,In store,Alpha,51.23
+4048,Store 11,In store,Alpha,51.96
+4049,Store 11,In store,Alpha,53.16
+4050,Store 11,In store,Beta,48.53
+4051,Store 11,In store,Beta,35.43
+4052,Store 11,In store,Alpha,33.37
+4053,Store 11,In store,Alpha,29.7
+4054,Store 11,In store,Beta,37.49
+4055,Store 11,In store,Beta,40.74
+4056,Store 11,In store,Alpha,68.79
+4057,Store 11,In store,Alpha,78.4
+4058,Store 11,In store,Alpha,61.16
+4059,Store 11,In store,Alpha,47.03
+4060,Store 11,In store,Alpha,49.9
+4061,Store 11,In store,Beta,72.91
+4062,Store 11,In store,Alpha,36.47
+4063,Store 11,In store,Beta,51.85
+4064,Store 11,In store,Beta,51.88
+4065,Store 11,In store,Alpha,44.86
+4066,Store 11,In store,Alpha,30.33
+4067,Store 11,In store,Alpha,85.48
+4068,Store 11,In store,Alpha,78.37
+4069,Store 11,In store,Alpha,39.14
+4070,Store 11,In store,Beta,93.62
+4071,Store 11,In store,Beta,18.63
+4072,Store 11,In store,Alpha,78.11
+4073,Store 11,In store,Alpha,57.32
+4074,Store 11,In store,Beta,45.58
+4075,Store 11,In store,Alpha,50.71
+4076,Store 11,In store,Beta,50.12
+4077,Store 11,In store,Alpha,51.21
+4078,Store 11,In store,Beta,139.87
+4079,Store 11,In store,Beta,37.3
+4080,Store 11,In store,Alpha,34.89
+4081,Store 11,In store,Beta,40.32
+4082,Store 11,In store,Alpha,59.27
+4083,Store 11,In store,Alpha,59.53
+4084,Store 11,In store,Beta,27.9
+4085,Store 11,In store,Alpha,54.82
+4086,Store 11,In store,Alpha,96.03
+4087,Store 11,In store,Beta,120.81
+4088,Store 11,In store,Alpha,64.32
+4089,Store 11,In store,Alpha,55.52
+4090,Store 11,In store,Alpha,77.62
+4091,Store 11,In store,Alpha,44.49
+4092,Store 11,In store,Beta,35.59
+4093,Store 11,In store,Beta,19.44
+4094,Store 12,Online,Alpha,124.26
+4095,Store 12,Online,Beta,72.41
+4096,Store 12,Online,Alpha,62.78
+4097,Store 12,Online,Beta,101.02
+4098,Store 12,Online,Alpha,64.81
+4099,Store 12,Online,Alpha,104.08
+4100,Store 12,Online,Alpha,131.09
+4101,Store 12,Online,Beta,110.26
+4102,Store 12,Online,Alpha,56.61
+4103,Store 12,Online,Alpha,74.68
+4104,Store 12,Online,Alpha,75.46
+4105,Store 12,Online,Alpha,167.4
+4106,Store 12,Online,Alpha,51.64
+4107,Store 12,Online,Alpha,34.22
+4108,Store 12,Online,Alpha,59.13
+4109,Store 12,Online,Alpha,91.92
+4110,Store 12,Online,Beta,81.88
+4111,Store 12,Online,Beta,41.7
+4112,Store 12,Online,Beta,47.84
+4113,Store 12,Online,Beta,27.78
+4114,Store 12,Online,Alpha,68.14
+4115,Store 12,Online,Alpha,52.09
+4116,Store 12,Online,Alpha,45.81
+4117,Store 12,Online,Alpha,40.11
+4118,Store 12,Online,Beta,59.21
+4119,Store 12,Online,Beta,54.15
+4120,Store 12,Online,Beta,54.17
+4121,Store 12,Online,Beta,37.71
+4122,Store 12,Online,Alpha,64.55
+4123,Store 12,Online,Alpha,120.83
+4124,Store 12,Online,Alpha,95.41
+4125,Store 12,Online,Alpha,48.68
+4126,Store 12,Online,Alpha,55.97
+4127,Store 12,Online,Beta,63.82
+4128,Store 12,Online,Alpha,64.94
+4129,Store 12,Online,Alpha,40.55
+4130,Store 12,Online,Alpha,52.13
+4131,Store 12,Online,Alpha,51.17
+4132,Store 12,Online,Alpha,69.22
+4133,Store 12,Online,Alpha,44.37
+4134,Store 12,Online,Beta,80.45
+4135,Store 12,Online,Alpha,78.75
+4136,Store 12,Online,Beta,53.63
+4137,Store 12,Online,Alpha,109.17
+4138,Store 12,Online,Beta,75.65
+4139,Store 12,Online,Beta,97.35
+4140,Store 12,Online,Alpha,118.36
+4141,Store 12,Online,Beta,75.96
+4142,Store 12,Online,Alpha,21.4
+4143,Store 12,Online,Alpha,39.31
+4144,Store 12,Online,Alpha,157.95
+4145,Store 12,Online,Alpha,63.73
+4146,Store 12,Online,Beta,140.36
+4147,Store 12,Online,Alpha,61.39
+4148,Store 12,Online,Beta,121.49
+4149,Store 12,Online,Beta,119.91
+4150,Store 12,Online,Alpha,22.57
+4151,Store 12,Online,Alpha,60.3
+4152,Store 12,Online,Alpha,47.66
+4153,Store 12,Online,Beta,61.27
+4154,Store 12,Online,Alpha,60.97
+4155,Store 12,Online,Beta,156.74
+4156,Store 12,Online,Alpha,53.53
+4157,Store 12,Online,Alpha,133.66
+4158,Store 12,Online,Alpha,77.48
+4159,Store 12,Online,Alpha,55.22
+4160,Store 12,Online,Alpha,42.85
+4161,Store 12,Online,Alpha,32.19
+4162,Store 12,Online,Beta,44.73
+4163,Store 12,Online,Beta,54.26
+4164,Store 12,Online,Alpha,100.22
+4165,Store 12,Online,Alpha,24.4
+4166,Store 12,Online,Beta,107.84
+4167,Store 12,Online,Beta,274.69
+4168,Store 12,Online,Beta,88.9
+4169,Store 12,Online,Alpha,50.45
+4170,Store 12,Online,Alpha,69.05
+4171,Store 12,Online,Beta,82.6
+4172,Store 12,Online,Beta,110.55
+4173,Store 12,Online,Beta,106.24
+4174,Store 12,Online,Alpha,51.23
+4175,Store 12,Online,Beta,174.88
+4176,Store 12,Online,Alpha,119.44
+4177,Store 12,Online,Beta,169.38
+4178,Store 12,Online,Alpha,74.53
+4179,Store 12,Online,Alpha,92.26
+4180,Store 12,Online,Alpha,90.5
+4181,Store 12,Online,Alpha,38.75
+4182,Store 12,Online,Beta,67.44
+4183,Store 12,Online,Gamma,70.51
+4184,Store 12,Online,Alpha,92.53
+4185,Store 12,Online,Beta,180.91
+4186,Store 12,Online,Beta,102.32
+4187,Store 12,Online,Alpha,97.65
+4188,Store 12,Online,Alpha,160.82
+4189,Store 12,Online,Alpha,81.63
+4190,Store 12,Online,Alpha,49.93
+4191,Store 12,Online,Beta,130.7
+4192,Store 12,Online,Alpha,57.37
+4193,Store 12,Online,Alpha,41.97
+4194,Store 12,Online,Beta,48.21
+4195,Store 12,Online,Alpha,26.96
+4196,Store 12,Online,Alpha,119.8
+4197,Store 12,Online,Alpha,131.96
+4198,Store 12,Online,Alpha,57.05
+4199,Store 12,Online,Beta,42.11
+4200,Store 12,Online,Beta,70.26
+4201,Store 12,Online,Alpha,73.63
+4202,Store 12,Online,Alpha,76.58
+4203,Store 12,Online,Alpha,61.79
+4204,Store 12,Online,Alpha,63.31
+4205,Store 12,Online,Alpha,43.13
+4206,Store 12,Online,Alpha,116.69
+4207,Store 12,Online,Alpha,76.41
+4208,Store 12,Online,Beta,56.82
+4209,Store 12,Online,Alpha,109.18
+4210,Store 12,Online,Alpha,80.63
+4211,Store 12,Online,Alpha,75.8
+4212,Store 12,Online,Alpha,43.3
+4213,Store 12,Online,Beta,44.61
+4214,Store 12,In store,Gamma,35.3
+4215,Store 12,In store,Alpha,67.39
+4216,Store 12,In store,Alpha,26.09
+4217,Store 12,In store,Alpha,64.85
+4218,Store 12,In store,Alpha,75.26
+4219,Store 12,In store,Beta,89.4
+4220,Store 12,In store,Alpha,236.41
+4221,Store 12,In store,Beta,58.01
+4222,Store 12,In store,Beta,19.29
+4223,Store 12,In store,Alpha,28.55
+4224,Store 12,In store,Beta,71.97
+4225,Store 12,In store,Alpha,107.49
+4226,Store 12,In store,Alpha,54.58
+4227,Store 12,In store,Beta,29.36
+4228,Store 12,In store,Alpha,92.17
+4229,Store 12,In store,Alpha,16.0
+4230,Store 12,In store,Beta,57.04
+4231,Store 12,In store,Beta,115.5
+4232,Store 12,In store,Alpha,69.96
+4233,Store 12,In store,Beta,38.39
+4234,Store 12,In store,Beta,31.42
+4235,Store 12,In store,Beta,82.82
+4236,Store 12,In store,Beta,76.61
+4237,Store 12,In store,Beta,50.71
+4238,Store 12,In store,Alpha,61.26
+4239,Store 12,In store,Alpha,30.43
+4240,Store 12,In store,Alpha,73.07
+4241,Store 12,In store,Alpha,38.3
+4242,Store 12,In store,Beta,123.99
+4243,Store 12,In store,Beta,34.76
+4244,Store 12,In store,Beta,93.34
+4245,Store 12,In store,Alpha,63.87
+4246,Store 12,In store,Alpha,43.75
+4247,Store 12,In store,Alpha,18.37
+4248,Store 12,In store,Beta,61.83
+4249,Store 12,In store,Alpha,22.52
+4250,Store 12,In store,Beta,83.33
+4251,Store 12,In store,Beta,43.13
+4252,Store 12,In store,Beta,80.64
+4253,Store 12,In store,Beta,45.25
+4254,Store 12,In store,Alpha,149.3
+4255,Store 12,In store,Alpha,113.03
+4256,Store 12,In store,Alpha,102.92
+4257,Store 12,In store,Alpha,61.63
+4258,Store 12,In store,Alpha,55.4
+4259,Store 12,In store,Alpha,70.95
+4260,Store 12,In store,Beta,25.95
+4261,Store 12,In store,Beta,66.94
+4262,Store 12,In store,Beta,70.34
+4263,Store 12,In store,Alpha,17.06
+4264,Store 12,In store,Alpha,57.33
+4265,Store 12,In store,Alpha,87.12
+4266,Store 12,In store,Alpha,75.18
+4267,Store 12,In store,Alpha,65.53
+4268,Store 12,In store,Alpha,49.42
+4269,Store 12,In store,Alpha,16.71
+4270,Store 12,In store,Alpha,69.91
+4271,Store 12,In store,Alpha,27.47
+4272,Store 12,In store,Alpha,50.13
+4273,Store 12,In store,Alpha,45.59
+4274,Store 12,In store,Alpha,69.12
+4275,Store 12,In store,Alpha,106.85
+4276,Store 12,In store,Alpha,82.42
+4277,Store 12,In store,Alpha,31.91
+4278,Store 12,In store,Alpha,74.6
+4279,Store 12,In store,Alpha,38.66
+4280,Store 12,In store,Alpha,74.09
+4281,Store 12,In store,Beta,98.09
+4282,Store 12,In store,Beta,28.24
+4283,Store 12,In store,Beta,42.52
+4284,Store 12,In store,Alpha,32.51
+4285,Store 12,In store,Beta,60.09
+4286,Store 12,In store,Alpha,47.04
+4287,Store 12,In store,Alpha,52.14
+4288,Store 12,In store,Alpha,23.66
+4289,Store 12,In store,Alpha,83.55
+4290,Store 12,In store,Alpha,33.78
+4291,Store 12,In store,Alpha,26.63
+4292,Store 12,In store,Alpha,58.55
+4293,Store 12,In store,Alpha,88.91
+4294,Store 12,In store,Alpha,88.04
+4295,Store 12,In store,Beta,38.9
+4296,Store 12,In store,Beta,55.6
+4297,Store 12,In store,Beta,56.56
+4298,Store 12,In store,Alpha,112.02
+4299,Store 12,In store,Alpha,28.21
+4300,Store 12,In store,Alpha,29.54
+4301,Store 12,In store,Beta,70.9
+4302,Store 12,In store,Beta,41.48
+4303,Store 12,In store,Alpha,51.06
+4304,Store 12,In store,Beta,16.51
+4305,Store 12,In store,Alpha,98.16
+4306,Store 12,In store,Alpha,67.62
+4307,Store 12,In store,Beta,49.68
+4308,Store 12,In store,Alpha,84.4
+4309,Store 12,In store,Alpha,76.0
+4310,Store 12,In store,Alpha,57.64
+4311,Store 12,In store,Beta,27.22
+4312,Store 12,In store,Alpha,34.79
+4313,Store 12,In store,Beta,40.17
+4314,Store 12,In store,Alpha,79.02
+4315,Store 12,In store,Alpha,25.07
+4316,Store 12,In store,Alpha,35.52
+4317,Store 12,In store,Alpha,131.18
+4318,Store 12,In store,Alpha,42.05
+4319,Store 12,In store,Gamma,11.93
+4320,Store 12,In store,Alpha,58.73
+4321,Store 12,In store,Beta,75.79
+4322,Store 12,In store,Alpha,59.0
+4323,Store 12,In store,Beta,34.41
+4324,Store 12,In store,Beta,26.14
+4325,Store 12,In store,Beta,87.65
+4326,Store 12,In store,Beta,53.1
+4327,Store 12,In store,Alpha,59.39
+4328,Store 12,In store,Alpha,85.31
+4329,Store 12,In store,Alpha,42.66
+4330,Store 12,In store,Beta,62.44
+4331,Store 12,In store,Alpha,71.97
+4332,Store 12,In store,Alpha,68.16
+4333,Store 12,In store,Alpha,70.03
+4334,Store 12,In store,Alpha,71.55
+4335,Store 12,In store,Alpha,72.44
+4336,Store 12,In store,Alpha,51.16
+4337,Store 12,In store,Alpha,41.16
+4338,Store 12,In store,Alpha,88.26
+4339,Store 12,In store,Beta,20.61
+4340,Store 12,In store,Beta,17.55
+4341,Store 12,In store,Alpha,52.55
+4342,Store 12,In store,Beta,42.09
+4343,Store 12,In store,Beta,50.64
+4344,Store 12,In store,Beta,44.34
+4345,Store 12,In store,Alpha,56.74
+4346,Store 12,In store,Beta,33.64
+4347,Store 12,In store,Alpha,99.35
+4348,Store 12,In store,Beta,74.15
+4349,Store 12,In store,Beta,90.02
+4350,Store 12,In store,Alpha,55.1
+4351,Store 12,In store,Alpha,22.25
+4352,Store 12,In store,Beta,65.34
+4353,Store 12,In store,Beta,89.72
+4354,Store 12,In store,Alpha,64.26
+4355,Store 12,In store,Beta,44.43
+4356,Store 12,In store,Alpha,53.97
+4357,Store 12,In store,Beta,92.51
+4358,Store 12,In store,Alpha,35.9
+4359,Store 12,In store,Beta,43.63
+4360,Store 12,In store,Alpha,87.03
+4361,Store 12,In store,Beta,20.78
+4362,Store 12,In store,Alpha,28.4
+4363,Store 12,In store,Beta,25.43
+4364,Store 12,In store,Alpha,47.87
+4365,Store 12,In store,Alpha,106.75
+4366,Store 12,In store,Alpha,29.88
+4367,Store 12,In store,Alpha,43.12
+4368,Store 12,In store,Beta,82.94
+4369,Store 12,In store,Beta,93.49
+4370,Store 12,In store,Alpha,17.83
+4371,Store 12,In store,Beta,40.44
+4372,Store 12,In store,Alpha,42.56
+4373,Store 12,In store,Beta,55.57
+4374,Store 12,In store,Alpha,125.79
+4375,Store 12,In store,Alpha,100.49
+4376,Store 12,In store,Alpha,28.95
+4377,Store 12,In store,Alpha,80.46
+4378,Store 12,In store,Alpha,43.85
+4379,Store 12,In store,Alpha,78.89
+4380,Store 12,In store,Beta,104.19

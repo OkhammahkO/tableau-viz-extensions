@@ -24,13 +24,19 @@ That's it. Fine-tune with **Format Extension** (below the tiles). *On Tableau Cl
    dimensions to **Rows**, **Columns** and **Colour**.
 4. **Format Extension** (below the tiles) for cloud, rain, outliers, markers, layout and colour.
 
-## Features (v1.0)
+## Features
 - Density (KDE, clipped to the data) or histogram cloud; stacked Wilkinson dot plot or strip rain; Tukey box.
 - Native Tableau tooltips and selection per dot; workbook font.
 - Rows (≤3) × Columns (≤2) grid with nested headers, wrapping, shared or independent axes; size modes.
-- Colour tile: Tableau palettes, stable colours, optional split cloud.
+- Density: Comfortable / Compact / Dense for long lists and big grids of small multiples.
+- Each chart's cloud fills its own height (labelled with its peak share); dots keep one size and compress where
+  crowded, so one busy chart never squashes the others.
+- Colour tile: Tableau palettes, stable colours, optional split cloud (each colour 100% or its share).
 - Outliers cut at whiskers + 5% by default, with a badge that lets viewers show all values.
-- Markers: median, mean, P5/P95 with values; decimals setting; field number format and axis title.
+- Markers: median, an orange mean, P5/P95 with values; field number format; axis title and tick options.
+- Optional cumulative line (ECDF) with its own 0–100% scale and a hover readout.
+
+See [CHANGELOG.md](CHANGELOG.md) for what changed in each version.
 
 ## Architecture
 | Folder | Role |
@@ -47,7 +53,8 @@ That's it. Fine-tune with **Format Extension** (below the tiles). *On Tableau Cl
 | `npm test` | Vitest: stats, layout, colours, format, render smoke tests |
 | `npm run build` | Type-check and build to `dist/raincloud/` (classic SystemJS scripts for sandbox hosting) |
 | `npm run sandbox` | Build, then serve `dist/raincloud/` with Tableau's sandbox server on :8765; load `vizzes/raincloud/manifests/raincloud-sandbox.trex` |
-| `npm run site` | Build the website into `dist/site/` (landing page, hosted extension, `.trex`, live demo); look with `npx vite preview --outDir dist/site` |
+| `npm run site` | Build the website into `dist/site/` (landing page, hosted extension, `.trex`, live demo) |
+| `npm run site:preview` | Build and serve the site on :4180; load `vizzes/raincloud/manifests/raincloud-preview.trex` to test the built extension in Tableau before pushing |
 | `python -I scripts/make_synthetic.py` | Regenerate `data/synthetic/` |
 
 Credits and resources reviewed: `CREDITS.md`. See `.claude/CLAUDE.md` (project map), `docs/PLAN.md` (status, decisions, backlog), `docs/RELEASE.md` (release checklist).

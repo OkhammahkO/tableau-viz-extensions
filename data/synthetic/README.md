@@ -17,8 +17,10 @@ Tableau aggregates to one row per category and there's no distribution to draw.
 | `edge_cases.csv` | 240 | category, value, … | Negatives, mostly zeros, nulls in value, an all-null group, a null category |
 | `repeated_measures.csv` | 120 | participant, group, time, score | 40 people × Pre/Post/Follow-up: linking lines later |
 | `large_10k.csv` / `large_100k.csv` | 10k / 100k | category, value, … | Performance: Normal, Skewed, Bimodal, Uniform |
+| `spikes_grid.csv` | 4,380 | store (12), channel (2), segment, basket_value | Rows × Columns with a spike: Store 03 / Online has 1,000 extra records, 85% at 0 (squashes other cells under shared scales); Store 07 / In store n = 8; Store 10 / Online empty; segment Gamma ~5% (split sizing) |
+| `large_grid.csv` | ~57k | store (40), region (3), segment (4), basket_value | Dense small multiples, many dots: Store 05 / North has 10k records; zero spikes (stores 9, 18, 27, 36 · South); ties at 25/50/75/100 (stores 7, 14, 21, 28, 35 · West); Delta ~5% |
 
-`segment` (Alpha/Beta) and `region` (N/S/E/W) are random, for colour, split and filter tests.
+In the older files, `segment` (Alpha/Beta) and `region` (N/S/E/W) are random, for colour, split and filter tests.
 
 ## Expected values (to check what the extension receives)
 

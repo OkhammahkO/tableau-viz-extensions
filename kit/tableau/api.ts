@@ -1,6 +1,6 @@
 import type { DataTable, FieldInstance, Worksheet } from '@tableau/extensions-api-types';
 
-// Shared Tableau plumbing, proven with the hello viz (see the project skill for why each rule exists).
+// Shared Tableau plumbing, verified in Tableau Desktop (see the project skill for why each rule exists).
 
 export type EncodingFields = Record<string, FieldInstance[]>;
 

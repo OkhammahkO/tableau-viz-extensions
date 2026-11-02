@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { dotLayout, fitDotDiameter, histogram, orderWithinStacks, kde, quantileSorted, summarize, tallestStack, wilkinsonStacks } from './stats';
+import { dotLayout, fitDotDiameter, histogram, orderWithinStacks, kde, quantileSorted, stackLayout, summarize, tallestStack, typicalDotDiameter, wilkinsonStacks } from './stats';
 
 describe('summarize', () => {
   it('matches known quartiles and Tukey whiskers', () => {
@@ -75,6 +75,18 @@ describe('dot plot layout', () => {
     const { d, step } = dotLayout([xs], 40, 7, 1.5);
     expect(d).toBe(1.5);
     expect((tallestStack(xs, d) - 1) * step + d).toBeLessThanOrEqual(40);
+  });
+
+  it('typical dot size ignores one huge group; that group compresses its own stacks to fit', () => {
+    const quiet = [[10, 30, 50], [12, 32, 52], [14, 34, 54]];
+    const pile = Array.from({ length: 400 }, () => 50);
+    const d = typicalDotDiameter([...quiet, pile], 40, 7, 1.5);
+    expect(d).toBe(7);
+    const lay = stackLayout(pile, 40, d);
+    expect(lay.d).toBe(7);
+    expect(lay.used).toBeLessThanOrEqual(40 + 1e-9);
+    expect(lay.step).toBeLessThan(d);
+    expect(stackLayout([1, 50], 40, d)).toEqual({ d, step: d, used: d });
   });
 
   it('falls back to the minimum diameter when nothing fits', () => {

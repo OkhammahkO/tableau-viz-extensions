@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Correlation Matrix for Tableau</title>
+  <meta name="description" content="A free Tableau viz extension: a correlation matrix with every pair as a scatter, each measure's distribution, and the correlations explained in words.">
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="../">Tableau viz extensions</a>
+      <a href="../raincloud/">Raincloud</a>
+      <a href="./" aria-current="page">Correlation matrix</a>
+      <a href="https://github.com/OkhammahkO/tableau-viz-extensions">GitHub</a>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <h1>See how your measures relate, in Tableau</h1>
+        <p class="lede">Correlation Matrix is a free viz extension that draws every pair of measures as a scatter, each
+          measure's distribution on the diagonal, and how strongly they move together, explained in words.</p>
+        <div class="buttons">
+          <a class="btn primary" href="correlation.trex" download>Download correlation.trex</a>
+          <a class="btn" href="demo/">Try the live demo</a>
+        </div>
+        <p class="meta"><span class="badge">Preview 0.9</span> Free and open source (MIT) · Tableau 2024.2 or later · nothing to install</p>
+      </div>
+      <div class="shot"><img src="../images/correlation-hero.png" alt="A correlation matrix of five health measures: histograms with box plots on the diagonal, scatters with trend lines below it, and coefficients above it, red for negative and blue for positive, sized by strength."></div>
+    </header>
+
+    <section id="start">
+      <h2>Quick start</h2>
+      <p class="sub">Three steps, about a minute.</p>
+      <ol class="steps">
+        <li><b>Download</b><p><a href="correlation.trex" download><code>correlation.trex</code></a>, a small manifest file that tells Tableau where the extension lives.</p></li>
+        <li><b>Add it in Tableau</b><p><span class="path">Show Me → Viz Extensions → Access Local Viz Extensions</span>, pick the file, then follow the prompts.</p></li>
+        <li><b>Drag fields</b><p>Two to eight measures to <span class="path">Measures</span> (as <code>AVG</code>) and a row ID to <span class="path">Detail</span> (one point per record). Optionally a dimension to <span class="path">Colour</span>.</p></li>
+      </ol>
+      <p class="note">Then fine-tune it with <b>Format Extension</b>, below the tiles on the Marks card.
+        On <b>Tableau Cloud or Server</b>, an admin first adds <code>https://okhammahko.github.io</code> to the site's extension allow list.
+        This is a <b>preview</b>: tell us what works and what doesn't in
+        <a href="https://github.com/OkhammahkO/tableau-viz-extensions/issues">the issue tracker</a>.</p>
+    </section>
+
+    <section id="features">
+      <h2>Read it right</h2>
+      <p class="sub">Click a number, or the ⤢ on a scatter, to look closer at one pair. Each pair is explained in words, with the caveats that apply.</p>
+      <div class="grid">
+        <figure><div class="img"><img src="../images/correlation-focus.png" alt="Weight against height, large, with marginal histograms, box plots, the trend line's formula and a reading in words" loading="lazy"></div>
+          <figcaption><b>Look closer</b>One pair, large: histograms and boxes on both axes, the line's formula and R², and what it means.</figcaption></figure>
+        <figure><div class="img"><img src="../images/correlation-simpson.png" alt="Cholesterol against exercise: the overall line rises, while the line for each age group falls" loading="lazy"></div>
+          <figcaption><b>Colour can flip a trend</b>Overall, more exercise goes with higher cholesterol; within each age group it's the other way. The extension warns you.</figcaption></figure>
+        <figure><div class="img"><img src="../images/correlation-icecream.png" alt="Drownings against ice cream sales coloured by season: strong overall, much weaker within each season" loading="lazy"></div>
+          <figcaption><b>Correlation isn't cause</b>Ice cream sales and drownings both rise in hot weather. Within a season, the link fades.</figcaption></figure>
+        <figure><div class="img"><img src="../images/correlation-density.png" alt="A three-measure matrix coloured by sex, with smooth density curves on the diagonal" loading="lazy"></div>
+          <figcaption><b>Smooth or bars</b>Density curves or histograms on the diagonal, split by colour.</figcaption></figure>
+        <figure><div class="img"><img src="../images/correlation-bigdata.png" alt="A matrix of 20,000 records with shaded density cells instead of points" loading="lazy"></div>
+          <figcaption><b>Big data</b>Above 5,000 records, scatters become density cells, still clickable to select.</figcaption></figure>
+        <figure><div class="img"><img src="../images/correlation-tiles.png" alt="A five-measure matrix with shaded coefficient tiles" loading="lazy"></div>
+          <figcaption><b>Tiles</b>Shaded tiles instead of sized numbers, like a heatmap.</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="more">
+      <h2>Also included</h2>
+      <ul class="list">
+        <li>Pearson r or Spearman ρ (rank-based: robust to outliers and curves); hover any number for both, n and the line's formula.</li>
+        <li>Plain-language readings with caveats when they apply: a curved or outlier-driven relationship, colour groups that disagree, few records.</li>
+        <li>Brushing: drag a rectangle in a scatter, or click a histogram bar, to select those records everywhere.</li>
+        <li>Outliers cut from the axes automatically (correlations still use every value), with a badge to show them all.</li>
+        <li>Median, mean and P5/P95 markers in the field's own number format; native Tableau tooltips, selection and actions.</li>
+        <li>Your data stays in Tableau: the extension draws inside the worksheet and sends nothing anywhere.</li>
+      </ul>
+    </section>
+
+    <footer>
+      MIT licence · <a href="https://github.com/OkhammahkO/tableau-viz-extensions">Source on GitHub</a> ·
+      <a href="https://github.com/OkhammahkO/tableau-viz-extensions/issues">Report an issue</a> ·
+      Not affiliated with or endorsed by Tableau or Salesforce.
+    </footer>
+  </div>
+</body>
+</html>

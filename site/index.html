@@ -3,130 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Raincloud for Tableau</title>
-  <meta name="description" content="A free Tableau viz extension: a raincloud plot showing each distribution's shape, summary and every record.">
-  <style>
-    :root {
-      --bg: #f7f8fa; --card: #ffffff; --ink: #1d2433; --ink-2: #4a5468; --muted: #6b7486; --line: #e1e5ec;
-      --accent: #1f6feb; --accent-ink: #ffffff; --accent-soft: #e8f0fe; --note: #fff7e6; --note-line: #f0c36d;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) {
-        --bg: #11151c; --card: #1a2029; --ink: #e8ecf2; --ink-2: #b8c0cd; --muted: #8e98a8; --line: #2c3442;
-        --accent: #4c8dff; --accent-ink: #0b1020; --accent-soft: #1d2a42; --note: #2a2416; --note-line: #8a6d2c;
-      }
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
-    a { color: var(--accent); }
-    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
-    nav { display: flex; align-items: center; gap: 20px; padding: 18px 0; }
-    nav .brand { font-weight: 700; color: var(--ink); text-decoration: none; margin-right: auto; }
-    nav a { text-decoration: none; font-size: 15px; }
-    header.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 40px; align-items: center; padding: 32px 0 48px; }
-    h1 { font-size: clamp(32px, 5vw, 46px); line-height: 1.1; margin: 0 0 14px; letter-spacing: -0.02em; }
-    .lede { font-size: 19px; color: var(--ink-2); margin: 0 0 24px; }
-    .buttons { display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn { display: inline-block; padding: 11px 18px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); }
-    .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-    .meta { margin: 14px 0 0; font-size: 14px; color: var(--muted); }
-    .shot { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 10px; box-shadow: 0 8px 28px rgba(16, 24, 40, .08); }
-    .shot img { display: block; width: 100%; height: auto; }
-    section { padding: 40px 0; border-top: 1px solid var(--line); }
-    h2 { font-size: 26px; margin: 0 0 8px; letter-spacing: -0.01em; }
-    .sub { color: var(--ink-2); margin: 0 0 24px; }
-    ol.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; counter-reset: s; }
-    ol.steps li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; counter-increment: s; }
-    ol.steps li::before { content: counter(s); display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 700; margin-bottom: 10px; }
-    ol.steps b { display: block; margin-bottom: 4px; }
-    ol.steps p { margin: 0; color: var(--ink-2); font-size: 15px; }
-    .path { font-weight: 600; color: var(--ink); }
-    .note { margin-top: 18px; background: var(--note); border: 1px solid var(--note-line); border-radius: 10px; padding: 12px 16px; font-size: 15px; color: var(--ink-2); }
-    code { font: 14px ui-monospace, SFMono-Regular, Consolas, monospace; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
-    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-    figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
-    figure .img { background: #fff; border-radius: 8px; padding: 6px; }
-    figure img { display: block; width: 100%; height: auto; }
-    figure.wide { grid-column: span 3; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 20px; align-items: center; }
-    figcaption { font-size: 15px; color: var(--ink-2); margin-top: 10px; }
-    figure.wide figcaption { margin: 0; }
-    figcaption b { display: block; color: var(--ink); }
-    ul.list { margin: 0; padding-left: 20px; color: var(--ink-2); }
-    ul.list li { margin: 4px 0; }
-    footer { padding: 28px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-    @media (max-width: 820px) {
-      header.hero { grid-template-columns: 1fr; gap: 28px; padding-top: 16px; }
-      ol.steps, .grid { grid-template-columns: 1fr; }
-      figure.wide { grid-column: auto; grid-template-columns: 1fr; }
-      nav { gap: 14px; }
-    }
-  </style>
+  <title>Tableau Viz Extensions</title>
+  <meta name="description" content="Free, open-source viz extensions for Tableau: chart types Tableau doesn't have built in, made to feel native.">
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <div class="wrap">
     <nav>
-      <a class="brand" href="./">Raincloud for Tableau</a>
-      <a href="raincloud/demo/">Live demo</a>
+      <a class="brand" href="./">Tableau viz extensions</a>
+      <a href="raincloud/">Raincloud</a>
+      <a href="correlation/">Correlation matrix</a>
       <a href="https://github.com/OkhammahkO/tableau-viz-extensions">GitHub</a>
     </nav>
 
-    <header class="hero">
-      <div>
-        <h1>See the whole distribution in Tableau</h1>
-        <p class="lede">Raincloud is a free viz extension that shows each distribution's shape (the cloud), its summary
-          (a box plot) and every record (the rain), in a Rows × Columns grid.</p>
-        <div class="buttons">
-          <a class="btn primary" href="raincloud/raincloud.trex" download>Download raincloud.trex</a>
-          <a class="btn" href="raincloud/demo/">Try the live demo</a>
-        </div>
-        <p class="meta">Free and open source (MIT) · Tableau 2024.2 or later · nothing to install</p>
-      </div>
-      <div class="shot"><img src="images/hero-a-rows-columns.svg" alt="Raincloud plots in a 3 by 2 grid: a normal, a bimodal and a right-skewed distribution, each split into Group A and Group B, with density clouds, box plots and stacked dots."></div>
+    <header class="intro">
+      <h1>Free viz extensions for Tableau</h1>
+      <p class="lede">Chart types Tableau doesn't have built in, made to feel native: drag fields onto the Marks card,
+        style them with Format Extension, and keep Tableau's tooltips, selection and actions.</p>
     </header>
 
-    <section id="start">
-      <h2>Quick start</h2>
-      <p class="sub">Three steps, about a minute.</p>
-      <ol class="steps">
-        <li><b>Download</b><p><a href="raincloud/raincloud.trex" download><code>raincloud.trex</code></a>, a small manifest file that tells Tableau where the extension lives.</p></li>
-        <li><b>Add it in Tableau</b><p><span class="path">Show Me → Viz Extensions → Access Local Viz Extensions</span>, pick the file, then follow the prompts.</p></li>
-        <li><b>Drag fields</b><p>A measure to <span class="path">Value</span> and a row ID to <span class="path">Detail</span> (one dot per record). Optionally a dimension to <span class="path">Rows</span>.</p></li>
-      </ol>
-      <p class="note">Then fine-tune it with <b>Format Extension</b>, below the tiles on the Marks card.
-        On <b>Tableau Cloud or Server</b>, an admin first adds <code>https://okhammahko.github.io</code> to the site's extension allow list.</p>
-    </section>
-
-    <section id="features">
-      <h2>Make it yours</h2>
-      <p class="sub">A few of the looks you can switch to in Format Extension.</p>
-      <div class="grid">
-        <figure><div class="img"><img src="images/feature-dot-plot.svg" alt="Bimodal distribution with stacked dots" loading="lazy"></div>
-          <figcaption><b>Dot plot rain</b>Stacked dots reveal two humps a box plot hides.</figcaption></figure>
-        <figure><div class="img"><img src="images/feature-strip.svg" alt="Normal distribution with a strip of dots" loading="lazy"></div>
-          <figcaption><b>Strip rain</b>A compact row of dots, for many rows.</figcaption></figure>
-        <figure><div class="img"><img src="images/feature-histogram.svg" alt="Right-skewed distribution drawn as a histogram" loading="lazy"></div>
-          <figcaption><b>Histogram cloud</b>Bins instead of a smooth curve show the long tail.</figcaption></figure>
-        <figure><div class="img"><img src="images/feature-colour.svg" alt="Bimodal distribution with dots coloured by sub-group" loading="lazy"></div>
-          <figcaption><b>Colour by group</b>Put a dimension on Colour; a sub-group explains the humps.</figcaption></figure>
-        <figure><div class="img"><img src="images/feature-split-cloud.svg" alt="One cloud per sub-group, overlaid" loading="lazy"></div>
-          <figcaption><b>Split cloud</b>One cloud per colour, overlaid.</figcaption></figure>
-        <figure><div class="img"><img src="images/hero-c-rows.svg" alt="Three raincloud rows: normal, bimodal, right-skewed" loading="lazy"></div>
-          <figcaption><b>Rows and columns</b>Up to three dimensions on Rows and two on Columns, like Tableau's shelves.</figcaption></figure>
-        <figure class="wide"><figcaption><b>Outliers handled</b>The axis is cut automatically at the whiskers plus 5%, so a few
-          extreme values don't squash everything else. A badge shows what's off-axis; click it to show all.</figcaption>
-          <div class="img"><img src="images/feature-outliers-cut.svg" alt="Response-time rainclouds with the axis cut and a badge counting the hidden outliers" loading="lazy"></div></figure>
+    <section id="vizzes">
+      <div class="cards">
+        <article class="card">
+          <div class="img"><img src="images/hero-a-rows-columns.svg" alt="Raincloud plots in a 3 by 2 grid, with density clouds, box plots and stacked dots."></div>
+          <h3><a href="raincloud/">Raincloud</a></h3>
+          <p>Each distribution's shape (the cloud), its summary (a box plot) and every record (the rain), in a Rows × Columns grid.</p>
+          <div class="buttons">
+            <a class="btn primary" href="raincloud/">Learn more</a>
+            <a class="btn" href="raincloud/raincloud.trex" download>Download .trex</a>
+            <a class="btn" href="raincloud/demo/">Demo</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="img"><img src="images/correlation-hero.png" alt="A correlation matrix of five health measures: histograms, scatters and coefficients."></div>
+          <h3><a href="correlation/">Correlation matrix</a> <span class="badge">Preview</span></h3>
+          <p>Every pair of measures as a scatter, each measure's distribution, and how strongly they move together, explained in words.</p>
+          <div class="buttons">
+            <a class="btn primary" href="correlation/">Learn more</a>
+            <a class="btn" href="correlation/correlation.trex" download>Download .trex</a>
+            <a class="btn" href="correlation/demo/">Demo</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="more">
-      <h2>Also included</h2>
+    <section id="how">
+      <h2>How they work</h2>
       <ul class="list">
-        <li>Median, mean and P5/P95 markers with values, in the field's own number format.</li>
-        <li>Comfortable, Compact and Dense layouts for long lists and big grids of small multiples.</li>
-        <li>An optional cumulative line (ECDF) with its own 0–100% scale: hover to read "62% of records ≤ 45".</li>
-        <li>Native Tableau tooltips, highlighting and selection on every dot; the workbook's font.</li>
-        <li>Entire view, fit width, fit height or standard sizing; shared or independent axes across panels.</li>
-        <li>Your data stays in Tableau: the extension draws inside the worksheet and sends nothing anywhere.</li>
+        <li><b>Install:</b> download a <code>.trex</code> file, then in Tableau choose <span class="path">Show Me → Viz Extensions → Access Local Viz Extensions</span>. Tableau 2024.2 or later.</li>
+        <li><b>Private:</b> your data stays in Tableau. The extensions draw inside the worksheet and send nothing anywhere.</li>
+        <li><b>Tableau Cloud or Server:</b> an admin first adds <code>https://okhammahko.github.io</code> to the site's extension allow list.</li>
+        <li><b>Open source:</b> MIT licence; ideas and bug reports welcome in <a href="https://github.com/OkhammahkO/tableau-viz-extensions/issues">the issue tracker</a>.</li>
       </ul>
     </section>
 

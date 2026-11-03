@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+  <worksheet-extension id="io.github.okhammahko.correlation.dev" extension-version="0.9.0">
+    <default-locale>en_US</default-locale>
+    <name resource-id="name"/>
+    <description>Correlation matrix: scatters below the diagonal, histograms on it, coefficients above.</description>
+    <author name="OkhammahkO" email="raincloud@example.com" organization="OkhammahkO" website="https://okhammahko.github.io/tableau-viz-extensions/"/>
+    <min-api-version>1.12</min-api-version>
+    <source-location>
+      <url>http://localhost:5174/correlation.html</url>
+    </source-location>
+    <icon/>
+    <context-menu>
+      <configure-context-menu-item/>
+    </context-menu>
+    <encoding id="measures">
+      <display-name resource-id="measures-name">Measures</display-name>
+      <role-spec>
+        <role-type>continuous-measure</role-type>
+      </role-spec>
+      <fields max-count="8"/>
+      <encoding-icon token="metric"/>
+      <tooltip resource-id="measures-tip">Measures - two to eight measures to compare pairwise.</tooltip>
+    </encoding>
+    <encoding id="colour">
+      <display-name resource-id="colour-name">Colour</display-name>
+      <role-spec>
+        <role-type>discrete-dimension</role-type>
+      </role-spec>
+      <fields max-count="1"/>
+      <encoding-icon token="color"/>
+      <tooltip resource-id="colour-tip">Colour - a dimension that colours the points.</tooltip>
+    </encoding>
+  </worksheet-extension>
+  <resources>
+    <resource id="name"><text locale="en_US">Correlation (dev)</text></resource>
+    <resource id="measures-name"><text locale="en_US">Measures</text></resource>
+    <resource id="measures-tip"><text locale="en_US">Measures - two to eight measures to compare pairwise.</text></resource>
+    <resource id="colour-name"><text locale="en_US">Colour</text></resource>
+    <resource id="colour-tip"><text locale="en_US">Colour - a dimension that colours the points.</text></resource>
+  </resources>
+</manifest>

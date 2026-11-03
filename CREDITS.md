@@ -1,10 +1,10 @@
 # Credits and resources
 
-Raincloud for Tableau stands on other people's research, tools and examples. This page credits them and lists what
-was reviewed while building it. All of the extension's code is our own; the products listed under "Reviewed" were
+These viz extensions stand on other people's research, tools and examples. This page credits them and lists what
+was reviewed while building them. All of the extensions' code is our own; the products listed under "Reviewed" were
 studied for ideas and conventions, not copied.
 
-## Research and design
+## Research and design: Raincloud
 
 | Credit | What it gave this project |
 |---|---|
@@ -20,6 +20,19 @@ studied for ideas and conventions, not copied.
 | Kay, Kola, Hullman & Munson, *When (ish) is My Bus?* (CHI 2016) | Quantile dot plots (considered for very large data) |
 | Daniel Marsh-Patrick, [Violin Plot for Power BI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381947) | Feature reference: combo plots, kernels, per-category bandwidth |
 | The Data School: Liam Holland, [*Making a violin plot in Tableau*](https://thedataschool.co.uk/liam-holland/understanding-and-making-violin-plot-in-tableau); Edward Hayter, [*Violin plots in Tableau*](https://thedataschool.co.uk/edward-hayter/violin-plots-in-tableau) | How hard this is natively, the gap this extension fills |
+
+## Research and design: Correlation matrix
+
+| Credit | What it gave this project |
+|---|---|
+| Barret Schloerke et al., [GGally `ggpairs`](https://ggobi.github.io/ggally/) (R) | The layout: scatters below the diagonal, distributions on it, correlations above |
+| Michael Waskom, [seaborn `pairplot`](https://seaborn.pydata.org/) (Python); Taiyun Wei & Viliam Simko, [corrplot](https://github.com/taiyun/corrplot) (R) | Reviewed alternatives: mirrored scatters, coefficient-only correlograms; red/blue as the correlation convention |
+| Richard A. Becker & William S. Cleveland, *Brushing Scatterplots*, Technometrics (1987) | Brushing and linked highlighting across the scatters |
+| Cynthia Brewer, [ColorBrewer](https://colorbrewer2.org/) RdBu | The red and blue of negative and positive coefficients |
+| Charles Spearman, *The proof and measurement of association between two things* (1904) | Rank correlation (ρ), with average ranks for ties |
+| E. H. Simpson, *The Interpretation of Interaction in Contingency Tables* (1951) | The Simpson's paradox caveat and landing-page example |
+| F. J. Anscombe, *Graphs in Statistical Analysis*, The American Statistician (1973) | Anscombe's quartet, one of the test datasets |
+| B. W. Silverman and John W. Tukey (above) | Density curves on the diagonal; box plots and the outlier axis cut |
 
 ## Tableau platform
 
@@ -44,6 +57,8 @@ Built with the help of [Claude Code](https://claude.com/claude-code) (Anthropic)
 ## Resources reviewed
 
 - **Official docs and tooling:** see [RESOURCES.md](docs/RESOURCES.md).
+- **Correlation matrix research:** layouts compared, decisions and the spike in
+  [concepts/correlation-matrix](docs/concepts/correlation-matrix/README.md).
 - **Raincloud design research:** implementations, licences and design guidance in [raincloud-research.md](docs/raincloud-research.md),
   with a live variant gallery in [prototypes/raincloud-gallery.html](docs/prototypes/raincloud-gallery.html).
 - **Exchange extensions reviewed** (features, hosting and integration only): Sankey (Tableau), Tableau Table, and Sankey-family

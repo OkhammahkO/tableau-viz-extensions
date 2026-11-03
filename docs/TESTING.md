@@ -59,9 +59,44 @@ Run before each release. Automated first: `npm test` and `npm run build` must pa
   100% label beside it; 50% guide; hover readout "x% of records ≤ v".
 - **T17 Mean (v1.1):** orange hollow circle, median visible through it; Summary → Shape and Colour change it.
 
+## C. Correlation matrix (in development; `npm run dev:correlation`)
+Harness http://localhost:5174/dev.html, then Tableau with `vizzes/correlation/manifests/correlation-dev.trex`
+("Correlation (dev)"): measures on **Measures**, `row_id` on **Detail**, optionally a dimension on **Colour**.
+- **C1 Layout:** `corr_health_8.csv` with 8 measures: names on the diagonal (no `SUM()`), boxes under histograms,
+  sized/tinted coefficients, trend lines; resize the frame.
+- **C2 Numbers:** hover a coefficient: r, ρ, n, formula with R², r per colour; `corr_edge_cases.csv`: the constant
+  shows "—" with an explanation; `corr_anscombe.csv`: four .82s, four shapes.
+- **C3 Colour:** `corr_groups.csv` tier / store / segment: split histograms (each 100% / stacked / off), per-colour
+  boxes, Other past 20, Null member; Premium visible despite 5%.
+- **C4 Highlight and brush:** hover a scatter (pair + names), a histogram (row and column in orange), a point (record in
+  every scatter + ticks on histograms); drag a rectangle; click a histogram bar; hover a legend member.
+- **C5 Focus:** click a number, or the ⤢ that appears on a hovered scatter (or double-click it); clicking a point
+  still selects it; in the focus view, drag a rectangle (selects what's inside), hover a marginal bar (its
+  records light up, tooltip with range and count) and click it (selects them; Ctrl adds); the selection shows on the
+  marginal histograms; pause over a scatter for the top-right preview, click it;
+  Esc closes; stays open after selecting.
+- **C6 Big data:** `large_corr_100k.csv`: density cells, hover count, click selects the bin; "Always points" for speed.
+- **C8 Outliers:** `corr_customers.csv` income + spend: dashed cut edges, "1 ›" on a histogram, amber badge; "show all"
+  and back; Format → Outliers off / margin.
+- **C9 Format dialog:** Format Extension opens it; every section changes the chart live; Reset; Done closes; settings
+  and colours survive save/close/reopen.
+- **C10 Formats:** a currency or % measure: ticks and bar ranges in its format.
+- **C11 Landing page (draft v2):** with fewer than two measures: four steps beside a live matrix (age, max heart rate,
+  height, weight); when roomy, six thumbnails (incl. "Correlation isn't cause") and the reminder line; resize to
+  medium (no thumbnails) and small (steps only). Focus thumbnails: title and numbers don't overlap.
+- **C12 Export (Tableau 2026.2+, ideally Cloud/Server):** export the sheet or dashboard as image/PDF: the points appear
+  (DevTools: "[correlation] export: render complete reported").
+- **C13 Selection after a filter (both vizzes; failed 2026-11-03, fixed in both by remapping; raincloud 1.1.1):** select a few points, then filter the sheet (or a quick filter) so
+  rows drop out. The highlighted points must be the same records as before (or the selection cleared), never others.
+- **C14 Export on the landing page:** with fewer than two measures, export the sheet: no hang (render complete is
+  reported for the landing page too).
+- **C7 Tableau:** native tooltips on hover; selections (click, Ctrl, brush, bar, bin) select in Tableau and drive
+  actions; no errors in DevTools (http://localhost:8696, `[correlation]` lines).
+
 ## P. Tableau, built site (what GitHub Pages will serve; do before every push)
 `npm run site:preview` (builds `dist/site/` and serves it on http://localhost:4180), then load
-`vizzes/raincloud/manifests/raincloud-preview.trex` ("Raincloud (preview)"). Repeat T1–T5, T9 and T11–T17 quickly.
+`vizzes/raincloud/manifests/raincloud-preview.trex` ("Raincloud (preview)") or
+`vizzes/correlation/manifests/correlation-preview.trex` ("Correlation (preview)"). Repeat T1–T5, T9 and T11–T17 quickly.
 Differences from dev to watch for: the built bundle uses classic scripts and bundles everything, so a failure here
 but not in dev points at the build (check DevTools at http://localhost:8696). Also open http://localhost:4180/ to
 check the site, images and demo.

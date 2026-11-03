@@ -1,0 +1,152 @@
+.cm-host {
+  position: relative;
+  /* Dragging a brush must not select the titles and labels as text. */
+  user-select: none;
+  -webkit-user-select: none;
+  /* Below the minimum cell size the matrix keeps its size and the frame scrolls. */
+  overflow: auto;
+}
+
+.cm-tip {
+  position: absolute;
+  pointer-events: none;
+  z-index: 5;
+  background: #fff;
+  color: #333;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 1.45;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.cm-tip[hidden] {
+  display: none;
+}
+
+.cm-empty {
+  margin: 12px;
+  padding: 8px 10px;
+  border: 1px solid #d0d0d0;
+  background: #f7f7f7;
+  color: #555;
+  border-radius: 4px;
+  font: 12px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Focus view: one pair, large, over the matrix. */
+.cm-focus-close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  font: 16px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+
+.cm-focus-close:hover {
+  background: #f2f2f2;
+}
+
+.cm-focus-close:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 1px;
+}
+
+/* Expand button on the hovered scatter: opens its focus view. */
+.cm-expand {
+  position: absolute;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 1px solid #c9ccd1;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #333;
+  font: 12px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+  cursor: zoom-in;
+}
+
+.cm-expand:hover {
+  background: #f2f2f2;
+  border-color: #8a9097;
+}
+
+.cm-expand[hidden] {
+  display: none;
+}
+
+/* Hover preview of the focus view, in the top-right corner of the matrix. */
+.cm-preview {
+  z-index: 3;
+  border: 1px solid #c9ccd1;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+/* Outlier badge: bottom right of the chart frame (the parent must be position: relative), as in the raincloud. */
+.cm-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  z-index: 6;
+  font: 600 11px/1.3 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #5c4100;
+  background: #fff4d6;
+  border: 1px solid #e8b931;
+  border-radius: 4px;
+  padding: 5px 9px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.cm-badge:hover {
+  background: #ffecb3;
+}
+
+.cm-badge:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 1px;
+}
+
+.cm-badge-all {
+  color: #333;
+  background: #f2f2f2;
+  border-color: #c9c9c9;
+}
+
+/* Landing page hero: a live mini matrix, taller than the kit's default hero; the box hugs the square matrix. */
+.cm-splash-hero {
+  height: 340px;
+  width: min(400px, 100%);
+  justify-self: end;
+}
+
+/* Landing page thumbnails: three focus views above three small matrices (3 x 2); no close button there.
+   The focus view draws at 200 px or more, so a shorter box clipped its axis. */
+.sp-roomy .sp-thumbs.cm-thumbs {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sp-thumb.cm-thumb-focus .sp-thumb-chart.cm-thumb-chart {
+  height: 290px;
+}
+
+.sp-thumb.cm-thumb-matrix .sp-thumb-chart.cm-thumb-chart {
+  height: 220px;
+}
+
+.sp-thumb-chart .cm-focus-close {
+  display: none;
+}

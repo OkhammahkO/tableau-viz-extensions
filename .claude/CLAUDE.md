@@ -17,6 +17,9 @@ kit/                 Shared toolkit for any viz (imported as @kit/…; never imp
 vizzes/raincloud/    The raincloud viz: src/chart (stats, model, options, render), src/extension (main.ts adapter,
                      settings, splash), src/dialog (Format dialog, React + Tableau UI), src/harness (dev harness),
                      app/ (HTML pages; code loads as /src/…), manifests/ (dev + sandbox manifests, sandbox config), vite.config.ts
+vizzes/correlation/  Correlation / scatterplot matrix (0.9.0 preview, releasing): same layout; src/chart (stats, model, options,
+                     render + cells/points/focus), src/extension (main.ts adapter; spike.ts), src/harness; dev server :5174.
+                     Design and status: docs/concepts/correlation-matrix/README.md
 ```
 Data flow: Tableau summary data → `extension/main.ts` → `chart/model.buildGrid` → `chart/render.renderRaincloud`.
 Options live in Tableau settings as one JSON string (kit settings store, merged over `chart/options.DEFAULT_OPTIONS`).
@@ -29,6 +32,12 @@ clone tableau/extensions-api there for the official samples) · `dist/<viz>/` (b
 
 ## Commands
 - `npm run dev`: dev server on http://localhost:5173 (the URL in `vizzes/raincloud/manifests/raincloud-dev.trex`); harness at /dev.html.
+- `npm run dev:correlation`: correlation dev server on http://localhost:5174 (`vizzes/correlation/manifests/correlation-dev.trex`); harness at /dev.html.
+  Public manifest `correlation.trex` (GitHub Pages); `npm run build` and `npm run site` build both vizzes.
+- Screenshots without Tableau: the correlation harness takes `?landing&w=1450&h=1300` (landing page, frame size);
+  `"/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --hide-scrollbars --window-size=1500,1450
+  --virtual-time-budget=4000 --screenshot=<scratchpad>/x.png "<url>"`, then read the PNG.
+- Every push redeploys every viz (the site builds all of them from `master`): see PLAN.md before changing a released viz.
 - `npm run site:preview`: build the GitHub Pages site and serve it on :4180 (`raincloud-preview.trex`): test this before every push.
 - `npm test`: Vitest. `npm run build`: type-check and bundle to `dist/raincloud/` (classic SystemJS scripts, required by
   sandbox hosting). `npm run sandbox`: build and serve `dist/raincloud/` with Tableau's sandbox server (:8765).

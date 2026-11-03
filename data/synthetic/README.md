@@ -20,6 +20,18 @@ Tableau aggregates to one row per category and there's no distribution to draw.
 | `spikes_grid.csv` | 4,380 | store (12), channel (2), segment, basket_value | Rows × Columns with a spike: Store 03 / Online has 1,000 extra records, 85% at 0 (squashes other cells under shared scales); Store 07 / In store n = 8; Store 10 / Online empty; segment Gamma ~5% (split sizing) |
 | `large_grid.csv` | ~57k | store (40), region (3), segment (4), basket_value | Dense small multiples, many dots: Store 05 / North has 10k records; zero spikes (stores 9, 18, 27, 36 · South); ties at 25/50/75/100 (stores 7, 14, 21, 28, 35 · West); Delta ~5% |
 
+### Correlation matrix (candidate 6)
+Put `row_id` on Detail and the measures on the Measures tile.
+
+| File | Rows | Measures | Tests |
+|---|---|---|---|
+| `corr_customers.csv` | 600 | income_k, spend_k, visits_per_month, days_since_visit, basket_size, tenure_years, satisfaction (+ channel, region) | The gallery's data. Income–Spend r ≈ .76 with one outlier (row 1); Visits–Days curved; Basket size unrelated; **Tenure–Satisfaction r ≈ −.41 overall but ≈ +.70 within each channel** (Simpson's paradox: colour by channel) |
+| `corr_health_8.csv` | 1,000 | age, bmi, blood_pressure, cholesterol, steps, sleep_hours, screen_time_hours, stress_score (+ clinic) | 8 measures in two related blocks (body, lifestyle) with cross-links (age–BP ≈ .62, steps–BMI ≈ −.28): legibility at 8 measures, clustered ordering |
+| `corr_anscombe.csv` | 11 | x1, y1 … x4, y4 | Anscombe's quartet (1973): all four pairs r ≈ .816, completely different shapes |
+| `corr_edge_cases.csv` | 300 | a, a_times_2_plus_3, minus_half_a, constant, a_with_nulls, likert_1_5, binary_0_1 (+ segment) | Perfect ±1, a constant (r undefined: must not crash), 25% nulls (pairwise n differs), ties, negatives, a 0/1 measure |
+| `corr_groups.csv` | 800 | price, demand, margin (+ tier, store, segment) | Colour cases: **tier** 95% / 5% with opposite slopes (the small group must stay visible; its r rests on ~40 records); **store** 25 members (past Tableau 20 → Other); **segment** with nulls (a "Null" member). Rows sorted by tier, to catch draw-order bias |
+| `large_corr_100k.csv` | 100,000 | m1 … m6 (+ region) | Performance and the density-cell switch (generated, not committed) |
+
 In the older files, `segment` (Alpha/Beta) and `region` (N/S/E/W) are random, for colour, split and filter tests.
 
 ## Expected values (to check what the extension receives)

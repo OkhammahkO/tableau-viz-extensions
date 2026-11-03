@@ -100,6 +100,7 @@ ws.addEventListener(tableau.TableauEventType.SummaryDataChanged, rerender);
 
 - Columns: `table.columns[j].fieldName`, cell `table.data[i][col.index]` → `.value`, `.formattedValue`, `.nativeValue`.
 - Encodings return `FieldInstance` (not `Field`); match `field.name === column.fieldName` (e.g. `SUM(Sales)`).
+- **A selection kept as tuple ids goes wrong after a filter** (verified 2026-11-03, correlation C13): ids are row positions, a filter renumbers them, and Tableau keeps the same *marks* selected. Remember selected records by content (`kit/tableau/selection.ts`: a key from every cell of the row) and remap after each read.
 - **Tuple IDs = summary-data row index (across pages) + 1.** The 1.17 type docs claim `totalRows - index`; that's wrong. Verified in Tableau with the hello viz on 2026-10-29: the hover tooltip matches the bar. Tableau's production Sankey also uses offset + index + 1. Selection: `ws.selectTuplesAsync(ids, tableau.SelectOptions.Simple, { tooltipAnchorPoint: {x, y} })`; hover: `ws.hoverTupleAsync(id, { tooltipAnchorPoint })`. This gives native Tableau tooltips and actions (Keep Only/Exclude/View Data). See `Samples/Viz/Sankey/sankey.js`.
 - Formatting: give the root SVG `class={tableau.ClassNameKey.Worksheet}`, read fonts/colours from `tableau.extensions.environment.workbookFormatting.formattingSheets` (`classNameKey === 'tableau-worksheet'`). Respect `worksheet.backgroundColor` (1.13+).
 - Settings persist per instance: `tableau.extensions.settings.set(k, v)` then `await settings.saveAsync()`; values are strings (JSON-encode).
@@ -110,6 +111,7 @@ ws.addEventListener(tableau.TableauEventType.SummaryDataChanged, rerender);
 ## Gotchas found in Tableau (hello viz, 2026-10-29)
 
 - `reader.getAllPagesAsync()` throws `invalid-parameter: 0 is invalid value for range: [0..0)` when there are 0 rows (e.g. encodings empty). Loop `pageCount` instead.
+- A mark you pass to `hoverTupleAsync` must not also get a custom tooltip: Tableau shows its native one too, and the two overlap (correlation focus view, 2026-11-03). Use custom tooltips only for things that aren't tuples (coefficients, bars, boxes).
 - `hoverTupleAsync(-1, null)` to "clear hover" → `internal-error: ExecuteCommand failed … Error parsing command parameter value string`. Never send an invalid tuple; on mouse-out just drop local hover state (Tableau's Sankey does the same).
 - Keyboard: listen on **`document`** for `keydown`. A listener on a focusable SVG never fires reliably: Tableau routes keys into the frame, and redraws replace the element. Tableau's Sankey uses `document.onkeydown`.
 - Hello viz passed all checks in Tableau Desktop (2026-10-29), including keeping the selection across a filter-driven redraw.
@@ -131,6 +133,41 @@ ws.addEventListener(tableau.TableauEventType.SummaryDataChanged, rerender);
 - **Scale:** 100,000 records → 10 pages (10,000 rows per page by default), read in ≈ 956 ms. View build felt fast, and hover over 100k SVG circles was acceptable. ~1 s load at 100k is fine; drawing every record is a legibility problem before it's a performance one.
 - **Null measure values reach the extension** as rows (verified with edge_cases.csv: 30 values + 20 nulls; an all-null category still appears with 0 values). Detect nulls via `value === null`, `'%null%'` or a NaN `Number(value)`, as `vizzes/raincloud/src/extension/main.ts` does, and report the missing count rather than dropping it silently. A null dimension member arrives as its own category.
 
+## Several measures on one tile (correlation spike, Tableau 2026.3.0, 2026-11-02)
+- An encoding with `<role-type>continuous-measure</role-type>` and `<fields max-count="8"/>` **accepts several
+  measures**. Each arrives as its own entry in the visual spec's encodings (same encoding id, role measure) and as its
+  own summary-data column, aggregated (`SUM(Age)`) and in tile order.
+- With a row ID on Detail the summary data has one row per record, so per-record maths (e.g. correlations) works on it
+  directly; no pivot or self-join.
+
+## Canvas rendering and export (2026-11-02)
+- A viz extension may draw marks on a `<canvas>` (the correlation matrix draws up to 28 scatters × thousands of points
+  there, with SVG layers above and below). It displayed fine in Desktop 2026.3.0 (user: "looking great"). Hover and
+  selection need your own hit-testing (a spatial index), since a canvas has no per-mark elements; `selectTuplesAsync`
+  with many tuple ids (brush, histogram bar, density cell) is how a region is selected.
+- **Export (API 1.17, Tableau 2026.2+; documented, not yet verified):** the release notes add "exporting extensions on
+  Tableau Cloud and Server". `tableau.extensions.environment.isExporting` and `exportedMediaType` (`image` | `pdf`)
+  say an export is running; the extension calls `tableau.extensions.reportExtensionRenderComplete(mediaBlob?)` when
+  drawn, optionally passing its own image (ArrayBuffer). Plan: in export mode render, compose SVG layers + canvas into
+  one PNG, pass it. Feature-detect (older versions lack these). Applies to every viz here.
+  Report render complete from **every** state, the landing page included, or an export may wait for it.
+
+## Lessons from the correlation build (2026-11-03)
+- **Many marks: keep data off the DOM.** Per-mark data in attributes (e.g. a density cell's tuple ids) grew to
+  megabytes at 100k records × 28 scatters; keep it in a `WeakMap<Element, …>`.
+- **Document-level listeners once per module**, not once per render or per chart: a landing page that redraws on
+  resize makes new chart hosts each time, and per-host listeners (with their closures and data) leak.
+- **Debounce redraws to one per frame** (`requestAnimationFrame`) on every `ResizeObserver`, the landing page included.
+- **Square charts in wide sheets:** centre them; anchored left, all spare width piles up on the right.
+- **Brushing needs `user-select: none`** on the chart host, or dragging also selects titles and labels as text.
+- **Clicking a mark selects it** (Tableau users expect it). Put "look closer" on an explicit control (a ⤢ button on
+  hover), not on the click.
+- **Pills on the landing page:** with one record per mark (row ID on Detail) use `AVG(...)`: every aggregation
+  agrees, AVG reads right, and it survives a repeated row ID. `MEDIAN` isn't supported by every live connection.
+- **Look before asking the user:** headless Chrome screenshots of the harness (`--headless=new --screenshot`, harness
+  URL switches for the page and frame size) catch layout problems: clipping, collisions, empty grid cells.
+- **Every push redeploys every viz** when one Pages site hosts them all: plan changes to a released viz as a release.
+
 ## Target architecture ("feels native")
 
 Modelled on how Tableau's own Sankey behaves:
@@ -140,6 +177,11 @@ Modelled on how Tableau's own Sankey behaves:
 - Keyboard: arrows/Enter/Space move the focused mark, which calls `hoverTupleAsync` anchored at that mark. Escape/Tab call `leaveMarkNavigationAsync()`. Write `getTooltipTextAsync(id)` into an `sr-only` `role="status" aria-live="assertive"` element.
 - Format dialog: Modeless, 320 px wide, full height; writes to settings, and `SettingsChanged` triggers a re-render.
 - Show a splash screen with instructions until the required encodings are filled.
+  - Our pattern (`kit/ui/splash`): Tableau-style steps with field pills beside a live hero, plus "Make it yours"
+    thumbnails. All of them are drawn by the real renderer from seeded sample data, so they never go stale. It adapts
+    to the frame: thumbnails only when roomy, the hero when medium, the steps always.
+  - Use familiar, non-Superstore sample data, and unit-test every claim a caption makes (e.g. "r is strong overall but
+    weak within a season"). Seeded generators drift when tweaked.
 
 ## Build & runtime constraints
 

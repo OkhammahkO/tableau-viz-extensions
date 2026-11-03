@@ -1,4 +1,8 @@
 // Pure statistics and layout for the raincloud. No DOM, no Tableau: unit-tested in stats.test.ts.
+// Quantiles, the Silverman bandwidth and the KDE live in the kit (shared with the correlation matrix).
+import { kde, quantileSorted, silverman } from '@kit/stats';
+
+export { kde, quantileSorted, silverman };
 
 export interface GroupStats {
   n: number;
@@ -14,17 +18,6 @@ export interface GroupStats {
   whiskerHigh: number;
   /** Silverman's rule-of-thumb bandwidth; 0 when it can't be estimated (n < 2 or no spread). */
   bandwidth: number;
-}
-
-/** Linear-interpolation quantile of an ascending array (same method as d3.quantile / R type 7). */
-export function quantileSorted(sorted: number[], p: number): number {
-  const n = sorted.length;
-  if (n === 0) return NaN;
-  if (n === 1) return sorted[0];
-  const i = (n - 1) * p;
-  const lo = Math.floor(i);
-  const hi = Math.min(n - 1, lo + 1);
-  return sorted[lo] + (sorted[hi] - sorted[lo]) * (i - lo);
 }
 
 export function summarize(sorted: number[], missing = 0): GroupStats {
@@ -49,41 +42,6 @@ export function summarize(sorted: number[], missing = 0): GroupStats {
   let whiskerHigh = sorted[n - 1];
   for (let i = n - 1; i >= 0; i--) if (sorted[i] <= highFence) { whiskerHigh = sorted[i]; break; }
   return { n, missing, min: sorted[0], max: sorted[n - 1], q1, median, q3, mean, whiskerLow, whiskerHigh, bandwidth: silverman(n, sd, iqr) };
-}
-
-/** Silverman: 0.9 · min(sd, IQR/1.34) · n^-1/5, falling back to sd when IQR is 0. */
-export function silverman(n: number, sd: number, iqr: number): number {
-  if (n < 2) return 0;
-  const spread = iqr > 0 ? Math.min(sd, iqr / 1.34) : sd;
-  return spread > 0 ? 0.9 * spread * Math.pow(n, -0.2) : 0;
-}
-
-/**
- * Gaussian KDE evaluated over the observed range only (no density drawn beyond the data),
- * optionally narrowed to a visible window [from, to] so a truncated axis still gets a smooth curve.
- * Returns [x, density] pairs; empty when there's no usable bandwidth.
- */
-export function kde(sorted: number[], bandwidth: number, steps = 128, from = -Infinity, to = Infinity): [number, number][] {
-  const n = sorted.length;
-  if (n < 2 || !(bandwidth > 0)) return [];
-  const lo = Math.max(sorted[0], from);
-  const hi = Math.min(sorted[n - 1], to);
-  if (!(hi > lo)) return [];
-  const k = 1 / (n * bandwidth * Math.sqrt(2 * Math.PI));
-  const cutoff = 4 * bandwidth; // contributions beyond 4 bandwidths are negligible
-  const out: [number, number][] = [];
-  let start = 0;
-  for (let s = 0; s < steps; s++) {
-    const x = lo + ((hi - lo) * s) / (steps - 1);
-    while (start < n && sorted[start] < x - cutoff) start++;
-    let sum = 0;
-    for (let i = start; i < n && sorted[i] <= x + cutoff; i++) {
-      const z = (x - sorted[i]) / bandwidth;
-      sum += Math.exp(-0.5 * z * z);
-    }
-    out.push([x, sum * k]);
-  }
-  return out;
 }
 
 export interface Bin {

@@ -91,6 +91,18 @@ export function formatSummary(v: number, fmt: NumberFormat | null | undefined, d
   return withAffixes(v, fmt, Math.max(0, Math.min(6, Math.round(decimals))));
 }
 
+/**
+ * Decimals for summary values that suit the data (user, 2026-11-03: "based on context"): a resolution of about 1/20
+ * of the typical spread, in the units shown. Age or cholesterol (spreads of tens) → 0, BMI or hours a week → 1,
+ * rates 0–1 → 2.
+ * `span` is a robust spread such as P95 − P5; `scale` the field format's display scale (100 for %). 0–4.
+ */
+export function decimalsForSpan(span: number, scale = 1): number {
+  const shown = Math.abs(span * scale);
+  if (!(shown > 0) || !Number.isFinite(shown)) return 1;
+  return Math.max(0, Math.min(4, Math.ceil(-Math.log10(shown / 20) - 1e-9)));
+}
+
 /** Axis ticks: the field's affixes and scale, with just enough decimals for the tick step. */
 export function formatTick(v: number, fmt: NumberFormat | null | undefined, step: number): string {
   const shownStep = Math.abs(step * (fmt?.scale ?? 1));

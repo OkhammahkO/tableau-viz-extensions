@@ -1,5 +1,7 @@
 # kit: shared toolkit for Tableau viz extensions
 
+Used by `vizzes/raincloud` and `vizzes/correlation`.
+
 Generic code every viz in `vizzes/` can use. Imported as `@kit/…`. **The kit never imports from a viz.**
 
 | Module | What it gives you |
@@ -8,6 +10,7 @@ Generic code every viz in `vizzes/` can use. Imported as `@kit/…`. **The kit n
 | `tableau/settings.ts` | `createSettingsStore(key, merge)`: options as one JSON string in Tableau settings, serialized saves |
 | `grid/layout.ts` | Size modes (Entire view, Fit width/height, Standard), Rows × Columns panels, wrapping; tick strip per cell or once per block (`footH`) |
 | `grid/ticks.ts` | Axis tick values (Fewer / Auto / More density, fixed interval) and label thinning so labels never overlap |
+| `ui/snapshot.ts` | A PNG of a chart (its SVG and canvas layers composed) for Tableau's export (API 1.17 `reportExtensionRenderComplete`) |
 | `grid/paths.ts` | Row/column combinations for Rows/Columns tiles (every combination, capped) |
 | `grid/headers.ts` | Nested/spanning row headers, column headers (nested or per wrapped panel), colour legend |
 | `colours.ts` | Tableau 10/20 palettes, "Other" folding, stable colours remembered per field |

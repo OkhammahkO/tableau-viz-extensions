@@ -1,11 +1,12 @@
 {
   "name": "raincloud-tableau",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "scripts": {
     "dev": "vite --config vizzes/raincloud/vite.config.ts",
-    "build": "tsc --noEmit && vite build --config vizzes/raincloud/vite.config.ts",
+    "dev:correlation": "vite --config vizzes/correlation/vite.config.ts",
+    "build": "tsc --noEmit && vite build --config vizzes/raincloud/vite.config.ts && vite build --config vizzes/correlation/vite.config.ts",
     "site": "node scripts/build-site.mjs",
     "site:preview": "npm run site && vite preview --outDir dist/site --port 4180 --strictPort",
     "preview": "vite preview --config vizzes/raincloud/vite.config.ts --port 5173 --strictPort",

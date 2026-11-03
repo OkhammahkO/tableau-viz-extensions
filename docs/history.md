@@ -314,3 +314,38 @@ parameter updater (small dashboard extension), and unchecked ideas (SPC/control 
   behaviour change), ECDF unit tests, stale comments fixed, unused 'line' mean style removed. Release prep: showcase
   images regenerated, README/site feature lists for v1.1. Research: correlation / scatterplot matrix (gap confirmed,
   ggpairs-style design, ink-efficient mock-up with Pearson vs Spearman) and a quick SPC / control-chart check.
+
+## 2026-11-02 (late): v1.1 released; correlation matrix from idea to first Tableau run
+- Raincloud v1.1.0 released: public repo refreshed, tagged, Pages redeployed, GitHub Release with the `.trex`. Before
+  that: options trimmed (dot size), tick controls merged, Format dialog regrouped in chart order with plain labels,
+  built-site testing (`npm run site:preview` + preview manifest) and a v1.0-settings upgrade test.
+- Correlation matrix (candidate 6): research and an interactive gallery artifact (playground, 9 variants, analysis
+  demos); decisions grilled (Pearson + Spearman option, linear line, sized numbers, 6–8 measures, colour, big data,
+  histogram diagonal); spike proved several measures on one tile (Tableau 2026.3.0); test data without Superstore
+  (customers with Simpson's paradox, health-8, Anscombe, edge cases, groups, 100k).
+- Built: stats (pairwise-complete, tied ranks), canvas points + SVG layers, density cells with selectable bins,
+  cross-highlighting, brushing, split histograms + per-colour boxes, formula / R² / per-group r tooltips, focus view +
+  hover preview (hover-to-open the full overlay was advised against: it covers what you point at), first adapter.
+- Found and fixed: draw order (sorted data painted the last colour on top: now a seeded shuffle), focus click detection
+  (pair attribute, not coordinates), CSV rounding in a "perfect r" test.
+- Research: Tableau export of extensions arrived in API 1.17 (`isExporting`, `reportExtensionRenderComplete(mediaBlob)`),
+  the route for exporting the canvas points (and raincloud F12). Renderer split into cells/points/geometry modules.
+- Night (user away): correlation outlier axis cut (as raincloud), number formats, settings + Format dialog, export path
+  (kit snapshot → reportExtensionRenderComplete, unverified), draft landing page. 188 tests.
+
+## 2026-11-03: correlation polish and landing page
+- Colour meaning settled: grey marks, red/blue coefficients (neutral with a Colour field); results explained in words
+  (interpret.ts); bigger focus histograms with boxes, CI band, group lines with direct labels; hover preview = focus.
+- Raincloud carry-overs: markers (mean, P5/P95) with a Markers section; density diagonal (kit KDE, `kit/stats.ts`).
+- Release kit: `correlation.trex` (v0.9.0), preview manifest, site build for both vizzes.
+- Landing page v2 like the raincloud's, with familiar health sample data (user asked for science people know, and a
+  classic "correlation isn't causation" example: ice cream vs drownings by season was chosen over pirates because it
+  shows the confounder, not just a coincidence). Tuned so within-season r drops to ≈ .2 (temperature sd 1.2 within
+  a season); the tests check every claim the page makes.
+- Tableau round (C1–C12) passed with fixes: focus box labels, double tooltip on focus points, landing-page layout
+  (found with headless Chrome screenshots of the harness: `?landing&w=&h=`), tick collisions, centring, AVG pills.
+  New: ⤢ expand button on scatters (chosen over "click empty space" and "keep double-click").
+- Code review (correlation + kit): six fixes, see the concept README §15. Learnings for the raincloud are pipelined in
+  PLAN.md ("Raincloud v1.2 pipeline") rather than applied: every push redeploys both vizzes.
+- Decisions: correlation ships as **0.9.0 preview**; the website becomes a portfolio home + a page per viz; per-viz
+  tags; before viz 3, move the shared Tableau adapter into the kit and add a `new-viz` scaffold (PLAN.md "Scaling").

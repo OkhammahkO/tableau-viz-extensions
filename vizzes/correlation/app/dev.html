@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correlation matrix live demo</title>
+    <style>
+      body { margin: 0; padding: 16px; font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; color: #222; background: #f3f4f6; display: grid; gap: 12px; }
+      h1 { margin: 0; font-size: 16px; }
+      .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: end; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 10px 12px; }
+      .controls label { display: grid; gap: 3px; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: .04em; }
+      .controls select, .controls input[type=number] { font: inherit; text-transform: none; }
+      .row { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; text-transform: none; color: #222; font-size: 13px; letter-spacing: 0; }
+      #measures { max-width: 720px; }
+      #frame { position: relative; background: #fff; border: 1px solid #bbb; resize: both; overflow: hidden; width: 760px; height: 640px; max-width: calc(100vw - 34px); display: flex; }
+      #chart { flex: 1; min-width: 0; }
+      #status { color: #555; font-size: 12px; font-variant-numeric: tabular-nums; }
+    </style>
+  </head>
+  <body>
+    <h1>Correlation matrix live demo <span id="status"></span></h1>
+    <div class="controls">
+      <label>Dataset <select id="dataset"></select></label>
+      <label>Landing page <span class="row"><input id="landing" type="checkbox"> show</span></label>
+      <label>Measures (tile order = tick order) <span class="row" id="measures"></span></label>
+      <label>Colour <select id="colour"></select></label>
+      <label>Coefficient <select id="coef"><option value="pearson">Pearson r</option><option value="spearman">Spearman ρ</option></select></label>
+      <label>Above <select id="upper"><option value="number">Sized number</option><option value="tile">Tile</option><option value="plain">Plain number</option><option value="blank">Blank</option></select></label>
+      <label>Coef colour <select id="coefcolour"><option value="auto">Auto</option><option value="diverging">Red/blue</option><option value="neutral">Neutral</option></select></label>
+      <label>Points <select id="points"><option value="auto">Automatic</option><option value="points">Always points</option><option value="density">Density cells</option></select></label>
+      <label>Outlier axis cut <span class="row"><input id="cut" type="checkbox" checked> whiskers + <input id="margin" type="number" min="0" max="50" step="1" value="5" style="width:48px">%</span></label>
+      <label>Density above <input id="threshold" type="number" min="100" step="500" value="5000" style="width:80px"></label>
+      <label>Trend line <span class="row"><input id="trend" type="checkbox" checked> show</span></label>
+      <label>Formula <select id="formula"><option value="tooltip">In tooltip</option><option value="cell">Also in each scatter</option></select></label>
+      <label>Box under histogram <span class="row"><input id="diagbox" type="checkbox" checked> show<select id="diagboxmode"><option value="combined">Combined</option><option value="colour">Per colour</option></select></span></label>
+      <label>Diagonal <select id="diag"><option value="histogram">Histogram</option><option value="density">Density</option></select></label>
+      <label>Marker decimals <select id="decimals"><option value="auto">Auto</option><option value="field">Field format</option><option>0</option><option>1</option><option>2</option></select></label>
+      <label>Split histograms by colour <select id="diagsplit"><option value="each">Each colour = 100%</option><option value="share">Share (stacked)</option><option value="off">Off</option></select></label>
+    </div>
+    <div id="frame"><div id="chart" class="cm-host"></div></div>
+    <p style="margin:0;color:#666;font-size:12px">Drag the frame's corner to resize. Hover a point to find the record in every scatter; click to select (Ctrl+click adds); <b>drag a rectangle</b> in a scatter to select what's inside; hover or click a <b>histogram bar</b> for its value range; hover a <b>legend</b> member to bring its colour forward; click a density cell to select its records. Hover a number for r, ρ, n, the formula and r per colour; <b>click a number</b> or the <b>⤢</b> on a hovered scatter (or double-click it) to look closer (it brushes too: drag, hover or click its histogram bars), Esc to go back; pause over a scatter for a preview in the top-right corner (click it to open).</p>
+    <script type="module" src="/src/harness/main.ts"></script>
+  </body>
+</html>

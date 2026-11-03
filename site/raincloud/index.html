@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raincloud for Tableau</title>
+  <meta name="description" content="A free Tableau viz extension: a raincloud plot showing each distribution's shape, summary and every record.">
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="../">Tableau viz extensions</a>
+      <a href="./" aria-current="page">Raincloud</a>
+      <a href="../correlation/">Correlation matrix</a>
+      <a href="https://github.com/OkhammahkO/tableau-viz-extensions">GitHub</a>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <h1>See the whole distribution in Tableau</h1>
+        <p class="lede">Raincloud is a free viz extension that shows each distribution's shape (the cloud), its summary
+          (a box plot) and every record (the rain), in a Rows × Columns grid.</p>
+        <div class="buttons">
+          <a class="btn primary" href="raincloud.trex" download>Download raincloud.trex</a>
+          <a class="btn" href="demo/">Try the live demo</a>
+        </div>
+        <p class="meta">Free and open source (MIT) · Tableau 2024.2 or later · nothing to install</p>
+      </div>
+      <div class="shot"><img src="../images/hero-a-rows-columns.svg" alt="Raincloud plots in a 3 by 2 grid: a normal, a bimodal and a right-skewed distribution, each split into Group A and Group B, with density clouds, box plots and stacked dots."></div>
+    </header>
+
+    <section id="start">
+      <h2>Quick start</h2>
+      <p class="sub">Three steps, about a minute.</p>
+      <ol class="steps">
+        <li><b>Download</b><p><a href="raincloud.trex" download><code>raincloud.trex</code></a>, a small manifest file that tells Tableau where the extension lives.</p></li>
+        <li><b>Add it in Tableau</b><p><span class="path">Show Me → Viz Extensions → Access Local Viz Extensions</span>, pick the file, then follow the prompts.</p></li>
+        <li><b>Drag fields</b><p>A measure to <span class="path">Value</span> and a row ID to <span class="path">Detail</span> (one dot per record). Optionally a dimension to <span class="path">Rows</span>.</p></li>
+      </ol>
+      <p class="note">Then fine-tune it with <b>Format Extension</b>, below the tiles on the Marks card.
+        On <b>Tableau Cloud or Server</b>, an admin first adds <code>https://okhammahko.github.io</code> to the site's extension allow list.</p>
+    </section>
+
+    <section id="features">
+      <h2>Make it yours</h2>
+      <p class="sub">A few of the looks you can switch to in Format Extension.</p>
+      <div class="grid">
+        <figure><div class="img"><img src="../images/feature-dot-plot.svg" alt="Bimodal distribution with stacked dots" loading="lazy"></div>
+          <figcaption><b>Dot plot rain</b>Stacked dots reveal two humps a box plot hides.</figcaption></figure>
+        <figure><div class="img"><img src="../images/feature-strip.svg" alt="Normal distribution with a strip of dots" loading="lazy"></div>
+          <figcaption><b>Strip rain</b>A compact row of dots, for many rows.</figcaption></figure>
+        <figure><div class="img"><img src="../images/feature-histogram.svg" alt="Right-skewed distribution drawn as a histogram" loading="lazy"></div>
+          <figcaption><b>Histogram cloud</b>Bins instead of a smooth curve show the long tail.</figcaption></figure>
+        <figure><div class="img"><img src="../images/feature-colour.svg" alt="Bimodal distribution with dots coloured by sub-group" loading="lazy"></div>
+          <figcaption><b>Colour by group</b>Put a dimension on Colour; a sub-group explains the humps.</figcaption></figure>
+        <figure><div class="img"><img src="../images/feature-split-cloud.svg" alt="One cloud per sub-group, overlaid" loading="lazy"></div>
+          <figcaption><b>Split cloud</b>One cloud per colour, overlaid.</figcaption></figure>
+        <figure><div class="img"><img src="../images/hero-c-rows.svg" alt="Three raincloud rows: normal, bimodal, right-skewed" loading="lazy"></div>
+          <figcaption><b>Rows and columns</b>Up to three dimensions on Rows and two on Columns, like Tableau's shelves.</figcaption></figure>
+        <figure class="wide"><figcaption><b>Outliers handled</b>The axis is cut automatically at the whiskers plus 5%, so a few
+          extreme values don't squash everything else. A badge shows what's off-axis; click it to show all.</figcaption>
+          <div class="img"><img src="../images/feature-outliers-cut.svg" alt="Response-time rainclouds with the axis cut and a badge counting the hidden outliers" loading="lazy"></div></figure>
+      </div>
+    </section>
+
+    <section id="more">
+      <h2>Also included</h2>
+      <ul class="list">
+        <li>Median, mean and P5/P95 markers with values, in the field's own number format.</li>
+        <li>Comfortable, Compact and Dense layouts for long lists and big grids of small multiples.</li>
+        <li>An optional cumulative line (ECDF) with its own 0–100% scale: hover to read "62% of records ≤ 45".</li>
+        <li>Native Tableau tooltips, highlighting and selection on every dot; the workbook's font.</li>
+        <li>Entire view, fit width, fit height or standard sizing; shared or independent axes across panels.</li>
+        <li>Your data stays in Tableau: the extension draws inside the worksheet and sends nothing anywhere.</li>
+      </ul>
+    </section>
+
+    <footer>
+      MIT licence · <a href="https://github.com/OkhammahkO/tableau-viz-extensions">Source on GitHub</a> ·
+      <a href="https://github.com/OkhammahkO/tableau-viz-extensions/issues">Report an issue</a> ·
+      Not affiliated with or endorsed by Tableau or Salesforce.
+    </footer>
+  </div>
+</body>
+</html>

@@ -199,6 +199,117 @@ def large_grid(rng):
     write("large_grid.csv", ["store", "region", "segment", "basket_value"], rows)
 
 
+# --- Correlation matrix (candidate 6) -------------------------------------------------------------------------------
+
+def corr_customers(rng):
+    """The gallery's data: 7 measures with known relationships. Income-Spend strong (+ one outlier), Spend-Visits
+    moderate, Visits-Days since visit curved negative, Basket size unrelated, Tenure-Satisfaction negative overall but
+    positive within each channel (Simpson's paradox: colour by channel)."""
+    rows = []
+    for i in range(600):
+        channel = "In store" if i % 2 else "Online"
+        g = 1 if channel == "In store" else 0
+        income = rng.gauss(52, 12) - g * 4
+        spend = 0.62 * income + rng.gauss(0, 6)
+        visits = max(0.5, 2 + 0.05 * spend + rng.gauss(0, 1.6))
+        days = max(0.2, 40 * math.exp(-0.35 * visits) + rng.gauss(0, 2.2))
+        basket_size = rng.gauss(30, 7)
+        tenure = max(0.2, 2 + g * 6 + rng.gauss(0, 1.6))
+        satisfaction = 6.2 + 0.32 * tenure - g * 3.4 + rng.gauss(0, 0.55)
+        if i == 0:
+            income, spend = 120, 20  # the outlier
+        rows.append([channel, rng.choice(REGIONS), fmt(income, 1), fmt(spend, 1), fmt(visits, 1), fmt(days, 1),
+                     fmt(basket_size, 1), fmt(tenure, 1), fmt(satisfaction, 2)])
+    write("corr_customers.csv", ["channel", "region", "income_k", "spend_k", "visits_per_month", "days_since_visit",
+                                 "basket_size", "tenure_years", "satisfaction"], rows)
+
+
+def corr_health_8(rng):
+    """8 measures in two correlated blocks (body: age, BMI, blood pressure, cholesterol; lifestyle: steps, sleep,
+    screen time, stress) with a few cross-links (steps lowers BMI, stress raises blood pressure). For legibility at 8
+    measures and for variable ordering (clustered order puts each block together)."""
+    rows = []
+    for _ in range(1000):
+        age = rng.uniform(20, 75)
+        steps = max(500, rng.gauss(8000, 2800) - 40 * (age - 45))
+        screen = max(0.3, rng.gauss(4.5, 1.6) - 0.02 * (age - 45))
+        sleep = max(3.5, min(10, rng.gauss(7.2, 0.9) - 0.18 * (screen - 4.5)))
+        stress = max(1, min(10, rng.gauss(5, 1.6) + 0.35 * (screen - 4.5) - 0.5 * (sleep - 7.2)))
+        bmi = max(16, rng.gauss(26, 3.5) + 0.04 * (age - 45) - 0.00035 * (steps - 8000))
+        bp = rng.gauss(122, 10) + 0.45 * (age - 45) + 0.9 * (bmi - 26) + 1.8 * (stress - 5)
+        chol = rng.gauss(195, 28) + 0.8 * (age - 45) + 1.6 * (bmi - 26)
+        rows.append([rng.choice(["Clinic A", "Clinic B", "Clinic C"]), fmt(age, 0), fmt(bmi, 1), fmt(bp, 0), fmt(chol, 0),
+                     fmt(steps, 0), fmt(sleep, 1), fmt(screen, 1), fmt(stress, 1)])
+    write("corr_health_8.csv", ["clinic", "age", "bmi", "blood_pressure", "cholesterol", "steps", "sleep_hours",
+                                "screen_time_hours", "stress_score"], rows)
+
+
+def corr_anscombe(_rng):
+    """Anscombe's quartet (1973, a published dataset): four x/y pairs with nearly the same mean, variance and
+    r (about 0.82) but very different shapes: linear, curved, one outlier, one leverage point."""
+    x123 = [10, 8, 13, 9, 11, 14, 6, 4, 12, 7, 5]
+    y1 = [8.04, 6.95, 7.58, 8.81, 8.33, 9.96, 7.24, 4.26, 10.84, 4.82, 5.68]
+    y2 = [9.14, 8.14, 8.74, 8.77, 9.26, 8.10, 6.13, 3.10, 9.13, 7.26, 4.74]
+    y3 = [7.46, 6.77, 12.74, 7.11, 7.81, 8.84, 6.08, 5.39, 8.15, 6.42, 5.73]
+    x4 = [8, 8, 8, 8, 8, 8, 8, 19, 8, 8, 8]
+    y4 = [6.58, 5.76, 7.71, 8.84, 8.47, 7.04, 5.25, 12.50, 5.56, 7.91, 6.89]
+    rows = [[x123[i], y1[i], x123[i], y2[i], x123[i], y3[i], x4[i], y4[i]] for i in range(11)]
+    write("corr_anscombe.csv", ["x1", "y1", "x2", "y2", "x3", "y3", "x4", "y4"], rows)
+
+
+def corr_edge_cases(rng):
+    """Robustness: a constant measure (r undefined), nulls in some measures (pairwise n differs), Likert 1-5 ties,
+    negative values, a perfect correlation (y = 2x + 3), a perfect negative one, and a 0/1 measure."""
+    rows = []
+    for _ in range(300):
+        a = rng.gauss(0, 10)  # includes negatives
+        rows.append([
+            rng.choice(SEGMENTS),
+            fmt(a, 2),
+            fmt(2 * a + 3, 2),                                       # perfect positive with a
+            fmt(-0.5 * a + 1, 2),                                    # perfect negative with a
+            42,                                                      # constant: no variance
+            None if rng.random() < 0.25 else fmt(a + rng.gauss(0, 8), 2),  # 25% nulls
+            max(1, min(5, round(3 + a / 8 + rng.gauss(0, 0.9)))),    # Likert ties
+            1 if a + rng.gauss(0, 6) > 0 else 0,                     # binary
+        ])
+    write("corr_edge_cases.csv", ["segment", "a", "a_times_2_plus_3", "minus_half_a", "constant", "a_with_nulls",
+                                  "likert_1_5", "binary_0_1"], rows)
+
+
+def corr_groups(rng):
+    """Colour-field cases: `tier` has two unbalanced members (95% Standard, 5% Premium, with an opposite slope: its
+    points are easy to lose and its per-group r rests on few records); `store` has 25 members (past Tableau 20: the
+    smallest fold into Other); `segment` has nulls (a "Null" member). Rows are SORTED by tier, so a renderer that
+    draws points in data order paints Premium on top of everything."""
+    rows = []
+    for i in range(800):
+        premium = rng.random() < 0.05
+        x = rng.gauss(50, 10)
+        y = (90 - 0.8 * x if premium else 10 + 0.7 * x) + rng.gauss(0, 5)
+        z = 0.4 * x + rng.gauss(20, 6)
+        store = f"Store {1 + min(24, int(rng.expovariate(0.12))):02d}"  # uneven sizes
+        segment = None if rng.random() < 0.08 else rng.choice(["Retail", "Trade", "Online"])
+        rows.append(["Premium" if premium else "Standard", store, segment, fmt(x, 1), fmt(y, 1), fmt(z, 1)])
+    rows.sort(key=lambda r: r[0] == "Premium")  # Standard first, Premium last
+    write("corr_groups.csv", ["tier", "store", "segment", "price", "demand", "margin"], rows)
+
+
+def large_corr(rng, total, name):
+    """Performance and the density-cell switch: 6 related measures, a 3-member group."""
+    rows = []
+    for _ in range(total):
+        g = rng.choice(["North", "South", "West"])
+        x = rng.gauss(50, 12)
+        y = 0.7 * x + rng.gauss(0, 8)
+        z = rng.gauss(30, 6) + (6 if g == "South" else 0)
+        w = 100 - 0.5 * y + rng.gauss(0, 7)
+        v = math.exp(rng.gauss(2.5, 0.5))  # skewed
+        u = 0.3 * x + 0.3 * z + rng.gauss(0, 6)
+        rows.append([g, fmt(x, 1), fmt(y, 1), fmt(z, 1), fmt(w, 1), fmt(v, 1), fmt(u, 1)])
+    write(name, ["region", "m1", "m2", "m3", "m4", "m5_skewed", "m6"], rows)
+
+
 def main() -> None:
     print(f"writing to {OUT}")
     # One generator per dataset, each with its own seed, so adding a dataset never changes the others.
@@ -211,10 +322,16 @@ def main() -> None:
     edge_cases(random.Random(17))
     repeated(random.Random(18))
     spikes_grid(random.Random(21))
+    corr_customers(random.Random(23))
+    corr_health_8(random.Random(24))
+    corr_anscombe(None)
+    corr_edge_cases(random.Random(25))
+    corr_groups(random.Random(27))
     if "--no-large" not in sys.argv:
         large(random.Random(19), 10_000, "large_10k.csv")
         large(random.Random(20), 100_000, "large_100k.csv")
         large_grid(random.Random(22))
+        large_corr(random.Random(26), 100_000, "large_corr_100k.csv")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 import type { Worksheet } from '@tableau/extensions-api-types';
 import { fireAndLog, getEncodingFields, readSummaryData, tupleIdForRow } from '@kit/tableau/api';
+import { remapSelection, rowKey } from '@kit/tableau/selection';
 import { allGroups, buildGrid, type Grid, type GridRecord, type Point } from '../chart/model';
 import { DEFAULT_OPTIONS, type RaincloudOptions } from '../chart/options';
 import { loadOptions, saveOptions } from './settings';
@@ -21,6 +22,8 @@ const state = {
   grid: undefined as Grid | undefined,
   totalRows: 0,
   selected: new Set<number>(),
+  /** Each record's identity (tuple id → row key), to carry the selection across a refresh. */
+  keys: new Map<number, string>(),
   options: structuredClone(DEFAULT_OPTIONS) as RaincloudOptions
 };
 
@@ -48,6 +51,7 @@ async function refresh(): Promise<void> {
   splashEl.hidden = true;
 
   const records: GridRecord[] = [];
+  const keys = new Map<number, string>();
   const formatSamples: { value: number; formatted: string }[] = [];
   const t0 = performance.now();
   const { totalRows } = await readSummaryData(state.worksheet, (page, offset) => {
@@ -63,6 +67,7 @@ async function refresh(): Promise<void> {
       return isNull(d.value) ? 'Null' : (d.formattedValue ?? String(d.value));
     };
     page.data.forEach((cells, i) => {
+      keys.set(tupleIdForRow(offset + i), rowKey(cells));
       const v = cells[vCol.index];
       const num = isNull(v.value) ? null : Number(v.value);
       if (num !== null && Number.isFinite(num) && formatSamples.length < 200 && v.formattedValue) {
@@ -82,7 +87,9 @@ async function refresh(): Promise<void> {
   state.grid = buildGrid(records, rowFields.map((f) => f.name), colFields.map((f) => f.name), valueField.name, colourField?.name ?? null);
   // Follow the measure's Tableau number format ($, %, K, separators) on ticks and labels.
   state.grid.valueFormat = inferFormat(formatSamples);
-  state.selected = new Set([...state.selected].filter((id) => id <= totalRows));
+  // Tuple ids are row positions: a filter renumbers them, so keep the same records selected, not the same ids.
+  state.selected = remapSelection(state.selected, state.keys, keys);
+  state.keys = keys;
   const cellsWithData = allGroups(state.grid).length;
   console.info('[raincloud] read', {
     rows: totalRows, gridRows: state.grid.rows.length, gridCols: state.grid.cols.length, cellsWithData,

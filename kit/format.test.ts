@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { axisTitle, formatSummary, formatTick, inferFormat, parseFormatted } from './format';
+import { axisTitle, decimalsForSpan, formatSummary, formatTick, inferFormat, parseFormatted } from './format';
 
 describe('parseFormatted', () => {
   it('reads common Tableau formats', () => {
@@ -57,5 +57,15 @@ describe('formatting', () => {
     expect(axisTitle('SUM(Response Ms)')).toBe('Response Ms');
     expect(axisTitle('AVG(Profit)')).toBe('AVG(Profit)');
     expect(axisTitle('value')).toBe('value');
+  });
+
+  it('decimalsForSpan: about 1/20 of the spread, in the units shown', () => {
+    expect(decimalsForSpan(60)).toBe(0); // age 20–80
+    expect(decimalsForSpan(130)).toBe(0); // cholesterol
+    expect(decimalsForSpan(9)).toBe(1); // hours a week
+    expect(decimalsForSpan(0.6)).toBe(2); // a rate 0–1
+    expect(decimalsForSpan(0.6, 100)).toBe(0); // the same rate shown as %
+    expect(decimalsForSpan(0)).toBe(1); // no spread: a sensible default
+    expect(decimalsForSpan(1e-9)).toBe(4); // capped
   });
 });

@@ -38,6 +38,29 @@
 - [ ] Defaults changed since v1.0 (cloud height fit per chart, split 100%, orange mean): workbooks saved with v1.0
       keep only the options they stored, so new options take the new defaults.
 
+## Correlation 0.9.0 preview + Raincloud 1.1.1 release
+- [x] Tableau round C1–C12 (dev build), user 2026-11-03; code review fixes; 203 tests.
+- [x] Website as a portfolio: `site/index.html` (home), `site/raincloud/`, `site/correlation/`, shared `site.css`;
+      images `docs/images/correlation-*.png` from the dev-only showcase page (below). README and CHANGELOG per viz.
+- [x] `npm run site:preview`, then TESTING.md P for **both** vizzes (user 2026-11-03: C13 good in both) (raincloud is rebuilt and redeployed too), plus
+      C13 in **both** vizzes (C12/C14 export: skipped for 0.9, user); look at the three pages (light and dark) and click every link and download.
+- [x] Raincloud 1.1.1 (selection survives a filter, same fix): `package.json` and the four raincloud `.trex` files.
+- [x] `extension-version` 0.9.0 in the three correlation `.trex` files.
+- [x] Both CHANGELOG entries dated 2026-11-03.
+- [ ] Public copy: synced and checked 2026-11-03 (clean install, 208 tests, site build, privacy scan clean), not
+      committed yet; re-sync after any fix from the check. Then commit, tag
+      `correlation-v0.9.0` and `raincloud-v1.1.1`; the user pushes (with tags); two GitHub Releases: "Correlation
+      matrix 0.9.0 (preview)" with `correlation.trex`, and "Raincloud 1.1.1" with `raincloud.trex`. Draft notes:
+      `docs/release-notes/`.
+- [ ] Old links: the site root was the raincloud page; it is now the home page, which links to it. The raincloud's
+      `.trex` URL (`raincloud/raincloud.html`) is unchanged, so installed workbooks keep working.
+
+### Website images
+With `npm run dev:correlation` running, `showcase.html?view=<hero|focus|simpson|icecream|density|bigdata|tiles>&w=&h=`
+draws one view; headless Chrome screenshots it at 2× (`--force-device-scale-factor=2 --window-size=W,H
+--screenshot=<absolute path>`; sizes: hero 760×760, focus views 640×600, small matrices 520×520). Raincloud images:
+`npm run showcase`.
+
 ## Before submitting
 - [ ] **Tableau check of the sandbox build:** add `vizzes/raincloud/manifests/raincloud-sandbox.trex` in Tableau with `npm run sandbox` running;
       confirm chart, Format dialog (live preview), settings saved with the workbook, colours, badge, landing page.

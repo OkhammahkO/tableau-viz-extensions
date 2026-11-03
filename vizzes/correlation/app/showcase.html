@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correlation matrix showcase</title>
+    <!-- Dev only: one named view at a fixed size, for the website's images (see src/harness/showcase.ts). -->
+    <style>
+      body { margin: 0; background: #fff; }
+      #chart { position: relative; }
+      .cm-focus-close { display: none; } /* a picture: no close button */
+    </style>
+  </head>
+  <body>
+    <div id="chart" class="cm-host"></div>
+    <script type="module" src="/src/harness/showcase.ts"></script>
+  </body>
+</html>
